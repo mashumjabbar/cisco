@@ -1,0 +1,65 @@
+!
+version 15.1
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+service compress-config
+!
+hostname Fileserver
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+clock timezone PST -8 0
+!
+ip cef
+!
+!
+no ipv6 cef
+ipv6 multicast rpf use-bgp
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+interface Ethernet0/0
+ ip address 172.16.130.6 255.255.255.0
+!         
+interface Ethernet0/1
+ no ip address
+ shutdown 
+!         
+interface Ethernet0/2
+ no ip address
+ shutdown 
+!         
+interface Ethernet0/3
+ no ip address
+ shutdown 
+!         
+!         
+!         
+no ip http server
+!         
+!         
+!         
+!         
+control-plane
+!         
+!         
+line con 0
+ logging synchronous
+line aux 0
+line vty 0 4
+ login    
+!         
+end

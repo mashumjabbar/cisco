@@ -1,0 +1,156 @@
+!
+! No configuration change since last restart
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+clock timezone PST -8 0
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!         
+!         
+!         
+          
+          
+!         
+!         
+!         
+!         
+no ip domain lookup
+ip cef    
+no ipv6 cef
+!         
+multilink bundle-name authenticated
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+crypto pki trustpoint TP-self-signed-1032193
+ enrollment selfsigned
+ subject-name cn=IOS-Self-Signed-Certificate-1032193
+ revocation-check none
+ rsakeypair TP-self-signed-1032193
+!         
+!         
+crypto pki certificate chain TP-self-signed-1032193
+ certificate self-signed 01
+  30820225 3082018E A0030201 02020101 300D0609 2A864886 F70D0101 05050030 
+  2E312C30 2A060355 04031323 494F532D 53656C66 2D536967 6E65642D 43657274 
+  69666963 6174652D 31303332 31393330 1E170D31 35313030 36313233 3634335A 
+  170D3230 30313031 30303030 30305A30 2E312C30 2A060355 04031323 494F532D 
+  53656C66 2D536967 6E65642D 43657274 69666963 6174652D 31303332 31393330 
+  819F300D 06092A86 4886F70D 01010105 0003818D 00308189 02818100 A068CE6B 
+  0384D250 7BF0668F 69E8F2B3 6064E5F4 2E194E4D 0DE0C648 AA3FEC6C 2C7CB1DF 
+  7442D13F AB5D58AC D0978E32 B6BAC9E4 8702B913 0D4E603F 16CF8010 40DA4108 
+  C5FAFD1D D2631BAA D918EF50 3099E088 4F174D8C 995A4A1A B238F3B3 F02B17D9 
+  E24A4677 4E804191 A7A9A2A4 AEC3FABD 2E475539 B2EB545B 5CDFF4D5 02030100 
+  01A35330 51300F06 03551D13 0101FF04 05300301 01FF301F 0603551D 23041830 
+  1680144A 3C56FC5A 511D085B C52BC586 53AA6597 79BC2F30 1D060355 1D0E0416 
+  04144A3C 56FC5A51 1D085BC5 2BC58653 AA659779 BC2F300D 06092A86 4886F70D 
+  01010505 00038181 0053CB27 77929D0B B90F5486 49DCBA05 67E38299 8B6BDF8F 
+  254CA467 E9647B20 C251FD42 0388C084 1D8C0189 070C11E5 4C4CEB2B 6B46B95F 
+  E2E989DE B0DE9D0D 795B165C 5BC534A4 FF10218F C55BF6CF F6E2B0B5 4AAB1E7B 
+  DF68E449 593DED74 953443A9 95DD174B 9FEEF4D4 90D9F321 70859547 048D0761 
+  01EE0612 2F3F542F 3C
+        quit
+!         
+redundancy
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+interface Loopback0
+ ip address 10.10.3.1 255.255.255.0
+!         
+interface Ethernet0/0
+ description Link to SW2
+ ip address 10.10.1.1 255.255.255.0
+!         
+interface Ethernet0/1
+ no ip address
+ shutdown 
+!         
+interface Ethernet0/2
+ no ip address
+ shutdown 
+!         
+interface Ethernet0/3
+ no ip address
+ shutdown 
+!         
+interface Serial1/0
+ no ip address
+ shutdown 
+ serial restart-delay 0
+!         
+interface Serial1/1
+ no ip address
+ shutdown 
+ serial restart-delay 0
+!         
+interface Serial1/2
+ no ip address
+ shutdown 
+ serial restart-delay 0
+!         
+interface Serial1/3
+ no ip address
+ shutdown 
+ serial restart-delay 0
+!         
+ip forward-protocol nd
+!         
+!         
+ip http server
+ip http secure-server
+!         
+!         
+!         
+!         
+control-plane
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+line con 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+line aux 0
+line vty 0 4
+ privilege level 15
+ password Cisco123
+ login    
+ transport input all
+!         
+ntp master 3
+!         
+end  

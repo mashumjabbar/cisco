@@ -1,0 +1,1795 @@
+<img src="FASTLab1.png"></img>
+<br>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Introduction</title><style type="text/css">
+
+        .title {
+            font-weight: bold;
+        }
+        body {
+            font-size: 12pt;
+        }
+        body > .title {
+            font-size: 20pt;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .procedure > .title {
+            font-size: 18pt;
+        }
+        .procedure > .stepgroup > .title {
+            font-size: 16pt;
+        }
+        .procedure > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup {
+            margin-top: 10px;
+        }
+        .procedure > .parablock {
+            margin-top: 10px;
+        }
+        .procedure > .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .step {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .step > .action > div: first-child {
+            margin-left: -20px;
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock {
+            margin-top: 10px;
+        }
+        .step > .response {
+            margin-top: 10px;
+        }
+        .step > .parablock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .step > .parablock > .titledblock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .step > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .substep {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .substep > .action > div: first-child {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-left: -20px;
+        }
+        .richtext {
+            margin-top: 10px;
+        }
+        .titledblock > .parablock {
+            margin-top: 10px;
+        }
+        .customnote {
+            margin: 10px 5px 10px 5px;
+            border: 1px solid black;
+        }
+        .notetitle {
+            font-weight: bold;
+            border-bottom: 1px solid black;
+            width: 100%;
+        }
+        .procedure {
+            margin-top: 10px;
+        }
+        .stepgroup > .title {
+            margin-left: -20px;
+        }
+        .stepgroup {
+            margin-left: 20px;
+        }
+        .procedure {
+            margin-left: 20px;
+        }
+        .procedure > .title {
+            margin-left: -20px;
+        }
+        .topic > .title {
+            font-size: 16pt;
+        }
+        .topic > .topic > .title {
+            font-size: 14pt;
+        }
+        .topic > .topic {
+            margin-top: 10px;
+        }
+        .parablock img {
+            margin-top: 20px;
+        }
+        .highlight {
+            background-color: #ffff00;
+        }
+        .double-underline {
+            border-bottom: 3px double;
+        }
+        .overline {
+            text-decoration: overline;
+        }
+        .inlineterm {
+        }
+        .inlinewindowname {
+        }        
+        .inlinemenuselection {
+          font-weight: bold;
+        }        
+        .inlinetypethis {
+          font-weight: bold;
+        }        
+        .inlinecode {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .subscript {
+            vertical-align: sub;
+            font-size: smaller;
+        }
+        .superscript {
+            vertical-align: super;
+            font-size: smaller;
+        }
+        .strikethrough {
+            text-decoration: line-through;
+        }
+        .titledblock {} .figure {
+            max-width: 100%;
+        }
+        .listpreamble {
+            margin-top: 20px;
+        }
+        .list {
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        .list li {
+            margin-left: 13px;
+            padding-left: 0px;
+            list-style-position: outside;
+            list-style-type: none;
+            text-indent: -5px;
+            margin-top: 5px;
+        }
+        .list li: before {
+            content: '\2022';
+            position: relative;
+            left: -5px;
+        }
+        .list ul {
+            margin-top: 0px;
+        }
+        .list ul li {
+            list-style-type: none;
+            margin-left: 15px;
+            text-indent: -7px;
+        }
+        .list ul li: before {
+            content: '\2013';
+            position: relative;
+            left: -7px;
+        }
+        .hintblock {
+            display: none;
+        }
+        .table {
+            empty-cells: show;
+            border: 0px none;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table tr {
+            border: 0px none;
+        }
+        .table tr td,
+        th {
+            border: 0px none;
+            vertical-align: top;
+        }
+        .table tr th {
+            background-color: #cccccc;
+        }
+        .table-border {
+            empty-cells: show;
+            border: 1px solid #000000;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table-border tr {
+            border: 1px solid #000000;
+        }
+        .table-border tr td,
+        th {
+            border: 1px solid #000000;
+            vertical-align: top;
+        }
+        .table-border tr th {
+            background-color: #cccccc;
+        }
+        .codeblock {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre;
+        }
+        li .codeblock {
+            text-indent: 0px;
+        }
+        .logoimage {
+            margin: 10px;
+        }
+        .printhere {
+            margin-top: 40px;
+        }
+        .slide {
+            border: none;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .slidetitle {
+            font-size: 14pt;
+            font-weight: bold;
+            text-align: center;
+            display: none;
+        }
+        .slidebody {
+            text-align: left;
+        }
+        .commandname {
+            font-weight: bold;
+        }
+        .syntaxarg {
+            font-style: italic;
+        }
+        .syntaxkeyword {
+            font-weight: bold;
+            font-style: italic;
+        }
+        .footline {
+            width: 98%;
+            margin-top: 30px;
+        }
+        .copyright {
+            font-size: 10pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .question {
+            margin-bottom: 20px;
+            border-bottom: solid 1px #000;
+        }
+        .question .title {
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .options {
+            border: none;
+        }
+        .option input[type=checkbox],
+        input.checkbox {
+            display: block;
+            float: left;
+        }
+        .option input[type=radio],
+        input.radio {
+            display: block;
+            float: left;
+        }
+        .option input[type=submit] {} 
+        .option label {
+            position: relative;
+            margin-left: 30px;
+            display: block;
+        }
+        .options .correct {
+            background-color: #0f0;
+        }
+        .options .incorrect {
+            background-color: #f00;
+        }
+        .feedback { 
+            border: 1px solid #000; 
+            padding: 5px;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            background-color: #eee;
+        }
+        .fbhidden {
+           display: none;
+        }
+
+      </style></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Introduction</div><div class="parablock" xmlns=""><div class="customnote"><div class="notetitle">Note</div><div class="richtext">Read the requirements in the Scenario carefully and use the Configuration Tips to help you do the required steps. If you need further assistance, refer to the Answer Key. Once you have completed the configuration specified, answer the questions.</div></div><div class="richtext">A law firm contracted CCS to install a switch that supports an administration desktop AdminPC and a file server Fileserver.</div><div class="listpreamble">The contract requires you to configure the following:</div><ul class="list"><li>Hostname as &quot;SW1&quot; for the switch.</li><li>Enable interface VLAN 1 and configure the switch management IPv4 address on this interface, with the correct subnet mask.</li><li>The default gateway for the switch SW1 should be 172.16.130.3.</li><li>The interface on the switch that is connected to AdminPC should be configured with description—Link to AdminPC.</li><li>The interface on the switch that is connected to Fileserver should be configured with description—Link to Fileserver.</li></ul><div class="richtext">You must complete the initial configuration of the switch to meet the requirements of the contract.</div><div class="customnote"><div class="notetitle">Note</div><div class="richtext">The AdminPC has been preconfigured with IPv4 address 172.16.130.5 and subnet mask 255.255.255.0, and the Fileserver has been preconfigured with IPv4 address 172.16.130.6 and subnet mask 255.255.255.0.</div></div></div><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>
+<hr>
+<hr>
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Job Aid</title><style type="text/css">
+
+        .title {
+            font-weight: bold;
+        }
+        body {
+            font-size: 12pt;
+        }
+        body > .title {
+            font-size: 20pt;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .procedure > .title {
+            font-size: 18pt;
+        }
+        .procedure > .stepgroup > .title {
+            font-size: 16pt;
+        }
+        .procedure > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup {
+            margin-top: 10px;
+        }
+        .procedure > .parablock {
+            margin-top: 10px;
+        }
+        .procedure > .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .step {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .step > .action > div: first-child {
+            margin-left: -20px;
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock {
+            margin-top: 10px;
+        }
+        .step > .response {
+            margin-top: 10px;
+        }
+        .step > .parablock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .step > .parablock > .titledblock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .step > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .substep {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .substep > .action > div: first-child {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-left: -20px;
+        }
+        .richtext {
+            margin-top: 10px;
+        }
+        .titledblock > .parablock {
+            margin-top: 10px;
+        }
+        .customnote {
+            margin: 10px 5px 10px 5px;
+            border: 1px solid black;
+        }
+        .notetitle {
+            font-weight: bold;
+            border-bottom: 1px solid black;
+            width: 100%;
+        }
+        .procedure {
+            margin-top: 10px;
+        }
+        .stepgroup > .title {
+            margin-left: -20px;
+        }
+        .stepgroup {
+            margin-left: 20px;
+        }
+        .procedure {
+            margin-left: 20px;
+        }
+        .procedure > .title {
+            margin-left: -20px;
+        }
+        .topic > .title {
+            font-size: 16pt;
+        }
+        .topic > .topic > .title {
+            font-size: 14pt;
+        }
+        .topic > .topic {
+            margin-top: 10px;
+        }
+        .parablock img {
+            margin-top: 20px;
+        }
+        .highlight {
+            background-color: #ffff00;
+        }
+        .double-underline {
+            border-bottom: 3px double;
+        }
+        .overline {
+            text-decoration: overline;
+        }
+        .inlineterm {
+        }
+        .inlinewindowname {
+        }        
+        .inlinemenuselection {
+          font-weight: bold;
+        }        
+        .inlinetypethis {
+          font-weight: bold;
+        }        
+        .inlinecode {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .subscript {
+            vertical-align: sub;
+            font-size: smaller;
+        }
+        .superscript {
+            vertical-align: super;
+            font-size: smaller;
+        }
+        .strikethrough {
+            text-decoration: line-through;
+        }
+        .titledblock {} .figure {
+            max-width: 100%;
+        }
+        .listpreamble {
+            margin-top: 20px;
+        }
+        .list {
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        .list li {
+            margin-left: 13px;
+            padding-left: 0px;
+            list-style-position: outside;
+            list-style-type: none;
+            text-indent: -5px;
+            margin-top: 5px;
+        }
+        .list li: before {
+            content: '\2022';
+            position: relative;
+            left: -5px;
+        }
+        .list ul {
+            margin-top: 0px;
+        }
+        .list ul li {
+            list-style-type: none;
+            margin-left: 15px;
+            text-indent: -7px;
+        }
+        .list ul li: before {
+            content: '\2013';
+            position: relative;
+            left: -7px;
+        }
+        .hintblock {
+            display: none;
+        }
+        .table {
+            empty-cells: show;
+            border: 0px none;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table tr {
+            border: 0px none;
+        }
+        .table tr td,
+        th {
+            border: 0px none;
+            vertical-align: top;
+        }
+        .table tr th {
+            background-color: #cccccc;
+        }
+        .table-border {
+            empty-cells: show;
+            border: 1px solid #000000;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table-border tr {
+            border: 1px solid #000000;
+        }
+        .table-border tr td,
+        th {
+            border: 1px solid #000000;
+            vertical-align: top;
+        }
+        .table-border tr th {
+            background-color: #cccccc;
+        }
+        .codeblock {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre;
+        }
+        li .codeblock {
+            text-indent: 0px;
+        }
+        .logoimage {
+            margin: 10px;
+        }
+        .printhere {
+            margin-top: 40px;
+        }
+        .slide {
+            border: none;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .slidetitle {
+            font-size: 14pt;
+            font-weight: bold;
+            text-align: center;
+            display: none;
+        }
+        .slidebody {
+            text-align: left;
+        }
+        .commandname {
+            font-weight: bold;
+        }
+        .syntaxarg {
+            font-style: italic;
+        }
+        .syntaxkeyword {
+            font-weight: bold;
+            font-style: italic;
+        }
+        .footline {
+            width: 98%;
+            margin-top: 30px;
+        }
+        .copyright {
+            font-size: 10pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .question {
+            margin-bottom: 20px;
+            border-bottom: solid 1px #000;
+        }
+        .question .title {
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .options {
+            border: none;
+        }
+        .option input[type=checkbox],
+        input.checkbox {
+            display: block;
+            float: left;
+        }
+        .option input[type=radio],
+        input.radio {
+            display: block;
+            float: left;
+        }
+        .option input[type=submit] {} 
+        .option label {
+            position: relative;
+            margin-left: 30px;
+            display: block;
+        }
+        .options .correct {
+            background-color: #0f0;
+        }
+        .options .incorrect {
+            background-color: #f00;
+        }
+        .feedback { 
+            border: 1px solid #000; 
+            padding: 5px;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            background-color: #eee;
+        }
+        .fbhidden {
+           display: none;
+        }
+
+      </style></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Job Aid</div><div class="parablock" xmlns=""><div class="customnote"><div class="notetitle">Note</div><div class="richtext">If you shut down an interface on a real router or switch, the connected device will see it as &quot;down/down.&quot; Due to virtualization specifics, Cisco IOL (Cisco IOS Software on Linux) behavior is slightly different. In the simulated lab environment, if you shut down an interface on a router or switch, the connected device will see it as &quot;up/up.&quot; In Cisco IOL, the status of an interface can only be &quot;up/up&quot; or &quot;administratively down/down.&quot;</div></div><div class="titledblock"><div class="title">Device Connections</div><div class="parablock"><div class="customnote"><div class="notetitle">Note</div><div class="richtext">In the virtual lab environment, all interfaces are Ethernet interfaces and not FastEthernet or GigabitEthernet interfaces, which you are likely to encounter in networks today.</div></div><table style="width: 100%;" class="table-border"><caption>Device Connections</caption><thead><tr><th>Device</th><th>Interface</th><th>Connects to</th><th>Neighbor Interface</th></tr></thead><tbody><tr><td>SW1</td><td>E0/1</td><td>R1</td><td>E0/0</td></tr><tr><td>SW1</td><td>E0/2</td><td>AdminPC</td><td>E0/0</td></tr><tr><td>SW1</td><td>E0/3</td><td>Fileserver</td><td>E0/0</td></tr></tbody></table></div></div><div class="titledblock"><div class="title">IP Addressing</div><div class="parablock"><table style="width: 100%;" class="table-border"><caption>Device IP Address Information</caption><thead><tr><th>Device</th><th>Interface</th><th style="width: 38%;">IPv4 Address</th></tr></thead><tbody><tr><td>SW1</td><td>VLAN 1</td><td style="width: 38%;">172.16.130.10 255.255.255.0</td></tr><tr><td>Router</td><td>E0/0</td><td style="width: 38%;">172.16.130.3 255.255.255.0</td></tr><tr><td>AdminPC</td><td>E0/0</td><td style="width: 38%;">172.16.130.5 255.255.255.0</td></tr><tr><td>Fileserver</td><td>E0/0</td><td style="width: 38%;">172.16.130.6 255.255.255.0</td></tr></tbody></table><div class="richtext">The default gateway address is 172.16.130.3 for the SW1 switch, which is the IPv4 address on interface E0/0 on the Router.</div></div></div></div><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>
+<hr>
+<hr>
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Configuration Tips</title><style type="text/css">
+
+        .title {
+            font-weight: bold;
+        }
+        body {
+            font-size: 12pt;
+        }
+        body > .title {
+            font-size: 20pt;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .procedure > .title {
+            font-size: 18pt;
+        }
+        .procedure > .stepgroup > .title {
+            font-size: 16pt;
+        }
+        .procedure > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup {
+            margin-top: 10px;
+        }
+        .procedure > .parablock {
+            margin-top: 10px;
+        }
+        .procedure > .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .step {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .step > .action > div: first-child {
+            margin-left: -20px;
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock {
+            margin-top: 10px;
+        }
+        .step > .response {
+            margin-top: 10px;
+        }
+        .step > .parablock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .step > .parablock > .titledblock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .step > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .substep {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .substep > .action > div: first-child {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-left: -20px;
+        }
+        .richtext {
+            margin-top: 10px;
+        }
+        .titledblock > .parablock {
+            margin-top: 10px;
+        }
+        .customnote {
+            margin: 10px 5px 10px 5px;
+            border: 1px solid black;
+        }
+        .notetitle {
+            font-weight: bold;
+            border-bottom: 1px solid black;
+            width: 100%;
+        }
+        .procedure {
+            margin-top: 10px;
+        }
+        .stepgroup > .title {
+            margin-left: -20px;
+        }
+        .stepgroup {
+            margin-left: 20px;
+        }
+        .procedure {
+            margin-left: 20px;
+        }
+        .procedure > .title {
+            margin-left: -20px;
+        }
+        .topic > .title {
+            font-size: 16pt;
+        }
+        .topic > .topic > .title {
+            font-size: 14pt;
+        }
+        .topic > .topic {
+            margin-top: 10px;
+        }
+        .parablock img {
+            margin-top: 20px;
+        }
+        .highlight {
+            background-color: #ffff00;
+        }
+        .double-underline {
+            border-bottom: 3px double;
+        }
+        .overline {
+            text-decoration: overline;
+        }
+        .inlineterm {
+        }
+        .inlinewindowname {
+        }        
+        .inlinemenuselection {
+          font-weight: bold;
+        }        
+        .inlinetypethis {
+          font-weight: bold;
+        }        
+        .inlinecode {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .subscript {
+            vertical-align: sub;
+            font-size: smaller;
+        }
+        .superscript {
+            vertical-align: super;
+            font-size: smaller;
+        }
+        .strikethrough {
+            text-decoration: line-through;
+        }
+        .titledblock {} .figure {
+            max-width: 100%;
+        }
+        .listpreamble {
+            margin-top: 20px;
+        }
+        .list {
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        .list li {
+            margin-left: 13px;
+            padding-left: 0px;
+            list-style-position: outside;
+            list-style-type: none;
+            text-indent: -5px;
+            margin-top: 5px;
+        }
+        .list li: before {
+            content: '\2022';
+            position: relative;
+            left: -5px;
+        }
+        .list ul {
+            margin-top: 0px;
+        }
+        .list ul li {
+            list-style-type: none;
+            margin-left: 15px;
+            text-indent: -7px;
+        }
+        .list ul li: before {
+            content: '\2013';
+            position: relative;
+            left: -7px;
+        }
+        .hintblock {
+            display: none;
+        }
+        .table {
+            empty-cells: show;
+            border: 0px none;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table tr {
+            border: 0px none;
+        }
+        .table tr td,
+        th {
+            border: 0px none;
+            vertical-align: top;
+        }
+        .table tr th {
+            background-color: #cccccc;
+        }
+        .table-border {
+            empty-cells: show;
+            border: 1px solid #000000;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table-border tr {
+            border: 1px solid #000000;
+        }
+        .table-border tr td,
+        th {
+            border: 1px solid #000000;
+            vertical-align: top;
+        }
+        .table-border tr th {
+            background-color: #cccccc;
+        }
+        .codeblock {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre;
+        }
+        li .codeblock {
+            text-indent: 0px;
+        }
+        .logoimage {
+            margin: 10px;
+        }
+        .printhere {
+            margin-top: 40px;
+        }
+        .slide {
+            border: none;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .slidetitle {
+            font-size: 14pt;
+            font-weight: bold;
+            text-align: center;
+            display: none;
+        }
+        .slidebody {
+            text-align: left;
+        }
+        .commandname {
+            font-weight: bold;
+        }
+        .syntaxarg {
+            font-style: italic;
+        }
+        .syntaxkeyword {
+            font-weight: bold;
+            font-style: italic;
+        }
+        .footline {
+            width: 98%;
+            margin-top: 30px;
+        }
+        .copyright {
+            font-size: 10pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .question {
+            margin-bottom: 20px;
+            border-bottom: solid 1px #000;
+        }
+        .question .title {
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .options {
+            border: none;
+        }
+        .option input[type=checkbox],
+        input.checkbox {
+            display: block;
+            float: left;
+        }
+        .option input[type=radio],
+        input.radio {
+            display: block;
+            float: left;
+        }
+        .option input[type=submit] {} 
+        .option label {
+            position: relative;
+            margin-left: 30px;
+            display: block;
+        }
+        .options .correct {
+            background-color: #0f0;
+        }
+        .options .incorrect {
+            background-color: #f00;
+        }
+        .feedback { 
+            border: 1px solid #000; 
+            padding: 5px;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            background-color: #eee;
+        }
+        .fbhidden {
+           display: none;
+        }
+
+      </style></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Configuration Tips</div><div class="parablock" xmlns=""><ul class="list"><li>To assign the hostname to the switch, enter the global configuration mode of the switch and configure the hostname as SW1.</li><li>For remote management of a switch, an IP address must be assigned to a VLAN interface on the switch. To assign an IPv4 address to the switch, configure IPv4 address 172.16.130.10 and subnet mask 255.255.255.0, as mentioned in the topology diagram for interface VLAN 1, and enable interface VLAN 1. Don’t forget to enable the VLAN interface.</li><li>Similar to any other host device, a switch must have a default gateway to reach the devices that are not connected to the same subnet to forward the IP packets to the destinations on the other networks. The default gateway is the address of the router interface that is directly connected to the switch. The default gateway address must be configured in the global configuration mode of the switch.</li><li>Identify the interface on the switch that is connected to the AdminPC, and configure the interface with the &quot;Link to AdminPC&quot; description. To configure the description for an interface, use the <span class="commandname">description</span> command at the interface level.</li><li>Identify the interface on the switch that is connected to the file server and configure the interface with the &quot;Link to Fileserver&quot; description. The contract requires that the link to the file server must have a description: Link to Fileserver. To configure the description for an interface, use the <span class="commandname">description</span> command at the interface level.</li></ul></div><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>
+<hr>
+<hr>
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Answer Key</title><style type="text/css">
+
+        .title {
+            font-weight: bold;
+        }
+        body {
+            font-size: 12pt;
+        }
+        body > .title {
+            font-size: 20pt;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .procedure > .title {
+            font-size: 18pt;
+        }
+        .procedure > .stepgroup > .title {
+            font-size: 16pt;
+        }
+        .procedure > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup {
+            margin-top: 10px;
+        }
+        .procedure > .parablock {
+            margin-top: 10px;
+        }
+        .procedure > .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .step {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .step > .action > div: first-child {
+            margin-left: -20px;
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock {
+            margin-top: 10px;
+        }
+        .step > .response {
+            margin-top: 10px;
+        }
+        .step > .parablock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .step > .parablock > .titledblock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .step > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .substep {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .substep > .action > div: first-child {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-left: -20px;
+        }
+        .richtext {
+            margin-top: 10px;
+        }
+        .titledblock > .parablock {
+            margin-top: 10px;
+        }
+        .customnote {
+            margin: 10px 5px 10px 5px;
+            border: 1px solid black;
+        }
+        .notetitle {
+            font-weight: bold;
+            border-bottom: 1px solid black;
+            width: 100%;
+        }
+        .procedure {
+            margin-top: 10px;
+        }
+        .stepgroup > .title {
+            margin-left: -20px;
+        }
+        .stepgroup {
+            margin-left: 20px;
+        }
+        .procedure {
+            margin-left: 20px;
+        }
+        .procedure > .title {
+            margin-left: -20px;
+        }
+        .topic > .title {
+            font-size: 16pt;
+        }
+        .topic > .topic > .title {
+            font-size: 14pt;
+        }
+        .topic > .topic {
+            margin-top: 10px;
+        }
+        .parablock img {
+            margin-top: 20px;
+        }
+        .highlight {
+            background-color: #ffff00;
+        }
+        .double-underline {
+            border-bottom: 3px double;
+        }
+        .overline {
+            text-decoration: overline;
+        }
+        .inlineterm {
+        }
+        .inlinewindowname {
+        }        
+        .inlinemenuselection {
+          font-weight: bold;
+        }        
+        .inlinetypethis {
+          font-weight: bold;
+        }        
+        .inlinecode {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .subscript {
+            vertical-align: sub;
+            font-size: smaller;
+        }
+        .superscript {
+            vertical-align: super;
+            font-size: smaller;
+        }
+        .strikethrough {
+            text-decoration: line-through;
+        }
+        .titledblock {} .figure {
+            max-width: 100%;
+        }
+        .listpreamble {
+            margin-top: 20px;
+        }
+        .list {
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        .list li {
+            margin-left: 13px;
+            padding-left: 0px;
+            list-style-position: outside;
+            list-style-type: none;
+            text-indent: -5px;
+            margin-top: 5px;
+        }
+        .list li: before {
+            content: '\2022';
+            position: relative;
+            left: -5px;
+        }
+        .list ul {
+            margin-top: 0px;
+        }
+        .list ul li {
+            list-style-type: none;
+            margin-left: 15px;
+            text-indent: -7px;
+        }
+        .list ul li: before {
+            content: '\2013';
+            position: relative;
+            left: -7px;
+        }
+        .hintblock {
+            display: none;
+        }
+        .table {
+            empty-cells: show;
+            border: 0px none;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table tr {
+            border: 0px none;
+        }
+        .table tr td,
+        th {
+            border: 0px none;
+            vertical-align: top;
+        }
+        .table tr th {
+            background-color: #cccccc;
+        }
+        .table-border {
+            empty-cells: show;
+            border: 1px solid #000000;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table-border tr {
+            border: 1px solid #000000;
+        }
+        .table-border tr td,
+        th {
+            border: 1px solid #000000;
+            vertical-align: top;
+        }
+        .table-border tr th {
+            background-color: #cccccc;
+        }
+        .codeblock {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre;
+        }
+        li .codeblock {
+            text-indent: 0px;
+        }
+        .logoimage {
+            margin: 10px;
+        }
+        .printhere {
+            margin-top: 40px;
+        }
+        .slide {
+            border: none;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .slidetitle {
+            font-size: 14pt;
+            font-weight: bold;
+            text-align: center;
+            display: none;
+        }
+        .slidebody {
+            text-align: left;
+        }
+        .commandname {
+            font-weight: bold;
+        }
+        .syntaxarg {
+            font-style: italic;
+        }
+        .syntaxkeyword {
+            font-weight: bold;
+            font-style: italic;
+        }
+        .footline {
+            width: 98%;
+            margin-top: 30px;
+        }
+        .copyright {
+            font-size: 10pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .question {
+            margin-bottom: 20px;
+            border-bottom: solid 1px #000;
+        }
+        .question .title {
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .options {
+            border: none;
+        }
+        .option input[type=checkbox],
+        input.checkbox {
+            display: block;
+            float: left;
+        }
+        .option input[type=radio],
+        input.radio {
+            display: block;
+            float: left;
+        }
+        .option input[type=submit] {} 
+        .option label {
+            position: relative;
+            margin-left: 30px;
+            display: block;
+        }
+        .options .correct {
+            background-color: #0f0;
+        }
+        .options .incorrect {
+            background-color: #f00;
+        }
+        .feedback { 
+            border: 1px solid #000; 
+            padding: 5px;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            background-color: #eee;
+        }
+        .fbhidden {
+           display: none;
+        }
+
+      </style></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Answer Key</div><div class="parablock" xmlns=""><div class="listpreamble">You need to complete the following tasks:</div><ul class="list"><li>Configure the hostname as &quot;SW1&quot; on the switch.<ul class="list"><li>In order to assign the hostname to the switch, enter the global configuration mode of the switch and configure the hostname as SW1.</li></ul><div class="codeblock">Switch(config)# <span class="bold">hostname SW1</span></div></li><li>Enable interface VLAN 1 and configure the switch management IPv4 address on this interface, with the correct subnet mask.<ul class="list"><li>For remote management of a switch, an IP address must be assigned to a VLAN interface on the switch. To assign an IPv4 address to the switch, configure IPv4 address 172.16.130.10 and subnet mask 255.255.255.0, as mentioned in the topology diagram for interface VLAN 1.</li></ul><div class="codeblock">SW1(config)# <span class="bold">interface vlan 1</span>
+SW1(config-if)# <span class="bold">ip address  172.16.130.10 255.255.255.0</span>
+SW1(config-if)# <span class="bold">no shutdown</span></div></li><li>Configure the default gateway for the switch SW1 to be 172.16.130.3.<ul class="list"><li>Similar to any other host device, a switch must have a default gateway to reach the devices that are not connected to the same segment in order to forward the IP packets to the destinations on the other networks. The default gateway is the address of the router interface that is directly connected to the switch. The default gateway address must be configured in the global configuration mode of the switch</li></ul><div class="codeblock">SW1(config)# <span class="bold">ip default-gateway 172.16.130.3</span></div></li><li>Identify the interface on the switch that is connected to the AdminPC, and configure the interface with the &quot;Link to AdminPC&quot; description.<ul class="list"><li>The contract requires that the link to the AdminPC must have a description: Link to AdminPC. Use the topology diagram to identify the port that the AdminPC is connected to (Ethernet0/2). To configure the description for an interface, use the <span class="commandname">description</span> command at the interface level.</li></ul><div class="codeblock">SW1(config)# <span class="bold">interface e0/2</span>
+SW1(config-if)# <span class="bold">description Link to AdminPC</span></div></li><li>Identify the interface on the switch that is connected to the file server and configure the interface with the &quot;Link to Fileserver&quot; description.<ul class="list"><li>The contract requires that the link to the file server must have a description: Link to Fileserver. To configure the description for an interface, use the <span class="commandname">description</span> command at the interface level.</li></ul><div class="codeblock">SW1(config)# <span class="bold">interface e0/3</span>
+SW1(config-if)# <span class="bold">description Link to Fileserver</span></div></li></ul></div><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>
+<hr>
+<hr>
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Questions</title><style type="text/css">
+
+        .title {
+            font-weight: bold;
+        }
+        body {
+            font-size: 12pt;
+        }
+        body > .title {
+            font-size: 20pt;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .procedure > .title {
+            font-size: 18pt;
+        }
+        .procedure > .stepgroup > .title {
+            font-size: 16pt;
+        }
+        .procedure > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup {
+            margin-top: 10px;
+        }
+        .procedure > .parablock {
+            margin-top: 10px;
+        }
+        .procedure > .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .step {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .step > .action > div: first-child {
+            margin-left: -20px;
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock {
+            margin-top: 10px;
+        }
+        .step > .response {
+            margin-top: 10px;
+        }
+        .step > .parablock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .step > .parablock > .titledblock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .step > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .substep {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .substep > .action > div: first-child {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-left: -20px;
+        }
+        .richtext {
+            margin-top: 10px;
+        }
+        .titledblock > .parablock {
+            margin-top: 10px;
+        }
+        .customnote {
+            margin: 10px 5px 10px 5px;
+            border: 1px solid black;
+        }
+        .notetitle {
+            font-weight: bold;
+            border-bottom: 1px solid black;
+            width: 100%;
+        }
+        .procedure {
+            margin-top: 10px;
+        }
+        .stepgroup > .title {
+            margin-left: -20px;
+        }
+        .stepgroup {
+            margin-left: 20px;
+        }
+        .procedure {
+            margin-left: 20px;
+        }
+        .procedure > .title {
+            margin-left: -20px;
+        }
+        .topic > .title {
+            font-size: 16pt;
+        }
+        .topic > .topic > .title {
+            font-size: 14pt;
+        }
+        .topic > .topic {
+            margin-top: 10px;
+        }
+        .parablock img {
+            margin-top: 20px;
+        }
+        .highlight {
+            background-color: #ffff00;
+        }
+        .double-underline {
+            border-bottom: 3px double;
+        }
+        .overline {
+            text-decoration: overline;
+        }
+        .inlineterm {
+        }
+        .inlinewindowname {
+        }        
+        .inlinemenuselection {
+          font-weight: bold;
+        }        
+        .inlinetypethis {
+          font-weight: bold;
+        }        
+        .inlinecode {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .subscript {
+            vertical-align: sub;
+            font-size: smaller;
+        }
+        .superscript {
+            vertical-align: super;
+            font-size: smaller;
+        }
+        .strikethrough {
+            text-decoration: line-through;
+        }
+        .titledblock {} .figure {
+            max-width: 100%;
+        }
+        .listpreamble {
+            margin-top: 20px;
+        }
+        .list {
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        .list li {
+            margin-left: 13px;
+            padding-left: 0px;
+            list-style-position: outside;
+            list-style-type: none;
+            text-indent: -5px;
+            margin-top: 5px;
+        }
+        .list li: before {
+            content: '\2022';
+            position: relative;
+            left: -5px;
+        }
+        .list ul {
+            margin-top: 0px;
+        }
+        .list ul li {
+            list-style-type: none;
+            margin-left: 15px;
+            text-indent: -7px;
+        }
+        .list ul li: before {
+            content: '\2013';
+            position: relative;
+            left: -7px;
+        }
+        .hintblock {
+            display: none;
+        }
+        .table {
+            empty-cells: show;
+            border: 0px none;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table tr {
+            border: 0px none;
+        }
+        .table tr td,
+        th {
+            border: 0px none;
+            vertical-align: top;
+        }
+        .table tr th {
+            background-color: #cccccc;
+        }
+        .table-border {
+            empty-cells: show;
+            border: 1px solid #000000;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table-border tr {
+            border: 1px solid #000000;
+        }
+        .table-border tr td,
+        th {
+            border: 1px solid #000000;
+            vertical-align: top;
+        }
+        .table-border tr th {
+            background-color: #cccccc;
+        }
+        .codeblock {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre;
+        }
+        li .codeblock {
+            text-indent: 0px;
+        }
+        .logoimage {
+            margin: 10px;
+        }
+        .printhere {
+            margin-top: 40px;
+        }
+        .slide {
+            border: none;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .slidetitle {
+            font-size: 14pt;
+            font-weight: bold;
+            text-align: center;
+            display: none;
+        }
+        .slidebody {
+            text-align: left;
+        }
+        .commandname {
+            font-weight: bold;
+        }
+        .syntaxarg {
+            font-style: italic;
+        }
+        .syntaxkeyword {
+            font-weight: bold;
+            font-style: italic;
+        }
+        .footline {
+            width: 98%;
+            margin-top: 30px;
+        }
+        .copyright {
+            font-size: 10pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .question {
+            margin-bottom: 20px;
+            border-bottom: solid 1px #000;
+        }
+        .question .title {
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .options {
+            border: none;
+        }
+        .option input[type=checkbox],
+        input.checkbox {
+            display: block;
+            float: left;
+        }
+        .option input[type=radio],
+        input.radio {
+            display: block;
+            float: left;
+        }
+        .option input[type=submit] {} 
+        .option label {
+            position: relative;
+            margin-left: 30px;
+            display: block;
+        }
+        .options .correct {
+            background-color: #0f0;
+        }
+        .options .incorrect {
+            background-color: #f00;
+        }
+        .feedback { 
+            border: 1px solid #000; 
+            padding: 5px;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            background-color: #eee;
+        }
+        .fbhidden {
+           display: none;
+        }
+
+      </style><script type="text/javascript" xmlns="">
+
+        function toggleClass(element, styleclass) {
+            var classes = element.className.split(" ");
+            var toggled = false;
+            for (var i = 0; i < classes.length; i++) {
+                if (classes[i] == styleclass) {
+                    classes.splice(i, 1);
+                    toggled = true;
+                }
+            }
+            if (!toggled)
+                classes.push(styleclass)
+            element.className = classes.join(" ");
+        }
+
+        function removeClass(element, styleclass) {
+            var classes = element.className.split(" ");
+            for (var i = 0; i < classes.length; i++) {
+                if (classes[i] == styleclass) {
+                    classes.splice(i, 1);
+                }
+            }
+            element.className = classes.join(" ");
+        }
+
+        function grade(questionId) {
+            var form = document.forms[questionId];
+            var answer = form["answer"].value.split(",");
+            var numAnswers = form["numAnswers"].value;
+            var numOptions = form["numOptions"].value;
+            var feedback = form.children[questionId + "-feedback"];
+
+            var correct = true;
+            removeClass(feedback, "fbhidden");
+            toggleClass(feedback, "fbhidden");
+            if (numAnswers <= 1) {
+                for (var i = 0; i < form["option"].length; i++) {
+                    var eleP = form["option"][i].parentNode;
+                    removeClass(eleP, "correct");
+                    removeClass(eleP, "incorrect");
+                }
+                for (var i = 0; i < form["option"].length; i++) {
+                    var ele = form["option"][i];
+                    var eleP = form["option"][i].parentNode;
+                    if (ele.checked && i == answer[0] - 1) {
+                        toggleClass(eleP, "correct");
+                    } else if (!ele.checked && i == answer[0] - 1) {
+                        toggleClass(eleP, "correct");
+                    } else if (ele.checked) {
+                        toggleClass(eleP, "incorrect");
+                        correct = false;
+                    }
+                }
+            } else {
+                for (var i = 0; i < numOptions; i++) {
+                    var eleP = form["option" + (i + 1)].parentNode;
+                    removeClass(eleP, "correct");
+                    removeClass(eleP, "incorrect");
+                }
+
+                for (var i = 0; i < numOptions; i++) {
+                    var ele = form["option" + (i + 1)];
+                    var eleP = ele.parentNode;
+
+                    // Is element i a correct answer?
+                    var needsCheck = (answer[i] == 1);
+                    if (ele.checked && needsCheck) {
+                        toggleClass(eleP, "correct");
+                    } else if (ele.checked && !needsCheck) {
+                        toggleClass(eleP, "incorrect");
+                        correct = false;
+                    } else if (!ele.checked && needsCheck) {
+                        toggleClass(eleP, "incorrect");
+                        correct = false;
+                    }
+                }
+            }
+            if (!correct)
+                removeClass(feedback, "fbhidden");
+        }
+
+      </script></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Questions</div><div class="question multiplechoice" xmlns=""><div class="title">
+        Question 1</div><form name="ID0E1FGM" id="ID0E1FGM"><input type="hidden" name="numAnswers" value="1"></input><input type="hidden" name="answer" value="1"></input><input type="hidden" name="numOptions" value="4"></input><div class="stem"><div class="richtext">What is the expected result, when you issue the <span class="commandname">show running-config | include hostname</span> command on the SW1?</div></div><fieldset class="options"><div class="option"><input type="radio" name="option" value="1" id="ID0ECGGM" class="radio"></input><label for="ID0ECGGM"><div class="richtext">hostname SW1</div></label></div><div class="option"><input type="radio" name="option" value="2" id="ID0EGGGM" class="radio"></input><label for="ID0EGGGM"><div class="richtext">SW1</div></label></div><div class="option"><input type="radio" name="option" value="3" id="ID0EKGGM" class="radio"></input><label for="ID0EKGGM"><div class="richtext">hostname switch SW1</div></label></div><div class="option"><input type="radio" name="option" value="4" id="ID0EOGGM" class="radio"></input><label for="ID0EOGGM"><div class="richtext">hostname Switch</div></label></div></fieldset><div class="feedback fbhidden" id="ID0E1FGM-feedback">The correct answer is &quot;hostname SW1.&quot; If the output of the <span class="commandname">show running-config</span> command does not display the desired result, verify that you entered the commands in the global configuration mode of the switch. When using this command, the actual output is displayed as <span class="bold">hostname SW1</span>.</div><input type="submit" onClick="javascript:grade(&#39;ID0E1FGM&#39;); return false;" value="Grade"></input></form></div><div class="question multiplechoice" xmlns=""><div class="title">
+        Question 2</div><form name="ID0EEHGM" id="ID0EEHGM"><input type="hidden" name="numAnswers" value="2"></input><input type="hidden" name="answer" value="1,1,0,0"></input><input type="hidden" name="numOptions" value="4"></input><div class="stem"><div class="richtext">In which two ways would you verify that VLAN 1 on SW1 is configured with the correct IP address, and the status of the corresponding interface is not shut down? (Choose two.)</div></div><fieldset class="options"><div class="option"><input type="checkbox" name="option1" value="1" id="ID0EJHGM"></input><label for="ID0EJHGM"><div class="richtext">The <span class="commandname">show running-config interface vlan1</span> shows <span class="commandname">ip address 172.16.130.10 255.255.255.0</span></div></label></div><div class="option"><input type="checkbox" name="option2" value="2" id="ID0ERHGM"></input><label for="ID0ERHGM"><div class="richtext">A <span class="commandname">ping</span> from SW1 to 172.16.130.5 and 172.16.130.6 is successful.</div></label></div><div class="option"><input type="checkbox" name="option3" value="3" id="ID0EYHGM"></input><label for="ID0EYHGM"><div class="richtext">The <span class="commandname">show running-config interface vlan10</span> shows <span class="commandname">ip address 172.16.130.10 255.255.0.0</span></div></label></div><div class="option"><input type="checkbox" name="option4" value="4" id="ID0EAIGM"></input><label for="ID0EAIGM"><div class="richtext">Successful <span class="commandname">ping</span> from SW1 to 172.16.130.1 and 172.16.130.10</div></label></div></fieldset><div class="feedback fbhidden" id="ID0EEHGM-feedback">The correct answers are &quot;The <span class="commandname">show running-config interface vlan1</span> shows <span class="commandname">ip address 172.16.130.10 255.255.255.0</span>&quot; and &quot;A <span class="commandname">ping</span> from SW1 to 172.16.130.5 and 172.16.130.6 is successful.&quot; If the output of the <span class="commandname">show running-config interface vlan1</span> and <span class="commandname">ping</span> commands does not display the desired result, ensure that VLAN 1 exists on the switch. Use the <span class="commandname">show vlan</span> command to verify configuration. The IP address must be configured in the interface configuration mode.</div><input type="submit" onClick="javascript:grade(&#39;ID0EEHGM&#39;); return false;" value="Grade"></input></form></div><div class="question multiplechoice" xmlns=""><div class="title">
+        Question 3</div><form name="ID0EBJGM" id="ID0EBJGM"><input type="hidden" name="numAnswers" value="1"></input><input type="hidden" name="answer" value="1"></input><input type="hidden" name="numOptions" value="4"></input><div class="stem"><div class="richtext">Which option correctly configures the default gateway address on the SW1 switch?</div></div><fieldset class="options"><div class="option"><input type="radio" name="option" value="1" id="ID0EGJGM" class="radio"></input><label for="ID0EGJGM"><div class="richtext"><span class="commandname">ip default-gateway 172.16.130.3</span></div></label></div><div class="option"><input type="radio" name="option" value="2" id="ID0ELJGM" class="radio"></input><label for="ID0ELJGM"><div class="richtext"><span class="commandname">ip default-gateway 172.16.130.1</span></div></label></div><div class="option"><input type="radio" name="option" value="3" id="ID0EQJGM" class="radio"></input><label for="ID0EQJGM"><div class="richtext"><span class="commandname">ip gateway 172.16.130.3</span></div></label></div><div class="option"><input type="radio" name="option" value="4" id="ID0EVJGM" class="radio"></input><label for="ID0EVJGM"><div class="richtext"><span class="commandname">ip default route 172.16.130.1</span></div></label></div></fieldset><div class="feedback fbhidden" id="ID0EBJGM-feedback">The correct answer is &quot;<span class="commandname">ip default-gateway 172.16.130.3</span>.&quot; If the output of the <span class="commandname">show running-config</span> command does not display the desired result, check whether the correct commands are entered in global config mode.</div><input type="submit" onClick="javascript:grade(&#39;ID0EBJGM&#39;); return false;" value="Grade"></input></form></div><div class="question multiplechoice" xmlns=""><div class="title">
+        Question 4</div><form name="ID0EMKGM" id="ID0EMKGM"><input type="hidden" name="numAnswers" value="1"></input><input type="hidden" name="answer" value="1"></input><input type="hidden" name="numOptions" value="4"></input><div class="stem"><div class="richtext">Which command displays the interface description as shown in the example?</div><table style="width: 100%;" class="table"><tbody><tr><td><div class="codeblock">Port      Name               Status       Vlan       Duplex  Speed Type
+Et0/0                        connected    1            auto   auto unknown
+Et0/1                        connected    1            auto   auto unknown
+Et0/2     Link to AdminPC    connected    1            auto   auto unknown
+Et0/3     Link to Fileserver connected    1            auto   auto unknown</div></td></tr></tbody></table></div><fieldset class="options"><div class="option"><input type="radio" name="option" value="1" id="ID0EELGM" class="radio"></input><label for="ID0EELGM"><div class="richtext"><span class="commandname">show interfaces status</span></div></label></div><div class="option"><input type="radio" name="option" value="2" id="ID0EJLGM" class="radio"></input><label for="ID0EJLGM"><div class="richtext"><span class="commandname">show running-config</span></div></label></div><div class="option"><input type="radio" name="option" value="3" id="ID0EOLGM" class="radio"></input><label for="ID0EOLGM"><div class="richtext"><span class="commandname">show ip interface brief</span></div></label></div><div class="option"><input type="radio" name="option" value="4" id="ID0ETLGM" class="radio"></input><label for="ID0ETLGM"><div class="richtext"><span class="commandname">show interface</span></div></label></div></fieldset><div class="feedback fbhidden" id="ID0EMKGM-feedback">The correct answer is &quot;<span class="commandname">show interfaces status</span>.&quot; If the output of the <span class="commandname">show interfaces status</span> command does not display the desired result, ensure that you have configured the description on the correct interface. </div><input type="submit" onClick="javascript:grade(&#39;ID0EMKGM&#39;); return false;" value="Grade"></input></form></div><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>
+<hr>
+<hr>

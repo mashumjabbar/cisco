@@ -1,0 +1,83 @@
+!
+version 15.1
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+service compress-config
+!
+hostname SW1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+clock timezone PST -8 0
+no ip routing
+!
+no ip cef
+!
+!
+no ip domain-lookup
+no ipv6 cef
+ipv6 multicast rpf use-bgp
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+spanning-tree mode pvst
+spanning-tree extend system-id
+!         
+!         
+!         
+!         
+vlan internal allocation policy ascending
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+interface Ethernet0/0
+ duplex auto
+!         
+interface Ethernet0/1
+ duplex auto
+!         
+interface Ethernet0/2
+ duplex auto
+!         
+interface Ethernet0/3
+ duplex auto
+!         
+interface Vlan1
+ ip address 10.10.1.2 255.255.255.0
+!         
+ip default-gateway 10.10.1.1
+!         
+no ip http server
+!         
+!         
+!         
+!         
+!         
+control-plane
+!         
+!         
+line con 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+line aux 0
+line vty 0 4
+ login    
+!         
+end 
