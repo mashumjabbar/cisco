@@ -1,0 +1,1891 @@
+<img src="FASTLab4.png">
+<br>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Scenario</title><style type="text/css">
+
+        .title {
+            font-weight: bold;
+        }
+        body {
+            font-size: 12pt;
+        }
+        body > .title {
+            font-size: 20pt;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .procedure > .title {
+            font-size: 18pt;
+        }
+        .procedure > .stepgroup > .title {
+            font-size: 16pt;
+        }
+        .procedure > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup {
+            margin-top: 10px;
+        }
+        .procedure > .parablock {
+            margin-top: 10px;
+        }
+        .procedure > .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .step {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .step > .action > div: first-child {
+            margin-left: -20px;
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock {
+            margin-top: 10px;
+        }
+        .step > .response {
+            margin-top: 10px;
+        }
+        .step > .parablock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .step > .parablock > .titledblock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .step > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .substep {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .substep > .action > div: first-child {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-left: -20px;
+        }
+        .richtext {
+            margin-top: 10px;
+        }
+        .titledblock > .parablock {
+            margin-top: 10px;
+        }
+        .customnote {
+            margin: 10px 5px 10px 5px;
+            border: 1px solid black;
+        }
+        .notetitle {
+            font-weight: bold;
+            border-bottom: 1px solid black;
+            width: 100%;
+        }
+        .procedure {
+            margin-top: 10px;
+        }
+        .stepgroup > .title {
+            margin-left: -20px;
+        }
+        .stepgroup {
+            margin-left: 20px;
+        }
+        .procedure {
+            margin-left: 20px;
+        }
+        .procedure > .title {
+            margin-left: -20px;
+        }
+        .topic > .title {
+            font-size: 16pt;
+        }
+        .topic > .topic > .title {
+            font-size: 14pt;
+        }
+        .topic > .topic {
+            margin-top: 10px;
+        }
+        .parablock img {
+            margin-top: 20px;
+        }
+        .highlight {
+            background-color: #ffff00;
+        }
+        .double-underline {
+            border-bottom: 3px double;
+        }
+        .overline {
+            text-decoration: overline;
+        }
+        .inlineterm {
+        }
+        .inlinewindowname {
+        }        
+        .inlinemenuselection {
+          font-weight: bold;
+        }        
+        .inlinetypethis {
+          font-weight: bold;
+        }        
+        .inlinecode {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .subscript {
+            vertical-align: sub;
+            font-size: smaller;
+        }
+        .superscript {
+            vertical-align: super;
+            font-size: smaller;
+        }
+        .strikethrough {
+            text-decoration: line-through;
+        }
+        .titledblock {} .figure {
+            max-width: 100%;
+        }
+        .listpreamble {
+            margin-top: 20px;
+        }
+        .list {
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        .list li {
+            margin-left: 13px;
+            padding-left: 0px;
+            list-style-position: outside;
+            list-style-type: none;
+            text-indent: -5px;
+            margin-top: 5px;
+        }
+        .list li: before {
+            content: '\2022';
+            position: relative;
+            left: -5px;
+        }
+        .list ul {
+            margin-top: 0px;
+        }
+        .list ul li {
+            list-style-type: none;
+            margin-left: 15px;
+            text-indent: -7px;
+        }
+        .list ul li: before {
+            content: '\2013';
+            position: relative;
+            left: -7px;
+        }
+        .hintblock {
+            display: none;
+        }
+        .table {
+            empty-cells: show;
+            border: 0px none;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table tr {
+            border: 0px none;
+        }
+        .table tr td,
+        th {
+            border: 0px none;
+            vertical-align: top;
+        }
+        .table tr th {
+            background-color: #cccccc;
+        }
+        .table-border {
+            empty-cells: show;
+            border: 1px solid #000000;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table-border tr {
+            border: 1px solid #000000;
+        }
+        .table-border tr td,
+        th {
+            border: 1px solid #000000;
+            vertical-align: top;
+        }
+        .table-border tr th {
+            background-color: #cccccc;
+        }
+        .codeblock {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre;
+        }
+        li .codeblock {
+            text-indent: 0px;
+        }
+        .logoimage {
+            margin: 10px;
+        }
+        .printhere {
+            margin-top: 40px;
+        }
+        .slide {
+            border: none;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .slidetitle {
+            font-size: 14pt;
+            font-weight: bold;
+            text-align: center;
+            display: none;
+        }
+        .slidebody {
+            text-align: left;
+        }
+        .commandname {
+            font-weight: bold;
+        }
+        .syntaxarg {
+            font-style: italic;
+        }
+        .syntaxkeyword {
+            font-weight: bold;
+            font-style: italic;
+        }
+        .footline {
+            width: 98%;
+            margin-top: 30px;
+        }
+        .copyright {
+            font-size: 10pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .question {
+            margin-bottom: 20px;
+            border-bottom: solid 1px #000;
+        }
+        .question .title {
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .options {
+            border: none;
+        }
+        .option input[type=checkbox],
+        input.checkbox {
+            display: block;
+            float: left;
+        }
+        .option input[type=radio],
+        input.radio {
+            display: block;
+            float: left;
+        }
+        .option input[type=submit] {} 
+        .option label {
+            position: relative;
+            margin-left: 30px;
+            display: block;
+        }
+        .options .correct {
+            background-color: #0f0;
+        }
+        .options .incorrect {
+            background-color: #f00;
+        }
+        .feedback { 
+            border: 1px solid #000; 
+            padding: 5px;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            background-color: #eee;
+        }
+        .fbhidden {
+           display: none;
+        }
+
+      </style></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Scenario</div><div class="parablock" xmlns=""><div class="customnote"><div class="notetitle">Note</div><div class="richtext">Read the requirements in the Scenario carefully and use the Configuration Tips to help you do the required steps. If you need further assistance, refer to the Answer Key. Once you have completed the configuration specified, answer the questions.</div></div><div class="richtext">You are piloting the IPv6 implementation. The ISP has provided you with the following IPv6 addresses for testing; you need to ensure that these addresses are reachable from your network:</div><ul class="list"><li>2001:db8:0:1a::1/64</li><li>2001:db8:0:1b::1/64</li><li>2001:db8:0:1c::1/64</li></ul><div class="listpreamble">You need to complete these tasks to enable IPv6 routing in the network:</div><ul class="list"><li>Configure a default route on R1, using the IPv6 global address to establish connectivity with the Internet router. Do not use the autoconfiguration method on R1.</li><li>Configure R4 to receive an IPv6 address and a default route from R1 using stateless autoconfiguration method.</li><li>Configure a default route on R3 that points to R1. In default route configuration, include an exit interface and use a link-local address for the next-hop address.</li><li>IPv6 configurations are already configured on the other devices. However, you need to investigate any incomplete configurations or misconfigurations. Also, ensure that the connectivity from all devices exists to the test IPv6 addresses that are provided by the ISP.</li></ul><div class="customnote"><div class="notetitle">Note</div><div class="richtext">The Router R1 may take 2 to 3 minutes to boot up and become accessible.</div></div></div><div class="parablock" xmlns=""></div><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>
+<hr>
+<hr>
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Job Aid</title><style type="text/css">
+
+        .title {
+            font-weight: bold;
+        }
+        body {
+            font-size: 12pt;
+        }
+        body > .title {
+            font-size: 20pt;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .procedure > .title {
+            font-size: 18pt;
+        }
+        .procedure > .stepgroup > .title {
+            font-size: 16pt;
+        }
+        .procedure > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup {
+            margin-top: 10px;
+        }
+        .procedure > .parablock {
+            margin-top: 10px;
+        }
+        .procedure > .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .step {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .step > .action > div: first-child {
+            margin-left: -20px;
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock {
+            margin-top: 10px;
+        }
+        .step > .response {
+            margin-top: 10px;
+        }
+        .step > .parablock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .step > .parablock > .titledblock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .step > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .substep {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .substep > .action > div: first-child {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-left: -20px;
+        }
+        .richtext {
+            margin-top: 10px;
+        }
+        .titledblock > .parablock {
+            margin-top: 10px;
+        }
+        .customnote {
+            margin: 10px 5px 10px 5px;
+            border: 1px solid black;
+        }
+        .notetitle {
+            font-weight: bold;
+            border-bottom: 1px solid black;
+            width: 100%;
+        }
+        .procedure {
+            margin-top: 10px;
+        }
+        .stepgroup > .title {
+            margin-left: -20px;
+        }
+        .stepgroup {
+            margin-left: 20px;
+        }
+        .procedure {
+            margin-left: 20px;
+        }
+        .procedure > .title {
+            margin-left: -20px;
+        }
+        .topic > .title {
+            font-size: 16pt;
+        }
+        .topic > .topic > .title {
+            font-size: 14pt;
+        }
+        .topic > .topic {
+            margin-top: 10px;
+        }
+        .parablock img {
+            margin-top: 20px;
+        }
+        .highlight {
+            background-color: #ffff00;
+        }
+        .double-underline {
+            border-bottom: 3px double;
+        }
+        .overline {
+            text-decoration: overline;
+        }
+        .inlineterm {
+        }
+        .inlinewindowname {
+        }        
+        .inlinemenuselection {
+          font-weight: bold;
+        }        
+        .inlinetypethis {
+          font-weight: bold;
+        }        
+        .inlinecode {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .subscript {
+            vertical-align: sub;
+            font-size: smaller;
+        }
+        .superscript {
+            vertical-align: super;
+            font-size: smaller;
+        }
+        .strikethrough {
+            text-decoration: line-through;
+        }
+        .titledblock {} .figure {
+            max-width: 100%;
+        }
+        .listpreamble {
+            margin-top: 20px;
+        }
+        .list {
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        .list li {
+            margin-left: 13px;
+            padding-left: 0px;
+            list-style-position: outside;
+            list-style-type: none;
+            text-indent: -5px;
+            margin-top: 5px;
+        }
+        .list li: before {
+            content: '\2022';
+            position: relative;
+            left: -5px;
+        }
+        .list ul {
+            margin-top: 0px;
+        }
+        .list ul li {
+            list-style-type: none;
+            margin-left: 15px;
+            text-indent: -7px;
+        }
+        .list ul li: before {
+            content: '\2013';
+            position: relative;
+            left: -7px;
+        }
+        .hintblock {
+            display: none;
+        }
+        .table {
+            empty-cells: show;
+            border: 0px none;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table tr {
+            border: 0px none;
+        }
+        .table tr td,
+        th {
+            border: 0px none;
+            vertical-align: top;
+        }
+        .table tr th {
+            background-color: #cccccc;
+        }
+        .table-border {
+            empty-cells: show;
+            border: 1px solid #000000;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table-border tr {
+            border: 1px solid #000000;
+        }
+        .table-border tr td,
+        th {
+            border: 1px solid #000000;
+            vertical-align: top;
+        }
+        .table-border tr th {
+            background-color: #cccccc;
+        }
+        .codeblock {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre;
+        }
+        li .codeblock {
+            text-indent: 0px;
+        }
+        .logoimage {
+            margin: 10px;
+        }
+        .printhere {
+            margin-top: 40px;
+        }
+        .slide {
+            border: none;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .slidetitle {
+            font-size: 14pt;
+            font-weight: bold;
+            text-align: center;
+            display: none;
+        }
+        .slidebody {
+            text-align: left;
+        }
+        .commandname {
+            font-weight: bold;
+        }
+        .syntaxarg {
+            font-style: italic;
+        }
+        .syntaxkeyword {
+            font-weight: bold;
+            font-style: italic;
+        }
+        .footline {
+            width: 98%;
+            margin-top: 30px;
+        }
+        .copyright {
+            font-size: 10pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .question {
+            margin-bottom: 20px;
+            border-bottom: solid 1px #000;
+        }
+        .question .title {
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .options {
+            border: none;
+        }
+        .option input[type=checkbox],
+        input.checkbox {
+            display: block;
+            float: left;
+        }
+        .option input[type=radio],
+        input.radio {
+            display: block;
+            float: left;
+        }
+        .option input[type=submit] {} 
+        .option label {
+            position: relative;
+            margin-left: 30px;
+            display: block;
+        }
+        .options .correct {
+            background-color: #0f0;
+        }
+        .options .incorrect {
+            background-color: #f00;
+        }
+        .feedback { 
+            border: 1px solid #000; 
+            padding: 5px;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            background-color: #eee;
+        }
+        .fbhidden {
+           display: none;
+        }
+
+      </style></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Job Aid</div><div class="parablock" xmlns=""><div class="customnote"><div class="notetitle">Note</div><div class="richtext">If you shut down an interface on a real router or switch, the connected device will see it as &quot;down/down.&quot; Because of virtualization specifics, Cisco IOL (Cisco IOS Software on Linux) behavior is slightly different. If you shut down an interface on a router or switch, the connected device will see it as &quot;up/up.&quot; In Cisco IOL, the status of an interface can only be &quot;up/up&quot; or &quot;administratively down/down.&quot; Also, in the virtual lab environment, all interfaces are Ethernet interfaces and not FastEthernet or GigabitEthernet interfaces, which you are likely to encounter in networks today. </div></div></div><div class="titledblock" xmlns=""><div class="title">Device Information</div><div class="parablock"><table class="table-border"><thead><tr><th>Device</th><th style="width: 13%;">Interface</th><th style="width: 19%;">IPv6 Address</th><th>Remote</th><th>Interface</th><th>IPv6 Address</th></tr></thead><tbody><tr><td>R1</td><td style="width: 13%;">Ethernet0/0</td><td style="width: 19%;">2001:db8:0:4::1/64</td><td>SW1</td><td>Ethernet0/0</td><td>VLAN 1</td></tr><tr><td>R1</td><td style="width: 13%;">Ethernet0/1</td><td style="width: 19%;">2001:db8:0:6::2/64</td><td>Internet</td><td>Ethernet0/0</td><td>2001:db8:0:6::1/64</td></tr><tr><td>R1</td><td style="width: 13%;">Ethernet0/2</td><td style="width: 19%;">2001:db8:0:3::1/64</td><td>R4</td><td>Ethernet0/0</td><td>Autoconfig</td></tr><tr><td>R2</td><td style="width: 13%;">Ethernet0/0</td><td style="width: 19%;">2001:db8:0:4::2/64</td><td>SW1</td><td>Ethernet0/1</td><td>VLAN 1</td></tr><tr><td>R2</td><td style="width: 13%;">Ethernet0/1</td><td style="width: 19%;">2001:db8:0:5::1/64</td><td>PC1</td><td>Ethernet0/0</td><td>Autoconfig</td></tr><tr><td>R3</td><td style="width: 13%;">Ethernet0/0</td><td style="width: 19%;">2001:db8:0:4::3/64</td><td>SW1</td><td>Ethernet0/2</td><td>VLAN 1</td></tr><tr><td>Internet</td><td style="width: 13%;">Loopback 1</td><td style="width: 19%;">2001:db8:0:1a::1/64</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Internet</td><td style="width: 13%;">Loopback 2</td><td style="width: 19%;">2001:db8:0:1b::1/64</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Internet</td><td style="width: 13%;">Loopback 3</td><td style="width: 19%;">2001:db8:0:1c::1/64</td><td>—</td><td>—</td><td>—</td></tr></tbody></table></div></div><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>
+<hr>
+<hr>
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Configuration Tips</title><style type="text/css">
+
+        .title {
+            font-weight: bold;
+        }
+        body {
+            font-size: 12pt;
+        }
+        body > .title {
+            font-size: 20pt;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .procedure > .title {
+            font-size: 18pt;
+        }
+        .procedure > .stepgroup > .title {
+            font-size: 16pt;
+        }
+        .procedure > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup {
+            margin-top: 10px;
+        }
+        .procedure > .parablock {
+            margin-top: 10px;
+        }
+        .procedure > .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .step {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .step > .action > div: first-child {
+            margin-left: -20px;
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock {
+            margin-top: 10px;
+        }
+        .step > .response {
+            margin-top: 10px;
+        }
+        .step > .parablock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .step > .parablock > .titledblock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .step > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .substep {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .substep > .action > div: first-child {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-left: -20px;
+        }
+        .richtext {
+            margin-top: 10px;
+        }
+        .titledblock > .parablock {
+            margin-top: 10px;
+        }
+        .customnote {
+            margin: 10px 5px 10px 5px;
+            border: 1px solid black;
+        }
+        .notetitle {
+            font-weight: bold;
+            border-bottom: 1px solid black;
+            width: 100%;
+        }
+        .procedure {
+            margin-top: 10px;
+        }
+        .stepgroup > .title {
+            margin-left: -20px;
+        }
+        .stepgroup {
+            margin-left: 20px;
+        }
+        .procedure {
+            margin-left: 20px;
+        }
+        .procedure > .title {
+            margin-left: -20px;
+        }
+        .topic > .title {
+            font-size: 16pt;
+        }
+        .topic > .topic > .title {
+            font-size: 14pt;
+        }
+        .topic > .topic {
+            margin-top: 10px;
+        }
+        .parablock img {
+            margin-top: 20px;
+        }
+        .highlight {
+            background-color: #ffff00;
+        }
+        .double-underline {
+            border-bottom: 3px double;
+        }
+        .overline {
+            text-decoration: overline;
+        }
+        .inlineterm {
+        }
+        .inlinewindowname {
+        }        
+        .inlinemenuselection {
+          font-weight: bold;
+        }        
+        .inlinetypethis {
+          font-weight: bold;
+        }        
+        .inlinecode {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .subscript {
+            vertical-align: sub;
+            font-size: smaller;
+        }
+        .superscript {
+            vertical-align: super;
+            font-size: smaller;
+        }
+        .strikethrough {
+            text-decoration: line-through;
+        }
+        .titledblock {} .figure {
+            max-width: 100%;
+        }
+        .listpreamble {
+            margin-top: 20px;
+        }
+        .list {
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        .list li {
+            margin-left: 13px;
+            padding-left: 0px;
+            list-style-position: outside;
+            list-style-type: none;
+            text-indent: -5px;
+            margin-top: 5px;
+        }
+        .list li: before {
+            content: '\2022';
+            position: relative;
+            left: -5px;
+        }
+        .list ul {
+            margin-top: 0px;
+        }
+        .list ul li {
+            list-style-type: none;
+            margin-left: 15px;
+            text-indent: -7px;
+        }
+        .list ul li: before {
+            content: '\2013';
+            position: relative;
+            left: -7px;
+        }
+        .hintblock {
+            display: none;
+        }
+        .table {
+            empty-cells: show;
+            border: 0px none;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table tr {
+            border: 0px none;
+        }
+        .table tr td,
+        th {
+            border: 0px none;
+            vertical-align: top;
+        }
+        .table tr th {
+            background-color: #cccccc;
+        }
+        .table-border {
+            empty-cells: show;
+            border: 1px solid #000000;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table-border tr {
+            border: 1px solid #000000;
+        }
+        .table-border tr td,
+        th {
+            border: 1px solid #000000;
+            vertical-align: top;
+        }
+        .table-border tr th {
+            background-color: #cccccc;
+        }
+        .codeblock {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre;
+        }
+        li .codeblock {
+            text-indent: 0px;
+        }
+        .logoimage {
+            margin: 10px;
+        }
+        .printhere {
+            margin-top: 40px;
+        }
+        .slide {
+            border: none;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .slidetitle {
+            font-size: 14pt;
+            font-weight: bold;
+            text-align: center;
+            display: none;
+        }
+        .slidebody {
+            text-align: left;
+        }
+        .commandname {
+            font-weight: bold;
+        }
+        .syntaxarg {
+            font-style: italic;
+        }
+        .syntaxkeyword {
+            font-weight: bold;
+            font-style: italic;
+        }
+        .footline {
+            width: 98%;
+            margin-top: 30px;
+        }
+        .copyright {
+            font-size: 10pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .question {
+            margin-bottom: 20px;
+            border-bottom: solid 1px #000;
+        }
+        .question .title {
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .options {
+            border: none;
+        }
+        .option input[type=checkbox],
+        input.checkbox {
+            display: block;
+            float: left;
+        }
+        .option input[type=radio],
+        input.radio {
+            display: block;
+            float: left;
+        }
+        .option input[type=submit] {} 
+        .option label {
+            position: relative;
+            margin-left: 30px;
+            display: block;
+        }
+        .options .correct {
+            background-color: #0f0;
+        }
+        .options .incorrect {
+            background-color: #f00;
+        }
+        .feedback { 
+            border: 1px solid #000; 
+            padding: 5px;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            background-color: #eee;
+        }
+        .fbhidden {
+           display: none;
+        }
+
+      </style></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Configuration Tips</div><div class="parablock" xmlns=""><div class="customnote"><div class="notetitle">Note</div><div class="richtext">The Router R1 may take 2 to 3 minutes to boot up and become accessible.</div></div><ul class="list"><li>Configure a default route on R1 that points to the Internet router. In the default route configuration command <span class="commandname">ipv6 route </span><span class="syntaxarg">ipv6 address</span>, use a global IPv6 address for the next-hop address.</li><li>Configure R4 to receive an IPv6 address and a default route from R1 through the stateless autoconfiguration method. Use the <span class="commandname">ipv6 address autoconfig default</span> command to receive the IPv6 address and default route from the IPv6-enabled neighbor router. Remember that you need to enter the interface configuration mode to perform this command. Verify that connectivity exists to the ISP-provided IPv6 addresses using the <span class="commandname">ping</span> command.</li><li>Configure a default route on R3 that points to R1. In the default route configuration command, include an exit interface and use a link-local address for the next-hop address. You can use the <span class="commandname">show ipv6 interface brief</span> command on R1 to identify the link-local address of the next-hop interface.</li><li>Use the <span class="commandname">ipv6 route ::/0 </span><span class="syntaxarg">&lt;exit interface&gt; &lt;IPv6 next hop address&gt;</span> command with the correct exit interface and next-hop global IPv6 address to configure the default route.</li><li>Using the <span class="commandname">show running-config</span> and <span class="commandname">show ipv6 route</span> commands, check the static route configuration on R2 and the static route configuration on R1 for traffic from the Internet router to PC1. Check if the correct next-hop IPv6 address are configured. Observe that the static routes that are configured on R1 and R2 have an incorrect IPv6 global address configured for the next-hop address; fix these issues.  </li></ul></div><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>
+<hr>
+<hr>
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Answer Key</title><style type="text/css">
+
+        .title {
+            font-weight: bold;
+        }
+        body {
+            font-size: 12pt;
+        }
+        body > .title {
+            font-size: 20pt;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .procedure > .title {
+            font-size: 18pt;
+        }
+        .procedure > .stepgroup > .title {
+            font-size: 16pt;
+        }
+        .procedure > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup {
+            margin-top: 10px;
+        }
+        .procedure > .parablock {
+            margin-top: 10px;
+        }
+        .procedure > .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .step {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .step > .action > div: first-child {
+            margin-left: -20px;
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock {
+            margin-top: 10px;
+        }
+        .step > .response {
+            margin-top: 10px;
+        }
+        .step > .parablock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .step > .parablock > .titledblock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .step > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .substep {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .substep > .action > div: first-child {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-left: -20px;
+        }
+        .richtext {
+            margin-top: 10px;
+        }
+        .titledblock > .parablock {
+            margin-top: 10px;
+        }
+        .customnote {
+            margin: 10px 5px 10px 5px;
+            border: 1px solid black;
+        }
+        .notetitle {
+            font-weight: bold;
+            border-bottom: 1px solid black;
+            width: 100%;
+        }
+        .procedure {
+            margin-top: 10px;
+        }
+        .stepgroup > .title {
+            margin-left: -20px;
+        }
+        .stepgroup {
+            margin-left: 20px;
+        }
+        .procedure {
+            margin-left: 20px;
+        }
+        .procedure > .title {
+            margin-left: -20px;
+        }
+        .topic > .title {
+            font-size: 16pt;
+        }
+        .topic > .topic > .title {
+            font-size: 14pt;
+        }
+        .topic > .topic {
+            margin-top: 10px;
+        }
+        .parablock img {
+            margin-top: 20px;
+        }
+        .highlight {
+            background-color: #ffff00;
+        }
+        .double-underline {
+            border-bottom: 3px double;
+        }
+        .overline {
+            text-decoration: overline;
+        }
+        .inlineterm {
+        }
+        .inlinewindowname {
+        }        
+        .inlinemenuselection {
+          font-weight: bold;
+        }        
+        .inlinetypethis {
+          font-weight: bold;
+        }        
+        .inlinecode {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .subscript {
+            vertical-align: sub;
+            font-size: smaller;
+        }
+        .superscript {
+            vertical-align: super;
+            font-size: smaller;
+        }
+        .strikethrough {
+            text-decoration: line-through;
+        }
+        .titledblock {} .figure {
+            max-width: 100%;
+        }
+        .listpreamble {
+            margin-top: 20px;
+        }
+        .list {
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        .list li {
+            margin-left: 13px;
+            padding-left: 0px;
+            list-style-position: outside;
+            list-style-type: none;
+            text-indent: -5px;
+            margin-top: 5px;
+        }
+        .list li: before {
+            content: '\2022';
+            position: relative;
+            left: -5px;
+        }
+        .list ul {
+            margin-top: 0px;
+        }
+        .list ul li {
+            list-style-type: none;
+            margin-left: 15px;
+            text-indent: -7px;
+        }
+        .list ul li: before {
+            content: '\2013';
+            position: relative;
+            left: -7px;
+        }
+        .hintblock {
+            display: none;
+        }
+        .table {
+            empty-cells: show;
+            border: 0px none;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table tr {
+            border: 0px none;
+        }
+        .table tr td,
+        th {
+            border: 0px none;
+            vertical-align: top;
+        }
+        .table tr th {
+            background-color: #cccccc;
+        }
+        .table-border {
+            empty-cells: show;
+            border: 1px solid #000000;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table-border tr {
+            border: 1px solid #000000;
+        }
+        .table-border tr td,
+        th {
+            border: 1px solid #000000;
+            vertical-align: top;
+        }
+        .table-border tr th {
+            background-color: #cccccc;
+        }
+        .codeblock {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre;
+        }
+        li .codeblock {
+            text-indent: 0px;
+        }
+        .logoimage {
+            margin: 10px;
+        }
+        .printhere {
+            margin-top: 40px;
+        }
+        .slide {
+            border: none;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .slidetitle {
+            font-size: 14pt;
+            font-weight: bold;
+            text-align: center;
+            display: none;
+        }
+        .slidebody {
+            text-align: left;
+        }
+        .commandname {
+            font-weight: bold;
+        }
+        .syntaxarg {
+            font-style: italic;
+        }
+        .syntaxkeyword {
+            font-weight: bold;
+            font-style: italic;
+        }
+        .footline {
+            width: 98%;
+            margin-top: 30px;
+        }
+        .copyright {
+            font-size: 10pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .question {
+            margin-bottom: 20px;
+            border-bottom: solid 1px #000;
+        }
+        .question .title {
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .options {
+            border: none;
+        }
+        .option input[type=checkbox],
+        input.checkbox {
+            display: block;
+            float: left;
+        }
+        .option input[type=radio],
+        input.radio {
+            display: block;
+            float: left;
+        }
+        .option input[type=submit] {} 
+        .option label {
+            position: relative;
+            margin-left: 30px;
+            display: block;
+        }
+        .options .correct {
+            background-color: #0f0;
+        }
+        .options .incorrect {
+            background-color: #f00;
+        }
+        .feedback { 
+            border: 1px solid #000; 
+            padding: 5px;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            background-color: #eee;
+        }
+        .fbhidden {
+           display: none;
+        }
+
+      </style></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Answer Key</div><div class="parablock" xmlns=""><div class="listpreamble">You need to complete the following tasks:</div><ul class="list"><li>Configure a default route on R1, using the IPv6 global address to establish connectivity with the Internet router. Do not use the autoconfiguration method on R1.<ul class="list"><li>Use the following command to accomplish this task:</li></ul><div class="codeblock">R1(config)# <span class="bold">ipv6 route ::/0 2001:db8:0:6::1</span></div></li><li>Configure R4 to receive an IPv6 address and a default route from R1 through the stateless autoconfiguration method.<ul class="list"><li>Use the following command to accomplish this task:</li></ul><div class="codeblock">R4(config)# <span class="bold">interface e0/0</span>
+R4(config-if)# <span class="bold">ipv6 address autoconfig default</span></div></li><li>Configure a default route on R3 that points to R1. In default route configuration, include an exit interface and use a link-local address for the next-hop address.<ul class="list"><li>Use the <span class="commandname">show ipv6 interface brief</span> command on R1 to identify the link-local address of the next-hop interface:</li></ul><div class="codeblock">R1# <span class="highlight">show ipv6 int brief</span>
+Ethernet0/0            [up/up]
+  <span class="highlight">  FE80::A8BB:CCFF:FE00:100</span>
+    2001:DB8:0:4::1
+Ethernet0/1            [up/up]
+    FE80::A8BB:CCFF:FE00:110
+    2001:DB8:0:6::2
+Ethernet0/2            [up/up]
+    FE80::A8BB:CCFF:FE00:120
+    2001:DB8:0:3::1
+Ethernet0/3            [administratively down/down]
+    unassigned
+NVI0                   [up/up]
+    unassigned
+</div><ul class="list"><li>Use the following command to configure a default route on R3:</li></ul><div class="codeblock">R3(config)# <span class="bold">ipv6 route ::/0 e0/0 FE80::A8BB:CCFF:FE00:100</span></div></li><li>IPv6 configurations are already configured on the other devices. However, you need to investigate any incomplete configurations or misconfigurations. Also, ensure that the connectivity from all devices exists to the test IPv6 addresses that are provided by the ISP.<ul class="list"><li>Examine the configuration on R2. Observe that the static route that is configured on R2 has an incorrect IPv6 global address configured for the next-hop address.</li></ul><div class="codeblock">R2# <span class="bold"><span class="highlight">show running-config | include ipv6 route</span></span>
+<span class="highlight">ipv6 route 2001:DB8:0:1A::/64 2001:DB8:0:4::3
+ipv6 route 2001:DB8:0:1B::/64 2001:DB8:0:4::3
+ipv6 route 2001:DB8:0:1C::/64 2001:DB8:0:4::3</span>
+!
+</div><div class="richtext">The output of the <span class="commandname">show run</span> command shows that the static route next-hop IPv6 global address is pointing to R3 instead of the next-hop global IPv6 address of R1.</div><ul class="list"><li>Use the following configuration commands to fix the static route configuration on R2:</li></ul><div class="codeblock">R2(config)# <span class="bold">no ipv6 route 2001:DB8:0:1A::/64 2001:DB8:0:4::3</span>
+R2(config)# <span class="bold">no ipv6 route 2001:DB8:0:1B::/64 2001:DB8:0:4::3</span>
+R2(config)# <span class="bold">no ipv6 route 2001:DB8:0:1C::/64 2001:DB8:0:4::3</span>
+R2(config)# <span class="bold">ipv6 route 2001:DB8:0:1A::/64 2001:DB8:0:4::1</span>
+R2(config)# <span class="bold">ipv6 route 2001:DB8:0:1B::/64 2001:DB8:0:4::1</span>
+R2(config)# <span class="bold">ipv6 route 2001:DB8:0:1C::/64 2001:DB8:0:4::1</span></div><ul class="list"><li>Examine the configuration on R1. Observe that the static route that is configured on R1 for the reverse traffic flow to IPv6 address 2001:DB8:0:5::/64 from the ISP-provided IPv6 address has an incorrect IPv6 global address configured for the next-hop address.</li></ul><div class="codeblock">R1# <span class="bold"><span class="highlight">show running-config | include ipv6 route</span></span>
+<span class="highlight">
+ipv6 route 2001:DB8:0:5::/64 2001:DB8:0:6::1
+</span>ipv6 route ::/0 2001:DB8:0:6::1</div><ul class="list"><li>The static route has the next-hop IPv6 global address is pointing to the Internet router instead of the next-hop IPv6 global address of R2. Use the following configuration commands to fix the static route configuration on R1.</li></ul><div class="codeblock">R1(config)# <span class="bold">no ipv6 route 2001:DB8:0:5::/64 2001:DB8:0:6::1</span>
+R1(config)# <span class="bold">ipv6 route 2001:DB8:0:5::/64 2001:DB8:0:4::2</span></div><ul class="list"><li>Use the <span class="commandname">show ipv6 route static</span> and <span class="commandname">show running-config</span> commands to verify that the static route configurations are correct. Ping from PC1 to the ISP-provided IPv6 addresses such as 2001:db8:0:1a::1,  2001:db8:0:1b::1, and 2001:db8:0:1c::1 to verify connectivity.<div class="codeblock">R2# <span class="bold">show running-config</span>
+Building configuration...
+Current configuration : 1201 bytes
+&lt;output omitted&gt;
+!
+<span class="highlight">ipv6 route 2001:DB8:0:1A::/64 2001:DB8:0:4::1
+ipv6 route 2001:DB8:0:1B::/64 2001:DB8:0:4::1
+ipv6 route 2001:DB8:0:1C::/64 2001:DB8:0:4::1</span>
+!
+!
+
+R2# <span class="bold">show ipv6 route static</span>
+IPv6 Routing Table - default - 8 entries
+Codes: C - Connected, L - Local, S - Static, U - Per-user Static route
+       B - BGP, HA - Home Agent, MR - Mobile Router, R - RIP
+       H - NHRP, I1 - ISIS L1, I2 - ISIS L2, IA - ISIS interarea
+       IS - ISIS summary, D - EIGRP, EX - EIGRP external, NM - NEMO
+       ND - ND Default, NDp - ND Prefix, DCE - Destination, NDr - Redirect
+       O - OSPF Intra, OI - OSPF Inter, OE1 - OSPF ext 1, OE2 - OSPF ext 2
+       ON1 - OSPF NSSA ext 1, ON2 - OSPF NSSA ext 2, l - LISP
+<span class="highlight">S   2001:DB8:0:1A::/64 [1/0]
+     via 2001:DB8:0:4::1</span>
+<span class="highlight">S   2001:DB8:0:1B::/64 [1/0]
+     via 2001:DB8:0:4::1
+S   2001:DB8:0:1C::/64 [1/0]
+     via 2001:DB8:0:4::1
+R2#</span>
+
+
+R1# <span class="bold">show run | incl ipv6 route</span>
+<span class="highlight">ipv6 route 2001:DB8:0:5::/64 2001:DB8:0:4::2</span>
+ipv6 route ::/0 2001:DB8:0:6::1
+
+
+R1# <span class="bold">show ipv6 route static</span>
+IPv6 Routing Table - default - 9 entries
+Codes: C - Connected, L - Local, S - Static, U - Per-user Static route
+       B - BGP, HA - Home Agent, MR - Mobile Router, R - RIP
+       H - NHRP, I1 - ISIS L1, I2 - ISIS L2, IA - ISIS interarea
+       IS - ISIS summary, D - EIGRP, EX - EIGRP external, NM - NEMO
+       ND - ND Default, NDp - ND Prefix, DCE - Destination, NDr - Redirect
+       O - OSPF Intra, OI - OSPF Inter, OE1 - OSPF ext 1, OE2 - OSPF ext 2
+       ON1 - OSPF NSSA ext 1, ON2 - OSPF NSSA ext 2, l - LISP
+S   ::/0 [1/0]
+     via 2001:DB8:0:6::1
+<span class="highlight">S   2001:DB8:0:5::/64 [1/0]
+     via 2001:DB8:0:4::2</span>
+<span class="highlight">
+</span>PC1# <span class="bold">ping 2001:db8:0:1a::1</span>
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 2001:DB8:0:1A::1, timeout is 2 seconds:
+<span class="highlight">!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 4/7/19 ms</span>
+PC1#<span class="bold"> ping 2001:db8:0:1b::1</span>
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 2001:DB8:0:1B::1, timeout is 2 seconds:
+<span class="highlight">!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 1/1/1 ms</span>
+PC1# <span class="bold">ping 2001:db8:0:1c::1</span>
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 2001:DB8:0:1C::1, timeout is 2 seconds:
+<span class="highlight">!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 1/1/1 ms</span>
+PC1#</div></li></ul></li></ul></div><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>
+<hr>
+<hr>
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Questions</title><style type="text/css">
+
+        .title {
+            font-weight: bold;
+        }
+        body {
+            font-size: 12pt;
+        }
+        body > .title {
+            font-size: 20pt;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .procedure > .title {
+            font-size: 18pt;
+        }
+        .procedure > .stepgroup > .title {
+            font-size: 16pt;
+        }
+        .procedure > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup {
+            margin-top: 10px;
+        }
+        .procedure > .parablock {
+            margin-top: 10px;
+        }
+        .procedure > .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .step {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .step > .action > div: first-child {
+            margin-left: -20px;
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock {
+            margin-top: 10px;
+        }
+        .step > .response {
+            margin-top: 10px;
+        }
+        .step > .parablock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .step > .parablock > .titledblock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .step > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .substep {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .substep > .action > div: first-child {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-left: -20px;
+        }
+        .richtext {
+            margin-top: 10px;
+        }
+        .titledblock > .parablock {
+            margin-top: 10px;
+        }
+        .customnote {
+            margin: 10px 5px 10px 5px;
+            border: 1px solid black;
+        }
+        .notetitle {
+            font-weight: bold;
+            border-bottom: 1px solid black;
+            width: 100%;
+        }
+        .procedure {
+            margin-top: 10px;
+        }
+        .stepgroup > .title {
+            margin-left: -20px;
+        }
+        .stepgroup {
+            margin-left: 20px;
+        }
+        .procedure {
+            margin-left: 20px;
+        }
+        .procedure > .title {
+            margin-left: -20px;
+        }
+        .topic > .title {
+            font-size: 16pt;
+        }
+        .topic > .topic > .title {
+            font-size: 14pt;
+        }
+        .topic > .topic {
+            margin-top: 10px;
+        }
+        .parablock img {
+            margin-top: 20px;
+        }
+        .highlight {
+            background-color: #ffff00;
+        }
+        .double-underline {
+            border-bottom: 3px double;
+        }
+        .overline {
+            text-decoration: overline;
+        }
+        .inlineterm {
+        }
+        .inlinewindowname {
+        }        
+        .inlinemenuselection {
+          font-weight: bold;
+        }        
+        .inlinetypethis {
+          font-weight: bold;
+        }        
+        .inlinecode {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .subscript {
+            vertical-align: sub;
+            font-size: smaller;
+        }
+        .superscript {
+            vertical-align: super;
+            font-size: smaller;
+        }
+        .strikethrough {
+            text-decoration: line-through;
+        }
+        .titledblock {} .figure {
+            max-width: 100%;
+        }
+        .listpreamble {
+            margin-top: 20px;
+        }
+        .list {
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        .list li {
+            margin-left: 13px;
+            padding-left: 0px;
+            list-style-position: outside;
+            list-style-type: none;
+            text-indent: -5px;
+            margin-top: 5px;
+        }
+        .list li: before {
+            content: '\2022';
+            position: relative;
+            left: -5px;
+        }
+        .list ul {
+            margin-top: 0px;
+        }
+        .list ul li {
+            list-style-type: none;
+            margin-left: 15px;
+            text-indent: -7px;
+        }
+        .list ul li: before {
+            content: '\2013';
+            position: relative;
+            left: -7px;
+        }
+        .hintblock {
+            display: none;
+        }
+        .table {
+            empty-cells: show;
+            border: 0px none;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table tr {
+            border: 0px none;
+        }
+        .table tr td,
+        th {
+            border: 0px none;
+            vertical-align: top;
+        }
+        .table tr th {
+            background-color: #cccccc;
+        }
+        .table-border {
+            empty-cells: show;
+            border: 1px solid #000000;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table-border tr {
+            border: 1px solid #000000;
+        }
+        .table-border tr td,
+        th {
+            border: 1px solid #000000;
+            vertical-align: top;
+        }
+        .table-border tr th {
+            background-color: #cccccc;
+        }
+        .codeblock {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre;
+        }
+        li .codeblock {
+            text-indent: 0px;
+        }
+        .logoimage {
+            margin: 10px;
+        }
+        .printhere {
+            margin-top: 40px;
+        }
+        .slide {
+            border: none;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .slidetitle {
+            font-size: 14pt;
+            font-weight: bold;
+            text-align: center;
+            display: none;
+        }
+        .slidebody {
+            text-align: left;
+        }
+        .commandname {
+            font-weight: bold;
+        }
+        .syntaxarg {
+            font-style: italic;
+        }
+        .syntaxkeyword {
+            font-weight: bold;
+            font-style: italic;
+        }
+        .footline {
+            width: 98%;
+            margin-top: 30px;
+        }
+        .copyright {
+            font-size: 10pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .question {
+            margin-bottom: 20px;
+            border-bottom: solid 1px #000;
+        }
+        .question .title {
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .options {
+            border: none;
+        }
+        .option input[type=checkbox],
+        input.checkbox {
+            display: block;
+            float: left;
+        }
+        .option input[type=radio],
+        input.radio {
+            display: block;
+            float: left;
+        }
+        .option input[type=submit] {} 
+        .option label {
+            position: relative;
+            margin-left: 30px;
+            display: block;
+        }
+        .options .correct {
+            background-color: #0f0;
+        }
+        .options .incorrect {
+            background-color: #f00;
+        }
+        .feedback { 
+            border: 1px solid #000; 
+            padding: 5px;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            background-color: #eee;
+        }
+        .fbhidden {
+           display: none;
+        }
+
+      </style><script type="text/javascript" xmlns="">
+
+        function toggleClass(element, styleclass) {
+            var classes = element.className.split(" ");
+            var toggled = false;
+            for (var i = 0; i < classes.length; i++) {
+                if (classes[i] == styleclass) {
+                    classes.splice(i, 1);
+                    toggled = true;
+                }
+            }
+            if (!toggled)
+                classes.push(styleclass)
+            element.className = classes.join(" ");
+        }
+
+        function removeClass(element, styleclass) {
+            var classes = element.className.split(" ");
+            for (var i = 0; i < classes.length; i++) {
+                if (classes[i] == styleclass) {
+                    classes.splice(i, 1);
+                }
+            }
+            element.className = classes.join(" ");
+        }
+
+        function grade(questionId) {
+            var form = document.forms[questionId];
+            var answer = form["answer"].value.split(",");
+            var numAnswers = form["numAnswers"].value;
+            var numOptions = form["numOptions"].value;
+            var feedback = form.children[questionId + "-feedback"];
+
+            var correct = true;
+            removeClass(feedback, "fbhidden");
+            toggleClass(feedback, "fbhidden");
+            if (numAnswers <= 1) {
+                for (var i = 0; i < form["option"].length; i++) {
+                    var eleP = form["option"][i].parentNode;
+                    removeClass(eleP, "correct");
+                    removeClass(eleP, "incorrect");
+                }
+                for (var i = 0; i < form["option"].length; i++) {
+                    var ele = form["option"][i];
+                    var eleP = form["option"][i].parentNode;
+                    if (ele.checked && i == answer[0] - 1) {
+                        toggleClass(eleP, "correct");
+                    } else if (!ele.checked && i == answer[0] - 1) {
+                        toggleClass(eleP, "correct");
+                    } else if (ele.checked) {
+                        toggleClass(eleP, "incorrect");
+                        correct = false;
+                    }
+                }
+            } else {
+                for (var i = 0; i < numOptions; i++) {
+                    var eleP = form["option" + (i + 1)].parentNode;
+                    removeClass(eleP, "correct");
+                    removeClass(eleP, "incorrect");
+                }
+
+                for (var i = 0; i < numOptions; i++) {
+                    var ele = form["option" + (i + 1)];
+                    var eleP = ele.parentNode;
+
+                    // Is element i a correct answer?
+                    var needsCheck = (answer[i] == 1);
+                    if (ele.checked && needsCheck) {
+                        toggleClass(eleP, "correct");
+                    } else if (ele.checked && !needsCheck) {
+                        toggleClass(eleP, "incorrect");
+                        correct = false;
+                    } else if (!ele.checked && needsCheck) {
+                        toggleClass(eleP, "incorrect");
+                        correct = false;
+                    }
+                }
+            }
+            if (!correct)
+                removeClass(feedback, "fbhidden");
+        }
+
+      </script></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Questions</div><div class="question multiplechoice" xmlns=""><div class="title">
+        Question 1</div><form name="ID0E54SQ" id="ID0E54SQ"><input type="hidden" name="numAnswers" value="1"></input><input type="hidden" name="answer" value="1"></input><input type="hidden" name="numOptions" value="4"></input><div class="stem"><div class="richtext">When using the <span class="commandname">show running-config | include ipv6 route ::/0</span> command on the R1, what is the expected result?</div></div><fieldset class="options"><div class="option"><input type="radio" name="option" value="1" id="ID0EG5SQ" class="radio"></input><label for="ID0EG5SQ"><div class="richtext"><span class="commandname">ipv6 route ::/0 2001:db8:0:6::1</span></div></label></div><div class="option"><input type="radio" name="option" value="2" id="ID0EL5SQ" class="radio"></input><label for="ID0EL5SQ"><div class="richtext"><span class="commandname">ipv6 route 0:0:0:0:0:0:0:0/0 2001:db8:0:6::1</span></div></label></div><div class="option"><input type="radio" name="option" value="3" id="ID0EQ5SQ" class="radio"></input><label for="ID0EQ5SQ"><div class="richtext"><span class="commandname">ipv6 route 0:0:0:0:0:0:0:0 0:0:0:0:0:0:0:0 2001:db8:0:6::1</span></div></label></div><div class="option"><input type="radio" name="option" value="4" id="ID0EV5SQ" class="radio"></input><label for="ID0EV5SQ"><div class="richtext"><span class="commandname">ipv6 route 0:0:0:0:0:0:0:0/0 fe80::a8bb:ccff:fe00:120</span></div></label></div></fieldset><div class="feedback fbhidden" id="ID0E54SQ-feedback">The correct answer is &quot;<span class="commandname">ipv6 route ::/0 2001:db8:0:6::1</span>.&quot; If the command output does not show the desired result, it indicates that the IPv6 default route with the global IPv6 address for the next-hop address is not configured correctly. The IPv6 default route is presented as ::/0.</div><input type="submit" onClick="javascript:grade(&#39;ID0E54SQ&#39;); return false;" value="Grade"></input></form></div><div class="question multiplechoice" xmlns=""><div class="title">
+        Question 2</div><form name="ID0EK6SQ" id="ID0EK6SQ"><input type="hidden" name="numAnswers" value="3"></input><input type="hidden" name="answer" value="1,0,1,0,0,1"></input><input type="hidden" name="numOptions" value="6"></input><div class="stem"><div class="richtext">Which three ping requests from R1 should be successful? (Choose three.)</div></div><fieldset class="options"><div class="option"><input type="checkbox" name="option1" value="1" id="ID0EP6SQ"></input><label for="ID0EP6SQ"><div class="richtext"><span class="commandname">ping 2001:db8:0:1b::1</span></div></label></div><div class="option"><input type="checkbox" name="option2" value="2" id="ID0EU6SQ"></input><label for="ID0EU6SQ"><div class="richtext"><span class="commandname">ping 2001:8db:0:1b::1</span></div></label></div><div class="option"><input type="checkbox" name="option3" value="3" id="ID0EZ6SQ"></input><label for="ID0EZ6SQ"><div class="richtext"><span class="commandname">ping 2001:db8:0:1a::1</span></div></label></div><div class="option"><input type="checkbox" name="option4" value="4" id="ID0E56SQ"></input><label for="ID0E56SQ"><div class="richtext"><span class="commandname">ping 2002:db8:0:1c::1</span></div></label></div><div class="option"><input type="checkbox" name="option5" value="5" id="ID0EDATQ"></input><label for="ID0EDATQ"><div class="richtext"><span class="commandname">ping 2001:db8:0:1e::1</span></div></label></div><div class="option"><input type="checkbox" name="option6" value="6" id="ID0EIATQ"></input><label for="ID0EIATQ"><div class="richtext"><span class="commandname">ping 2001:db8:0:1c::1</span></div></label></div></fieldset><div class="feedback fbhidden" id="ID0EK6SQ-feedback">The correct answers are: &quot;<span class="commandname">ping 2001:db8:0:1a::1</span>,&quot; &quot;<span class="commandname">ping 2001:db8:0:1b::1</span>,&quot; and &quot;<span class="commandname">ping 2001:db8:0:1c::1</span>.&quot; You should be able to ping these ISP-provided IPv6 addresses from the R1 router.</div><input type="submit" onClick="javascript:grade(&#39;ID0EK6SQ&#39;); return false;" value="Grade"></input></form></div><div class="question multiplechoice" xmlns=""><div class="title">
+        Question 3</div><form name="ID0EBBTQ" id="ID0EBBTQ"><input type="hidden" name="numAnswers" value="1"></input><input type="hidden" name="answer" value="2"></input><input type="hidden" name="numOptions" value="4"></input><div class="stem"><div class="richtext">When using the <span class="commandname">show running-config interface e0/0</span> command on the R4, what is the expected result?</div></div><fieldset class="options"><div class="option"><input type="radio" name="option" value="1" id="ID0EJBTQ" class="radio"></input><label for="ID0EJBTQ"><div class="richtext"><span class="commandname">interface Ethernet0/0<br></br> ip address 192.168.14.4 255.255.255.0<br></br> ipv6 address 2001:db8:0:3:a8bb:ccff:Ffe00:400/128</span></div></label></div><div class="option"><input type="radio" name="option" value="2" id="ID0EOBTQ" class="radio"></input><label for="ID0EOBTQ"><div class="richtext"><span class="commandname">interface Ethernet0/0<br></br> ip address 192.168.14.4 255.255.255.0<br></br> ipv6 address autoconfig default</span></div></label></div><div class="option"><input type="radio" name="option" value="3" id="ID0ETBTQ" class="radio"></input><label for="ID0ETBTQ"><div class="richtext"><span class="commandname">interface Ethernet0/0<br></br> ip address 192.168.14.4 255.255.255.0<br></br> ipv6 address 2001:db8:0:3:a8bb:ccff:fe00:400 ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff</span></div></label></div><div class="option"><input type="radio" name="option" value="4" id="ID0EYBTQ" class="radio"></input><label for="ID0EYBTQ"><div class="richtext"><span class="commandname">interface Ethernet0/0<br></br> ip address 192.168.14.4 255.255.255.0<br></br> ipv6 address 2001:db8:0:3::1/128</span></div></label></div></fieldset><div class="feedback fbhidden" id="ID0EBBTQ-feedback">The correct answer is &quot;<span class="commandname">interface Ethernet0/0<br></br> ip address 192.168.14.4 255.255.255.0<br></br> ipv6 address autoconfig default</span>.&quot; The R4 should receive an IPv6 address and a default route from R1 through the stateless autoconfiguration method.</div><input type="submit" onClick="javascript:grade(&#39;ID0EBBTQ&#39;); return false;" value="Grade"></input></form></div><div class="question multiplechoice" xmlns=""><div class="title">
+        Question 4</div><form name="ID0ENCTQ" id="ID0ENCTQ"><input type="hidden" name="numAnswers" value="1"></input><input type="hidden" name="answer" value="4"></input><input type="hidden" name="numOptions" value="4"></input><div class="stem"><div class="richtext">When using the <span class="commandname">show running-config | include ipv6 route ::/0</span> command on the R3, what is the expected result?</div></div><fieldset class="options"><div class="option"><input type="radio" name="option" value="1" id="ID0EVCTQ" class="radio"></input><label for="ID0EVCTQ"><div class="richtext"><span class="commandname">default route ::/0 Ethernet0/0 FE80::A8BB:CCFF:FE00:100</span></div></label></div><div class="option"><input type="radio" name="option" value="2" id="ID0E1CTQ" class="radio"></input><label for="ID0E1CTQ"><div class="richtext"><span class="commandname">default route 0:0:0:0:0:0:0:0/0 Ethernet0/0 FE80::A8BB:CCFF:FE00:100</span></div></label></div><div class="option"><input type="radio" name="option" value="3" id="ID0E6CTQ" class="radio"></input><label for="ID0E6CTQ"><div class="richtext"><span class="commandname">ipv6 route ::/0 FE80::A8BB:CCFF:FE00:100</span></div></label></div><div class="option"><input type="radio" name="option" value="4" id="ID0EEDTQ" class="radio"></input><label for="ID0EEDTQ"><div class="richtext"><span class="commandname">ipv6 route ::/0 Ethernet0/0 FE80::A8BB:CCFF:FE00:100</span></div></label></div></fieldset><div class="feedback fbhidden" id="ID0ENCTQ-feedback">The correct answer is &quot;<span class="commandname">ipv6 route ::/0 Ethernet0/0 FE80::A8BB:CCFF:FE00:100</span>.&quot; In the default route configuration command, include an exit interface and use a link-local address for the next-hop address.</div><input type="submit" onClick="javascript:grade(&#39;ID0ENCTQ&#39;); return false;" value="Grade"></input></form></div><div class="question multiplechoice" xmlns=""><div class="title">
+        Question 5</div><form name="ID0EZDTQ" id="ID0EZDTQ"><input type="hidden" name="numAnswers" value="1"></input><input type="hidden" name="answer" value="3"></input><input type="hidden" name="numOptions" value="4"></input><div class="stem"><div class="richtext">Which command is displayed in this output on the R2 router?</div><table style="width: 100%;" class="table"><tbody><tr><td><div class="codeblock">IPv6 Routing Table - default - 8 entries
+Codes: C - Connected, L - Local, S - Static, U - Per-user Static route
+       B - BGP, HA - Home Agent, MR - Mobile Router, R - RIP
+       H - NHRP, I1 - ISIS L1, I2 - ISIS L2, IA - ISIS interarea
+       IS - ISIS summary, D - EIGRP, EX - EIGRP external, NM - NEMO
+       ND - ND Default, NDp - ND Prefix, DCE - Destination, NDr - Redirect
+       O - OSPF Intra, OI - OSPF Inter, OE1 - OSPF ext 1, OE2 - OSPF ext 2
+       ON1 - OSPF NSSA ext 1, ON2 - OSPF NSSA ext 2, l - LISP
+S   2001:DB8:0:1A::/64 [1/0]
+     via 2001:DB8:0:4::1
+S   2001:DB8:0:1B::/64 [1/0]
+     via 2001:DB8:0:4::1
+S   2001:DB8:0:1C::/64 [1/0]
+     via 2001:DB8:0:4::1</div></td></tr></tbody></table></div><fieldset class="options"><div class="option"><input type="radio" name="option" value="1" id="ID0ERETQ" class="radio"></input><label for="ID0ERETQ"><div class="richtext"><span class="commandname">show running static</span></div></label></div><div class="option"><input type="radio" name="option" value="2" id="ID0EWETQ" class="radio"></input><label for="ID0EWETQ"><div class="richtext"><span class="commandname">show route static</span></div></label></div><div class="option"><input type="radio" name="option" value="3" id="ID0E2ETQ" class="radio"></input><label for="ID0E2ETQ"><div class="richtext"><span class="commandname">show ipv6 route static</span></div></label></div><div class="option"><input type="radio" name="option" value="4" id="ID0EAFTQ" class="radio"></input><label for="ID0EAFTQ"><div class="richtext"><span class="commandname">show ipv6 route</span></div></label></div></fieldset><div class="feedback fbhidden" id="ID0EZDTQ-feedback">The correct answer is &quot;<span class="commandname">show ipv6 route static</span>.&quot; The output displays IPv6 routing table with static routes only, there are no connected or local routes displayed.</div><input type="submit" onClick="javascript:grade(&#39;ID0EZDTQ&#39;); return false;" value="Grade"></input></form></div><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>
