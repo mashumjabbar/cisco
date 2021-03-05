@@ -1,0 +1,1804 @@
+<img src="FASTLab8.png">
+<br>
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Scenario</title><style type="text/css">
+
+        .title {
+            font-weight: bold;
+        }
+        body {
+            font-size: 12pt;
+        }
+        body > .title {
+            font-size: 20pt;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .procedure > .title {
+            font-size: 18pt;
+        }
+        .procedure > .stepgroup > .title {
+            font-size: 16pt;
+        }
+        .procedure > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup {
+            margin-top: 10px;
+        }
+        .procedure > .parablock {
+            margin-top: 10px;
+        }
+        .procedure > .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .step {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .step > .action > div: first-child {
+            margin-left: -20px;
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock {
+            margin-top: 10px;
+        }
+        .step > .response {
+            margin-top: 10px;
+        }
+        .step > .parablock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .step > .parablock > .titledblock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .step > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .substep {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .substep > .action > div: first-child {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-left: -20px;
+        }
+        .richtext {
+            margin-top: 10px;
+        }
+        .titledblock > .parablock {
+            margin-top: 10px;
+        }
+        .customnote {
+            margin: 10px 5px 10px 5px;
+            border: 1px solid black;
+        }
+        .notetitle {
+            font-weight: bold;
+            border-bottom: 1px solid black;
+            width: 100%;
+        }
+        .procedure {
+            margin-top: 10px;
+        }
+        .stepgroup > .title {
+            margin-left: -20px;
+        }
+        .stepgroup {
+            margin-left: 20px;
+        }
+        .procedure {
+            margin-left: 20px;
+        }
+        .procedure > .title {
+            margin-left: -20px;
+        }
+        .topic > .title {
+            font-size: 16pt;
+        }
+        .topic > .topic > .title {
+            font-size: 14pt;
+        }
+        .topic > .topic {
+            margin-top: 10px;
+        }
+        .parablock img {
+            margin-top: 20px;
+        }
+        .highlight {
+            background-color: #ffff00;
+        }
+        .double-underline {
+            border-bottom: 3px double;
+        }
+        .overline {
+            text-decoration: overline;
+        }
+        .inlineterm {
+        }
+        .inlinewindowname {
+        }        
+        .inlinemenuselection {
+          font-weight: bold;
+        }        
+        .inlinetypethis {
+          font-weight: bold;
+        }        
+        .inlinecode {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .subscript {
+            vertical-align: sub;
+            font-size: smaller;
+        }
+        .superscript {
+            vertical-align: super;
+            font-size: smaller;
+        }
+        .strikethrough {
+            text-decoration: line-through;
+        }
+        .titledblock {} .figure {
+            max-width: 100%;
+        }
+        .listpreamble {
+            margin-top: 20px;
+        }
+        .list {
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        .list li {
+            margin-left: 13px;
+            padding-left: 0px;
+            list-style-position: outside;
+            list-style-type: none;
+            text-indent: -5px;
+            margin-top: 5px;
+        }
+        .list li: before {
+            content: '\2022';
+            position: relative;
+            left: -5px;
+        }
+        .list ul {
+            margin-top: 0px;
+        }
+        .list ul li {
+            list-style-type: none;
+            margin-left: 15px;
+            text-indent: -7px;
+        }
+        .list ul li: before {
+            content: '\2013';
+            position: relative;
+            left: -7px;
+        }
+        .hintblock {
+            display: none;
+        }
+        .table {
+            empty-cells: show;
+            border: 0px none;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table tr {
+            border: 0px none;
+        }
+        .table tr td,
+        th {
+            border: 0px none;
+            vertical-align: top;
+        }
+        .table tr th {
+            background-color: #cccccc;
+        }
+        .table-border {
+            empty-cells: show;
+            border: 1px solid #000000;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table-border tr {
+            border: 1px solid #000000;
+        }
+        .table-border tr td,
+        th {
+            border: 1px solid #000000;
+            vertical-align: top;
+        }
+        .table-border tr th {
+            background-color: #cccccc;
+        }
+        .codeblock {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre;
+        }
+        li .codeblock {
+            text-indent: 0px;
+        }
+        .logoimage {
+            margin: 10px;
+        }
+        .printhere {
+            margin-top: 40px;
+        }
+        .slide {
+            border: none;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .slidetitle {
+            font-size: 14pt;
+            font-weight: bold;
+            text-align: center;
+            display: none;
+        }
+        .slidebody {
+            text-align: left;
+        }
+        .commandname {
+            font-weight: bold;
+        }
+        .syntaxarg {
+            font-style: italic;
+        }
+        .syntaxkeyword {
+            font-weight: bold;
+            font-style: italic;
+        }
+        .footline {
+            width: 98%;
+            margin-top: 30px;
+        }
+        .copyright {
+            font-size: 10pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .question {
+            margin-bottom: 20px;
+            border-bottom: solid 1px #000;
+        }
+        .question .title {
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .options {
+            border: none;
+        }
+        .option input[type=checkbox],
+        input.checkbox {
+            display: block;
+            float: left;
+        }
+        .option input[type=radio],
+        input.radio {
+            display: block;
+            float: left;
+        }
+        .option input[type=submit] {} 
+        .option label {
+            position: relative;
+            margin-left: 30px;
+            display: block;
+        }
+        .options .correct {
+            background-color: #0f0;
+        }
+        .options .incorrect {
+            background-color: #f00;
+        }
+        .feedback { 
+            border: 1px solid #000; 
+            padding: 5px;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            background-color: #eee;
+        }
+        .fbhidden {
+           display: none;
+        }
+
+      </style></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Scenario</div><div class="parablock" xmlns=""><div class="customnote"><div class="notetitle">Note</div><div class="richtext">Read the requirements in the Scenario carefully and use the Configuration Tips to help you do the required steps. If you need further assistance, refer to the Answer Key. Once you have completed the configuration specified, answer the questions.</div></div><div class="richtext">Your mentor, Bob, tells you that you are doing great and the company wants you to start handling more complicated implementations. He explains that you must have a thorough understanding of ACLs (including the various types of ACLs) and you should be able to configure standard and extended ACLs before going on these deployments. To gauge your level of preparedness, Bob has set up a Proof of Concept (PoC) lab to test your knowledge and skills. The lab consists of three routers: PoC1, PoC2, and PoC3. PoC1 and PoC3 are already configured. You have access to these routers for testing purposes; however, you must not make any changes to these routers.</div><div class="richtext">Some of the configurations on PoC2 are already done. The correct interface addressing and static routing have been configured.  </div><div class="richtext">To verify ACL operation, you can use <span class="commandname">ping</span> and <span class="commandname">telnet</span>. The syntax you should use for ping tests is <span class="commandname">ping</span> <span class="syntaxarg">destination</span> <span class="commandname">source</span> <span class="syntaxarg">source</span>, where <span class="syntaxarg">destination</span> is the destination IPv4 address and <span class="syntaxarg">source</span> is the source IPv4 address you choose to test from. When testing remote connections using the <span class="commandname">telnet</span> command, you can specify the port number you wish to access, when not using the default Telnet port number. The syntax of the command is <span class="commandname">telnet</span> <span class="syntaxarg">destination port</span>. </div><div class="listpreamble">You need to complete the following tasks:</div><ul class="list"><li>Create a numbered access-list using number 1 on router PoC2,  to filter traffic that goes from PoC3 to PoC1. Ensure the following:<ul class="list"><li>With one ACL statement, block all traffic from the host 172.16.1.1.</li><li>Ensure that access-list 1 allows traffic from rest of the hosts in the 172.16.1.0/24 range.</li><li>Ensure that access-list 1 blocks traffic from the subnet range 172.16.2.0/24.</li><li>Ensure that access-list 1 allows rest of the traffic.</li></ul></li><li>Apply the access list on PoC2 on the appropriate interface and in the appropriate direction, so that only traffic from the loopback network segments of PoC3 to loopback network segments of PoC1 is blocked. Traffic to PoC2 should not be blocked.</li><li>On router PoC2, create a named standard access-list with the name NAMED_ACL. The access list NAMED_ACL should:<ul class="list"><li>Allow traffic from hosts 10.1.1.1, 10.1.1.2, and 10.1.1.3. You need to use a single ACL statement to allow traffic from the specified IPv4 addresses.</li><li>Should have one entry that allows traffic from 10.1.2.0/24 and 10.1.3.0/24 subnets.</li><li>Should also allow traffic with a source address of interface E0/0 on router PoC1.</li></ul></li><li>Apply the access list NAMED_ACL so that it filters traffic ingressing from PoC1.</li><li>Create a named extended access-list with the name PING_31.<ul class="list"><li>The access list PING_31 should allow ICMP connectivity tests only from PoC3 Ethernet interface. </li><li>Make sure that ICMP tests from other PoC3 interfaces fail.</li><li>The access list PING_31 should not introduce other restriction—it should not block other traffic that is allowed by the standard access list 1.</li></ul></li><li>Apply the access list PING_31 to the PoC2 to the appropriate interface and direction.</li></ul></div><div class="parablock" xmlns=""></div><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>
+<hr>
+<hr>
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Job Aid</title><style type="text/css">
+
+        .title {
+            font-weight: bold;
+        }
+        body {
+            font-size: 12pt;
+        }
+        body > .title {
+            font-size: 20pt;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .procedure > .title {
+            font-size: 18pt;
+        }
+        .procedure > .stepgroup > .title {
+            font-size: 16pt;
+        }
+        .procedure > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup {
+            margin-top: 10px;
+        }
+        .procedure > .parablock {
+            margin-top: 10px;
+        }
+        .procedure > .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .step {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .step > .action > div: first-child {
+            margin-left: -20px;
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock {
+            margin-top: 10px;
+        }
+        .step > .response {
+            margin-top: 10px;
+        }
+        .step > .parablock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .step > .parablock > .titledblock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .step > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .substep {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .substep > .action > div: first-child {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-left: -20px;
+        }
+        .richtext {
+            margin-top: 10px;
+        }
+        .titledblock > .parablock {
+            margin-top: 10px;
+        }
+        .customnote {
+            margin: 10px 5px 10px 5px;
+            border: 1px solid black;
+        }
+        .notetitle {
+            font-weight: bold;
+            border-bottom: 1px solid black;
+            width: 100%;
+        }
+        .procedure {
+            margin-top: 10px;
+        }
+        .stepgroup > .title {
+            margin-left: -20px;
+        }
+        .stepgroup {
+            margin-left: 20px;
+        }
+        .procedure {
+            margin-left: 20px;
+        }
+        .procedure > .title {
+            margin-left: -20px;
+        }
+        .topic > .title {
+            font-size: 16pt;
+        }
+        .topic > .topic > .title {
+            font-size: 14pt;
+        }
+        .topic > .topic {
+            margin-top: 10px;
+        }
+        .parablock img {
+            margin-top: 20px;
+        }
+        .highlight {
+            background-color: #ffff00;
+        }
+        .double-underline {
+            border-bottom: 3px double;
+        }
+        .overline {
+            text-decoration: overline;
+        }
+        .inlineterm {
+        }
+        .inlinewindowname {
+        }        
+        .inlinemenuselection {
+          font-weight: bold;
+        }        
+        .inlinetypethis {
+          font-weight: bold;
+        }        
+        .inlinecode {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .subscript {
+            vertical-align: sub;
+            font-size: smaller;
+        }
+        .superscript {
+            vertical-align: super;
+            font-size: smaller;
+        }
+        .strikethrough {
+            text-decoration: line-through;
+        }
+        .titledblock {} .figure {
+            max-width: 100%;
+        }
+        .listpreamble {
+            margin-top: 20px;
+        }
+        .list {
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        .list li {
+            margin-left: 13px;
+            padding-left: 0px;
+            list-style-position: outside;
+            list-style-type: none;
+            text-indent: -5px;
+            margin-top: 5px;
+        }
+        .list li: before {
+            content: '\2022';
+            position: relative;
+            left: -5px;
+        }
+        .list ul {
+            margin-top: 0px;
+        }
+        .list ul li {
+            list-style-type: none;
+            margin-left: 15px;
+            text-indent: -7px;
+        }
+        .list ul li: before {
+            content: '\2013';
+            position: relative;
+            left: -7px;
+        }
+        .hintblock {
+            display: none;
+        }
+        .table {
+            empty-cells: show;
+            border: 0px none;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table tr {
+            border: 0px none;
+        }
+        .table tr td,
+        th {
+            border: 0px none;
+            vertical-align: top;
+        }
+        .table tr th {
+            background-color: #cccccc;
+        }
+        .table-border {
+            empty-cells: show;
+            border: 1px solid #000000;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table-border tr {
+            border: 1px solid #000000;
+        }
+        .table-border tr td,
+        th {
+            border: 1px solid #000000;
+            vertical-align: top;
+        }
+        .table-border tr th {
+            background-color: #cccccc;
+        }
+        .codeblock {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre;
+        }
+        li .codeblock {
+            text-indent: 0px;
+        }
+        .logoimage {
+            margin: 10px;
+        }
+        .printhere {
+            margin-top: 40px;
+        }
+        .slide {
+            border: none;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .slidetitle {
+            font-size: 14pt;
+            font-weight: bold;
+            text-align: center;
+            display: none;
+        }
+        .slidebody {
+            text-align: left;
+        }
+        .commandname {
+            font-weight: bold;
+        }
+        .syntaxarg {
+            font-style: italic;
+        }
+        .syntaxkeyword {
+            font-weight: bold;
+            font-style: italic;
+        }
+        .footline {
+            width: 98%;
+            margin-top: 30px;
+        }
+        .copyright {
+            font-size: 10pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .question {
+            margin-bottom: 20px;
+            border-bottom: solid 1px #000;
+        }
+        .question .title {
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .options {
+            border: none;
+        }
+        .option input[type=checkbox],
+        input.checkbox {
+            display: block;
+            float: left;
+        }
+        .option input[type=radio],
+        input.radio {
+            display: block;
+            float: left;
+        }
+        .option input[type=submit] {} 
+        .option label {
+            position: relative;
+            margin-left: 30px;
+            display: block;
+        }
+        .options .correct {
+            background-color: #0f0;
+        }
+        .options .incorrect {
+            background-color: #f00;
+        }
+        .feedback { 
+            border: 1px solid #000; 
+            padding: 5px;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            background-color: #eee;
+        }
+        .fbhidden {
+           display: none;
+        }
+
+      </style></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Job Aid</div><div class="parablock" xmlns=""><div class="customnote"><div class="notetitle">Note</div><div class="richtext">In the lab environment, all interfaces are Ethernet interfaces and not FastEthernet or GigabitEthernet interfaces, which you are likely to encounter in networks today. </div></div><table style="width: 100%;" class="table-border"><thead><tr><th style="width: 12%;"> </th><th style="width: 17%;"> </th><th style="width: 18%;"> </th><th style="width: 14%;"> </th><th style="width: 15%;"> </th><th style="width: 24%;"> </th></tr></thead><tbody><tr><td style="width: 12%;">PoC1</td><td style="width: 17%;">E0/0</td><td style="width: 18%;">192.168.12.1/24</td><td style="width: 14%;">PoC2</td><td style="width: 15%;">E0/0</td><td style="width: 24%;">192.168.12.2/24</td></tr><tr><td style="width: 12%;">PoC2</td><td style="width: 17%;">E0/1</td><td style="width: 18%;">192.168.23.2/24</td><td style="width: 14%;">PoC3</td><td style="width: 15%;">E0/0</td><td style="width: 24%;">192.168.23.3/24</td></tr><tr><td style="width: 12%;">PoC1</td><td style="width: 17%;">Loo 0</td><td style="width: 18%;">10.1.1.1/24 </td><td style="width: 14%;">—</td><td style="width: 15%;">—</td><td style="width: 24%;">—</td></tr><tr><td style="width: 12%;">PoC1</td><td style="width: 17%;">Loo 1</td><td style="width: 18%;">10.1.1.2/24</td><td style="width: 14%;">—</td><td style="width: 15%;">—</td><td style="width: 24%;">—</td></tr><tr><td style="width: 12%;">PoC1</td><td style="width: 17%;">Loo 2</td><td style="width: 18%;">10.1.1.3/24</td><td style="width: 14%;">—</td><td style="width: 15%;">—</td><td style="width: 24%;">—</td></tr><tr><td style="width: 12%;">PoC1</td><td style="width: 17%;">Loo 3</td><td style="width: 18%;">10.1.2.1/24</td><td style="width: 14%;">—</td><td style="width: 15%;">—</td><td style="width: 24%;">—</td></tr><tr><td style="width: 12%;">PoC1</td><td style="width: 17%;">Loo 4</td><td style="width: 18%;">10.1.3.1/24</td><td style="width: 14%;">—</td><td style="width: 15%;">—</td><td style="width: 24%;">—</td></tr><tr><td style="width: 12%;">PoC3</td><td style="width: 17%;">Loo 1</td><td style="width: 18%;">172.16.1.1/24</td><td style="width: 14%;">—</td><td style="width: 15%;">—</td><td style="width: 24%;">—</td></tr><tr><td style="width: 12%;">PoC3</td><td style="width: 17%;">Loo 2</td><td style="width: 18%;">172.16.1.10/24</td><td style="width: 14%;">—</td><td style="width: 15%;">—</td><td style="width: 24%;">—</td></tr><tr><td style="width: 12%;">PoC3</td><td style="width: 17%;">Loo 3</td><td style="width: 18%;">172.16.2.1/24</td><td style="width: 14%;">—</td><td style="width: 15%;">—</td><td style="width: 24%;">—</td></tr><tr><td style="width: 12%;">PoC3</td><td style="width: 17%;">Loo 4</td><td style="width: 18%;">172.16.3.1/24</td><td style="width: 14%;">—</td><td style="width: 15%;">—</td><td style="width: 24%;">—</td></tr></tbody></table></div><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>
+<hr>
+<hr>
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Configuration Tips</title><style type="text/css">
+
+        .title {
+            font-weight: bold;
+        }
+        body {
+            font-size: 12pt;
+        }
+        body > .title {
+            font-size: 20pt;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .procedure > .title {
+            font-size: 18pt;
+        }
+        .procedure > .stepgroup > .title {
+            font-size: 16pt;
+        }
+        .procedure > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup {
+            margin-top: 10px;
+        }
+        .procedure > .parablock {
+            margin-top: 10px;
+        }
+        .procedure > .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .step {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .step > .action > div: first-child {
+            margin-left: -20px;
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock {
+            margin-top: 10px;
+        }
+        .step > .response {
+            margin-top: 10px;
+        }
+        .step > .parablock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .step > .parablock > .titledblock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .step > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .substep {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .substep > .action > div: first-child {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-left: -20px;
+        }
+        .richtext {
+            margin-top: 10px;
+        }
+        .titledblock > .parablock {
+            margin-top: 10px;
+        }
+        .customnote {
+            margin: 10px 5px 10px 5px;
+            border: 1px solid black;
+        }
+        .notetitle {
+            font-weight: bold;
+            border-bottom: 1px solid black;
+            width: 100%;
+        }
+        .procedure {
+            margin-top: 10px;
+        }
+        .stepgroup > .title {
+            margin-left: -20px;
+        }
+        .stepgroup {
+            margin-left: 20px;
+        }
+        .procedure {
+            margin-left: 20px;
+        }
+        .procedure > .title {
+            margin-left: -20px;
+        }
+        .topic > .title {
+            font-size: 16pt;
+        }
+        .topic > .topic > .title {
+            font-size: 14pt;
+        }
+        .topic > .topic {
+            margin-top: 10px;
+        }
+        .parablock img {
+            margin-top: 20px;
+        }
+        .highlight {
+            background-color: #ffff00;
+        }
+        .double-underline {
+            border-bottom: 3px double;
+        }
+        .overline {
+            text-decoration: overline;
+        }
+        .inlineterm {
+        }
+        .inlinewindowname {
+        }        
+        .inlinemenuselection {
+          font-weight: bold;
+        }        
+        .inlinetypethis {
+          font-weight: bold;
+        }        
+        .inlinecode {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .subscript {
+            vertical-align: sub;
+            font-size: smaller;
+        }
+        .superscript {
+            vertical-align: super;
+            font-size: smaller;
+        }
+        .strikethrough {
+            text-decoration: line-through;
+        }
+        .titledblock {} .figure {
+            max-width: 100%;
+        }
+        .listpreamble {
+            margin-top: 20px;
+        }
+        .list {
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        .list li {
+            margin-left: 13px;
+            padding-left: 0px;
+            list-style-position: outside;
+            list-style-type: none;
+            text-indent: -5px;
+            margin-top: 5px;
+        }
+        .list li: before {
+            content: '\2022';
+            position: relative;
+            left: -5px;
+        }
+        .list ul {
+            margin-top: 0px;
+        }
+        .list ul li {
+            list-style-type: none;
+            margin-left: 15px;
+            text-indent: -7px;
+        }
+        .list ul li: before {
+            content: '\2013';
+            position: relative;
+            left: -7px;
+        }
+        .hintblock {
+            display: none;
+        }
+        .table {
+            empty-cells: show;
+            border: 0px none;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table tr {
+            border: 0px none;
+        }
+        .table tr td,
+        th {
+            border: 0px none;
+            vertical-align: top;
+        }
+        .table tr th {
+            background-color: #cccccc;
+        }
+        .table-border {
+            empty-cells: show;
+            border: 1px solid #000000;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table-border tr {
+            border: 1px solid #000000;
+        }
+        .table-border tr td,
+        th {
+            border: 1px solid #000000;
+            vertical-align: top;
+        }
+        .table-border tr th {
+            background-color: #cccccc;
+        }
+        .codeblock {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre;
+        }
+        li .codeblock {
+            text-indent: 0px;
+        }
+        .logoimage {
+            margin: 10px;
+        }
+        .printhere {
+            margin-top: 40px;
+        }
+        .slide {
+            border: none;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .slidetitle {
+            font-size: 14pt;
+            font-weight: bold;
+            text-align: center;
+            display: none;
+        }
+        .slidebody {
+            text-align: left;
+        }
+        .commandname {
+            font-weight: bold;
+        }
+        .syntaxarg {
+            font-style: italic;
+        }
+        .syntaxkeyword {
+            font-weight: bold;
+            font-style: italic;
+        }
+        .footline {
+            width: 98%;
+            margin-top: 30px;
+        }
+        .copyright {
+            font-size: 10pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .question {
+            margin-bottom: 20px;
+            border-bottom: solid 1px #000;
+        }
+        .question .title {
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .options {
+            border: none;
+        }
+        .option input[type=checkbox],
+        input.checkbox {
+            display: block;
+            float: left;
+        }
+        .option input[type=radio],
+        input.radio {
+            display: block;
+            float: left;
+        }
+        .option input[type=submit] {} 
+        .option label {
+            position: relative;
+            margin-left: 30px;
+            display: block;
+        }
+        .options .correct {
+            background-color: #0f0;
+        }
+        .options .incorrect {
+            background-color: #f00;
+        }
+        .feedback { 
+            border: 1px solid #000; 
+            padding: 5px;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            background-color: #eee;
+        }
+        .fbhidden {
+           display: none;
+        }
+
+      </style></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Configuration Tips</div><div class="parablock" xmlns=""><ul class="list"><li>Before you start typing-in and executing commands, prepare the list of ACL statements in a text editor file. Be careful how you sequence permit and deny statements. Start with more specific entries.</li><li>To define an IP access list by name or number use the <span class="commandname">ip access-list {standard | extended} </span><span class="syntaxarg">{access-list-name | access-list-number}</span> command. For numbered ACLs you can also use the <span class="commandname">access-list</span> <span class="syntaxarg">access-list-number</span> <span class="commandname">{permit | deny}</span> command.</li><li>Use the <span class="commandname">ip access-group </span><span class="syntaxarg">access-list-number</span><span class="commandname"> direction</span> command to apply access list for traffic filtering on an interface.</li><li>Use the <span class="commandname">ping</span> <span class="syntaxarg">{hostname | destination-address}</span><span class="commandname"> [source </span><span class="syntaxarg">source-address</span><span class="commandname">]</span> command to diagnose basic network connectivity.</li><li>Use <span class="commandname">show access-list </span><span class="syntaxarg">access-list-number</span> command to view access list statistics. You can clear counters using the <span class="commandname">clear access-list counters</span> command.</li></ul></div><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>
+<hr>
+<hr>
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Answer Key</title><style type="text/css">
+
+        .title {
+            font-weight: bold;
+        }
+        body {
+            font-size: 12pt;
+        }
+        body > .title {
+            font-size: 20pt;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .procedure > .title {
+            font-size: 18pt;
+        }
+        .procedure > .stepgroup > .title {
+            font-size: 16pt;
+        }
+        .procedure > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup {
+            margin-top: 10px;
+        }
+        .procedure > .parablock {
+            margin-top: 10px;
+        }
+        .procedure > .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .step {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .step > .action > div: first-child {
+            margin-left: -20px;
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock {
+            margin-top: 10px;
+        }
+        .step > .response {
+            margin-top: 10px;
+        }
+        .step > .parablock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .step > .parablock > .titledblock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .step > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .substep {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .substep > .action > div: first-child {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-left: -20px;
+        }
+        .richtext {
+            margin-top: 10px;
+        }
+        .titledblock > .parablock {
+            margin-top: 10px;
+        }
+        .customnote {
+            margin: 10px 5px 10px 5px;
+            border: 1px solid black;
+        }
+        .notetitle {
+            font-weight: bold;
+            border-bottom: 1px solid black;
+            width: 100%;
+        }
+        .procedure {
+            margin-top: 10px;
+        }
+        .stepgroup > .title {
+            margin-left: -20px;
+        }
+        .stepgroup {
+            margin-left: 20px;
+        }
+        .procedure {
+            margin-left: 20px;
+        }
+        .procedure > .title {
+            margin-left: -20px;
+        }
+        .topic > .title {
+            font-size: 16pt;
+        }
+        .topic > .topic > .title {
+            font-size: 14pt;
+        }
+        .topic > .topic {
+            margin-top: 10px;
+        }
+        .parablock img {
+            margin-top: 20px;
+        }
+        .highlight {
+            background-color: #ffff00;
+        }
+        .double-underline {
+            border-bottom: 3px double;
+        }
+        .overline {
+            text-decoration: overline;
+        }
+        .inlineterm {
+        }
+        .inlinewindowname {
+        }        
+        .inlinemenuselection {
+          font-weight: bold;
+        }        
+        .inlinetypethis {
+          font-weight: bold;
+        }        
+        .inlinecode {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .subscript {
+            vertical-align: sub;
+            font-size: smaller;
+        }
+        .superscript {
+            vertical-align: super;
+            font-size: smaller;
+        }
+        .strikethrough {
+            text-decoration: line-through;
+        }
+        .titledblock {} .figure {
+            max-width: 100%;
+        }
+        .listpreamble {
+            margin-top: 20px;
+        }
+        .list {
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        .list li {
+            margin-left: 13px;
+            padding-left: 0px;
+            list-style-position: outside;
+            list-style-type: none;
+            text-indent: -5px;
+            margin-top: 5px;
+        }
+        .list li: before {
+            content: '\2022';
+            position: relative;
+            left: -5px;
+        }
+        .list ul {
+            margin-top: 0px;
+        }
+        .list ul li {
+            list-style-type: none;
+            margin-left: 15px;
+            text-indent: -7px;
+        }
+        .list ul li: before {
+            content: '\2013';
+            position: relative;
+            left: -7px;
+        }
+        .hintblock {
+            display: none;
+        }
+        .table {
+            empty-cells: show;
+            border: 0px none;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table tr {
+            border: 0px none;
+        }
+        .table tr td,
+        th {
+            border: 0px none;
+            vertical-align: top;
+        }
+        .table tr th {
+            background-color: #cccccc;
+        }
+        .table-border {
+            empty-cells: show;
+            border: 1px solid #000000;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table-border tr {
+            border: 1px solid #000000;
+        }
+        .table-border tr td,
+        th {
+            border: 1px solid #000000;
+            vertical-align: top;
+        }
+        .table-border tr th {
+            background-color: #cccccc;
+        }
+        .codeblock {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre;
+        }
+        li .codeblock {
+            text-indent: 0px;
+        }
+        .logoimage {
+            margin: 10px;
+        }
+        .printhere {
+            margin-top: 40px;
+        }
+        .slide {
+            border: none;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .slidetitle {
+            font-size: 14pt;
+            font-weight: bold;
+            text-align: center;
+            display: none;
+        }
+        .slidebody {
+            text-align: left;
+        }
+        .commandname {
+            font-weight: bold;
+        }
+        .syntaxarg {
+            font-style: italic;
+        }
+        .syntaxkeyword {
+            font-weight: bold;
+            font-style: italic;
+        }
+        .footline {
+            width: 98%;
+            margin-top: 30px;
+        }
+        .copyright {
+            font-size: 10pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .question {
+            margin-bottom: 20px;
+            border-bottom: solid 1px #000;
+        }
+        .question .title {
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .options {
+            border: none;
+        }
+        .option input[type=checkbox],
+        input.checkbox {
+            display: block;
+            float: left;
+        }
+        .option input[type=radio],
+        input.radio {
+            display: block;
+            float: left;
+        }
+        .option input[type=submit] {} 
+        .option label {
+            position: relative;
+            margin-left: 30px;
+            display: block;
+        }
+        .options .correct {
+            background-color: #0f0;
+        }
+        .options .incorrect {
+            background-color: #f00;
+        }
+        .feedback { 
+            border: 1px solid #000; 
+            padding: 5px;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            background-color: #eee;
+        }
+        .fbhidden {
+           display: none;
+        }
+
+      </style></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Answer Key</div><div class="parablock" xmlns=""><div class="listpreamble">You need to complete the following tasks:</div><ul class="list"><li>Create a numbered access-list using number 1 on router PoC2,  to filter traffic that goes from PoC3 to PoC1. Ensure the following:<ul class="list"><li>With one ACL statement, block all traffic from the host 172.16.1.1.</li><li>Ensure that access-list 1 allows traffic from rest of the hosts in the 172.16.1.0/24 range.</li><li>Ensure that access-list 1 blocks traffic from the subnet range 172.16.2.0/24.</li><li>Ensure that access-list 1 allows rest of the traffic.</li></ul><div class="richtext">On PoC2, configure the following commands:</div><div class="codeblock">PoC2&gt; <span class="bold">enable</span>
+PoC2# <span class="bold">configure terminal</span>
+PoC2(config)# <span class="bold">access-list 1 deny 172.16.1.1</span>
+PoC2(config)# <span class="bold">access-list 1 permit 172.16.1.0 0.0.0.255</span>
+PoC2(config)# <span class="bold">access-list 1 deny 172.16.2.0 0.0.0.255</span>
+PoC2(config)# <span class="bold">access-list 1 permit any</span></div></li><li>Apply the access list on PoC2 on the appropriate interface and in the appropriate direction, so that only traffic from the loopback network segments of PoC3 to loopback network segments of PoC1 is blocked. Traffic to PoC2 should not be blocked.<div class="richtext">On PoC2, configure the following commands:</div><div class="codeblock">PoC2(config)# <span class="bold">interface Ethernet0/0</span>
+Poc2(config-if)# <span class="bold">ip access-group 1 out </span> 
+Poc2(config-if)# <span class="bold">exit</span></div></li><li>On router PoC2, create a named standard access-list with the name NAMED_ACL. The access list NAMED_ACL should:<ul class="list"><li>Allow traffic from hosts 10.1.1.1, 10.1.1.2, and 10.1.1.3. You need to use a single ACL statement to allow traffic from the specified IPv4 addresses.</li><li>Should have one entry that allows traffic from 10.1.2.0/24 and 10.1.3.0/24 subnets.</li><li>Should also allow traffic with a source address of interface E0/0 on router PoC1.</li></ul><div class="richtext">On PoC2, Configure the following commands; note that the most specific statements are configured first:</div><div class="codeblock">PoC2(Config)# <span class="bold">ip access-list standard NAMED_ACL</span>
+PoC2(Config-std-nacl)# <span class="bold">permit host 192.168.12.1</span>
+PoC2(Config-std-nacl)# <span class="bold">permit 10.1.1.0 0.0.0.3</span>
+PoC2(Config-std-nacl)# <span class="bold">permit 10.1.2.0 0.0.1.255
+</span>PoC2(Config-std-nacl)# <span class="bold">exit</span></div></li><li>Apply the access list NAMED_ACL so that it filters traffic ingressing from PoC1.<div class="richtext">On PoC2, configure the following commands.</div><div class="codeblock">PoC2(config)# <span class="bold">interface Ethernet0/0</span>
+Poc2(config-if)# <span class="bold">ip access-group NAMED_ACL in</span>
+Poc2(config-if)# <span class="bold">exit</span></div></li><li>Create a named extended access-list with the name PING_31.<ul class="list"><li>The access list PING_31 should allow ICMP connectivity tests only from PoC3 Ethernet 0/0 interface. </li><li>Make sure that ICMP tests from other PoC3 interfaces fail.</li><li>The access list PING_31 should not introduce other restriction—it should not block other traffic that is allowed by the standard access list 1.</li></ul><div class="richtext">On PoC2, configure the following commands:</div><div class="codeblock">PoC2(config)# <span class="bold">ip access-list extended PING_31</span>
+PoC2(config-ext-nacl)# <span class="bold">permit icmp host 192.168.23.3 any</span>
+PoC2(config-ext-nacl)# <span class="bold">deny icmp any any</span>
+PoC2(config-ext-nacl)# <span class="bold">permit ip any any</span>
+PoC2(config-ext-nacl)# <span class="bold">exit</span></div></li><li>Apply the access list PING_31 to the PoC2 to the appropriate interface and direction.<div class="richtext">On PoC2, configure the following commands:</div><div class="codeblock">PoC2(config)# <span class="bold">interface Ethernet0/1</span>
+Poc2(config-if)# <span class="bold">ip access-group PING_31 in</span></div></li></ul></div><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>
+<hr>
+<hr>
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Questions</title><style type="text/css">
+
+        .title {
+            font-weight: bold;
+        }
+        body {
+            font-size: 12pt;
+        }
+        body > .title {
+            font-size: 20pt;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .procedure > .title {
+            font-size: 18pt;
+        }
+        .procedure > .stepgroup > .title {
+            font-size: 16pt;
+        }
+        .procedure > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup {
+            margin-top: 10px;
+        }
+        .procedure > .parablock {
+            margin-top: 10px;
+        }
+        .procedure > .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .step {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .step > .action > div: first-child {
+            margin-left: -20px;
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock {
+            margin-top: 10px;
+        }
+        .step > .response {
+            margin-top: 10px;
+        }
+        .step > .parablock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .step > .parablock > .titledblock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .step > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .substep {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .substep > .action > div: first-child {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-left: -20px;
+        }
+        .richtext {
+            margin-top: 10px;
+        }
+        .titledblock > .parablock {
+            margin-top: 10px;
+        }
+        .customnote {
+            margin: 10px 5px 10px 5px;
+            border: 1px solid black;
+        }
+        .notetitle {
+            font-weight: bold;
+            border-bottom: 1px solid black;
+            width: 100%;
+        }
+        .procedure {
+            margin-top: 10px;
+        }
+        .stepgroup > .title {
+            margin-left: -20px;
+        }
+        .stepgroup {
+            margin-left: 20px;
+        }
+        .procedure {
+            margin-left: 20px;
+        }
+        .procedure > .title {
+            margin-left: -20px;
+        }
+        .topic > .title {
+            font-size: 16pt;
+        }
+        .topic > .topic > .title {
+            font-size: 14pt;
+        }
+        .topic > .topic {
+            margin-top: 10px;
+        }
+        .parablock img {
+            margin-top: 20px;
+        }
+        .highlight {
+            background-color: #ffff00;
+        }
+        .double-underline {
+            border-bottom: 3px double;
+        }
+        .overline {
+            text-decoration: overline;
+        }
+        .inlineterm {
+        }
+        .inlinewindowname {
+        }        
+        .inlinemenuselection {
+          font-weight: bold;
+        }        
+        .inlinetypethis {
+          font-weight: bold;
+        }        
+        .inlinecode {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .subscript {
+            vertical-align: sub;
+            font-size: smaller;
+        }
+        .superscript {
+            vertical-align: super;
+            font-size: smaller;
+        }
+        .strikethrough {
+            text-decoration: line-through;
+        }
+        .titledblock {} .figure {
+            max-width: 100%;
+        }
+        .listpreamble {
+            margin-top: 20px;
+        }
+        .list {
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        .list li {
+            margin-left: 13px;
+            padding-left: 0px;
+            list-style-position: outside;
+            list-style-type: none;
+            text-indent: -5px;
+            margin-top: 5px;
+        }
+        .list li: before {
+            content: '\2022';
+            position: relative;
+            left: -5px;
+        }
+        .list ul {
+            margin-top: 0px;
+        }
+        .list ul li {
+            list-style-type: none;
+            margin-left: 15px;
+            text-indent: -7px;
+        }
+        .list ul li: before {
+            content: '\2013';
+            position: relative;
+            left: -7px;
+        }
+        .hintblock {
+            display: none;
+        }
+        .table {
+            empty-cells: show;
+            border: 0px none;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table tr {
+            border: 0px none;
+        }
+        .table tr td,
+        th {
+            border: 0px none;
+            vertical-align: top;
+        }
+        .table tr th {
+            background-color: #cccccc;
+        }
+        .table-border {
+            empty-cells: show;
+            border: 1px solid #000000;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table-border tr {
+            border: 1px solid #000000;
+        }
+        .table-border tr td,
+        th {
+            border: 1px solid #000000;
+            vertical-align: top;
+        }
+        .table-border tr th {
+            background-color: #cccccc;
+        }
+        .codeblock {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre;
+        }
+        li .codeblock {
+            text-indent: 0px;
+        }
+        .logoimage {
+            margin: 10px;
+        }
+        .printhere {
+            margin-top: 40px;
+        }
+        .slide {
+            border: none;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .slidetitle {
+            font-size: 14pt;
+            font-weight: bold;
+            text-align: center;
+            display: none;
+        }
+        .slidebody {
+            text-align: left;
+        }
+        .commandname {
+            font-weight: bold;
+        }
+        .syntaxarg {
+            font-style: italic;
+        }
+        .syntaxkeyword {
+            font-weight: bold;
+            font-style: italic;
+        }
+        .footline {
+            width: 98%;
+            margin-top: 30px;
+        }
+        .copyright {
+            font-size: 10pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .question {
+            margin-bottom: 20px;
+            border-bottom: solid 1px #000;
+        }
+        .question .title {
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .options {
+            border: none;
+        }
+        .option input[type=checkbox],
+        input.checkbox {
+            display: block;
+            float: left;
+        }
+        .option input[type=radio],
+        input.radio {
+            display: block;
+            float: left;
+        }
+        .option input[type=submit] {} 
+        .option label {
+            position: relative;
+            margin-left: 30px;
+            display: block;
+        }
+        .options .correct {
+            background-color: #0f0;
+        }
+        .options .incorrect {
+            background-color: #f00;
+        }
+        .feedback { 
+            border: 1px solid #000; 
+            padding: 5px;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            background-color: #eee;
+        }
+        .fbhidden {
+           display: none;
+        }
+
+      </style><script type="text/javascript" xmlns="">
+
+        function toggleClass(element, styleclass) {
+            var classes = element.className.split(" ");
+            var toggled = false;
+            for (var i = 0; i < classes.length; i++) {
+                if (classes[i] == styleclass) {
+                    classes.splice(i, 1);
+                    toggled = true;
+                }
+            }
+            if (!toggled)
+                classes.push(styleclass)
+            element.className = classes.join(" ");
+        }
+
+        function removeClass(element, styleclass) {
+            var classes = element.className.split(" ");
+            for (var i = 0; i < classes.length; i++) {
+                if (classes[i] == styleclass) {
+                    classes.splice(i, 1);
+                }
+            }
+            element.className = classes.join(" ");
+        }
+
+        function grade(questionId) {
+            var form = document.forms[questionId];
+            var answer = form["answer"].value.split(",");
+            var numAnswers = form["numAnswers"].value;
+            var numOptions = form["numOptions"].value;
+            var feedback = form.children[questionId + "-feedback"];
+
+            var correct = true;
+            removeClass(feedback, "fbhidden");
+            toggleClass(feedback, "fbhidden");
+            if (numAnswers <= 1) {
+                for (var i = 0; i < form["option"].length; i++) {
+                    var eleP = form["option"][i].parentNode;
+                    removeClass(eleP, "correct");
+                    removeClass(eleP, "incorrect");
+                }
+                for (var i = 0; i < form["option"].length; i++) {
+                    var ele = form["option"][i];
+                    var eleP = form["option"][i].parentNode;
+                    if (ele.checked && i == answer[0] - 1) {
+                        toggleClass(eleP, "correct");
+                    } else if (!ele.checked && i == answer[0] - 1) {
+                        toggleClass(eleP, "correct");
+                    } else if (ele.checked) {
+                        toggleClass(eleP, "incorrect");
+                        correct = false;
+                    }
+                }
+            } else {
+                for (var i = 0; i < numOptions; i++) {
+                    var eleP = form["option" + (i + 1)].parentNode;
+                    removeClass(eleP, "correct");
+                    removeClass(eleP, "incorrect");
+                }
+
+                for (var i = 0; i < numOptions; i++) {
+                    var ele = form["option" + (i + 1)];
+                    var eleP = ele.parentNode;
+
+                    // Is element i a correct answer?
+                    var needsCheck = (answer[i] == 1);
+                    if (ele.checked && needsCheck) {
+                        toggleClass(eleP, "correct");
+                    } else if (ele.checked && !needsCheck) {
+                        toggleClass(eleP, "incorrect");
+                        correct = false;
+                    } else if (!ele.checked && needsCheck) {
+                        toggleClass(eleP, "incorrect");
+                        correct = false;
+                    }
+                }
+            }
+            if (!correct)
+                removeClass(feedback, "fbhidden");
+        }
+
+      </script></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Questions</div><div class="question multiplechoice" xmlns=""><div class="title">
+        Question 1</div><form name="ID0EKFES" id="ID0EKFES"><input type="hidden" name="numAnswers" value="1"></input><input type="hidden" name="answer" value="2"></input><input type="hidden" name="numOptions" value="4"></input><div class="stem"><div class="richtext">From the router PoC3, verify connectivity to PoC1 by issuing <span class="commandname">ping 192.168.12.1 source 192.168.23.3</span> command. What result do you see?</div></div><fieldset class="options"><div class="option"><input type="radio" name="option" value="1" id="ID0ESFES" class="radio"></input><label for="ID0ESFES"><div class="richtext">The gateway is not reachable.</div></label></div><div class="option"><input type="radio" name="option" value="2" id="ID0EWFES" class="radio"></input><label for="ID0EWFES"><div class="richtext">There is connectivity and the ping is successful.</div></label></div><div class="option"><input type="radio" name="option" value="3" id="ID0E1FES" class="radio"></input><label for="ID0E1FES"><div class="richtext">There is intermittent connectivity, some of the ECHO request packets are successful, and some are not.</div></label></div><div class="option"><input type="radio" name="option" value="4" id="ID0E5FES" class="radio"></input><label for="ID0E5FES"><div class="richtext">Ping is not successful.</div></label></div></fieldset><div class="feedback fbhidden" id="ID0EKFES-feedback">The correct answer is &quot;There is connectivity and the ping is successful.&quot; The extended access list PING_31 permits the ICMP traffic from the 192.168.23.3 address. Also, access list 1 is allowing the return packets from 192.168.12.1.</div><input type="submit" onClick="javascript:grade(&#39;ID0EKFES&#39;); return false;" value="Grade"></input></form></div><div class="question multiplechoice" xmlns=""><div class="title">
+        Question 2</div><form name="ID0EPGES" id="ID0EPGES"><input type="hidden" name="numAnswers" value="1"></input><input type="hidden" name="answer" value="3"></input><input type="hidden" name="numOptions" value="4"></input><div class="stem"><div class="richtext">On router PoC3, perform the connectivity test to PoC1 by using <span class="commandname">ping 192.168.12.1 source 172.16.1.1</span> command. The test should not succeed. What statement is true about the unsuccessful test?</div></div><fieldset class="options"><div class="option"><input type="radio" name="option" value="1" id="ID0EXGES" class="radio"></input><label for="ID0EXGES"><div class="richtext">Ping fails because access list 1 is blocking it.</div></label></div><div class="option"><input type="radio" name="option" value="2" id="ID0E2GES" class="radio"></input><label for="ID0E2GES"><div class="richtext">Ping fails because access list NAMED_ACL is blocking it.</div></label></div><div class="option"><input type="radio" name="option" value="3" id="ID0E6GES" class="radio"></input><label for="ID0E6GES"><div class="richtext">Ping fails because access list PING_31 is blocking it.</div></label></div><div class="option"><input type="radio" name="option" value="4" id="ID0EDHES" class="radio"></input><label for="ID0EDHES"><div class="richtext">Ping fails because on PoC3 there is no route to the destination address.</div></label></div></fieldset><div class="feedback fbhidden" id="ID0EPGES-feedback">The correct answer is &quot;Ping fails because access list PING_31 is blocking it.&quot; Access list 1 permits all traffic from the 172.16.1.0/24 subnet, except from the 172.16.1.1 IPv4 address. Named_ACL allows returning ECHO Replies from the 192.168.12.1. The default route exists that is used for forwarding traffic to remote destinations.</div><input type="submit" onClick="javascript:grade(&#39;ID0EPGES&#39;); return false;" value="Grade"></input></form></div><div class="question multiplechoice" xmlns=""><div class="title">
+        Question 3</div><form name="ID0EUHES" id="ID0EUHES"><input type="hidden" name="numAnswers" value="1"></input><input type="hidden" name="answer" value="1"></input><input type="hidden" name="numOptions" value="5"></input><div class="stem"><div class="richtext">Not including the implicit deny statement in the end, how many entries did you have to type for access list 1?</div></div><fieldset class="options"><div class="option"><input type="radio" name="option" value="1" id="ID0EZHES" class="radio"></input><label for="ID0EZHES"><div class="richtext">Four statements are in access list 1.</div></label></div><div class="option"><input type="radio" name="option" value="2" id="ID0E4HES" class="radio"></input><label for="ID0E4HES"><div class="richtext">Six statements are in access list 1.</div></label></div><div class="option"><input type="radio" name="option" value="3" id="ID0EBIES" class="radio"></input><label for="ID0EBIES"><div class="richtext">Three statements are in access list 1.</div></label></div><div class="option"><input type="radio" name="option" value="4" id="ID0EFIES" class="radio"></input><label for="ID0EFIES"><div class="richtext">Two statements are in access list 1.</div></label></div><div class="option"><input type="radio" name="option" value="5" id="ID0EJIES" class="radio"></input><label for="ID0EJIES"><div class="richtext">Five statements are in access list 1.</div></label></div></fieldset><div class="feedback fbhidden" id="ID0EUHES-feedback">The correct answer is &quot;Four statements are in access list 1.&quot; The tasks specified cannot be implemented with fewer than four statements: one for each access list task.</div><input type="submit" onClick="javascript:grade(&#39;ID0EUHES&#39;); return false;" value="Grade"></input></form></div><div class="question multiplechoice" xmlns=""><div class="title">
+        Question 4</div><form name="ID0E1IES" id="ID0E1IES"><input type="hidden" name="numAnswers" value="1"></input><input type="hidden" name="answer" value="1"></input><input type="hidden" name="numOptions" value="4"></input><div class="stem"><div class="richtext">In the Named_ACL access list, what is the wildcard mask that you chose for the statement that allows traffic from hosts 10.1.1.1, 10.1.1.2, and 10.1.1.3?</div></div><fieldset class="options"><div class="option"><input type="radio" name="option" value="1" id="ID0E6IES" class="radio"></input><label for="ID0E6IES"><div class="richtext">The wildcard mask is 0.0.0.3.</div></label></div><div class="option"><input type="radio" name="option" value="2" id="ID0EDJES" class="radio"></input><label for="ID0EDJES"><div class="richtext">The wildcard mask is 0.0.0.255.</div></label></div><div class="option"><input type="radio" name="option" value="3" id="ID0EHJES" class="radio"></input><label for="ID0EHJES"><div class="richtext">The wildcard mask is 0.0.0.15.</div></label></div><div class="option"><input type="radio" name="option" value="4" id="ID0ELJES" class="radio"></input><label for="ID0ELJES"><div class="richtext">The wildcard mask is 0.0.0.7.</div></label></div></fieldset><div class="feedback fbhidden" id="ID0E1IES-feedback">The correct answer is &quot;The wildcard mask is 0.0.0.3.&quot; Although all wildcard masks 0.0.0.3, 0.0.0.7, 0.0.0.15, and 0.0.0.255 all include the specified host addresses, they also include others. The correct wildcard mask 0.0.0.3 includes only one additional address (10.1.1.0), so is the most adequate. </div><input type="submit" onClick="javascript:grade(&#39;ID0E1IES&#39;); return false;" value="Grade"></input></form></div><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>

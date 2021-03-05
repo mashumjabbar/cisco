@@ -1,5 +1,4 @@
-<img src="Discovery6.png">
-<br>
+
 <html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Introduction</title><style type="text/css">
 
         .title {
@@ -336,11 +335,11 @@
            display: none;
         }
 
-      </style></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Introduction</div><div class="parablock" xmlns=""><div class="richtext">During this activity, you will use Cisco Discovery Protocol and LLDP to map the connectivity within an unfamiliar network. There are four devices in the topology, and you have access to their console ports, but you do not know how they are connected. Using Cisco Discovery Protocol and LLDP commands, you will determine the actual topology.</div></div><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>
+      </style></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Introduction</div><div class="parablock" xmlns=""><div class="customnote"><div class="notetitle">Note</div><div class="richtext">In this activity, you will interact with a recording of a lab, made on actual devices, rather than with the actual devices. In this activity, when entering a command, the entire command must be entered exactly as stated, including matching the case and spaces; shortcuts and tab completion are not supported. In GUIs, you will only be able to use the menu items required for the activity, you will not be able to use other menu items. </div></div><div class="richtext">In this activity, you will use the Monitor screen to look at various types of information that the Cisco WLC collects. You are going to begin this task on the Monitor Summary Screen. </div><div class="customnote"><div class="notetitle">Note</div><div class="richtext">This is the second discovery in the series of the Cisco WLC discoveries. This discovery starts where the previous discovery has ended. The topology shows the relevant devices and addresses configured in this series of related discoveries.</div></div></div><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>
 <hr>
 <hr>
 
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Job Aid</title><style type="text/css">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Topology</title><style type="text/css">
 
         .title {
             font-weight: bold;
@@ -676,11 +675,11 @@
            display: none;
         }
 
-      </style></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Job Aid</div><div class="parablock" xmlns=""><div class="richtext">There are no Job Aids for this lab exercise because the objective of the lab is to map the connectivity within an unfamiliar network.</div></div><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>
+      </style></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Topology</div><img class="figure" alt="" src="CCNA_1-0-0_EAI_Wireless_Topology_001.png" style="max-width: 100%;" xmlns=""></img><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>
 <hr>
 <hr>
 
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Procedure</title><style type="text/css">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Topology</title><style type="text/css">
 
         .title {
             font-weight: bold;
@@ -1016,176 +1015,351 @@
            display: none;
         }
 
-      </style></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Discovery 6: Configure and Verify Layer 2 Discovery Protocols</div><div class="procedure" xmlns=""><div class="title">Task 1: Discover Neighbors Using Cisco Discovery Protocol</div><div class="stepgroup"><div class="title">Activity</div><div class="step"><div class="action"><div class="richtext"><strong>Step 1: </strong>Before accessing the console of switch SW1, wait 60 seconds for Cisco Discovery Protocol to populate its database. On SW1, use the <span class="commandname">show cdp neighbors</span> command to determine the devices to which SW1 is connected. Note that the Cisco Discovery Protocol table shows both the local port on SW1 and the port on the remote device to which SW1 is connected. </div></div><div class="response"><div class="richtext">On SW1, enter this command:</div><div class="codeblock">SW1# <span class="bold">show cdp neighbors</span>
-Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
-                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone,
-                  D - Remote, C - CVTA, M - Two-port Mac Relay
+      </style></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Topology</div><img class="figure" alt="" src="CCNA_1-0-0_EAI_Wireless_Topology_001s.png" style="max-width: 100%;" xmlns=""></img><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>
+<hr>
+<hr>
 
-<span class="highlight">Device ID</span>        <span class="highlight">Local Intrfce</span>     Holdtme    Capability  Platform  <span class="highlight">Port ID</span>
-<span class="highlight">SW2</span>              <span class="highlight">Eth 0/0</span>           153              S I   Linux Uni <span class="highlight">Eth 0/0</span></div><img class="figure" alt="" src="CCNA_1-0-0_DISCOVERY_Configuring_CDP_and_LLDP_002.png" style="max-width: 100%;"></img><div class="richtext">The Device ID column in the output indicates the remote device connected to SW1, which is switch SW2. The Local Intrfce column indicates the local port (Ethernet0/0) on SW1. The Port ID column indicates the remote port (Ethernet0/0) on SW2 used for connecting to SW1.</div></div></div><div class="step"><div class="action"><div class="richtext"><strong>Step 2: </strong>Execute the <span class="commandname">show cdp neighbors</span> command again, but this time, use the <span class="commandname">detail</span> keyword. What is the IPv4 address of SW2?</div></div><div class="response"><div class="richtext">On SW1, enter this command:</div><div class="codeblock">SW1# <span class="bold">show cdp neighbors detail</span>
--------------------------
-Device ID: SW2
-Entry address(es):
-  <span class="highlight">IP address: 10.10.1.3</span>
-Platform: Linux Unix,  Capabilities: Switch IGMP
-Interface: Ethernet0/0,  Port ID (outgoing port): Ethernet0/0
-Holdtime : 147 sec
+<style type="text/css" xmlns="http://www.w3.org/1999/xhtml">
 
-Version :
-Cisco IOS Software, Solaris Software (I86BI_LINUXL2-ADVENTERPRISEK9-M), Experimental Version 15.1(20130919:231344) [dstivers-sept19-2013pm-team_track 107]
-Copyright (c) 1986-2013 by Cisco Systems, Inc.
-Compiled Thu 19-Sep-13 22:38 by dstivers
+        .title {
+            font-weight: bold;
+        }
+        body {
+            font-size: 12pt;
+        }
+        body > .title {
+            font-size: 20pt;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .procedure > .title {
+            font-size: 18pt;
+        }
+        .procedure > .stepgroup > .title {
+            font-size: 16pt;
+        }
+        .procedure > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup {
+            margin-top: 10px;
+        }
+        .procedure > .parablock {
+            margin-top: 10px;
+        }
+        .procedure > .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .step {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .step > .action > div: first-child {
+            margin-left: -20px;
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock {
+            margin-top: 10px;
+        }
+        .step > .response {
+            margin-top: 10px;
+        }
+        .step > .parablock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .step > .parablock > .titledblock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .step > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .substep {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .substep > .action > div: first-child {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-left: -20px;
+        }
+        .richtext {
+            margin-top: 10px;
+        }
+        .titledblock > .parablock {
+            margin-top: 10px;
+        }
+        .customnote {
+            margin: 10px 5px 10px 5px;
+            border: 1px solid black;
+        }
+        .notetitle {
+            font-weight: bold;
+            border-bottom: 1px solid black;
+            width: 100%;
+        }
+        .procedure {
+            margin-top: 10px;
+        }
+        .stepgroup > .title {
+            margin-left: -20px;
+        }
+        .stepgroup {
+            margin-left: 20px;
+        }
+        .procedure {
+            margin-left: 20px;
+        }
+        .procedure > .title {
+            margin-left: -20px;
+        }
+        .topic > .title {
+            font-size: 16pt;
+        }
+        .topic > .topic > .title {
+            font-size: 14pt;
+        }
+        .topic > .topic {
+            margin-top: 10px;
+        }
+        .parablock img {
+            margin-top: 20px;
+        }
+        .highlight {
+            background-color: #ffff00;
+        }
+        .double-underline {
+            border-bottom: 3px double;
+        }
+        .overline {
+            text-decoration: overline;
+        }
+        .inlineterm {
+        }
+        .inlinewindowname {
+        }        
+        .inlinemenuselection {
+          font-weight: bold;
+        }        
+        .inlinetypethis {
+          font-weight: bold;
+        }        
+        .inlinecode {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .subscript {
+            vertical-align: sub;
+            font-size: smaller;
+        }
+        .superscript {
+            vertical-align: super;
+            font-size: smaller;
+        }
+        .strikethrough {
+            text-decoration: line-through;
+        }
+        .titledblock {} .figure {
+            max-width: 100%;
+        }
+        .listpreamble {
+            margin-top: 20px;
+        }
+        .list {
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        .list li {
+            margin-left: 13px;
+            padding-left: 0px;
+            list-style-position: outside;
+            list-style-type: none;
+            text-indent: -5px;
+            margin-top: 5px;
+        }
+        .list li: before {
+            content: '\2022';
+            position: relative;
+            left: -5px;
+        }
+        .list ul {
+            margin-top: 0px;
+        }
+        .list ul li {
+            list-style-type: none;
+            margin-left: 15px;
+            text-indent: -7px;
+        }
+        .list ul li: before {
+            content: '\2013';
+            position: relative;
+            left: -7px;
+        }
+        .hintblock {
+            display: none;
+        }
+        .table {
+            empty-cells: show;
+            border: 0px none;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table tr {
+            border: 0px none;
+        }
+        .table tr td,
+        th {
+            border: 0px none;
+            vertical-align: top;
+        }
+        .table tr th {
+            background-color: #cccccc;
+        }
+        .table-border {
+            empty-cells: show;
+            border: 1px solid #000000;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table-border tr {
+            border: 1px solid #000000;
+        }
+        .table-border tr td,
+        th {
+            border: 1px solid #000000;
+            vertical-align: top;
+        }
+        .table-border tr th {
+            background-color: #cccccc;
+        }
+        .codeblock {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre;
+        }
+        li .codeblock {
+            text-indent: 0px;
+        }
+        .logoimage {
+            margin: 10px;
+        }
+        .printhere {
+            margin-top: 40px;
+        }
+        .slide {
+            border: none;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .slidetitle {
+            font-size: 14pt;
+            font-weight: bold;
+            text-align: center;
+            display: none;
+        }
+        .slidebody {
+            text-align: left;
+        }
+        .commandname {
+            font-weight: bold;
+        }
+        .syntaxarg {
+            font-style: italic;
+        }
+        .syntaxkeyword {
+            font-weight: bold;
+            font-style: italic;
+        }
+        .footline {
+            width: 98%;
+            margin-top: 30px;
+        }
+        .copyright {
+            font-size: 10pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .question {
+            margin-bottom: 20px;
+            border-bottom: solid 1px #000;
+        }
+        .question .title {
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .options {
+            border: none;
+        }
+        .option input[type=checkbox],
+        input.checkbox {
+            display: block;
+            float: left;
+        }
+        .option input[type=radio],
+        input.radio {
+            display: block;
+            float: left;
+        }
+        .option input[type=submit] {} 
+        .option label {
+            position: relative;
+            margin-left: 30px;
+            display: block;
+        }
+        .options .correct {
+            background-color: #0f0;
+        }
+        .options .incorrect {
+            background-color: #f00;
+        }
+        .feedback { 
+            border: 1px solid #000; 
+            padding: 5px;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            background-color: #eee;
+        }
+        .fbhidden {
+           display: none;
+        }
 
-advertisement version: 2
-VTP Management Domain: &#39;&#39;
-Duplex: half
-Management address(es):
-  IP address: 10.10.1.3</div><div class="richtext">The IPv4 address of SW2 switch is 10.10.1.3.</div><div class="customnote"><div class="notetitle">Note</div><div class="richtext">If you do not see all of the details of the SW2 neighbor (including its IPv4 address), wait a few minutes and try again.</div></div><img class="figure" alt="" src="CCNA_1-0-0_DISCOVERY_Configuring_CDP_and_LLDP_003.png" style="max-width: 100%;"></img></div></div><div class="step"><div class="action"><div class="richtext"><strong>Step 3: </strong>Continue the topology inspection from SW2. You know that SW1 is one of the neighbors of SW2. What are the other neighbors of SW2?</div></div><div class="response"><div class="richtext">On SW2, enter these commands:</div><div class="codeblock">SW2# <span class="bold">show cdp neighbors</span>
-Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
-                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone,
-                  D - Remote, C - CVTA, M - Two-port Mac Relay
-
-Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID
-SW1              Eth 0/0           130              S I   Linux Uni Eth 0/0
-R1               <span class="highlight">Eth 0/1</span>           153               R    Linux Uni <span class="highlight">Eth 0/0</span>
-SW2# <span class="bold">show cdp neighbors detail</span>
--------------------------
-Device ID: SW1
-Entry address(es):
-  <span class="highlight">IP address: 10.10.1.2</span>
-Platform: Linux Unix,  <span class="highlight">Capabilities:</span> <span class="highlight">Switch</span> IGMP
-Interface: Ethernet0/0,  Port ID (outgoing port): Ethernet0/0
-Holdtime : 124 sec
-
-Version :
-Cisco IOS Software, Solaris Software (I86BI_LINUXL2-ADVENTERPRISEK9-M), Experimental Version 15.1(20130919:231344) [dstivers-sept19-2013pm-team_track 107]
-Copyright (c) 1986-2013 by Cisco Systems, Inc.
-Compiled Thu 19-Sep-13 22:38 by dstivers
-
-advertisement version: 2
-VTP Management Domain: &#39;&#39;
-Duplex: half
-Management address(es):
-  IP address: 10.10.1.2
-
--------------------------
-Device ID: R1
-Entry address(es):
-  <span class="highlight">IP address: 10.10.1.1</span>
-Platform: Linux Unix,  <span class="highlight">Capabilities:</span> <span class="highlight">Router</span>
-Interface: Ethernet0/1,  Port ID (outgoing port): Ethernet0/0
-Holdtime : 147 sec
-
-Version :
-Cisco IOS Software, Linux Software (I86BI_LINUX-ADVENTERPRISEK9-M), Version 15.2(4)M3, DEVELOPMENT TEST SOFTWARE
-Technical Support: http://www.cisco.com/techsupport
-Copyright (c) 1986-2013 by Cisco Systems, Inc.
-Compiled Tue 26-Feb-13 19:06 by prod_rel_team
-
-advertisement version: 2
-Duplex: half
-Management address(es):</div><div class="richtext">Based on the output, SW2 has two neighboring devices, SW1 and router R1. The IPv4 address of SW1 is 10.10.1.2, and the IPv4 address of R1 is 10.10.1.1.</div><img class="figure" alt="" src="CCNA_1-0-0_DISCOVERY_Configuring_CDP_and_LLDP_004.png" style="max-width: 100%;"></img></div></div><div class="step"><div class="action"><div class="richtext"><strong>Step 4: </strong>Continue the topology inspection from R1. What are the other neighbors of R1?</div></div><div class="response"><div class="richtext">On R1, enter these commands:</div><div class="codeblock">R1# <span class="bold">show cdp neighbors</span>
-Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
-                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone,
-                  D - Remote, C - CVTA, M - Two-port Mac Relay
-
-Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID
-SW2              Eth 0/0            164             S I   Linux Uni Eth 0/1
-R2               <span class="highlight">Eth 0/1</span>            173              R    Linux Uni <span class="highlight">Eth 0/0</span>
-
-R1# <span class="bold">show cdp neighbors detail</span>
--------------------------
-Device ID: SW2
-Entry address(es):
-  <span class="highlight">IP address: 10.10.1.3</span>
-Platform: Linux Unix,  Capabilities: Switch IGMP
-Interface: Ethernet0/0,  Port ID (outgoing port): Ethernet0/1
-Holdtime : 161 sec
-
-Version :
-Cisco IOS Software, Solaris Software (I86BI_LINUXL2-ADVENTERPRISEK9-M), Experimental Version 15.1(20130919:231344) [dstivers-sept19-2013pm-team_track 107]
-Copyright (c) 1986-2013 by Cisco Systems, Inc.
-Compiled Thu 19-Sep-13 22:38 by dstivers
-
-advertisement version: 2
-VTP Management Domain: &#39;&#39;
-Native VLAN: 1
-Duplex: half
-
--------------------------
-Device ID: R2
-Entry address(es):
-  <span class="highlight">IP address: 192.168.3.2</span>
-Platform: Linux Unix,  Capabilities: Router
-Interface: Ethernet0/1,  Port ID (outgoing port): Ethernet0/0
-Holdtime : 170 sec
-
-Version :
-Cisco IOS Software, Linux Software (I86BI_LINUX-ADVENTERPRISEK9-M), Version 15.2(4)M3, DEVELOPMENT TEST SOFTWARE
-Technical Support: http://www.cisco.com/techsupport
-Copyright (c) 1986-2013 by Cisco Systems, Inc.
-Compiled Tue 26-Feb-13 19:06 by prod_rel_team
-
-advertisement version: 2
-Duplex: half</div><div class="richtext">The output shows that R1 has connections to SW2 and router R2, connected to local interfaces Ethernet0/0 and Ethernet0/1, respectively. SW2 has 10.10.1.3 IPv4 address. The IPv4 address of R2 is 192.168.3.2.</div><img class="figure" alt="" src="CCNA_1-0-0_DISCOVERY_Configuring_CDP_and_LLDP_005.png" style="max-width: 100%;"></img></div></div><div class="step"><div class="action"><div class="richtext"><strong>Step 5: </strong>Continue the topology inspection from R2.</div></div><div class="response"><div class="richtext">On R2, enter these commands:</div><div class="codeblock">R2# <span class="bold">show cdp neighbors</span>
-Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
-                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone,
-                  D - Remote, C - CVTA, M - Two-port Mac Relay
-
-Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID
-R1               <span class="highlight">Eth 0/0</span>            176              R    Linux Uni <span class="highlight">Eth 0/1</span>
-R2# <span class="bold">show cdp neighbors detail</span>
--------------------------
-Device ID: R1
-Entry address(es):
-  <span class="highlight">IP address: 192.168.3.1</span>
-Platform: Linux Unix,  Capabilities: Router
-Interface: Ethernet0/0,  Port ID (outgoing port): Ethernet0/1
-Holdtime : 174 sec
-
-Version :
-Cisco IOS Software, Linux Software (I86BI_LINUX-ADVENTERPRISEK9-M), Version 15.2(4)M3, DEVELOPMENT TEST SOFTWARE
-Technical Support: http://www.cisco.com/techsupport
-Copyright (c) 1986-2013 by Cisco Systems, Inc.
-Compiled Tue 26-Feb-13 19:06 by prod_rel_team
-
-advertisement version: 2
-Duplex: half</div><div class="richtext">R2 has no additional neighbors, so the only neighboring device is R1. The 192.168.3.1 IPv4 address is used on R1 Ethernet0/1 interface.</div><img class="figure" alt="" src="CCNA_1-0-0_DISCOVERY_Configuring_CDP_and_LLDP_006.png" style="max-width: 100%;"></img></div></div></div></div><div class="procedure" xmlns=""><div class="title">Task 2: Discover Neighbors Using Link Layer Discovery Protocol</div><div class="stepgroup"><div class="title">Activity</div><div class="step"><div class="action"><div class="richtext"><strong>Step 1: </strong>Before configuring LLDP, disable Cisco Discovery Protocol on all devices (SW1, SW2, R1, and R2).</div></div><div class="response"><div class="richtext">On SW1, enter these commands:</div><div class="codeblock">SW1# <span class="bold">configure terminal
-</span>SW1(config)# <span class="bold">no cdp run</span></div><div class="richtext">On SW2, enter these commands:</div><div class="codeblock">SW2# <span class="bold">configure terminal
-</span>SW2(config)# <span class="bold">no cdp run</span></div><div class="richtext">On R1, enter these commands:</div><div class="codeblock">R1# <span class="bold">configure terminal
-</span>R1(config)# <span class="bold">no cdp run</span></div><div class="richtext">On R2, enter these commands:</div><div class="codeblock">R2# <span class="bold">configure terminal
-</span>R2(config)# <span class="bold">no cdp run</span></div></div></div><div class="step"><div class="action"><div class="richtext"><strong>Step 2: </strong>On the SW1, SW2, R1, and R2 globally enable LLDP and exit to the Privileged EXEC mode.</div></div><div class="response"><div class="richtext">On SW1, enter these commands:</div><div class="codeblock">SW1(config)# <span class="bold">lldp run
-</span>SW1(config)#<span class="bold"> exit</span></div><div class="richtext">On SW2, enter these commands:</div><div class="codeblock">SW2(config)# <span class="bold">lldp run
-</span>SW2(config)# <span class="bold">exit</span></div><div class="richtext">On R1, enter these commands:</div><div class="codeblock">R1(config)# <span class="bold">lldp run
-</span>R1(config)# <span class="bold">exit</span></div><div class="richtext">On R2, enter these commands:</div><div class="codeblock">R2(config)# <span class="bold">lldp run
-</span>R2(config)# <span class="bold">exit</span></div></div></div><div class="step"><div class="action"><div class="richtext"><strong>Step 3: </strong>On SW1, execute the <span class="commandname">show lldp neighbors</span> command.</div></div><div class="response"><div class="richtext">On SW1, enter this command:</div><div class="codeblock">SW1# <span class="bold">show lldp neighbor</span>
-SW1# show lldp neighbor
-Capability codes:
-    (R) Router, (B) Bridge, (T) Telephone, (C) DOCSIS Cable Device
-    (W) WLAN Access Point, (P) Repeater, (S) Station, (O) Other
-
-<span class="highlight">Device ID</span>           <span class="highlight">Local Intf</span>     Hold-time  Capability      <span class="highlight">Port ID</span>
-<span class="highlight">SW2</span>                 <span class="highlight">Et0/0</span>          120                        <span class="highlight">Et0/0 </span>       <span class="highlight">
-</span>
-Total entries displayed: 1</div><div class="richtext">Note that the LLDP table shows the name of the remote device, as well as both the local port on SW1 and the remote port on the remote device that are connected to each other. The output is very similar to the output produced by the Cisco Discovery Protocol. The Device ID column indicates the remote device connected to SW1, which is switch SW2. The Local Intf column indicates the local port (Ethernet0/0) used for connecting to the remote port (Ethernet0/0) on SW2 identified by the Port ID column.</div><div class="customnote"><div class="notetitle">Note</div><div class="richtext">In the virtual lab environment, when you run the LLDP on a switch, it can discover neighbor routers and switches. But LLDP enabled router will discover only neighbor routers.</div></div></div></div><div class="step"><div class="action"><div class="richtext"><strong>Step 4: </strong>Execute the <span class="commandname">show lldp neighbors</span> command again, but this time, use the <span class="commandname">detail</span> keyword. What is the IPv4 address of SW2?</div></div><div class="response"><div class="richtext">On SW1, enter this command:</div><div class="codeblock">SW1# <span class="bold">show lldp neighbors detail</span>
-------------------------------------------------
-Chassis id: aabb.cc00.3b00
-Port id: Et0/0
-Port Description: Ethernet0/0
-System Name: SW2
-
-System Description:
-Cisco IOS Software, Solaris Software (I86BI_LINUXL2-ADVENTERPRISEK9-M), Experimental Version 15.1(20130919:231344) [dstivers-sept19-2013pm-team_track 107]
-Copyright (c) 1986-2013 by Cisco Systems, Inc.
-Compiled Thu 19-Sep-13 22:38 by dstivers
-
-Time remaining: 108 seconds
-System Capabilities: B,R
-Enabled Capabilities - not advertised
-Management Addresses:
-    <span class="highlight">IP: 10.10.1.3</span>
-Auto Negotiation - not supported
-Physical media capabilities - not advertised
-Media Attachment Unit type - not advertised
-Vlan ID: - not advertised
-</div><div class="richtext">The output is similar to the output from the Cisco Discovery Protocol and the IPv4 address of SW2 switch is 10.10.1.3.</div></div><div class="parablock"><div class="richtext">The output of both <span class="commandname">show cdp neighbors</span> and <span class="commandname">show lldp neighbors</span> commands is very similar and provide the same information, with exception of the Platform column (provides information about the platform used on the remote device) which is only available in the output of the <span class="commandname">show cdp neighbors</span> command.</div></div></div><div class="parablock"><div class="richtext">It is recommended that you continue the topology inspection using LLDP on the other devices as well, to verify that you get the same results as you got from the previous Cisco Discovery Protocol inspection.</div></div></div></div><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>
+      </style>
+<div class="lds_sidebar_task"><h1>Task1: Monitor the WLC</h1><p>Monitor the WLC_PORTFOLIO_2.0/_Cross_Technology/CCNA_Unified/CCNA/v1.0/v1.0/ELT_Videos/CCNA100_25-7_Monitor_The_WLC_001.mp43Play Transcript ID4180818template_version4.1.1_PORTFOLIO_2.0/_Cross_Technology/CCNA_Unified/CCNA/v1.0/v1.0/ELT_Videos/CCNA100_25-7_Monitor_The_WLC_001.vtt</p><ul class="lds_sidebar_steps"><li><p><div class="richtext">You will examine the Monitor menu on the left side of the screen. As you can see, there are several options and many of these options have sub-options denoted by a triangle. At the top of the menu, you see Summary. If you are in one of the lower menus and you want to return to the main screen that has the image of the WLC and click <span class="bold">Summary</span>.</div><img class="figure" alt="" src="CCNAU_1-0-0_Monitoring_the_WLAN_Controller_001.png" style="max-width: 100%;"></img></p></li><li><strong>Procedure1:
+      </strong><div class="richtext">First, you will explore Statistics. Click the triangle next to Statistics. Several new options will appear. At this point, the focus is on the top three options: Controller, AP Join, and Ports. Click the <span class="bold">Controller</span> option.</div><div class="lds_sidebar_tip"><div class="richtext"></div><img class="figure" alt="" src="CCNAU_1-0-0_Monitoring_the_WLAN_Controller_002.png" style="max-width: 100%;"></img><div class="richtext">You will now see the Controller Statistics screen. This screen captures the network traffic coming into and going out of the controller. This screen is mainly divided into three sections. The Octets Received area, the Octets Transmitted area, and the bottom six individual statistics. In the Octets Received and Transmitted sections, you can see the number of octets transmitted and received, the number of packets transmitted and received without error, multicast packets transmitted and received, broadcast packets transmitted and received, and received and transmitted packets discarded. Notice that there is a difference between the number of received packets and the number of transmitted packets in the Octets Received and Transmitted areas. The reason is that there are no clients on the network yet. This traffic is background traffic that is received and transmitted by the controller.  </div><div class="richtext">Look at the bottom of the screen where you can see six more parameters that are being tracked. The first is Most Addresses Ever Used. This value is the highest number of Forwarding Database Address Table entries that have been learned by this controller since the most recent reboot. The Address Entries in Use value is the number of learned and static entries in the Forwarding Database Table for this controller. The Maximum VLAN Entries value is the maximum number of VLAN allowed on this controller. The Most VLAN Entries Ever Used value is the largest number of VLANs that have been active on this controller since the last reboot.  The Static VLAN Entries value is the number of presently active VLAN entries on this controller that have been statically created. The Time Since Counters Last Cleared value is the elapsed time in days, hours, minutes, and seconds since the statistics for this controller were cleared. </div><img class="figure" alt="" src="CCNAU_1-0-0_Monitoring_the_WLAN_Controller_003.png" style="max-width: 100%;"></img></div></li><li><strong>Procedure2:
+      </strong><div class="richtext">The next step is to clear the counters.</div><div class="lds_sidebar_tip"><div class="richtext">Go to the upper right part of the screen and click <span class="bold">Clear Counters</span>. </div><img class="figure" alt="" src="CCNAU_1-0-0_Monitoring_the_WLAN_Controller_004.png" style="max-width: 100%;"></img><div class="richtext">You will see the screen change to the state shown below.</div><img class="figure" alt="" src="CCNAU_1-0-0_Monitoring_the_WLAN_Controller_005.png" style="max-width: 100%;"></img></div></li><li><strong>Procedure3:
+      </strong><div class="richtext">Navigate to the menu bar on the left, and click the <span class="bold">AP Join </span>option.</div><div class="lds_sidebar_tip"><div class="richtext">A new screen will appear. It provides a list of currently joined APs.</div><div class="listpreamble">As you can see, this view is organized by the following parameters:</div><ul class="list"><li><span class="bold">AP Base Radio MAC</span></li><li><span class="bold">AP name:</span> Choosing a descriptive name makes locating an AP with a problem in the facility a lot faster and easier.</li><li><span class="bold">Status of the AP:</span> Shows the current join status for this AP.</li><li><span class="bold">Ethernet MAC: </span>MAC address of the Ethernet port on the AP</li><li><span class="bold">IP address: </span>This feature is very helpful if the AP is getting an IP address in the wrong VLAN and you have been getting user complaints about failing to join the WLAN.</li></ul><div class="richtext">Normally you would use the scroll bar on the bottom of the screen to examine all of the fields; in this simulation you will use the <span class="bold">Next</span> button to see this information. </div><ul class="list"><li><span class="bold">Last Join Time:</span> Last on the far right, you see statistics about the Last Join Time. This information can be very useful if you have an AP that is joining and leaving the controller constantly. The Last Join Time will usually be relatively recent, but you may see APs that have a Last Join Time that was weeks or months ago. </li></ul><div class="richtext">The last item in this view is the blue box at the end of the entry for this AP. If you hover the mouse over this box, the Remove option appears. There may be times when you need to remove an AP from a controller. The Remove option is a quick way to perform that task. </div><img class="figure" alt="" src="CCNAU_1-0-0_Monitoring_the_WLAN_Controller_006.png" style="max-width: 100%;"></img><img class="figure" alt="" src="CCNAU_1-0-0_Monitoring_the_WLAN_Controller_006a.png" style="max-width: 100%;"></img></div></li><li><strong>Procedure4:
+      </strong><div class="richtext">Go back to the left menu bar and click the <span class="bold">Ports</span> option.</div><div class="lds_sidebar_tip"><div class="richtext"></div><img class="figure" alt="" src="CCNAU_1-0-0_Monitoring_the_WLAN_Controller_007.png" style="max-width: 100%;"></img><div class="richtext">You will see a new screen. As you can see, there are entries for the five ports on the controller. There is one Multigigabit (mGig) port and four Gigabit Ethernet ports. It might seem counter-intuitive, but the first port in the list is the first Gigabit Ethernet port and the last is the mGig port. Each port lists the Admin Status, Physical Mode, Physical Status, and Link Status. This overview makes it really easy to see a problem with one or more ports. At the end of each port output, there is the View Statistics option.</div><div class="richtext">The listed ports are the physical ports on the device that you can see in the next figure. You are already familiar with it from the Monitor Summary screen. The colors show the condition of the switch ports in the WLC. One of the ports is marked with green. This port is the one that we use in this discovery to connect to a LAN switch and is also the one that you saw in the previous screen at the top of the port list with the state <span class="bold">Link</span> <span class="bold">Up</span>.</div><img class="figure" alt="" src="CCNA_1-0-0_Monitoring_the_WLAN_Controller_011a.png" style="max-width: 100%;"></img><div class="customnote"><div class="notetitle">Note</div><div class="richtext">Each WLC has several ports, (physical interfaces) and several logical interfaces. Multiple logical interfaces can be assigned to one physical port. You can see the ports in the device picture on the Monitor Summary screen of the WLC GUI. You will encounter the logical interfaces and learn more about their role in the next discovery. The ports and the interfaces together ensure the proper operation of the WLC and enable its integration with the network.</div></div></div></li><li><strong>Procedure5:
+      </strong><div class="richtext">Click <span class="bold">View Statistics</span> for Port 1.</div><div class="lds_sidebar_tip"><div class="richtext"></div><img class="figure" alt="" src="CCNA_1-0-0_Monitoring_the_WLAN_Controller_010.png" style="max-width: 100%;"></img><div class="richtext">Now, you see a much different set of statistics available for the port. Take a minute to look at the different areas in this output. Notice the Traffic area. This area provides the total number of octets of data (including the octets in bad packets) received on the network (excluding framing bits but including Frame Check Sequence [FCS] octets). This object can be used as a reasonable estimate of Ethernet utilization. Normally you would use the scroll bar on the bottom of the screen to examine all of the fields; in this simulation, you will use the <span class="bold">Next</span> button to see the rest of information.</div><img class="figure" alt="" src="CCNAU_1-0-0_Monitoring_the_WLAN_Controller_008.png" style="max-width: 100%;"></img><div class="richtext">Observe the Maximum info Size Allowed field. This field shows the maximum size of the info (non-MAC) field that this port receives or transmits. Below is the Successful Packets field, which is broken down to Unicast packets, Multicast Packets, and Broadcast packets. </div></div></li><li><strong>Procedure6:
+      </strong><div class="richtext">You have completed this activity when you have attained these results:</div><ul class="list"><li>You have explored the menu bar on the left side of the Monitor Summary Screen.</li><li>You have opened and explored the Statistics menu option.</li><li>You have explored the Controller, AP Join and Ports menu options.</li></ul></li></ul></div>

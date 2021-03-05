@@ -1,5 +1,3 @@
-<img src="Discovery6.png">
-<br>
 <html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Introduction</title><style type="text/css">
 
         .title {
@@ -336,11 +334,11 @@
            display: none;
         }
 
-      </style></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Introduction</div><div class="parablock" xmlns=""><div class="richtext">During this activity, you will use Cisco Discovery Protocol and LLDP to map the connectivity within an unfamiliar network. There are four devices in the topology, and you have access to their console ports, but you do not know how they are connected. Using Cisco Discovery Protocol and LLDP commands, you will determine the actual topology.</div></div><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>
+      </style></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Introduction</div><div class="parablock" xmlns=""><div class="customnote"><div class="notetitle">Note</div><div class="richtext">In this activity, you will interact with a recording of a lab, made on actual devices, rather than with the actual devices. In this activity, when entering a command, the entire command must be entered exactly as stated, including matching the case and spaces; shortcuts and tab completion are not supported. In GUIs, you will only be able to use the menu items required for the activity, you will not be able to use other menu items. </div></div><div class="richtext">After completing this activity, you will be familiar with the Cisco WLC Web GUI interface layout and usage.</div><div class="customnote"><div class="notetitle">Note</div><div class="richtext">This is the first in a series of seven related discoveries. Each discovery starts where the previous has ended. The topology shows the relevant devices and addresses configured in this series of related discoveries.</div></div></div><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>
 <hr>
 <hr>
 
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Job Aid</title><style type="text/css">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Topology</title><style type="text/css">
 
         .title {
             font-weight: bold;
@@ -676,11 +674,11 @@
            display: none;
         }
 
-      </style></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Job Aid</div><div class="parablock" xmlns=""><div class="richtext">There are no Job Aids for this lab exercise because the objective of the lab is to map the connectivity within an unfamiliar network.</div></div><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>
+      </style></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Topology</div><img class="figure" alt="" src="CCNA_1-0-0_EAI_Wireless_Topology_001.png" style="max-width: 100%;" xmlns=""></img><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>
 <hr>
 <hr>
 
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Procedure</title><style type="text/css">
+<style type="text/css" xmlns="http://www.w3.org/1999/xhtml">
 
         .title {
             font-weight: bold;
@@ -1016,176 +1014,13 @@
            display: none;
         }
 
-      </style></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Discovery 6: Configure and Verify Layer 2 Discovery Protocols</div><div class="procedure" xmlns=""><div class="title">Task 1: Discover Neighbors Using Cisco Discovery Protocol</div><div class="stepgroup"><div class="title">Activity</div><div class="step"><div class="action"><div class="richtext"><strong>Step 1: </strong>Before accessing the console of switch SW1, wait 60 seconds for Cisco Discovery Protocol to populate its database. On SW1, use the <span class="commandname">show cdp neighbors</span> command to determine the devices to which SW1 is connected. Note that the Cisco Discovery Protocol table shows both the local port on SW1 and the port on the remote device to which SW1 is connected. </div></div><div class="response"><div class="richtext">On SW1, enter this command:</div><div class="codeblock">SW1# <span class="bold">show cdp neighbors</span>
-Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
-                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone,
-                  D - Remote, C - CVTA, M - Two-port Mac Relay
-
-<span class="highlight">Device ID</span>        <span class="highlight">Local Intrfce</span>     Holdtme    Capability  Platform  <span class="highlight">Port ID</span>
-<span class="highlight">SW2</span>              <span class="highlight">Eth 0/0</span>           153              S I   Linux Uni <span class="highlight">Eth 0/0</span></div><img class="figure" alt="" src="CCNA_1-0-0_DISCOVERY_Configuring_CDP_and_LLDP_002.png" style="max-width: 100%;"></img><div class="richtext">The Device ID column in the output indicates the remote device connected to SW1, which is switch SW2. The Local Intrfce column indicates the local port (Ethernet0/0) on SW1. The Port ID column indicates the remote port (Ethernet0/0) on SW2 used for connecting to SW1.</div></div></div><div class="step"><div class="action"><div class="richtext"><strong>Step 2: </strong>Execute the <span class="commandname">show cdp neighbors</span> command again, but this time, use the <span class="commandname">detail</span> keyword. What is the IPv4 address of SW2?</div></div><div class="response"><div class="richtext">On SW1, enter this command:</div><div class="codeblock">SW1# <span class="bold">show cdp neighbors detail</span>
--------------------------
-Device ID: SW2
-Entry address(es):
-  <span class="highlight">IP address: 10.10.1.3</span>
-Platform: Linux Unix,  Capabilities: Switch IGMP
-Interface: Ethernet0/0,  Port ID (outgoing port): Ethernet0/0
-Holdtime : 147 sec
-
-Version :
-Cisco IOS Software, Solaris Software (I86BI_LINUXL2-ADVENTERPRISEK9-M), Experimental Version 15.1(20130919:231344) [dstivers-sept19-2013pm-team_track 107]
-Copyright (c) 1986-2013 by Cisco Systems, Inc.
-Compiled Thu 19-Sep-13 22:38 by dstivers
-
-advertisement version: 2
-VTP Management Domain: &#39;&#39;
-Duplex: half
-Management address(es):
-  IP address: 10.10.1.3</div><div class="richtext">The IPv4 address of SW2 switch is 10.10.1.3.</div><div class="customnote"><div class="notetitle">Note</div><div class="richtext">If you do not see all of the details of the SW2 neighbor (including its IPv4 address), wait a few minutes and try again.</div></div><img class="figure" alt="" src="CCNA_1-0-0_DISCOVERY_Configuring_CDP_and_LLDP_003.png" style="max-width: 100%;"></img></div></div><div class="step"><div class="action"><div class="richtext"><strong>Step 3: </strong>Continue the topology inspection from SW2. You know that SW1 is one of the neighbors of SW2. What are the other neighbors of SW2?</div></div><div class="response"><div class="richtext">On SW2, enter these commands:</div><div class="codeblock">SW2# <span class="bold">show cdp neighbors</span>
-Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
-                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone,
-                  D - Remote, C - CVTA, M - Two-port Mac Relay
-
-Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID
-SW1              Eth 0/0           130              S I   Linux Uni Eth 0/0
-R1               <span class="highlight">Eth 0/1</span>           153               R    Linux Uni <span class="highlight">Eth 0/0</span>
-SW2# <span class="bold">show cdp neighbors detail</span>
--------------------------
-Device ID: SW1
-Entry address(es):
-  <span class="highlight">IP address: 10.10.1.2</span>
-Platform: Linux Unix,  <span class="highlight">Capabilities:</span> <span class="highlight">Switch</span> IGMP
-Interface: Ethernet0/0,  Port ID (outgoing port): Ethernet0/0
-Holdtime : 124 sec
-
-Version :
-Cisco IOS Software, Solaris Software (I86BI_LINUXL2-ADVENTERPRISEK9-M), Experimental Version 15.1(20130919:231344) [dstivers-sept19-2013pm-team_track 107]
-Copyright (c) 1986-2013 by Cisco Systems, Inc.
-Compiled Thu 19-Sep-13 22:38 by dstivers
-
-advertisement version: 2
-VTP Management Domain: &#39;&#39;
-Duplex: half
-Management address(es):
-  IP address: 10.10.1.2
-
--------------------------
-Device ID: R1
-Entry address(es):
-  <span class="highlight">IP address: 10.10.1.1</span>
-Platform: Linux Unix,  <span class="highlight">Capabilities:</span> <span class="highlight">Router</span>
-Interface: Ethernet0/1,  Port ID (outgoing port): Ethernet0/0
-Holdtime : 147 sec
-
-Version :
-Cisco IOS Software, Linux Software (I86BI_LINUX-ADVENTERPRISEK9-M), Version 15.2(4)M3, DEVELOPMENT TEST SOFTWARE
-Technical Support: http://www.cisco.com/techsupport
-Copyright (c) 1986-2013 by Cisco Systems, Inc.
-Compiled Tue 26-Feb-13 19:06 by prod_rel_team
-
-advertisement version: 2
-Duplex: half
-Management address(es):</div><div class="richtext">Based on the output, SW2 has two neighboring devices, SW1 and router R1. The IPv4 address of SW1 is 10.10.1.2, and the IPv4 address of R1 is 10.10.1.1.</div><img class="figure" alt="" src="CCNA_1-0-0_DISCOVERY_Configuring_CDP_and_LLDP_004.png" style="max-width: 100%;"></img></div></div><div class="step"><div class="action"><div class="richtext"><strong>Step 4: </strong>Continue the topology inspection from R1. What are the other neighbors of R1?</div></div><div class="response"><div class="richtext">On R1, enter these commands:</div><div class="codeblock">R1# <span class="bold">show cdp neighbors</span>
-Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
-                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone,
-                  D - Remote, C - CVTA, M - Two-port Mac Relay
-
-Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID
-SW2              Eth 0/0            164             S I   Linux Uni Eth 0/1
-R2               <span class="highlight">Eth 0/1</span>            173              R    Linux Uni <span class="highlight">Eth 0/0</span>
-
-R1# <span class="bold">show cdp neighbors detail</span>
--------------------------
-Device ID: SW2
-Entry address(es):
-  <span class="highlight">IP address: 10.10.1.3</span>
-Platform: Linux Unix,  Capabilities: Switch IGMP
-Interface: Ethernet0/0,  Port ID (outgoing port): Ethernet0/1
-Holdtime : 161 sec
-
-Version :
-Cisco IOS Software, Solaris Software (I86BI_LINUXL2-ADVENTERPRISEK9-M), Experimental Version 15.1(20130919:231344) [dstivers-sept19-2013pm-team_track 107]
-Copyright (c) 1986-2013 by Cisco Systems, Inc.
-Compiled Thu 19-Sep-13 22:38 by dstivers
-
-advertisement version: 2
-VTP Management Domain: &#39;&#39;
-Native VLAN: 1
-Duplex: half
-
--------------------------
-Device ID: R2
-Entry address(es):
-  <span class="highlight">IP address: 192.168.3.2</span>
-Platform: Linux Unix,  Capabilities: Router
-Interface: Ethernet0/1,  Port ID (outgoing port): Ethernet0/0
-Holdtime : 170 sec
-
-Version :
-Cisco IOS Software, Linux Software (I86BI_LINUX-ADVENTERPRISEK9-M), Version 15.2(4)M3, DEVELOPMENT TEST SOFTWARE
-Technical Support: http://www.cisco.com/techsupport
-Copyright (c) 1986-2013 by Cisco Systems, Inc.
-Compiled Tue 26-Feb-13 19:06 by prod_rel_team
-
-advertisement version: 2
-Duplex: half</div><div class="richtext">The output shows that R1 has connections to SW2 and router R2, connected to local interfaces Ethernet0/0 and Ethernet0/1, respectively. SW2 has 10.10.1.3 IPv4 address. The IPv4 address of R2 is 192.168.3.2.</div><img class="figure" alt="" src="CCNA_1-0-0_DISCOVERY_Configuring_CDP_and_LLDP_005.png" style="max-width: 100%;"></img></div></div><div class="step"><div class="action"><div class="richtext"><strong>Step 5: </strong>Continue the topology inspection from R2.</div></div><div class="response"><div class="richtext">On R2, enter these commands:</div><div class="codeblock">R2# <span class="bold">show cdp neighbors</span>
-Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
-                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone,
-                  D - Remote, C - CVTA, M - Two-port Mac Relay
-
-Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID
-R1               <span class="highlight">Eth 0/0</span>            176              R    Linux Uni <span class="highlight">Eth 0/1</span>
-R2# <span class="bold">show cdp neighbors detail</span>
--------------------------
-Device ID: R1
-Entry address(es):
-  <span class="highlight">IP address: 192.168.3.1</span>
-Platform: Linux Unix,  Capabilities: Router
-Interface: Ethernet0/0,  Port ID (outgoing port): Ethernet0/1
-Holdtime : 174 sec
-
-Version :
-Cisco IOS Software, Linux Software (I86BI_LINUX-ADVENTERPRISEK9-M), Version 15.2(4)M3, DEVELOPMENT TEST SOFTWARE
-Technical Support: http://www.cisco.com/techsupport
-Copyright (c) 1986-2013 by Cisco Systems, Inc.
-Compiled Tue 26-Feb-13 19:06 by prod_rel_team
-
-advertisement version: 2
-Duplex: half</div><div class="richtext">R2 has no additional neighbors, so the only neighboring device is R1. The 192.168.3.1 IPv4 address is used on R1 Ethernet0/1 interface.</div><img class="figure" alt="" src="CCNA_1-0-0_DISCOVERY_Configuring_CDP_and_LLDP_006.png" style="max-width: 100%;"></img></div></div></div></div><div class="procedure" xmlns=""><div class="title">Task 2: Discover Neighbors Using Link Layer Discovery Protocol</div><div class="stepgroup"><div class="title">Activity</div><div class="step"><div class="action"><div class="richtext"><strong>Step 1: </strong>Before configuring LLDP, disable Cisco Discovery Protocol on all devices (SW1, SW2, R1, and R2).</div></div><div class="response"><div class="richtext">On SW1, enter these commands:</div><div class="codeblock">SW1# <span class="bold">configure terminal
-</span>SW1(config)# <span class="bold">no cdp run</span></div><div class="richtext">On SW2, enter these commands:</div><div class="codeblock">SW2# <span class="bold">configure terminal
-</span>SW2(config)# <span class="bold">no cdp run</span></div><div class="richtext">On R1, enter these commands:</div><div class="codeblock">R1# <span class="bold">configure terminal
-</span>R1(config)# <span class="bold">no cdp run</span></div><div class="richtext">On R2, enter these commands:</div><div class="codeblock">R2# <span class="bold">configure terminal
-</span>R2(config)# <span class="bold">no cdp run</span></div></div></div><div class="step"><div class="action"><div class="richtext"><strong>Step 2: </strong>On the SW1, SW2, R1, and R2 globally enable LLDP and exit to the Privileged EXEC mode.</div></div><div class="response"><div class="richtext">On SW1, enter these commands:</div><div class="codeblock">SW1(config)# <span class="bold">lldp run
-</span>SW1(config)#<span class="bold"> exit</span></div><div class="richtext">On SW2, enter these commands:</div><div class="codeblock">SW2(config)# <span class="bold">lldp run
-</span>SW2(config)# <span class="bold">exit</span></div><div class="richtext">On R1, enter these commands:</div><div class="codeblock">R1(config)# <span class="bold">lldp run
-</span>R1(config)# <span class="bold">exit</span></div><div class="richtext">On R2, enter these commands:</div><div class="codeblock">R2(config)# <span class="bold">lldp run
-</span>R2(config)# <span class="bold">exit</span></div></div></div><div class="step"><div class="action"><div class="richtext"><strong>Step 3: </strong>On SW1, execute the <span class="commandname">show lldp neighbors</span> command.</div></div><div class="response"><div class="richtext">On SW1, enter this command:</div><div class="codeblock">SW1# <span class="bold">show lldp neighbor</span>
-SW1# show lldp neighbor
-Capability codes:
-    (R) Router, (B) Bridge, (T) Telephone, (C) DOCSIS Cable Device
-    (W) WLAN Access Point, (P) Repeater, (S) Station, (O) Other
-
-<span class="highlight">Device ID</span>           <span class="highlight">Local Intf</span>     Hold-time  Capability      <span class="highlight">Port ID</span>
-<span class="highlight">SW2</span>                 <span class="highlight">Et0/0</span>          120                        <span class="highlight">Et0/0 </span>       <span class="highlight">
-</span>
-Total entries displayed: 1</div><div class="richtext">Note that the LLDP table shows the name of the remote device, as well as both the local port on SW1 and the remote port on the remote device that are connected to each other. The output is very similar to the output produced by the Cisco Discovery Protocol. The Device ID column indicates the remote device connected to SW1, which is switch SW2. The Local Intf column indicates the local port (Ethernet0/0) used for connecting to the remote port (Ethernet0/0) on SW2 identified by the Port ID column.</div><div class="customnote"><div class="notetitle">Note</div><div class="richtext">In the virtual lab environment, when you run the LLDP on a switch, it can discover neighbor routers and switches. But LLDP enabled router will discover only neighbor routers.</div></div></div></div><div class="step"><div class="action"><div class="richtext"><strong>Step 4: </strong>Execute the <span class="commandname">show lldp neighbors</span> command again, but this time, use the <span class="commandname">detail</span> keyword. What is the IPv4 address of SW2?</div></div><div class="response"><div class="richtext">On SW1, enter this command:</div><div class="codeblock">SW1# <span class="bold">show lldp neighbors detail</span>
-------------------------------------------------
-Chassis id: aabb.cc00.3b00
-Port id: Et0/0
-Port Description: Ethernet0/0
-System Name: SW2
-
-System Description:
-Cisco IOS Software, Solaris Software (I86BI_LINUXL2-ADVENTERPRISEK9-M), Experimental Version 15.1(20130919:231344) [dstivers-sept19-2013pm-team_track 107]
-Copyright (c) 1986-2013 by Cisco Systems, Inc.
-Compiled Thu 19-Sep-13 22:38 by dstivers
-
-Time remaining: 108 seconds
-System Capabilities: B,R
-Enabled Capabilities - not advertised
-Management Addresses:
-    <span class="highlight">IP: 10.10.1.3</span>
-Auto Negotiation - not supported
-Physical media capabilities - not advertised
-Media Attachment Unit type - not advertised
-Vlan ID: - not advertised
-</div><div class="richtext">The output is similar to the output from the Cisco Discovery Protocol and the IPv4 address of SW2 switch is 10.10.1.3.</div></div><div class="parablock"><div class="richtext">The output of both <span class="commandname">show cdp neighbors</span> and <span class="commandname">show lldp neighbors</span> commands is very similar and provide the same information, with exception of the Platform column (provides information about the platform used on the remote device) which is only available in the output of the <span class="commandname">show cdp neighbors</span> command.</div></div></div><div class="parablock"><div class="richtext">It is recommended that you continue the topology inspection using LLDP on the other devices as well, to verify that you get the same results as you got from the previous Cisco Discovery Protocol inspection.</div></div></div></div><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>
+      </style>
+<div class="lds_sidebar_task"><h1>Task1: Log into the WLC</h1><p>Log into the WLC_PORTFOLIO_2.0/_Cross_Technology/CCNA_Unified/CCNA/v1.0/v1.0/ELT_Videos/CCNA100_25-6_Log_Into_WLC_001.mp43Play Transcript ID4174558template_version4.1.1_PORTFOLIO_2.0/_Cross_Technology/CCNA_Unified/CCNA/v1.0/v1.0/ELT_Videos/CCNA100_25-6_Log_Into_WLC_001.vtt</p><p><div class="richtext">In this task, you will have the opportunity to configure a Cisco WLC Web using the GUI. There may be a situation where you need to deploy a new WLC to support a new office, a new floor, or a new remote location. </div><div class="richtext">There are two methods of configuring the WLC, from the GUI and from the CLI through the console connection on the WLC. Both are very effective; in some special cases, you may need to use both configuration methods to perform different configuration steps. In this activity, you will only need the GUI to perform the configuration steps. </div><div class="richtext">You will use Cisco 3504 WLC, which is intended for small to medium-sized enterprise networks and branch offices. At your job, you might encounter other WLCs that have slightly different GUIs, however the core functionality remains the same.</div></p><ul class="lds_sidebar_steps"><li><strong>Procedure1:
+      </strong><div class="richtext">To begin the process, you will need some credentials to access the WLC. The username is <span class="bold">admin</span>, and the password is <span class="bold">Cisco123</span>.</div><div class="lds_sidebar_tip"><div class="richtext"></div><div class="customnote"><div class="notetitle">Note</div><div class="richtext">Remember that the username and password are <span class="italic">case sensitive</span>. One other thing to remember is that if you add a new username to the WLC, the password <span class="italic">must contain</span> uppercase and lowercase letters, a number, and a special character. </div></div></div></li><li><strong>Procedure2:
+      </strong><div class="richtext">Open the Chrome browser on your PC.</div><div class="lds_sidebar_tip"><div class="richtext">Click the <span class="bold">Chrome</span> browser icon. </div><img class="figure" alt="" src="CCNAU_1-0-0_EAI_Logging_into_WLC_001.png" style="max-width: 100%;"></img></div></li><li><strong>Procedure3:
+      </strong><div class="richtext">Use the IPv4 address to log in to the WLC. Type <span class="bold">https://192.168.1.150</span> in the address bar, and press <span class="bold">Enter</span>.</div><div class="lds_sidebar_tip"><div class="richtext"></div><img class="figure" alt="" src="CCNA_1-0-0_EAI_Logging_into_WLC_002.png" style="max-width: 100%;"></img></div></li><li><strong>Procedure4:
+      </strong><div class="richtext">The opening screen from the WLC will appear. Log in to the WLC.</div><div class="lds_sidebar_tip"><div class="richtext">Click the <span class="bold">Login</span> button in the middle of the screen.</div><img class="figure" alt="" src="CCNAU_1-0-0_EAI_Logging_into_WLC_003.png" style="max-width: 100%;"></img><div class="customnote"><div class="notetitle">Note</div><div class="richtext">Notice the Not Secure warning next to the URL bar and the crossed out https. Usually, when you see something like this to your HTTPS URL, this may indicate that there is a problem with the certificate of the website that you are trying to reach. The certificate may have been expired or it may not have been signed by one of the certificate authorities (CAs) that the browser implicitly trusts. However, in this case, it is more likely that this warning is a result of the password input field. As of January 2017, Google Chrome marks all the pages that include a non-secure password field with a Not Secure warning. Even if the top-level page is HTTPS, the warning will appear if the password input frame is not served over HTTPS as well. </div></div></div></li><li><strong>Procedure5:
+      </strong><div class="richtext">A dialog box will appear at the top of the screen where you can enter your credentials. Use the <span class="bold">admin</span>/<span class="bold">Cisco123</span> credentials. Both username and password are case-sensitive. Type carefully, and press <span class="bold">Enter</span> when finished.</div><div class="lds_sidebar_tip"><div class="richtext"></div><div class="customnote"><div class="notetitle">Note</div><div class="richtext">The characters in the password are not displayed, only dots will be displayed.</div></div><img class="figure" alt="" src="CCNAU_1-0-0_EAI_Logging_into_WLC_004.png" style="max-width: 100%;"></img></div></li><li><strong>Procedure6:
+      </strong><div class="richtext">Observe the initial Network Summary WLC screen.</div><div class="lds_sidebar_tip"><div class="richtext">The opening screen of the WLC will appear. There is a lot of information you can see on this screen, but understand that this screen is a summary screen. You don’t have the ability to make configuration changes from this screen, you can only look at what the WLC is reporting. </div><img class="figure" alt="" src="CCNAU_1-0-0_EAI_Logging_into_WLC_005.png" style="max-width: 100%;"></img></div></li><li><strong>Procedure7:
+      </strong><div class="richtext">Navigate to the <span class="bold">Network Summary</span> screen, by going to the top right corner of the Network Summary page and click <span class="bold">Advanced</span>.</div><div class="lds_sidebar_tip"><div class="richtext"></div><img class="figure" alt="" src="CCNAU_1-0-0_EAI_Logging_into_WLC_006.png" style="max-width: 100%;"></img><div class="richtext">The next screen you see is the Monitor Summary screen. This view is much different from the Network Summary screen. You will use the menu options on this screen and others to configure the WLC in other discoveries. If you need to validate that an AP or a client has joined a WLAN, the Monitor screen is a good place to start troubleshooting issues. </div><img class="figure" alt="" src="CCNAU_1-0-0_EAI_Logging_into_WLC_007.png" style="max-width: 100%;"></img></div></li><li><strong>Procedure8:
+      </strong><div class="richtext">You have completed this activity when you have attained these results:</div><ul class="list"><li>You have used Chrome to connect to the WLC.</li><li>You have entered the credentials to access the WLC GUI.</li><li>You have entered the Network Summary screen.</li><li>You have navigated to the Advanced Monitor Summary screen.</li></ul></li></ul></div>

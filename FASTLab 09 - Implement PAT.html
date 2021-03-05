@@ -1,0 +1,1818 @@
+<img src="FASTLab9.png">
+<br>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Scenario</title><style type="text/css">
+
+        .title {
+            font-weight: bold;
+        }
+        body {
+            font-size: 12pt;
+        }
+        body > .title {
+            font-size: 20pt;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .procedure > .title {
+            font-size: 18pt;
+        }
+        .procedure > .stepgroup > .title {
+            font-size: 16pt;
+        }
+        .procedure > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup {
+            margin-top: 10px;
+        }
+        .procedure > .parablock {
+            margin-top: 10px;
+        }
+        .procedure > .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .step {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .step > .action > div: first-child {
+            margin-left: -20px;
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock {
+            margin-top: 10px;
+        }
+        .step > .response {
+            margin-top: 10px;
+        }
+        .step > .parablock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .step > .parablock > .titledblock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .step > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .substep {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .substep > .action > div: first-child {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-left: -20px;
+        }
+        .richtext {
+            margin-top: 10px;
+        }
+        .titledblock > .parablock {
+            margin-top: 10px;
+        }
+        .customnote {
+            margin: 10px 5px 10px 5px;
+            border: 1px solid black;
+        }
+        .notetitle {
+            font-weight: bold;
+            border-bottom: 1px solid black;
+            width: 100%;
+        }
+        .procedure {
+            margin-top: 10px;
+        }
+        .stepgroup > .title {
+            margin-left: -20px;
+        }
+        .stepgroup {
+            margin-left: 20px;
+        }
+        .procedure {
+            margin-left: 20px;
+        }
+        .procedure > .title {
+            margin-left: -20px;
+        }
+        .topic > .title {
+            font-size: 16pt;
+        }
+        .topic > .topic > .title {
+            font-size: 14pt;
+        }
+        .topic > .topic {
+            margin-top: 10px;
+        }
+        .parablock img {
+            margin-top: 20px;
+        }
+        .highlight {
+            background-color: #ffff00;
+        }
+        .double-underline {
+            border-bottom: 3px double;
+        }
+        .overline {
+            text-decoration: overline;
+        }
+        .inlineterm {
+        }
+        .inlinewindowname {
+        }        
+        .inlinemenuselection {
+          font-weight: bold;
+        }        
+        .inlinetypethis {
+          font-weight: bold;
+        }        
+        .inlinecode {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .subscript {
+            vertical-align: sub;
+            font-size: smaller;
+        }
+        .superscript {
+            vertical-align: super;
+            font-size: smaller;
+        }
+        .strikethrough {
+            text-decoration: line-through;
+        }
+        .titledblock {} .figure {
+            max-width: 100%;
+        }
+        .listpreamble {
+            margin-top: 20px;
+        }
+        .list {
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        .list li {
+            margin-left: 13px;
+            padding-left: 0px;
+            list-style-position: outside;
+            list-style-type: none;
+            text-indent: -5px;
+            margin-top: 5px;
+        }
+        .list li: before {
+            content: '\2022';
+            position: relative;
+            left: -5px;
+        }
+        .list ul {
+            margin-top: 0px;
+        }
+        .list ul li {
+            list-style-type: none;
+            margin-left: 15px;
+            text-indent: -7px;
+        }
+        .list ul li: before {
+            content: '\2013';
+            position: relative;
+            left: -7px;
+        }
+        .hintblock {
+            display: none;
+        }
+        .table {
+            empty-cells: show;
+            border: 0px none;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table tr {
+            border: 0px none;
+        }
+        .table tr td,
+        th {
+            border: 0px none;
+            vertical-align: top;
+        }
+        .table tr th {
+            background-color: #cccccc;
+        }
+        .table-border {
+            empty-cells: show;
+            border: 1px solid #000000;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table-border tr {
+            border: 1px solid #000000;
+        }
+        .table-border tr td,
+        th {
+            border: 1px solid #000000;
+            vertical-align: top;
+        }
+        .table-border tr th {
+            background-color: #cccccc;
+        }
+        .codeblock {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre;
+        }
+        li .codeblock {
+            text-indent: 0px;
+        }
+        .logoimage {
+            margin: 10px;
+        }
+        .printhere {
+            margin-top: 40px;
+        }
+        .slide {
+            border: none;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .slidetitle {
+            font-size: 14pt;
+            font-weight: bold;
+            text-align: center;
+            display: none;
+        }
+        .slidebody {
+            text-align: left;
+        }
+        .commandname {
+            font-weight: bold;
+        }
+        .syntaxarg {
+            font-style: italic;
+        }
+        .syntaxkeyword {
+            font-weight: bold;
+            font-style: italic;
+        }
+        .footline {
+            width: 98%;
+            margin-top: 30px;
+        }
+        .copyright {
+            font-size: 10pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .question {
+            margin-bottom: 20px;
+            border-bottom: solid 1px #000;
+        }
+        .question .title {
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .options {
+            border: none;
+        }
+        .option input[type=checkbox],
+        input.checkbox {
+            display: block;
+            float: left;
+        }
+        .option input[type=radio],
+        input.radio {
+            display: block;
+            float: left;
+        }
+        .option input[type=submit] {} 
+        .option label {
+            position: relative;
+            margin-left: 30px;
+            display: block;
+        }
+        .options .correct {
+            background-color: #0f0;
+        }
+        .options .incorrect {
+            background-color: #f00;
+        }
+        .feedback { 
+            border: 1px solid #000; 
+            padding: 5px;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            background-color: #eee;
+        }
+        .fbhidden {
+           display: none;
+        }
+
+      </style></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Scenario</div><div class="parablock" xmlns=""><div class="customnote"><div class="notetitle">Note</div><div class="richtext">Read the requirements in the Scenario carefully and use the Configuration Tips to help you do the required steps. If you need further assistance, refer to the Answer Key. Once you have completed the configuration specified, answer the questions.</div></div><div class="richtext">The customer has asked CCS to provide internet connectivity to their servers. You are asked to complete the implementation of the internet connection on the Branch router.</div><div class="richtext">The customer wants their internal network to use NAT to the public IPv4 address that is configured on the interface on the Branch router which faces the ISP router.</div><div class="listpreamble">You need to complete these tasks:</div><ul class="list"><li>On the Branch router, create a single statement standard IPv4 access list named <span class="italic">NAT_Traffic</span>. The NAT_Traffic access list should identify all inside local addresses—all addresses of all inside subnets. The address identification ACL statement should specify the range of addresses as close as possible (as narrow as possible).</li><li>Configure the Branch router interfaces for NAT. Make sure to configure all relevant interfaces. There will be a significant pause in response to the first interface NAT command because the Branch router will have to initiate an internal NVI to support NAT.</li><li>Specify PAT as the translation mechanism. The traffic to be translated is identified in the NAT_Traffic access list. Public IPv4 address is assigned to the Branch router by the ISP.</li><li>Verify that all the inside devices have internet connectivity, by checking the connectivity to IPv4 test address 209.165.201.1.</li></ul></div><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>
+<hr>
+<hr>
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Job Aid</title><style type="text/css">
+
+        .title {
+            font-weight: bold;
+        }
+        body {
+            font-size: 12pt;
+        }
+        body > .title {
+            font-size: 20pt;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .procedure > .title {
+            font-size: 18pt;
+        }
+        .procedure > .stepgroup > .title {
+            font-size: 16pt;
+        }
+        .procedure > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup {
+            margin-top: 10px;
+        }
+        .procedure > .parablock {
+            margin-top: 10px;
+        }
+        .procedure > .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .step {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .step > .action > div: first-child {
+            margin-left: -20px;
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock {
+            margin-top: 10px;
+        }
+        .step > .response {
+            margin-top: 10px;
+        }
+        .step > .parablock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .step > .parablock > .titledblock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .step > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .substep {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .substep > .action > div: first-child {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-left: -20px;
+        }
+        .richtext {
+            margin-top: 10px;
+        }
+        .titledblock > .parablock {
+            margin-top: 10px;
+        }
+        .customnote {
+            margin: 10px 5px 10px 5px;
+            border: 1px solid black;
+        }
+        .notetitle {
+            font-weight: bold;
+            border-bottom: 1px solid black;
+            width: 100%;
+        }
+        .procedure {
+            margin-top: 10px;
+        }
+        .stepgroup > .title {
+            margin-left: -20px;
+        }
+        .stepgroup {
+            margin-left: 20px;
+        }
+        .procedure {
+            margin-left: 20px;
+        }
+        .procedure > .title {
+            margin-left: -20px;
+        }
+        .topic > .title {
+            font-size: 16pt;
+        }
+        .topic > .topic > .title {
+            font-size: 14pt;
+        }
+        .topic > .topic {
+            margin-top: 10px;
+        }
+        .parablock img {
+            margin-top: 20px;
+        }
+        .highlight {
+            background-color: #ffff00;
+        }
+        .double-underline {
+            border-bottom: 3px double;
+        }
+        .overline {
+            text-decoration: overline;
+        }
+        .inlineterm {
+        }
+        .inlinewindowname {
+        }        
+        .inlinemenuselection {
+          font-weight: bold;
+        }        
+        .inlinetypethis {
+          font-weight: bold;
+        }        
+        .inlinecode {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .subscript {
+            vertical-align: sub;
+            font-size: smaller;
+        }
+        .superscript {
+            vertical-align: super;
+            font-size: smaller;
+        }
+        .strikethrough {
+            text-decoration: line-through;
+        }
+        .titledblock {} .figure {
+            max-width: 100%;
+        }
+        .listpreamble {
+            margin-top: 20px;
+        }
+        .list {
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        .list li {
+            margin-left: 13px;
+            padding-left: 0px;
+            list-style-position: outside;
+            list-style-type: none;
+            text-indent: -5px;
+            margin-top: 5px;
+        }
+        .list li: before {
+            content: '\2022';
+            position: relative;
+            left: -5px;
+        }
+        .list ul {
+            margin-top: 0px;
+        }
+        .list ul li {
+            list-style-type: none;
+            margin-left: 15px;
+            text-indent: -7px;
+        }
+        .list ul li: before {
+            content: '\2013';
+            position: relative;
+            left: -7px;
+        }
+        .hintblock {
+            display: none;
+        }
+        .table {
+            empty-cells: show;
+            border: 0px none;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table tr {
+            border: 0px none;
+        }
+        .table tr td,
+        th {
+            border: 0px none;
+            vertical-align: top;
+        }
+        .table tr th {
+            background-color: #cccccc;
+        }
+        .table-border {
+            empty-cells: show;
+            border: 1px solid #000000;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table-border tr {
+            border: 1px solid #000000;
+        }
+        .table-border tr td,
+        th {
+            border: 1px solid #000000;
+            vertical-align: top;
+        }
+        .table-border tr th {
+            background-color: #cccccc;
+        }
+        .codeblock {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre;
+        }
+        li .codeblock {
+            text-indent: 0px;
+        }
+        .logoimage {
+            margin: 10px;
+        }
+        .printhere {
+            margin-top: 40px;
+        }
+        .slide {
+            border: none;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .slidetitle {
+            font-size: 14pt;
+            font-weight: bold;
+            text-align: center;
+            display: none;
+        }
+        .slidebody {
+            text-align: left;
+        }
+        .commandname {
+            font-weight: bold;
+        }
+        .syntaxarg {
+            font-style: italic;
+        }
+        .syntaxkeyword {
+            font-weight: bold;
+            font-style: italic;
+        }
+        .footline {
+            width: 98%;
+            margin-top: 30px;
+        }
+        .copyright {
+            font-size: 10pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .question {
+            margin-bottom: 20px;
+            border-bottom: solid 1px #000;
+        }
+        .question .title {
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .options {
+            border: none;
+        }
+        .option input[type=checkbox],
+        input.checkbox {
+            display: block;
+            float: left;
+        }
+        .option input[type=radio],
+        input.radio {
+            display: block;
+            float: left;
+        }
+        .option input[type=submit] {} 
+        .option label {
+            position: relative;
+            margin-left: 30px;
+            display: block;
+        }
+        .options .correct {
+            background-color: #0f0;
+        }
+        .options .incorrect {
+            background-color: #f00;
+        }
+        .feedback { 
+            border: 1px solid #000; 
+            padding: 5px;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            background-color: #eee;
+        }
+        .fbhidden {
+           display: none;
+        }
+
+      </style></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Job Aid</div><div class="parablock" xmlns=""><div class="customnote"><div class="notetitle">Note</div><div class="richtext">In the virtual lab environment, all interfaces are Ethernet interfaces and not FastEthernet or GigabitEthernet interfaces, which you are likely to encounter in networks today.</div></div><table style="width: 100%;" class="table-border"><caption>Device Information</caption><thead><tr><th>Device</th><th>Interface</th><th>IPv4 Address</th><th>Remote</th><th>Interface</th><th>IPv4 Address</th></tr></thead><tbody><tr><td>SW1</td><td>VLAN 1</td><td>172.16.130.10/24</td><td>VLAN 1</td><td>—</td><td>—</td></tr><tr><td>SW1</td><td>E0/1</td><td>VLAN 1</td><td>Branch</td><td>E0/0</td><td>172.16.130.3/24</td></tr><tr><td>SW1</td><td>E0/2</td><td>VLAN 1</td><td>AdminPC</td><td>E0/0</td><td>172.16.130.5/24</td></tr><tr><td>SW1</td><td>E0/3</td><td>VLAN 1</td><td>Fileserver</td><td>E0/0</td><td>172.16.130.6/24</td></tr><tr><td>Branch</td><td>E0/0</td><td>172.16.130.3/24</td><td>SW1</td><td>E0/1</td><td>VLAN 1</td></tr><tr><td>Branch</td><td>E0/1</td><td>209.165.200.226/27</td><td>Internet</td><td>E0/0</td><td>209.165.200.225/27</td></tr><tr><td>Branch</td><td>E0/2</td><td>172.16.160.3/24</td><td>R1</td><td>E0/0</td><td>172.16.160.1/24</td></tr><tr><td>Branch</td><td>Lo0</td><td>172.16.168.1/24</td><td>—</td><td>—</td><td>—</td></tr><tr><td>R1</td><td>E0/0</td><td>172.16.160.1/24</td><td>Branch</td><td>E0/2</td><td>172.16.160.3/24</td></tr><tr><td>R1</td><td>Lo0</td><td>172.16.176.1/24</td><td>—</td><td>—</td><td>—</td></tr><tr><td>AdminPC</td><td>E0/0</td><td>172.16.130.5/24</td><td>SW1</td><td>E0/2</td><td>—</td></tr><tr><td>Fileserver</td><td>E0/0</td><td>172.16.130.6/24</td><td>SW1</td><td>E0/3</td><td>—</td></tr><tr><td>Internet</td><td>E0/0</td><td>209.165.200.225/27</td><td>Branch </td><td>E0/1</td><td>209.165.200.226/27</td></tr><tr><td>Internet </td><td>Lo0</td><td>209.165.201.1/32</td><td>—</td><td>—</td><td>—</td></tr></tbody></table><div class="richtext">Test IPv4 address credentials: admin / Cisco123</div></div><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>
+<hr>
+<hr>
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Configuration Tips</title><style type="text/css">
+
+        .title {
+            font-weight: bold;
+        }
+        body {
+            font-size: 12pt;
+        }
+        body > .title {
+            font-size: 20pt;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .procedure > .title {
+            font-size: 18pt;
+        }
+        .procedure > .stepgroup > .title {
+            font-size: 16pt;
+        }
+        .procedure > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup {
+            margin-top: 10px;
+        }
+        .procedure > .parablock {
+            margin-top: 10px;
+        }
+        .procedure > .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .step {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .step > .action > div: first-child {
+            margin-left: -20px;
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock {
+            margin-top: 10px;
+        }
+        .step > .response {
+            margin-top: 10px;
+        }
+        .step > .parablock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .step > .parablock > .titledblock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .step > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .substep {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .substep > .action > div: first-child {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-left: -20px;
+        }
+        .richtext {
+            margin-top: 10px;
+        }
+        .titledblock > .parablock {
+            margin-top: 10px;
+        }
+        .customnote {
+            margin: 10px 5px 10px 5px;
+            border: 1px solid black;
+        }
+        .notetitle {
+            font-weight: bold;
+            border-bottom: 1px solid black;
+            width: 100%;
+        }
+        .procedure {
+            margin-top: 10px;
+        }
+        .stepgroup > .title {
+            margin-left: -20px;
+        }
+        .stepgroup {
+            margin-left: 20px;
+        }
+        .procedure {
+            margin-left: 20px;
+        }
+        .procedure > .title {
+            margin-left: -20px;
+        }
+        .topic > .title {
+            font-size: 16pt;
+        }
+        .topic > .topic > .title {
+            font-size: 14pt;
+        }
+        .topic > .topic {
+            margin-top: 10px;
+        }
+        .parablock img {
+            margin-top: 20px;
+        }
+        .highlight {
+            background-color: #ffff00;
+        }
+        .double-underline {
+            border-bottom: 3px double;
+        }
+        .overline {
+            text-decoration: overline;
+        }
+        .inlineterm {
+        }
+        .inlinewindowname {
+        }        
+        .inlinemenuselection {
+          font-weight: bold;
+        }        
+        .inlinetypethis {
+          font-weight: bold;
+        }        
+        .inlinecode {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .subscript {
+            vertical-align: sub;
+            font-size: smaller;
+        }
+        .superscript {
+            vertical-align: super;
+            font-size: smaller;
+        }
+        .strikethrough {
+            text-decoration: line-through;
+        }
+        .titledblock {} .figure {
+            max-width: 100%;
+        }
+        .listpreamble {
+            margin-top: 20px;
+        }
+        .list {
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        .list li {
+            margin-left: 13px;
+            padding-left: 0px;
+            list-style-position: outside;
+            list-style-type: none;
+            text-indent: -5px;
+            margin-top: 5px;
+        }
+        .list li: before {
+            content: '\2022';
+            position: relative;
+            left: -5px;
+        }
+        .list ul {
+            margin-top: 0px;
+        }
+        .list ul li {
+            list-style-type: none;
+            margin-left: 15px;
+            text-indent: -7px;
+        }
+        .list ul li: before {
+            content: '\2013';
+            position: relative;
+            left: -7px;
+        }
+        .hintblock {
+            display: none;
+        }
+        .table {
+            empty-cells: show;
+            border: 0px none;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table tr {
+            border: 0px none;
+        }
+        .table tr td,
+        th {
+            border: 0px none;
+            vertical-align: top;
+        }
+        .table tr th {
+            background-color: #cccccc;
+        }
+        .table-border {
+            empty-cells: show;
+            border: 1px solid #000000;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table-border tr {
+            border: 1px solid #000000;
+        }
+        .table-border tr td,
+        th {
+            border: 1px solid #000000;
+            vertical-align: top;
+        }
+        .table-border tr th {
+            background-color: #cccccc;
+        }
+        .codeblock {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre;
+        }
+        li .codeblock {
+            text-indent: 0px;
+        }
+        .logoimage {
+            margin: 10px;
+        }
+        .printhere {
+            margin-top: 40px;
+        }
+        .slide {
+            border: none;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .slidetitle {
+            font-size: 14pt;
+            font-weight: bold;
+            text-align: center;
+            display: none;
+        }
+        .slidebody {
+            text-align: left;
+        }
+        .commandname {
+            font-weight: bold;
+        }
+        .syntaxarg {
+            font-style: italic;
+        }
+        .syntaxkeyword {
+            font-weight: bold;
+            font-style: italic;
+        }
+        .footline {
+            width: 98%;
+            margin-top: 30px;
+        }
+        .copyright {
+            font-size: 10pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .question {
+            margin-bottom: 20px;
+            border-bottom: solid 1px #000;
+        }
+        .question .title {
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .options {
+            border: none;
+        }
+        .option input[type=checkbox],
+        input.checkbox {
+            display: block;
+            float: left;
+        }
+        .option input[type=radio],
+        input.radio {
+            display: block;
+            float: left;
+        }
+        .option input[type=submit] {} 
+        .option label {
+            position: relative;
+            margin-left: 30px;
+            display: block;
+        }
+        .options .correct {
+            background-color: #0f0;
+        }
+        .options .incorrect {
+            background-color: #f00;
+        }
+        .feedback { 
+            border: 1px solid #000; 
+            padding: 5px;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            background-color: #eee;
+        }
+        .fbhidden {
+           display: none;
+        }
+
+      </style></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Configuration Tips</div><div class="parablock" xmlns=""><ul class="list"><li>On the Branch router, create a single statement standard IPv4 access list named NAT_Traffic. The NAT_Traffic access list should identify all inside local addresses—all addresses of all inside subnets. The address identification ACL statement should specify the range of addresses as close as possible (as narrow as possible).</li><li>Configure the Branch router interfaces for NAT. Make sure to configure all relevant interfaces.</li><li>Specify PAT as the translation mechanism. The traffic to be translated is identified in the NAT_Traffic access list. Public IPv4 address is assigned to the Branch router by the ISP.</li><li>Verify that all the inside devices have internet connectivity, by checking the connectivity to IPv4 test address 209.165.201.1.</li></ul></div><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>
+<hr>
+<hr>
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Answer Key</title><style type="text/css">
+
+        .title {
+            font-weight: bold;
+        }
+        body {
+            font-size: 12pt;
+        }
+        body > .title {
+            font-size: 20pt;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .procedure > .title {
+            font-size: 18pt;
+        }
+        .procedure > .stepgroup > .title {
+            font-size: 16pt;
+        }
+        .procedure > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup {
+            margin-top: 10px;
+        }
+        .procedure > .parablock {
+            margin-top: 10px;
+        }
+        .procedure > .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .step {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .step > .action > div: first-child {
+            margin-left: -20px;
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock {
+            margin-top: 10px;
+        }
+        .step > .response {
+            margin-top: 10px;
+        }
+        .step > .parablock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .step > .parablock > .titledblock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .step > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .substep {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .substep > .action > div: first-child {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-left: -20px;
+        }
+        .richtext {
+            margin-top: 10px;
+        }
+        .titledblock > .parablock {
+            margin-top: 10px;
+        }
+        .customnote {
+            margin: 10px 5px 10px 5px;
+            border: 1px solid black;
+        }
+        .notetitle {
+            font-weight: bold;
+            border-bottom: 1px solid black;
+            width: 100%;
+        }
+        .procedure {
+            margin-top: 10px;
+        }
+        .stepgroup > .title {
+            margin-left: -20px;
+        }
+        .stepgroup {
+            margin-left: 20px;
+        }
+        .procedure {
+            margin-left: 20px;
+        }
+        .procedure > .title {
+            margin-left: -20px;
+        }
+        .topic > .title {
+            font-size: 16pt;
+        }
+        .topic > .topic > .title {
+            font-size: 14pt;
+        }
+        .topic > .topic {
+            margin-top: 10px;
+        }
+        .parablock img {
+            margin-top: 20px;
+        }
+        .highlight {
+            background-color: #ffff00;
+        }
+        .double-underline {
+            border-bottom: 3px double;
+        }
+        .overline {
+            text-decoration: overline;
+        }
+        .inlineterm {
+        }
+        .inlinewindowname {
+        }        
+        .inlinemenuselection {
+          font-weight: bold;
+        }        
+        .inlinetypethis {
+          font-weight: bold;
+        }        
+        .inlinecode {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .subscript {
+            vertical-align: sub;
+            font-size: smaller;
+        }
+        .superscript {
+            vertical-align: super;
+            font-size: smaller;
+        }
+        .strikethrough {
+            text-decoration: line-through;
+        }
+        .titledblock {} .figure {
+            max-width: 100%;
+        }
+        .listpreamble {
+            margin-top: 20px;
+        }
+        .list {
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        .list li {
+            margin-left: 13px;
+            padding-left: 0px;
+            list-style-position: outside;
+            list-style-type: none;
+            text-indent: -5px;
+            margin-top: 5px;
+        }
+        .list li: before {
+            content: '\2022';
+            position: relative;
+            left: -5px;
+        }
+        .list ul {
+            margin-top: 0px;
+        }
+        .list ul li {
+            list-style-type: none;
+            margin-left: 15px;
+            text-indent: -7px;
+        }
+        .list ul li: before {
+            content: '\2013';
+            position: relative;
+            left: -7px;
+        }
+        .hintblock {
+            display: none;
+        }
+        .table {
+            empty-cells: show;
+            border: 0px none;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table tr {
+            border: 0px none;
+        }
+        .table tr td,
+        th {
+            border: 0px none;
+            vertical-align: top;
+        }
+        .table tr th {
+            background-color: #cccccc;
+        }
+        .table-border {
+            empty-cells: show;
+            border: 1px solid #000000;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table-border tr {
+            border: 1px solid #000000;
+        }
+        .table-border tr td,
+        th {
+            border: 1px solid #000000;
+            vertical-align: top;
+        }
+        .table-border tr th {
+            background-color: #cccccc;
+        }
+        .codeblock {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre;
+        }
+        li .codeblock {
+            text-indent: 0px;
+        }
+        .logoimage {
+            margin: 10px;
+        }
+        .printhere {
+            margin-top: 40px;
+        }
+        .slide {
+            border: none;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .slidetitle {
+            font-size: 14pt;
+            font-weight: bold;
+            text-align: center;
+            display: none;
+        }
+        .slidebody {
+            text-align: left;
+        }
+        .commandname {
+            font-weight: bold;
+        }
+        .syntaxarg {
+            font-style: italic;
+        }
+        .syntaxkeyword {
+            font-weight: bold;
+            font-style: italic;
+        }
+        .footline {
+            width: 98%;
+            margin-top: 30px;
+        }
+        .copyright {
+            font-size: 10pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .question {
+            margin-bottom: 20px;
+            border-bottom: solid 1px #000;
+        }
+        .question .title {
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .options {
+            border: none;
+        }
+        .option input[type=checkbox],
+        input.checkbox {
+            display: block;
+            float: left;
+        }
+        .option input[type=radio],
+        input.radio {
+            display: block;
+            float: left;
+        }
+        .option input[type=submit] {} 
+        .option label {
+            position: relative;
+            margin-left: 30px;
+            display: block;
+        }
+        .options .correct {
+            background-color: #0f0;
+        }
+        .options .incorrect {
+            background-color: #f00;
+        }
+        .feedback { 
+            border: 1px solid #000; 
+            padding: 5px;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            background-color: #eee;
+        }
+        .fbhidden {
+           display: none;
+        }
+
+      </style></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Answer Key</div><div class="parablock" xmlns=""><ul class="list"><li>On the Branch router, create a single statement standard IPv4 access list named <span class="italic">NAT_Traffic</span>. The NAT_Traffic access list should identify all inside local addresses—all addresses of all inside subnets. The address identification ACL statement should specify the range of addresses as close as possible (as narrow as possible).<div class="codeblock">Branch&gt; <span class="bold">enable</span>
+Branch# <span class="bold">configure terminal</span>
+Branch(config)# <span class="bold">ip access-list standard NAT_Traffic</span>
+Branch(config-std-nacl)# <span class="bold">permit 172.16.160.0 0.0.63.255</span>
+Branch(config)#</div><div class="richtext">HINT: You need to identify common bits for 172.16.130.0/24 and 172.16.160.0/24. You should display the first two octets in decimal value (172.16) and the third and fourth octets as binary 8-bit values:</div><div class="codeblock">172.16.130.0 =======&gt; <span class="highlight">172.16. 10</span>00 0010. 0000 00000
+172.16.160.0 =======&gt; <span class="highlight">172.16. 10</span>10 0000. 0000 00000</div><div class="richtext">Which mask represents both networks in a range? Assign 1’s to what is common and 0’s to what is different in the range. In this case 8 bits in first octet, 8 bits in second octet and 2 bits in third octet are common. So, the mask would be:</div><div class="codeblock"><span class="highlight">Mask</span> = 1111 1111. 1111 1111. 1100 0000. 0000 0000 = <span class="highlight">255.255.192.0</span></div><div class="richtext">What is the Wild card mask? REMEMBER: it is the opposite of Mask:</div><div class="codeblock"><span class="highlight">Wild Card Mask</span> = 0000 0000. 0000 0000. 0000 0000. 0011 1111. 1111 1111 = <span class="highlight">0.0.63.255</span></div><div class="richtext">Finally, when writing the ACL, you can use any network number that falls in the range. For example you could use:</div><div class="codeblock">Permit 172.16.128.0 0.0.63.255 or
+Permit 172.16.130.0 0.0.63.255 or
+<span class="highlight">Permit 172.16.160.0 0.0.63.255</span> or
+Permit 172.16.176.0 0.0.63.255</div><div class="richtext">The selected wild card implies: check the first 18 bits in the address and make sure that they are equal to 172.16.10xx xxxx. Xxxx xxxx; x’s mean “do not care about that value”.</div></li><li>Configure the Branch router interfaces for NAT. Make sure to configure all relevant interfaces. There will be a significant pause (3 to 5 minutes) in response to the first interface NAT command because the Branch router will have to initiate an internal NVI to support NAT.<div class="codeblock">Branch(config)# <span class="bold">interface ethernet 0/2</span>
+Branch(config-if)# <span class="bold">ip nat inside</span><span class="commandname"> </span>
+Branch(config)# <span class="bold">interface ethernet 0/0</span>
+Branch(config-if)# <span class="bold">ip nat inside</span>
+Branch(config)# <span class="bold">interface ethernet 0/1</span>
+Branch(config-if)# <span class="bold">ip nat outside</span> 
+Branch(config)# <span class="bold">exit</span></div></li><li>Specify PAT as the translation mechanism. The traffic to be translated is identified in the NAT_Traffic access list. Public IPv4 address is assigned to the Branch router by the ISP.<div class="codeblock">Branch(config)# <span class="bold">ip nat inside source list NAT_Traffic interface ethernet 0/1 overload</span>
+Branch(config)#</div></li><li>Verify that AdminPC and FileServer devices have internet connectivity, by checking the connectivity to IPv4 test address 209.165.201.1.<div class="codeblock">AdminPC&gt; <span class="bold">enable</span>
+AdminPC# <span class="bold">ping 209.165.201.1</span>  
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 209.165.201.1, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 1/1/2 ms
+AdminPC#
+</div><div class="codeblock">FileServer# <span class="bold">telnet 209.165.201.1</span>
+Trying 209.165.201.1 ... Open
+
+
+User Access Verification
+
+Username: <span class="bold">admin</span>
+Password: <span class="bold">Cisco123</span><span class="commandname"> </span>
+CA quick brown fox jumps over the lazy dog
+Internet&gt;<span class="bold">exit</span>
+
+[Connection to 209.165.201.1 closed by foreign host]
+FileServer#</div></li></ul></div><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>
+<hr>
+<hr>
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Questions</title><style type="text/css">
+
+        .title {
+            font-weight: bold;
+        }
+        body {
+            font-size: 12pt;
+        }
+        body > .title {
+            font-size: 20pt;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .procedure > .title {
+            font-size: 18pt;
+        }
+        .procedure > .stepgroup > .title {
+            font-size: 16pt;
+        }
+        .procedure > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup {
+            margin-top: 10px;
+        }
+        .procedure > .parablock {
+            margin-top: 10px;
+        }
+        .procedure > .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .step {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .step > .action > div: first-child {
+            margin-left: -20px;
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock {
+            margin-top: 10px;
+        }
+        .step > .response {
+            margin-top: 10px;
+        }
+        .step > .parablock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .step > .parablock > .titledblock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .step > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .substep {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .substep > .action > div: first-child {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-left: -20px;
+        }
+        .richtext {
+            margin-top: 10px;
+        }
+        .titledblock > .parablock {
+            margin-top: 10px;
+        }
+        .customnote {
+            margin: 10px 5px 10px 5px;
+            border: 1px solid black;
+        }
+        .notetitle {
+            font-weight: bold;
+            border-bottom: 1px solid black;
+            width: 100%;
+        }
+        .procedure {
+            margin-top: 10px;
+        }
+        .stepgroup > .title {
+            margin-left: -20px;
+        }
+        .stepgroup {
+            margin-left: 20px;
+        }
+        .procedure {
+            margin-left: 20px;
+        }
+        .procedure > .title {
+            margin-left: -20px;
+        }
+        .topic > .title {
+            font-size: 16pt;
+        }
+        .topic > .topic > .title {
+            font-size: 14pt;
+        }
+        .topic > .topic {
+            margin-top: 10px;
+        }
+        .parablock img {
+            margin-top: 20px;
+        }
+        .highlight {
+            background-color: #ffff00;
+        }
+        .double-underline {
+            border-bottom: 3px double;
+        }
+        .overline {
+            text-decoration: overline;
+        }
+        .inlineterm {
+        }
+        .inlinewindowname {
+        }        
+        .inlinemenuselection {
+          font-weight: bold;
+        }        
+        .inlinetypethis {
+          font-weight: bold;
+        }        
+        .inlinecode {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .subscript {
+            vertical-align: sub;
+            font-size: smaller;
+        }
+        .superscript {
+            vertical-align: super;
+            font-size: smaller;
+        }
+        .strikethrough {
+            text-decoration: line-through;
+        }
+        .titledblock {} .figure {
+            max-width: 100%;
+        }
+        .listpreamble {
+            margin-top: 20px;
+        }
+        .list {
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        .list li {
+            margin-left: 13px;
+            padding-left: 0px;
+            list-style-position: outside;
+            list-style-type: none;
+            text-indent: -5px;
+            margin-top: 5px;
+        }
+        .list li: before {
+            content: '\2022';
+            position: relative;
+            left: -5px;
+        }
+        .list ul {
+            margin-top: 0px;
+        }
+        .list ul li {
+            list-style-type: none;
+            margin-left: 15px;
+            text-indent: -7px;
+        }
+        .list ul li: before {
+            content: '\2013';
+            position: relative;
+            left: -7px;
+        }
+        .hintblock {
+            display: none;
+        }
+        .table {
+            empty-cells: show;
+            border: 0px none;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table tr {
+            border: 0px none;
+        }
+        .table tr td,
+        th {
+            border: 0px none;
+            vertical-align: top;
+        }
+        .table tr th {
+            background-color: #cccccc;
+        }
+        .table-border {
+            empty-cells: show;
+            border: 1px solid #000000;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table-border tr {
+            border: 1px solid #000000;
+        }
+        .table-border tr td,
+        th {
+            border: 1px solid #000000;
+            vertical-align: top;
+        }
+        .table-border tr th {
+            background-color: #cccccc;
+        }
+        .codeblock {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre;
+        }
+        li .codeblock {
+            text-indent: 0px;
+        }
+        .logoimage {
+            margin: 10px;
+        }
+        .printhere {
+            margin-top: 40px;
+        }
+        .slide {
+            border: none;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .slidetitle {
+            font-size: 14pt;
+            font-weight: bold;
+            text-align: center;
+            display: none;
+        }
+        .slidebody {
+            text-align: left;
+        }
+        .commandname {
+            font-weight: bold;
+        }
+        .syntaxarg {
+            font-style: italic;
+        }
+        .syntaxkeyword {
+            font-weight: bold;
+            font-style: italic;
+        }
+        .footline {
+            width: 98%;
+            margin-top: 30px;
+        }
+        .copyright {
+            font-size: 10pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .question {
+            margin-bottom: 20px;
+            border-bottom: solid 1px #000;
+        }
+        .question .title {
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .options {
+            border: none;
+        }
+        .option input[type=checkbox],
+        input.checkbox {
+            display: block;
+            float: left;
+        }
+        .option input[type=radio],
+        input.radio {
+            display: block;
+            float: left;
+        }
+        .option input[type=submit] {} 
+        .option label {
+            position: relative;
+            margin-left: 30px;
+            display: block;
+        }
+        .options .correct {
+            background-color: #0f0;
+        }
+        .options .incorrect {
+            background-color: #f00;
+        }
+        .feedback { 
+            border: 1px solid #000; 
+            padding: 5px;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            background-color: #eee;
+        }
+        .fbhidden {
+           display: none;
+        }
+
+      </style><script type="text/javascript" xmlns="">
+
+        function toggleClass(element, styleclass) {
+            var classes = element.className.split(" ");
+            var toggled = false;
+            for (var i = 0; i < classes.length; i++) {
+                if (classes[i] == styleclass) {
+                    classes.splice(i, 1);
+                    toggled = true;
+                }
+            }
+            if (!toggled)
+                classes.push(styleclass)
+            element.className = classes.join(" ");
+        }
+
+        function removeClass(element, styleclass) {
+            var classes = element.className.split(" ");
+            for (var i = 0; i < classes.length; i++) {
+                if (classes[i] == styleclass) {
+                    classes.splice(i, 1);
+                }
+            }
+            element.className = classes.join(" ");
+        }
+
+        function grade(questionId) {
+            var form = document.forms[questionId];
+            var answer = form["answer"].value.split(",");
+            var numAnswers = form["numAnswers"].value;
+            var numOptions = form["numOptions"].value;
+            var feedback = form.children[questionId + "-feedback"];
+
+            var correct = true;
+            removeClass(feedback, "fbhidden");
+            toggleClass(feedback, "fbhidden");
+            if (numAnswers <= 1) {
+                for (var i = 0; i < form["option"].length; i++) {
+                    var eleP = form["option"][i].parentNode;
+                    removeClass(eleP, "correct");
+                    removeClass(eleP, "incorrect");
+                }
+                for (var i = 0; i < form["option"].length; i++) {
+                    var ele = form["option"][i];
+                    var eleP = form["option"][i].parentNode;
+                    if (ele.checked && i == answer[0] - 1) {
+                        toggleClass(eleP, "correct");
+                    } else if (!ele.checked && i == answer[0] - 1) {
+                        toggleClass(eleP, "correct");
+                    } else if (ele.checked) {
+                        toggleClass(eleP, "incorrect");
+                        correct = false;
+                    }
+                }
+            } else {
+                for (var i = 0; i < numOptions; i++) {
+                    var eleP = form["option" + (i + 1)].parentNode;
+                    removeClass(eleP, "correct");
+                    removeClass(eleP, "incorrect");
+                }
+
+                for (var i = 0; i < numOptions; i++) {
+                    var ele = form["option" + (i + 1)];
+                    var eleP = ele.parentNode;
+
+                    // Is element i a correct answer?
+                    var needsCheck = (answer[i] == 1);
+                    if (ele.checked && needsCheck) {
+                        toggleClass(eleP, "correct");
+                    } else if (ele.checked && !needsCheck) {
+                        toggleClass(eleP, "incorrect");
+                        correct = false;
+                    } else if (!ele.checked && needsCheck) {
+                        toggleClass(eleP, "incorrect");
+                        correct = false;
+                    }
+                }
+            }
+            if (!correct)
+                removeClass(feedback, "fbhidden");
+        }
+
+      </script></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Questions</div><div class="question multiplechoice" xmlns=""><div class="title">
+        Question 1</div><form name="ID0ELMTS" id="ID0ELMTS"><input type="hidden" name="numAnswers" value="1"></input><input type="hidden" name="answer" value="4"></input><input type="hidden" name="numOptions" value="5"></input><div class="stem"><div class="richtext">Which NAT_Traffic ACL statement most narrowly identifies the traffic for which PAT is performed?</div></div><fieldset class="options"><div class="option"><input type="radio" name="option" value="1" id="ID0EQMTS" class="radio"></input><label for="ID0EQMTS"><div class="richtext">permit 172.16.130.0 0.0.0.255</div></label></div><div class="option"><input type="radio" name="option" value="2" id="ID0EUMTS" class="radio"></input><label for="ID0EUMTS"><div class="richtext">permit 172.16.128.0 0.0.255.255</div></label></div><div class="option"><input type="radio" name="option" value="3" id="ID0EYMTS" class="radio"></input><label for="ID0EYMTS"><div class="richtext">permit 172.16.128.0 0.0.0.255</div></label></div><div class="option"><input type="radio" name="option" value="4" id="ID0E3MTS" class="radio"></input><label for="ID0E3MTS"><div class="richtext">permit 172.16.128.0 0.0.63.255</div></label></div><div class="option"><input type="radio" name="option" value="5" id="ID0EANTS" class="radio"></input><label for="ID0EANTS"><div class="richtext">permit 172.16.130.0 0.0.255.255</div></label></div></fieldset><div class="feedback fbhidden" id="ID0ELMTS-feedback">The correct answer is &quot;172.16.128.0 0.0.63.255.&quot; While the wildcard mask of 0.0.255.255 would include all relevant local addresses, it includes wider range than necessary. There are four inside subnets in the lab: 172.16.130.0/24, 172.16.160.0/24, 172.16.176.0/24, and 172.16.168.0/24. The loopback interfaces of R1 and Branch belong to these subnets. All four inside subnets have first 18 bits common; therefore, the narrowest wildcard mask to correctly include all the subnets would be 0.0.63.255.</div><input type="submit" onClick="javascript:grade(&#39;ID0ELMTS&#39;); return false;" value="Grade"></input></form></div><div class="question multiplechoice" xmlns=""><div class="title">
+        Question 2</div><form name="ID0ERNTS" id="ID0ERNTS"><input type="hidden" name="numAnswers" value="1"></input><input type="hidden" name="answer" value="3"></input><input type="hidden" name="numOptions" value="4"></input><div class="stem"><div class="richtext">From the consoles of R1, AdminPC, and SW1, check connectivity to internet using ping. All tests should succeed. Then, as quickly as you can, check the active translations on the Branch router. Which IPv4 address was used for translations of SW1 traffic?</div></div><fieldset class="options"><div class="option"><input type="radio" name="option" value="1" id="ID0EWNTS" class="radio"></input><label for="ID0EWNTS"><div class="richtext">IPv4 address 209.165.201.1</div></label></div><div class="option"><input type="radio" name="option" value="2" id="ID0E1NTS" class="radio"></input><label for="ID0E1NTS"><div class="richtext">IPv4 address 209.165.200.225</div></label></div><div class="option"><input type="radio" name="option" value="3" id="ID0E5NTS" class="radio"></input><label for="ID0E5NTS"><div class="richtext">IPv4 address 209.165.200.226</div></label></div><div class="option"><input type="radio" name="option" value="4" id="ID0ECOTS" class="radio"></input><label for="ID0ECOTS"><div class="richtext">IPv4 address 209.165.200.10</div></label></div></fieldset><div class="feedback fbhidden" id="ID0ERNTS-feedback">The correct answer is &quot;IPv4 address 209.165.200.226.&quot; In the lab, you have implemented PAT and used the Branch outside interface address as the global address—by identifying interface Ethernet0/1 in the <span class="commandname">ip nat inside command</span>, you specified IPv4 public address 209.165.200.226 for all translations.</div><input type="submit" onClick="javascript:grade(&#39;ID0ERNTS&#39;); return false;" value="Grade"></input></form></div><div class="question multiplechoice" xmlns=""><div class="title">
+        Question 3</div><form name="ID0EWOTS" id="ID0EWOTS"><input type="hidden" name="numAnswers" value="1"></input><input type="hidden" name="answer" value="2"></input><input type="hidden" name="numOptions" value="4"></input><div class="stem"><div class="richtext">From the console of Fileserver, establish a Telnet connection to internet IPv4 address 209.165.201.1 using the username <span class="bold">admin</span> and password <span class="bold">Cisco123</span>. What is the message that you see when you log in.</div></div><fieldset class="options"><div class="option"><input type="radio" name="option" value="1" id="ID0EAPTS" class="radio"></input><label for="ID0EAPTS"><div class="richtext">Hello, World!</div></label></div><div class="option"><input type="radio" name="option" value="2" id="ID0EEPTS" class="radio"></input><label for="ID0EEPTS"><div class="richtext">CA quick brown fox jumps over the lazy dog</div></label></div><div class="option"><input type="radio" name="option" value="3" id="ID0EIPTS" class="radio"></input><label for="ID0EIPTS"><div class="richtext">% Connection refused by remote host</div></label></div><div class="option"><input type="radio" name="option" value="4" id="ID0EMPTS" class="radio"></input><label for="ID0EMPTS"><div class="richtext">Password required, but none set</div></label></div></fieldset><div class="feedback fbhidden" id="ID0EWOTS-feedback">The correct answer is &quot;A quick brown fox jumps over the lazy dog.&quot; If you have correctly configured NAT, the users from the inside network will see the configured banner message upon successful Telnet connection to internet.</div><input type="submit" onClick="javascript:grade(&#39;ID0EWOTS&#39;); return false;" value="Grade"></input></form></div><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>

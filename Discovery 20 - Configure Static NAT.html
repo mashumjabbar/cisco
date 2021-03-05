@@ -1,4 +1,4 @@
-<img src="Discovery6.png">
+<img src="Discovery20.png">
 <br>
 <html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Introduction</title><style type="text/css">
 
@@ -336,11 +336,11 @@
            display: none;
         }
 
-      </style></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Introduction</div><div class="parablock" xmlns=""><div class="richtext">During this activity, you will use Cisco Discovery Protocol and LLDP to map the connectivity within an unfamiliar network. There are four devices in the topology, and you have access to their console ports, but you do not know how they are connected. Using Cisco Discovery Protocol and LLDP commands, you will determine the actual topology.</div></div><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>
+      </style></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Introduction</div><div class="parablock" xmlns=""><div class="richtext">This activity will guide you through the aspects of connecting a small network to the internet. NAT is a very important concept for internet connectivity. The private IPv4 addresses that are used on most internal networks are not routable on the public internet. Because they are not routable, the private IPv4 addresses must be translated to assigned public IPv4 addresses at the border to the internet.</div><div class="richtext">The lab is prepared with the devices that are represented in the topology diagram. All devices have their basic configurations in place, including hostnames and IPv4 addresses. You will manually configure the R1 router with an outside IPv4 address and a default route. The IPv4 address is assigned by the ISP. Implementing NAT will be your job during this activity. You will implement a static IPv4 inside NAT translation for SRV1. Static NAT facilitates inbound connectivity.</div></div><hr class="footline"></hr><div class="copyright"></div></body></html>
 <hr>
 <hr>
 
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Job Aid</title><style type="text/css">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Job Aids</title><style type="text/css">
 
         .title {
             font-weight: bold;
@@ -676,7 +676,7 @@
            display: none;
         }
 
-      </style></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Job Aid</div><div class="parablock" xmlns=""><div class="richtext">There are no Job Aids for this lab exercise because the objective of the lab is to map the connectivity within an unfamiliar network.</div></div><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>
+      </style></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Job Aids</div><div class="titledblock" xmlns=""><div class="title">Device Information</div><div class="parablock"><div class="customnote"><div class="notetitle">Note</div><div class="richtext">In the virtual lab environment, all interfaces are Ethernet interfaces and not FastEthernet or GigabitEthernet interfaces, which you are likely to encounter in networks today. The personal computer (PC) and servers (SRVs) in the virtual lab environment are simulated by routers, so you should use Cisco IOS commands to configure them or verify the configuration.</div></div><table style="width: 100%;" class="table-border"><caption>Device Information Table</caption><thead><tr><th>Device</th><th>Characteristic<span class="bold"> </span></th><th>Value</th></tr></thead><tbody><tr><td>PC1</td><td>IPv4 address</td><td>10.10.1.10/24</td></tr><tr><td>PC1</td><td>Default gateway</td><td>10.10.1.1</td></tr><tr><td>SRV1</td><td>IPv4 address</td><td>10.10.2.20/24</td></tr><tr><td>SRV1</td><td>Default gateway</td><td>10.10.2.1</td></tr><tr><td>SRV1</td><td>Credentials</td><td>admin / Cisco123</td></tr><tr><td>SRV2</td><td>IPv4 address</td><td>203.0.113.30/24</td></tr><tr><td>SRV2</td><td>Default gateway</td><td>203.0.113.1</td></tr><tr><td>SW1</td><td>VLAN 1 IPv4 address</td><td>10.10.1.4/24</td></tr><tr><td>SW1</td><td>Default gateway</td><td>10.10.1.1</td></tr><tr><td>SW1</td><td>Ethernet0/0 description</td><td>Link to R1</td></tr><tr><td>SW1</td><td>Ethernet0/1 description</td><td>Link to PC1</td></tr><tr><td>SW2</td><td>VLAN 1 IPv4 address</td><td>10.10.2.4/24</td></tr><tr><td>SW2</td><td>Default gateway</td><td>10.10.2.1</td></tr><tr><td>SW2</td><td>Ethernet0/0 description</td><td>Link to R1</td></tr><tr><td>SW2</td><td>Ethernet0/1 description</td><td>Link to SRV1</td></tr><tr><td>SW3</td><td>VLAN 1 IPv4 address</td><td>203.0.113.4/24</td></tr><tr><td>SW3</td><td>Default gateway</td><td>203.0.113.1</td></tr><tr><td>SW3</td><td>Ethernet0/0 description</td><td>Link to R2</td></tr><tr><td>SW3</td><td>Ethernet0/1 description</td><td>Link to SRV2</td></tr><tr><td>R1</td><td>Ethernet0/0 description</td><td>Link to SW1</td></tr><tr><td>R1</td><td>Ethernet0/0 IPv4 address</td><td>10.10.1.1/24</td></tr><tr><td>R1</td><td>Ethernet0/1 description</td><td>Link to SW2</td></tr><tr><td>R1</td><td>Ethernet0/1 IPv4 address</td><td>10.10.2.1/24</td></tr><tr><td>R1</td><td>Ethernet0/3 description</td><td>Link to R2</td></tr><tr><td>R1</td><td>Ethernet0/3 IPv4 address</td><td>198.51.100.2/24</td></tr><tr><td>R2</td><td>Ethernet0/0 description</td><td>Link to SW3</td></tr><tr><td>R2</td><td>Ethernet0/0 IPv4 address</td><td>203.0.113.1/24</td></tr><tr><td>R2</td><td>Ethernet0/3 description</td><td>Link to R1</td></tr><tr><td>R2</td><td>Ethernet0/3 IPv4 address</td><td>198.51.100.1/24</td></tr></tbody></table><table style="width: 100%;" class="table-border"><caption>Global IPv4 Address Networks</caption><thead><tr><th>Address Block</th><th>Host Starting Address</th><th>Host Ending Address</th><th>Broadcast Address</th><th>Subnet Mask</th></tr></thead><tbody><tr><td>192.0.2.0/24</td><td>192.0.2.1</td><td>192.0.2.254</td><td>192.0.2.255</td><td>255.255.255.0</td></tr><tr><td>198.51.100.0/24</td><td>198.51.100.1</td><td>198.51.100.254</td><td>198.51.100.255</td><td>255.255.255.0</td></tr><tr><td>203.0.113.0/24</td><td>203.0.113.1</td><td>203.0.113.254</td><td>203.0.113.255</td><td>255.255.255.0</td></tr></tbody></table></div></div><hr class="footline"></hr><div class="copyright"></div></body></html>
 <hr>
 <hr>
 
@@ -1016,176 +1016,70 @@
            display: none;
         }
 
-      </style></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Discovery 6: Configure and Verify Layer 2 Discovery Protocols</div><div class="procedure" xmlns=""><div class="title">Task 1: Discover Neighbors Using Cisco Discovery Protocol</div><div class="stepgroup"><div class="title">Activity</div><div class="step"><div class="action"><div class="richtext"><strong>Step 1: </strong>Before accessing the console of switch SW1, wait 60 seconds for Cisco Discovery Protocol to populate its database. On SW1, use the <span class="commandname">show cdp neighbors</span> command to determine the devices to which SW1 is connected. Note that the Cisco Discovery Protocol table shows both the local port on SW1 and the port on the remote device to which SW1 is connected. </div></div><div class="response"><div class="richtext">On SW1, enter this command:</div><div class="codeblock">SW1# <span class="bold">show cdp neighbors</span>
-Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
-                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone,
-                  D - Remote, C - CVTA, M - Two-port Mac Relay
+      </style></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Discovery 20: Configure Static NAT</div><div class="procedure" xmlns=""><div class="title">Task 1: Configure Static NAT</div><div class="stepgroup"><div class="title">Activity</div><div class="step"><div class="action"><div class="richtext"><strong>Step 1: </strong>The R1 border router has been assigned a public IPv4 address by the ISP. On R1, set the IPv4 address of Ethernet0/3 to <span class="bold">198.51.100.2/24</span>.</div></div><div class="response"><div class="richtext">On R1, enter the following commands:</div><div class="codeblock">R1# <span class="bold">configure terminal</span>
+R1(config)# <span class="bold">interface Ethernet0/3</span>
+R1(config-if)# <span class="bold">ip address 198.51.100.2 255.255.255.0</span>
+R1(config-if)# <span class="bold">exit</span>
+R1(config)#</div></div></div><div class="step"><div class="action"><div class="richtext"><strong>Step 2: </strong>While still in the Global Configuration mode, use the <span class="commandname">do</span> command to execute the Privileged Exec mode <span class="commandname">show ip interface brief</span> command and verify the configuration of Ethernet0/3.</div></div><div class="response"><div class="richtext">On R1, enter the following command:</div><div class="codeblock">R1(config)# <span class="bold">do show ip interface brief</span>
+Interface                  IP-Address      OK? Method Status                Protocol
+Ethernet0/0                10.10.1.1       YES NVRAM  up                    up  
+Ethernet0/1                10.10.2.1       YES NVRAM  up                    up  
+Ethernet0/2                unassigned      YES NVRAM  administratively down down
+<span class="highlight">Ethernet0/3</span>                <span class="highlight">198.51.100.2</span>    YES <span class="highlight">manual</span> up                    up  
+Serial1/0                  unassigned      YES NVRAM  administratively down down
+Serial1/1                  unassigned      YES NVRAM  administratively down down
+Serial1/2                  unassigned      YES NVRAM  administratively down down
+Serial1/3                  unassigned      YES NVRAM  administratively down down</div><div class="customnote"><div class="notetitle">Note</div><div class="richtext">You can use the <span class="commandname">do</span> <span class="syntaxarg">EXEC-command </span>command to execute an EXEC-level command in any configuration mode (including configuration submodes).</div></div></div></div><div class="step"><div class="action"><div class="richtext"><strong>Step 3: </strong>Statically configure the IPv4 default route on R1, using the R2 interface as its next-hop IPv4 address.</div></div><div class="response"><div class="richtext">On R1, enter the following command:</div><div class="codeblock">R1(config)# <span class="bold">ip route 0.0.0.0 0.0.0.0 198.51.100.1</span></div></div></div><div class="step"><div class="action"><div class="richtext"><strong>Step 4: </strong>Remain in the configuration mode and verify that the default route is now in the routing table.</div></div><div class="response"><div class="richtext">On R1, enter the following command:</div><div class="codeblock">R1(config)# <span class="bold">do show ip route</span>
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       + - replicated route, % - next hop override
 
-<span class="highlight">Device ID</span>        <span class="highlight">Local Intrfce</span>     Holdtme    Capability  Platform  <span class="highlight">Port ID</span>
-<span class="highlight">SW2</span>              <span class="highlight">Eth 0/0</span>           153              S I   Linux Uni <span class="highlight">Eth 0/0</span></div><img class="figure" alt="" src="CCNA_1-0-0_DISCOVERY_Configuring_CDP_and_LLDP_002.png" style="max-width: 100%;"></img><div class="richtext">The Device ID column in the output indicates the remote device connected to SW1, which is switch SW2. The Local Intrfce column indicates the local port (Ethernet0/0) on SW1. The Port ID column indicates the remote port (Ethernet0/0) on SW2 used for connecting to SW1.</div></div></div><div class="step"><div class="action"><div class="richtext"><strong>Step 2: </strong>Execute the <span class="commandname">show cdp neighbors</span> command again, but this time, use the <span class="commandname">detail</span> keyword. What is the IPv4 address of SW2?</div></div><div class="response"><div class="richtext">On SW1, enter this command:</div><div class="codeblock">SW1# <span class="bold">show cdp neighbors detail</span>
--------------------------
-Device ID: SW2
-Entry address(es):
-  <span class="highlight">IP address: 10.10.1.3</span>
-Platform: Linux Unix,  Capabilities: Switch IGMP
-Interface: Ethernet0/0,  Port ID (outgoing port): Ethernet0/0
-Holdtime : 147 sec
+Gateway of last resort is 198.51.100.1 to network 0.0.0.0
 
-Version :
-Cisco IOS Software, Solaris Software (I86BI_LINUXL2-ADVENTERPRISEK9-M), Experimental Version 15.1(20130919:231344) [dstivers-sept19-2013pm-team_track 107]
-Copyright (c) 1986-2013 by Cisco Systems, Inc.
-Compiled Thu 19-Sep-13 22:38 by dstivers
+<span class="highlight">S*    0.0.0.0/0 [1/0] via 198.51.100.1</span>
+      10.0.0.0/8 is variably subnetted, 4 subnets, 2 masks
+C        10.10.1.0/24 is directly connected, Ethernet0/0
+L        10.10.1.1/32 is directly connected, Ethernet0/0
+C        10.10.2.0/24 is directly connected, Ethernet0/1
+L        10.10.2.1/32 is directly connected, Ethernet0/1
+      198.51.100.0/24 is variably subnetted, 2 subnets, 2 masks
+C        198.51.100.0/24 is directly connected, Ethernet0/3
+L        198.51.100.2/32 is directly connected, Ethernet0/3</div></div></div><div class="step"><div class="action"><div class="richtext"><strong>Step 5: </strong>While R1 does have access to the public IPv4 address space, systems within the private IPv4 address space of the topology do not verify this fact. Access the console of SRV1 and attempt to ping SRV2. This process should fail.</div></div><div class="response"><div class="richtext">On SRV1, enter the following command to test access to the public IPv4 address space:</div><div class="codeblock">SRV1(config)# <span class="bold">do ping 203.0.113.30</span>
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 203.0.113.30, timeout is 2 seconds:
+.....
+Success rate is 0 percent (0/5)</div><div class="richtext">For the <span class="commandname">ping</span> command to succeed, bidirectional connectivity must exist. In this case, the problem is not getting the ECHO requests from SRV1 to SRV2. Instead, the problem is a failure in getting the ECHO replies from SRV2 back to SRV1. Because NAT has not been configured, SRV2 is receiving IPv4 packets from the private IPv4 address of SRV1 (10.10.2.20). Routers on the internet are not aware of the private IPv4 address space within the networks that connect to the internet. When SRV2 generates an ECHO reply to 10.10.2.20 and sends that reply to R2 for forwarding, R2 does not have a route to use to forward the reply, so the reply is dropped.</div></div></div><div class="step"><div class="action"><div class="richtext"><strong>Step 6: </strong>SRV1 should be able to connect to the internet. Also, SRV1 should be accessible from the internet. Therefore, you will configure R1 to perform static inside IPv4 NAT for the SRV1 server. First, configure R1 interfaces for NAT. Ethernet0/1 is part of the inside network, and Ethernet0/3 is part of the outside networks. Return to the Global Configuration mode.</div><div class="customnote"><div class="notetitle">Note</div><div class="richtext">There will be a significant pause in response (3 to 5 minutes) to the first interface NAT command because R1 will have to initiate an internal NAT Virtual Interface (NVI) to support NAT. </div></div></div><div class="response"><div class="richtext">On R1, enter the following commands:</div><div class="codeblock">R1(config)# <span class="bold">interface Ethernet0/1</span>
+R1(config-if)# <span class="bold">ip nat inside</span>
+R1(config-if)# <span class="bold">interface Ethernet0/3</span>
+R1(config-if)# <span class="bold">ip nat outside</span>
+R1(config-if)# <span class="bold">exit
+</span>R1(config)#</div></div></div><div class="step"><div class="action"><div class="richtext"><strong>Step 7: </strong>Add a static NAT configuration entry that translates the SRV1 IPv4 address (10.10.2.20) to public IPv4 address 198.51.100.20, and then leave the configuration mode.</div></div><div class="response"><div class="richtext">On R1, enter the following command:</div><div class="codeblock">R1(config)# <span class="bold">ip nat inside source static 10.10.2.20 198.51.100.20</span>
+R1(config)# <span class="bold">end</span>
+R1#</div></div></div><div class="step"><div class="action"><div class="richtext"><strong>Step 8: </strong>Display the translation table on R1.</div></div><div class="response"><div class="richtext">On R1, enter the following command:</div><div class="codeblock">R1# <span class="bold">show ip nat translations</span>
+Pro <span class="highlight">Inside globa</span>l      <span class="highlight">Inside local</span>       <span class="highlight">Outside</span> local      <span class="highlight">Outside</span> global
+--- <span class="highlight">198.51.100.20</span>      <span class="highlight">10.10.2.20</span>         <span class="highlight">---</span>                <span class="highlight">---</span></div><div class="richtext">Static translations do not time out and remain in the translation table, regardless of whether they are used, for example, regardless of whether there is traffic to be translated. A static entry is persistent and will be present in the NAT translations table until it is manually removed.</div><div class="richtext">The entry that you see in the NAT translations table is called a simple entry. It is a persistent entry that is associated with the configured static translation. As you can see, only inside mapping addresses are shown, because you only configured inside IPv4 static NAT. Outside addresses are empty. In the continuation of this activity, this translation will be used for specific traffic.</div></div></div><div class="step"><div class="action"><div class="richtext"><strong>Step 9: </strong>Access the console of SRV1 and test connectivity to SRV2 using <span class="commandname">ping</span>.</div></div><div class="response"><div class="richtext">On SRV1, enter the following command:</div><div class="codeblock">SRV1# <span class="bold">ping 203.0.113.30</span>
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 203.0.113.30, timeout is 2 seconds:
+<span class="highlight">!!!!!
+Success rate is 100 percent (5/5)</span>, round-trip min/avg/max = 1/1/1 ms</div></div></div><div class="step"><div class="action"><div class="richtext"><strong>Step 10: </strong>Return to the console of R1 and display the translation table.</div></div><div class="response"><div class="richtext">On R1, enter the following command:</div><div class="codeblock">R1# <span class="bold">show ip nat translations</span>
+Pro Inside global      Inside local       Outside local      Outside global
+<span class="highlight">icmp 198.51.100.20:1   10.10.2.20:1       203.0.113.30:1     203.0.113.30:1</span>
+--- 198.51.100.20      10.10.2.20         ---                ---</div><div class="richtext">The NAT translation table now shows two entries. The first entry is an extended entry because it includes more details than a simple entry. The extended entry also includes the protocol indication, the port numbers or protocol identifiers, and outside addresses. The extended entry is created when NAT is performed to translate specific traffic.</div><div class="richtext">Note that ICMP messages are encapsulated into packets, so the numbers shown after the IPv4 address and the colon are not port numbers. Instead, the translation information includes ICMP-specific message identifiers. In the example, the ICMP identifier has the value 1.</div><div class="richtext">The second entry is a simple entry, which is a persistent entry associated with the configured static translation.</div></div></div><div class="step"><div class="action"><div class="richtext"><strong>Step 11: </strong>The most common use for static inside NAT translations is to provide a persistent IPv4 address that the systems in the public IPv4 address space can use to communicate with specific systems in the private IPv4 address space. Demonstrate this use. Access the console of SRV2 and establish a Telnet connection to SRV1. Make sure to use global SRV1 address. Use <span class="bold">admin</span> as username and <span class="bold">Cisco123</span> as password.</div></div><div class="response"><div class="richtext">On SRV2, enter the following command:</div><div class="codeblock">SRV2# <span class="bold">telnet 198.51.100.20</span>
+Trying 198.51.100.20 ... <span class="highlight">Open</span>
 
-advertisement version: 2
-VTP Management Domain: &#39;&#39;
-Duplex: half
-Management address(es):
-  IP address: 10.10.1.3</div><div class="richtext">The IPv4 address of SW2 switch is 10.10.1.3.</div><div class="customnote"><div class="notetitle">Note</div><div class="richtext">If you do not see all of the details of the SW2 neighbor (including its IPv4 address), wait a few minutes and try again.</div></div><img class="figure" alt="" src="CCNA_1-0-0_DISCOVERY_Configuring_CDP_and_LLDP_003.png" style="max-width: 100%;"></img></div></div><div class="step"><div class="action"><div class="richtext"><strong>Step 3: </strong>Continue the topology inspection from SW2. You know that SW1 is one of the neighbors of SW2. What are the other neighbors of SW2?</div></div><div class="response"><div class="richtext">On SW2, enter these commands:</div><div class="codeblock">SW2# <span class="bold">show cdp neighbors</span>
-Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
-                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone,
-                  D - Remote, C - CVTA, M - Two-port Mac Relay
 
-Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID
-SW1              Eth 0/0           130              S I   Linux Uni Eth 0/0
-R1               <span class="highlight">Eth 0/1</span>           153               R    Linux Uni <span class="highlight">Eth 0/0</span>
-SW2# <span class="bold">show cdp neighbors detail</span>
--------------------------
-Device ID: SW1
-Entry address(es):
-  <span class="highlight">IP address: 10.10.1.2</span>
-Platform: Linux Unix,  <span class="highlight">Capabilities:</span> <span class="highlight">Switch</span> IGMP
-Interface: Ethernet0/0,  Port ID (outgoing port): Ethernet0/0
-Holdtime : 124 sec
+User Access Verification
 
-Version :
-Cisco IOS Software, Solaris Software (I86BI_LINUXL2-ADVENTERPRISEK9-M), Experimental Version 15.1(20130919:231344) [dstivers-sept19-2013pm-team_track 107]
-Copyright (c) 1986-2013 by Cisco Systems, Inc.
-Compiled Thu 19-Sep-13 22:38 by dstivers
+Username: <span class="bold">admin</span>
+Password: <span class="bold">Cisco123</span>
+<span class="highlight">SRV1&gt;</span></div></div></div><div class="step"><div class="action"><div class="richtext"><strong>Step 12: </strong>With the Telnet connection running, return to the console of R1 and view the translation table.</div></div><div class="response"><div class="richtext">On R1, enter the following command:</div><div class="codeblock">R1# <span class="bold">show ip nat translations</span>
+<span class="highlight">tcp 198.51.100.20:23   10.10.2.20:23      203.0.113.30:52975 203.0.113.30:52975</span>
+--- 198.51.100.20      10.10.2.20         ---                ---</div><div class="richtext">There is the one simple entry that is associated with the configured static translation, and one extended entry, associated with the active Telnet session. The extended entry for the ICMP session has already timed out. In the extended entry, note the protocol indication <span class="italic">tcp</span> at the beginning of the entry and port number 23 alongside inside addresses.</div></div></div><div class="step"><div class="action"><div class="richtext"><strong>Step 13: </strong>Access the console of SRV2 and close the Telnet session to SRV1.</div></div><div class="response"><div class="richtext">On SRV2, enter the following command:</div><div class="codeblock">SRV1&gt; <span class="bold">exit</span>
 
-advertisement version: 2
-VTP Management Domain: &#39;&#39;
-Duplex: half
-Management address(es):
-  IP address: 10.10.1.2
-
--------------------------
-Device ID: R1
-Entry address(es):
-  <span class="highlight">IP address: 10.10.1.1</span>
-Platform: Linux Unix,  <span class="highlight">Capabilities:</span> <span class="highlight">Router</span>
-Interface: Ethernet0/1,  Port ID (outgoing port): Ethernet0/0
-Holdtime : 147 sec
-
-Version :
-Cisco IOS Software, Linux Software (I86BI_LINUX-ADVENTERPRISEK9-M), Version 15.2(4)M3, DEVELOPMENT TEST SOFTWARE
-Technical Support: http://www.cisco.com/techsupport
-Copyright (c) 1986-2013 by Cisco Systems, Inc.
-Compiled Tue 26-Feb-13 19:06 by prod_rel_team
-
-advertisement version: 2
-Duplex: half
-Management address(es):</div><div class="richtext">Based on the output, SW2 has two neighboring devices, SW1 and router R1. The IPv4 address of SW1 is 10.10.1.2, and the IPv4 address of R1 is 10.10.1.1.</div><img class="figure" alt="" src="CCNA_1-0-0_DISCOVERY_Configuring_CDP_and_LLDP_004.png" style="max-width: 100%;"></img></div></div><div class="step"><div class="action"><div class="richtext"><strong>Step 4: </strong>Continue the topology inspection from R1. What are the other neighbors of R1?</div></div><div class="response"><div class="richtext">On R1, enter these commands:</div><div class="codeblock">R1# <span class="bold">show cdp neighbors</span>
-Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
-                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone,
-                  D - Remote, C - CVTA, M - Two-port Mac Relay
-
-Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID
-SW2              Eth 0/0            164             S I   Linux Uni Eth 0/1
-R2               <span class="highlight">Eth 0/1</span>            173              R    Linux Uni <span class="highlight">Eth 0/0</span>
-
-R1# <span class="bold">show cdp neighbors detail</span>
--------------------------
-Device ID: SW2
-Entry address(es):
-  <span class="highlight">IP address: 10.10.1.3</span>
-Platform: Linux Unix,  Capabilities: Switch IGMP
-Interface: Ethernet0/0,  Port ID (outgoing port): Ethernet0/1
-Holdtime : 161 sec
-
-Version :
-Cisco IOS Software, Solaris Software (I86BI_LINUXL2-ADVENTERPRISEK9-M), Experimental Version 15.1(20130919:231344) [dstivers-sept19-2013pm-team_track 107]
-Copyright (c) 1986-2013 by Cisco Systems, Inc.
-Compiled Thu 19-Sep-13 22:38 by dstivers
-
-advertisement version: 2
-VTP Management Domain: &#39;&#39;
-Native VLAN: 1
-Duplex: half
-
--------------------------
-Device ID: R2
-Entry address(es):
-  <span class="highlight">IP address: 192.168.3.2</span>
-Platform: Linux Unix,  Capabilities: Router
-Interface: Ethernet0/1,  Port ID (outgoing port): Ethernet0/0
-Holdtime : 170 sec
-
-Version :
-Cisco IOS Software, Linux Software (I86BI_LINUX-ADVENTERPRISEK9-M), Version 15.2(4)M3, DEVELOPMENT TEST SOFTWARE
-Technical Support: http://www.cisco.com/techsupport
-Copyright (c) 1986-2013 by Cisco Systems, Inc.
-Compiled Tue 26-Feb-13 19:06 by prod_rel_team
-
-advertisement version: 2
-Duplex: half</div><div class="richtext">The output shows that R1 has connections to SW2 and router R2, connected to local interfaces Ethernet0/0 and Ethernet0/1, respectively. SW2 has 10.10.1.3 IPv4 address. The IPv4 address of R2 is 192.168.3.2.</div><img class="figure" alt="" src="CCNA_1-0-0_DISCOVERY_Configuring_CDP_and_LLDP_005.png" style="max-width: 100%;"></img></div></div><div class="step"><div class="action"><div class="richtext"><strong>Step 5: </strong>Continue the topology inspection from R2.</div></div><div class="response"><div class="richtext">On R2, enter these commands:</div><div class="codeblock">R2# <span class="bold">show cdp neighbors</span>
-Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
-                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone,
-                  D - Remote, C - CVTA, M - Two-port Mac Relay
-
-Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID
-R1               <span class="highlight">Eth 0/0</span>            176              R    Linux Uni <span class="highlight">Eth 0/1</span>
-R2# <span class="bold">show cdp neighbors detail</span>
--------------------------
-Device ID: R1
-Entry address(es):
-  <span class="highlight">IP address: 192.168.3.1</span>
-Platform: Linux Unix,  Capabilities: Router
-Interface: Ethernet0/0,  Port ID (outgoing port): Ethernet0/1
-Holdtime : 174 sec
-
-Version :
-Cisco IOS Software, Linux Software (I86BI_LINUX-ADVENTERPRISEK9-M), Version 15.2(4)M3, DEVELOPMENT TEST SOFTWARE
-Technical Support: http://www.cisco.com/techsupport
-Copyright (c) 1986-2013 by Cisco Systems, Inc.
-Compiled Tue 26-Feb-13 19:06 by prod_rel_team
-
-advertisement version: 2
-Duplex: half</div><div class="richtext">R2 has no additional neighbors, so the only neighboring device is R1. The 192.168.3.1 IPv4 address is used on R1 Ethernet0/1 interface.</div><img class="figure" alt="" src="CCNA_1-0-0_DISCOVERY_Configuring_CDP_and_LLDP_006.png" style="max-width: 100%;"></img></div></div></div></div><div class="procedure" xmlns=""><div class="title">Task 2: Discover Neighbors Using Link Layer Discovery Protocol</div><div class="stepgroup"><div class="title">Activity</div><div class="step"><div class="action"><div class="richtext"><strong>Step 1: </strong>Before configuring LLDP, disable Cisco Discovery Protocol on all devices (SW1, SW2, R1, and R2).</div></div><div class="response"><div class="richtext">On SW1, enter these commands:</div><div class="codeblock">SW1# <span class="bold">configure terminal
-</span>SW1(config)# <span class="bold">no cdp run</span></div><div class="richtext">On SW2, enter these commands:</div><div class="codeblock">SW2# <span class="bold">configure terminal
-</span>SW2(config)# <span class="bold">no cdp run</span></div><div class="richtext">On R1, enter these commands:</div><div class="codeblock">R1# <span class="bold">configure terminal
-</span>R1(config)# <span class="bold">no cdp run</span></div><div class="richtext">On R2, enter these commands:</div><div class="codeblock">R2# <span class="bold">configure terminal
-</span>R2(config)# <span class="bold">no cdp run</span></div></div></div><div class="step"><div class="action"><div class="richtext"><strong>Step 2: </strong>On the SW1, SW2, R1, and R2 globally enable LLDP and exit to the Privileged EXEC mode.</div></div><div class="response"><div class="richtext">On SW1, enter these commands:</div><div class="codeblock">SW1(config)# <span class="bold">lldp run
-</span>SW1(config)#<span class="bold"> exit</span></div><div class="richtext">On SW2, enter these commands:</div><div class="codeblock">SW2(config)# <span class="bold">lldp run
-</span>SW2(config)# <span class="bold">exit</span></div><div class="richtext">On R1, enter these commands:</div><div class="codeblock">R1(config)# <span class="bold">lldp run
-</span>R1(config)# <span class="bold">exit</span></div><div class="richtext">On R2, enter these commands:</div><div class="codeblock">R2(config)# <span class="bold">lldp run
-</span>R2(config)# <span class="bold">exit</span></div></div></div><div class="step"><div class="action"><div class="richtext"><strong>Step 3: </strong>On SW1, execute the <span class="commandname">show lldp neighbors</span> command.</div></div><div class="response"><div class="richtext">On SW1, enter this command:</div><div class="codeblock">SW1# <span class="bold">show lldp neighbor</span>
-SW1# show lldp neighbor
-Capability codes:
-    (R) Router, (B) Bridge, (T) Telephone, (C) DOCSIS Cable Device
-    (W) WLAN Access Point, (P) Repeater, (S) Station, (O) Other
-
-<span class="highlight">Device ID</span>           <span class="highlight">Local Intf</span>     Hold-time  Capability      <span class="highlight">Port ID</span>
-<span class="highlight">SW2</span>                 <span class="highlight">Et0/0</span>          120                        <span class="highlight">Et0/0 </span>       <span class="highlight">
-</span>
-Total entries displayed: 1</div><div class="richtext">Note that the LLDP table shows the name of the remote device, as well as both the local port on SW1 and the remote port on the remote device that are connected to each other. The output is very similar to the output produced by the Cisco Discovery Protocol. The Device ID column indicates the remote device connected to SW1, which is switch SW2. The Local Intf column indicates the local port (Ethernet0/0) used for connecting to the remote port (Ethernet0/0) on SW2 identified by the Port ID column.</div><div class="customnote"><div class="notetitle">Note</div><div class="richtext">In the virtual lab environment, when you run the LLDP on a switch, it can discover neighbor routers and switches. But LLDP enabled router will discover only neighbor routers.</div></div></div></div><div class="step"><div class="action"><div class="richtext"><strong>Step 4: </strong>Execute the <span class="commandname">show lldp neighbors</span> command again, but this time, use the <span class="commandname">detail</span> keyword. What is the IPv4 address of SW2?</div></div><div class="response"><div class="richtext">On SW1, enter this command:</div><div class="codeblock">SW1# <span class="bold">show lldp neighbors detail</span>
-------------------------------------------------
-Chassis id: aabb.cc00.3b00
-Port id: Et0/0
-Port Description: Ethernet0/0
-System Name: SW2
-
-System Description:
-Cisco IOS Software, Solaris Software (I86BI_LINUXL2-ADVENTERPRISEK9-M), Experimental Version 15.1(20130919:231344) [dstivers-sept19-2013pm-team_track 107]
-Copyright (c) 1986-2013 by Cisco Systems, Inc.
-Compiled Thu 19-Sep-13 22:38 by dstivers
-
-Time remaining: 108 seconds
-System Capabilities: B,R
-Enabled Capabilities - not advertised
-Management Addresses:
-    <span class="highlight">IP: 10.10.1.3</span>
-Auto Negotiation - not supported
-Physical media capabilities - not advertised
-Media Attachment Unit type - not advertised
-Vlan ID: - not advertised
-</div><div class="richtext">The output is similar to the output from the Cisco Discovery Protocol and the IPv4 address of SW2 switch is 10.10.1.3.</div></div><div class="parablock"><div class="richtext">The output of both <span class="commandname">show cdp neighbors</span> and <span class="commandname">show lldp neighbors</span> commands is very similar and provide the same information, with exception of the Platform column (provides information about the platform used on the remote device) which is only available in the output of the <span class="commandname">show cdp neighbors</span> command.</div></div></div><div class="parablock"><div class="richtext">It is recommended that you continue the topology inspection using LLDP on the other devices as well, to verify that you get the same results as you got from the previous Cisco Discovery Protocol inspection.</div></div></div></div><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>
+[Connection to 198.51.100.20 closed by foreign host]
+SRV2#</div></div></div></div></div><hr class="footline"></hr><div class="copyright"></div></body></html>
