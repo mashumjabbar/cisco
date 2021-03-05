@@ -1,0 +1,132 @@
+!
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+service password-encryption
+!
+hostname R1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+enable secret 4 9h/bNbZRK8Hm9J2ONmwUdf0KoztPJewuR2NseOBKzM6
+enable password 7 01230717481C091D251D1C5A59
+!
+no aaa new-model
+clock timezone PST -8 0
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!         
+!         
+!         
+!         
+          
+          
+!         
+!         
+!         
+!         
+no ip domain lookup
+ip domain name icnd.lab
+ip cef    
+no ipv6 cef
+!         
+multilink bundle-name authenticated
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+username admin secret 4 vwcGVdcUZcRMCyxaH2U9Y/PTujsnQWPSbt.LFG8lhTw
+!         
+redundancy
+!         
+!         
+ip ssh version 2
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+interface Loopback0
+ ip address 10.10.3.1 255.255.255.0
+!         
+interface Ethernet0/0
+ description Link to SW2
+ ip address 10.10.1.1 255.255.255.0
+!         
+interface Ethernet0/1
+ no ip address
+ shutdown 
+!         
+interface Ethernet0/2
+ no ip address
+ shutdown 
+!         
+interface Ethernet0/3
+ no ip address
+ shutdown 
+!         
+interface Serial1/0
+ no ip address
+ shutdown 
+ serial restart-delay 0
+!         
+interface Serial1/1
+ no ip address
+ shutdown 
+ serial restart-delay 0
+!         
+interface Serial1/2
+ no ip address
+ shutdown 
+ serial restart-delay 0
+!         
+interface Serial1/3
+ no ip address
+ shutdown 
+ serial restart-delay 0
+!         
+ip forward-protocol nd
+!         
+!         
+no ip http server
+no ip http secure-server
+!         
+!         
+!         
+!         
+control-plane
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+line con 0
+ exec-timeout 5 0
+ password 7 112A160B041D0709557878
+ logging synchronous
+ login    
+line aux 0
+line vty 0 4
+ password 7 1333232B3B0D1739
+ login local
+ transport input ssh
+!         
+!         
+end

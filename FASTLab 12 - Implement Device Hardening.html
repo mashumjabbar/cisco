@@ -1,0 +1,1838 @@
+<img src="FASTLab12.png">
+<br>
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Scenario</title><style type="text/css">
+
+        .title {
+            font-weight: bold;
+        }
+        body {
+            font-size: 12pt;
+        }
+        body > .title {
+            font-size: 20pt;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .procedure > .title {
+            font-size: 18pt;
+        }
+        .procedure > .stepgroup > .title {
+            font-size: 16pt;
+        }
+        .procedure > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup {
+            margin-top: 10px;
+        }
+        .procedure > .parablock {
+            margin-top: 10px;
+        }
+        .procedure > .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .step {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .step > .action > div: first-child {
+            margin-left: -20px;
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock {
+            margin-top: 10px;
+        }
+        .step > .response {
+            margin-top: 10px;
+        }
+        .step > .parablock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .step > .parablock > .titledblock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .step > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .substep {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .substep > .action > div: first-child {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-left: -20px;
+        }
+        .richtext {
+            margin-top: 10px;
+        }
+        .titledblock > .parablock {
+            margin-top: 10px;
+        }
+        .customnote {
+            margin: 10px 5px 10px 5px;
+            border: 1px solid black;
+        }
+        .notetitle {
+            font-weight: bold;
+            border-bottom: 1px solid black;
+            width: 100%;
+        }
+        .procedure {
+            margin-top: 10px;
+        }
+        .stepgroup > .title {
+            margin-left: -20px;
+        }
+        .stepgroup {
+            margin-left: 20px;
+        }
+        .procedure {
+            margin-left: 20px;
+        }
+        .procedure > .title {
+            margin-left: -20px;
+        }
+        .topic > .title {
+            font-size: 16pt;
+        }
+        .topic > .topic > .title {
+            font-size: 14pt;
+        }
+        .topic > .topic {
+            margin-top: 10px;
+        }
+        .parablock img {
+            margin-top: 20px;
+        }
+        .highlight {
+            background-color: #ffff00;
+        }
+        .double-underline {
+            border-bottom: 3px double;
+        }
+        .overline {
+            text-decoration: overline;
+        }
+        .inlineterm {
+        }
+        .inlinewindowname {
+        }        
+        .inlinemenuselection {
+          font-weight: bold;
+        }        
+        .inlinetypethis {
+          font-weight: bold;
+        }        
+        .inlinecode {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .subscript {
+            vertical-align: sub;
+            font-size: smaller;
+        }
+        .superscript {
+            vertical-align: super;
+            font-size: smaller;
+        }
+        .strikethrough {
+            text-decoration: line-through;
+        }
+        .titledblock {} .figure {
+            max-width: 100%;
+        }
+        .listpreamble {
+            margin-top: 20px;
+        }
+        .list {
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        .list li {
+            margin-left: 13px;
+            padding-left: 0px;
+            list-style-position: outside;
+            list-style-type: none;
+            text-indent: -5px;
+            margin-top: 5px;
+        }
+        .list li: before {
+            content: '\2022';
+            position: relative;
+            left: -5px;
+        }
+        .list ul {
+            margin-top: 0px;
+        }
+        .list ul li {
+            list-style-type: none;
+            margin-left: 15px;
+            text-indent: -7px;
+        }
+        .list ul li: before {
+            content: '\2013';
+            position: relative;
+            left: -7px;
+        }
+        .hintblock {
+            display: none;
+        }
+        .table {
+            empty-cells: show;
+            border: 0px none;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table tr {
+            border: 0px none;
+        }
+        .table tr td,
+        th {
+            border: 0px none;
+            vertical-align: top;
+        }
+        .table tr th {
+            background-color: #cccccc;
+        }
+        .table-border {
+            empty-cells: show;
+            border: 1px solid #000000;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table-border tr {
+            border: 1px solid #000000;
+        }
+        .table-border tr td,
+        th {
+            border: 1px solid #000000;
+            vertical-align: top;
+        }
+        .table-border tr th {
+            background-color: #cccccc;
+        }
+        .codeblock {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre;
+        }
+        li .codeblock {
+            text-indent: 0px;
+        }
+        .logoimage {
+            margin: 10px;
+        }
+        .printhere {
+            margin-top: 40px;
+        }
+        .slide {
+            border: none;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .slidetitle {
+            font-size: 14pt;
+            font-weight: bold;
+            text-align: center;
+            display: none;
+        }
+        .slidebody {
+            text-align: left;
+        }
+        .commandname {
+            font-weight: bold;
+        }
+        .syntaxarg {
+            font-style: italic;
+        }
+        .syntaxkeyword {
+            font-weight: bold;
+            font-style: italic;
+        }
+        .footline {
+            width: 98%;
+            margin-top: 30px;
+        }
+        .copyright {
+            font-size: 10pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .question {
+            margin-bottom: 20px;
+            border-bottom: solid 1px #000;
+        }
+        .question .title {
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .options {
+            border: none;
+        }
+        .option input[type=checkbox],
+        input.checkbox {
+            display: block;
+            float: left;
+        }
+        .option input[type=radio],
+        input.radio {
+            display: block;
+            float: left;
+        }
+        .option input[type=submit] {} 
+        .option label {
+            position: relative;
+            margin-left: 30px;
+            display: block;
+        }
+        .options .correct {
+            background-color: #0f0;
+        }
+        .options .incorrect {
+            background-color: #f00;
+        }
+        .feedback { 
+            border: 1px solid #000; 
+            padding: 5px;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            background-color: #eee;
+        }
+        .fbhidden {
+           display: none;
+        }
+
+      </style></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Scenario</div><div class="parablock" xmlns=""><div class="customnote"><div class="notetitle">Note</div><div class="richtext">Read the requirements in the Scenario carefully and use the Configuration Tips to help you do the required steps. If you need further assistance, refer to the Answer Key. Once you have completed the configuration specified, answer the questions.</div></div><div class="richtext">You have successfully added basic security to the network, however, you have now been tasked with applying additional security measures.</div><div class="listpreamble">Your mentor tells you that you will need to perform these tasks:</div><ul class="list"><li>Configure SW1 as follows:<ul class="list"><li>Disable all unused interfaces on the switch.</li><li>Create a VLAN 99 that is named &quot;VLAN99,&quot; and assign all unused ports to VLAN 99. Disable VLAN99.</li><li>Configure port security on SW1 on the port that is connected to the Inventory server to allow the MAC address of the inventory server only. If any other device is connected to this port, then the port must drop all the packets and increment the security-violation count.</li><li>Configure port security on SW1 on the port that is connected to PC1 to allow the MAC address of PC1 only. If any other device is connected to this port, then the port must drop all the packets, but it must not increment the security-violation count.</li><li>Configure port security on SW1, on the port that is connected to PC2 to allow the MAC address of PC2 only. If any other device is connected to this port, then the port must drop all the packets and place the port in an error-disabled state immediately.</li><li>Disable Cisco Discovery Protocol on ports that are currently connected to all the endpoints – PCs and servers.</li></ul></li><li>Configure the Border router as follows:<ul class="list"><li>Disable HTTP service on the router.</li></ul></li></ul><div class="customnote"><div class="notetitle">Note</div><div class="richtext">The Border router may take 3 to 5 minutes to boot up and become accessible.</div></div></div><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>
+<hr>
+<hr>
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Job Aids</title><style type="text/css">
+
+        .title {
+            font-weight: bold;
+        }
+        body {
+            font-size: 12pt;
+        }
+        body > .title {
+            font-size: 20pt;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .procedure > .title {
+            font-size: 18pt;
+        }
+        .procedure > .stepgroup > .title {
+            font-size: 16pt;
+        }
+        .procedure > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup {
+            margin-top: 10px;
+        }
+        .procedure > .parablock {
+            margin-top: 10px;
+        }
+        .procedure > .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .step {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .step > .action > div: first-child {
+            margin-left: -20px;
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock {
+            margin-top: 10px;
+        }
+        .step > .response {
+            margin-top: 10px;
+        }
+        .step > .parablock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .step > .parablock > .titledblock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .step > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .substep {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .substep > .action > div: first-child {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-left: -20px;
+        }
+        .richtext {
+            margin-top: 10px;
+        }
+        .titledblock > .parablock {
+            margin-top: 10px;
+        }
+        .customnote {
+            margin: 10px 5px 10px 5px;
+            border: 1px solid black;
+        }
+        .notetitle {
+            font-weight: bold;
+            border-bottom: 1px solid black;
+            width: 100%;
+        }
+        .procedure {
+            margin-top: 10px;
+        }
+        .stepgroup > .title {
+            margin-left: -20px;
+        }
+        .stepgroup {
+            margin-left: 20px;
+        }
+        .procedure {
+            margin-left: 20px;
+        }
+        .procedure > .title {
+            margin-left: -20px;
+        }
+        .topic > .title {
+            font-size: 16pt;
+        }
+        .topic > .topic > .title {
+            font-size: 14pt;
+        }
+        .topic > .topic {
+            margin-top: 10px;
+        }
+        .parablock img {
+            margin-top: 20px;
+        }
+        .highlight {
+            background-color: #ffff00;
+        }
+        .double-underline {
+            border-bottom: 3px double;
+        }
+        .overline {
+            text-decoration: overline;
+        }
+        .inlineterm {
+        }
+        .inlinewindowname {
+        }        
+        .inlinemenuselection {
+          font-weight: bold;
+        }        
+        .inlinetypethis {
+          font-weight: bold;
+        }        
+        .inlinecode {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .subscript {
+            vertical-align: sub;
+            font-size: smaller;
+        }
+        .superscript {
+            vertical-align: super;
+            font-size: smaller;
+        }
+        .strikethrough {
+            text-decoration: line-through;
+        }
+        .titledblock {} .figure {
+            max-width: 100%;
+        }
+        .listpreamble {
+            margin-top: 20px;
+        }
+        .list {
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        .list li {
+            margin-left: 13px;
+            padding-left: 0px;
+            list-style-position: outside;
+            list-style-type: none;
+            text-indent: -5px;
+            margin-top: 5px;
+        }
+        .list li: before {
+            content: '\2022';
+            position: relative;
+            left: -5px;
+        }
+        .list ul {
+            margin-top: 0px;
+        }
+        .list ul li {
+            list-style-type: none;
+            margin-left: 15px;
+            text-indent: -7px;
+        }
+        .list ul li: before {
+            content: '\2013';
+            position: relative;
+            left: -7px;
+        }
+        .hintblock {
+            display: none;
+        }
+        .table {
+            empty-cells: show;
+            border: 0px none;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table tr {
+            border: 0px none;
+        }
+        .table tr td,
+        th {
+            border: 0px none;
+            vertical-align: top;
+        }
+        .table tr th {
+            background-color: #cccccc;
+        }
+        .table-border {
+            empty-cells: show;
+            border: 1px solid #000000;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table-border tr {
+            border: 1px solid #000000;
+        }
+        .table-border tr td,
+        th {
+            border: 1px solid #000000;
+            vertical-align: top;
+        }
+        .table-border tr th {
+            background-color: #cccccc;
+        }
+        .codeblock {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre;
+        }
+        li .codeblock {
+            text-indent: 0px;
+        }
+        .logoimage {
+            margin: 10px;
+        }
+        .printhere {
+            margin-top: 40px;
+        }
+        .slide {
+            border: none;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .slidetitle {
+            font-size: 14pt;
+            font-weight: bold;
+            text-align: center;
+            display: none;
+        }
+        .slidebody {
+            text-align: left;
+        }
+        .commandname {
+            font-weight: bold;
+        }
+        .syntaxarg {
+            font-style: italic;
+        }
+        .syntaxkeyword {
+            font-weight: bold;
+            font-style: italic;
+        }
+        .footline {
+            width: 98%;
+            margin-top: 30px;
+        }
+        .copyright {
+            font-size: 10pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .question {
+            margin-bottom: 20px;
+            border-bottom: solid 1px #000;
+        }
+        .question .title {
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .options {
+            border: none;
+        }
+        .option input[type=checkbox],
+        input.checkbox {
+            display: block;
+            float: left;
+        }
+        .option input[type=radio],
+        input.radio {
+            display: block;
+            float: left;
+        }
+        .option input[type=submit] {} 
+        .option label {
+            position: relative;
+            margin-left: 30px;
+            display: block;
+        }
+        .options .correct {
+            background-color: #0f0;
+        }
+        .options .incorrect {
+            background-color: #f00;
+        }
+        .feedback { 
+            border: 1px solid #000; 
+            padding: 5px;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            background-color: #eee;
+        }
+        .fbhidden {
+           display: none;
+        }
+
+      </style></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Job Aids</div><div class="parablock" xmlns=""><div class="customnote"><div class="notetitle">Note</div><div class="richtext">If you shut down an interface on a real router or switch, the connected device will see it as &quot;down/down.&quot; Due to virtualization specifics, Cisco IOL (Cisco IOS Software on Linux) behavior is slightly different. If you shut down an interface on a router or switch, the connected device will see it as &quot;up/up.&quot; In Cisco IOL, the status of an interface can only be up/up or administratively down/down. Also, in the virtual lab environment, all interfaces are Ethernet interfaces and not FastEthernet or GigabitEthernet interfaces, which you are likely to encounter in networks today. </div></div></div><div class="titledblock" xmlns=""><div class="title">Device Information</div><div class="parablock"><table style="width: 100%;" class="table-border"><thead><tr><th>Device</th><th>Interface</th><th style="width: 18%;">IPv4 Address</th><th style="width: 14%;">Remote</th><th>Interface</th><th>IPv4 Address</th></tr></thead><tbody><tr><td>SW1</td><td>Ethernet0/0</td><td style="width: 18%;">VLAN 1</td><td style="width: 14%;">Border</td><td>Ethernet0/0</td><td>192.168.100.254/24</td></tr><tr><td>SW1</td><td>Ethernet0/1</td><td style="width: 18%;">VLAN 1</td><td style="width: 14%;">PC1</td><td>Ethernet0/0</td><td>192.168.100.5/24</td></tr><tr><td>SW1</td><td>Ethernet0/2</td><td style="width: 18%;">VLAN 1</td><td style="width: 14%;">PC2</td><td>Ethernet0/0</td><td>192.168.100.6/24</td></tr><tr><td>SW1</td><td>Ethernet0/3</td><td style="width: 18%;">VLAN 1</td><td style="width: 14%;">Inventory</td><td>Ethernet0/0</td><td>192.168.100.1/24</td></tr><tr><td>SW1</td><td>VLAN 1</td><td style="width: 18%;">192.168.100.10/24</td><td style="width: 14%;">_</td><td>_</td><td>_</td></tr><tr><td>Inventory</td><td>Ethernet0/0</td><td style="width: 18%;">192.168.100.1/24</td><td style="width: 14%;">SW1</td><td>Ethernet0/3</td><td>VLAN 1</td></tr><tr><td>Border</td><td>Ethernet0/0</td><td style="width: 18%;">192.168.100.254/24</td><td style="width: 14%;">SW1</td><td>Ethernet0/0</td><td>VLAN 1</td></tr></tbody></table></div></div><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>
+<hr>
+<hr>
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Configuration Tips</title><style type="text/css">
+
+        .title {
+            font-weight: bold;
+        }
+        body {
+            font-size: 12pt;
+        }
+        body > .title {
+            font-size: 20pt;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .procedure > .title {
+            font-size: 18pt;
+        }
+        .procedure > .stepgroup > .title {
+            font-size: 16pt;
+        }
+        .procedure > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup {
+            margin-top: 10px;
+        }
+        .procedure > .parablock {
+            margin-top: 10px;
+        }
+        .procedure > .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .step {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .step > .action > div: first-child {
+            margin-left: -20px;
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock {
+            margin-top: 10px;
+        }
+        .step > .response {
+            margin-top: 10px;
+        }
+        .step > .parablock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .step > .parablock > .titledblock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .step > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .substep {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .substep > .action > div: first-child {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-left: -20px;
+        }
+        .richtext {
+            margin-top: 10px;
+        }
+        .titledblock > .parablock {
+            margin-top: 10px;
+        }
+        .customnote {
+            margin: 10px 5px 10px 5px;
+            border: 1px solid black;
+        }
+        .notetitle {
+            font-weight: bold;
+            border-bottom: 1px solid black;
+            width: 100%;
+        }
+        .procedure {
+            margin-top: 10px;
+        }
+        .stepgroup > .title {
+            margin-left: -20px;
+        }
+        .stepgroup {
+            margin-left: 20px;
+        }
+        .procedure {
+            margin-left: 20px;
+        }
+        .procedure > .title {
+            margin-left: -20px;
+        }
+        .topic > .title {
+            font-size: 16pt;
+        }
+        .topic > .topic > .title {
+            font-size: 14pt;
+        }
+        .topic > .topic {
+            margin-top: 10px;
+        }
+        .parablock img {
+            margin-top: 20px;
+        }
+        .highlight {
+            background-color: #ffff00;
+        }
+        .double-underline {
+            border-bottom: 3px double;
+        }
+        .overline {
+            text-decoration: overline;
+        }
+        .inlineterm {
+        }
+        .inlinewindowname {
+        }        
+        .inlinemenuselection {
+          font-weight: bold;
+        }        
+        .inlinetypethis {
+          font-weight: bold;
+        }        
+        .inlinecode {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .subscript {
+            vertical-align: sub;
+            font-size: smaller;
+        }
+        .superscript {
+            vertical-align: super;
+            font-size: smaller;
+        }
+        .strikethrough {
+            text-decoration: line-through;
+        }
+        .titledblock {} .figure {
+            max-width: 100%;
+        }
+        .listpreamble {
+            margin-top: 20px;
+        }
+        .list {
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        .list li {
+            margin-left: 13px;
+            padding-left: 0px;
+            list-style-position: outside;
+            list-style-type: none;
+            text-indent: -5px;
+            margin-top: 5px;
+        }
+        .list li: before {
+            content: '\2022';
+            position: relative;
+            left: -5px;
+        }
+        .list ul {
+            margin-top: 0px;
+        }
+        .list ul li {
+            list-style-type: none;
+            margin-left: 15px;
+            text-indent: -7px;
+        }
+        .list ul li: before {
+            content: '\2013';
+            position: relative;
+            left: -7px;
+        }
+        .hintblock {
+            display: none;
+        }
+        .table {
+            empty-cells: show;
+            border: 0px none;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table tr {
+            border: 0px none;
+        }
+        .table tr td,
+        th {
+            border: 0px none;
+            vertical-align: top;
+        }
+        .table tr th {
+            background-color: #cccccc;
+        }
+        .table-border {
+            empty-cells: show;
+            border: 1px solid #000000;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table-border tr {
+            border: 1px solid #000000;
+        }
+        .table-border tr td,
+        th {
+            border: 1px solid #000000;
+            vertical-align: top;
+        }
+        .table-border tr th {
+            background-color: #cccccc;
+        }
+        .codeblock {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre;
+        }
+        li .codeblock {
+            text-indent: 0px;
+        }
+        .logoimage {
+            margin: 10px;
+        }
+        .printhere {
+            margin-top: 40px;
+        }
+        .slide {
+            border: none;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .slidetitle {
+            font-size: 14pt;
+            font-weight: bold;
+            text-align: center;
+            display: none;
+        }
+        .slidebody {
+            text-align: left;
+        }
+        .commandname {
+            font-weight: bold;
+        }
+        .syntaxarg {
+            font-style: italic;
+        }
+        .syntaxkeyword {
+            font-weight: bold;
+            font-style: italic;
+        }
+        .footline {
+            width: 98%;
+            margin-top: 30px;
+        }
+        .copyright {
+            font-size: 10pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .question {
+            margin-bottom: 20px;
+            border-bottom: solid 1px #000;
+        }
+        .question .title {
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .options {
+            border: none;
+        }
+        .option input[type=checkbox],
+        input.checkbox {
+            display: block;
+            float: left;
+        }
+        .option input[type=radio],
+        input.radio {
+            display: block;
+            float: left;
+        }
+        .option input[type=submit] {} 
+        .option label {
+            position: relative;
+            margin-left: 30px;
+            display: block;
+        }
+        .options .correct {
+            background-color: #0f0;
+        }
+        .options .incorrect {
+            background-color: #f00;
+        }
+        .feedback { 
+            border: 1px solid #000; 
+            padding: 5px;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            background-color: #eee;
+        }
+        .fbhidden {
+           display: none;
+        }
+
+      </style></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Configuration Tips</div><div class="parablock" xmlns=""><ul class="list"><li>To disable an interface on a switch, use the <span class="commandname">shutdown</span> command in the interface configuration mode. Alternatively, you can use the <span class="commandname">shutdown</span> command in the interface range mode to disable multiple interfaces with one command.<span class="inlinecode"> </span></li><li>To create a VLAN, use the <span class="commandname">vlan</span> <span class="syntaxarg">vlan number</span> command in the global configuration mode. You specify the VLAN name in the VLAN configuration mode, using the <span class="commandname">name</span> <span class="syntaxarg">vlan name</span> command. To disable the VLAN, use the <span class="commandname">shutdown</span> command in the VLAN configuration mode.</li><li>To configure static secure MAC address learning, first use the <span class="commandname">switchport port-securit</span>y command in the interface configuration mode, to enable port-security feature on the port, and then use the <span class="commandname">switchport port-security mac-address</span> <span class="syntaxarg">mac-address</span> to specify the secure MAC address.</li><li>To configure a port to drop all packets from unsecure MAC addresses, and to increment the security-violation count use the <span class="commandname">port-security violation restrict</span> command in the interface configuration mode. To configure a port to drop all packets from unsecure MAC addresses, but not to increment the security-violation count use the command <span class="commandname">port-security violation protect</span> in the interface configuration mode. To configure a port to drop all packets from unsecure MAC addresses, but not to increment the security-violation count, and disable the interface, use the<span class="inlinecode"> </span><span class="commandname">port-security violation shutdown</span><span class="inlinecode"> </span>command in the interface configuration mode. Shutdown is the default violation mode.</li><li>To disable CDP, use the <span class="commandname">no cdp enable</span> command in the interface range mode.</li></ul></div><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>
+<hr>
+<hr>
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Answer Key</title><style type="text/css">
+
+        .title {
+            font-weight: bold;
+        }
+        body {
+            font-size: 12pt;
+        }
+        body > .title {
+            font-size: 20pt;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .procedure > .title {
+            font-size: 18pt;
+        }
+        .procedure > .stepgroup > .title {
+            font-size: 16pt;
+        }
+        .procedure > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup {
+            margin-top: 10px;
+        }
+        .procedure > .parablock {
+            margin-top: 10px;
+        }
+        .procedure > .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .step {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .step > .action > div: first-child {
+            margin-left: -20px;
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock {
+            margin-top: 10px;
+        }
+        .step > .response {
+            margin-top: 10px;
+        }
+        .step > .parablock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .step > .parablock > .titledblock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .step > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .substep {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .substep > .action > div: first-child {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-left: -20px;
+        }
+        .richtext {
+            margin-top: 10px;
+        }
+        .titledblock > .parablock {
+            margin-top: 10px;
+        }
+        .customnote {
+            margin: 10px 5px 10px 5px;
+            border: 1px solid black;
+        }
+        .notetitle {
+            font-weight: bold;
+            border-bottom: 1px solid black;
+            width: 100%;
+        }
+        .procedure {
+            margin-top: 10px;
+        }
+        .stepgroup > .title {
+            margin-left: -20px;
+        }
+        .stepgroup {
+            margin-left: 20px;
+        }
+        .procedure {
+            margin-left: 20px;
+        }
+        .procedure > .title {
+            margin-left: -20px;
+        }
+        .topic > .title {
+            font-size: 16pt;
+        }
+        .topic > .topic > .title {
+            font-size: 14pt;
+        }
+        .topic > .topic {
+            margin-top: 10px;
+        }
+        .parablock img {
+            margin-top: 20px;
+        }
+        .highlight {
+            background-color: #ffff00;
+        }
+        .double-underline {
+            border-bottom: 3px double;
+        }
+        .overline {
+            text-decoration: overline;
+        }
+        .inlineterm {
+        }
+        .inlinewindowname {
+        }        
+        .inlinemenuselection {
+          font-weight: bold;
+        }        
+        .inlinetypethis {
+          font-weight: bold;
+        }        
+        .inlinecode {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .subscript {
+            vertical-align: sub;
+            font-size: smaller;
+        }
+        .superscript {
+            vertical-align: super;
+            font-size: smaller;
+        }
+        .strikethrough {
+            text-decoration: line-through;
+        }
+        .titledblock {} .figure {
+            max-width: 100%;
+        }
+        .listpreamble {
+            margin-top: 20px;
+        }
+        .list {
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        .list li {
+            margin-left: 13px;
+            padding-left: 0px;
+            list-style-position: outside;
+            list-style-type: none;
+            text-indent: -5px;
+            margin-top: 5px;
+        }
+        .list li: before {
+            content: '\2022';
+            position: relative;
+            left: -5px;
+        }
+        .list ul {
+            margin-top: 0px;
+        }
+        .list ul li {
+            list-style-type: none;
+            margin-left: 15px;
+            text-indent: -7px;
+        }
+        .list ul li: before {
+            content: '\2013';
+            position: relative;
+            left: -7px;
+        }
+        .hintblock {
+            display: none;
+        }
+        .table {
+            empty-cells: show;
+            border: 0px none;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table tr {
+            border: 0px none;
+        }
+        .table tr td,
+        th {
+            border: 0px none;
+            vertical-align: top;
+        }
+        .table tr th {
+            background-color: #cccccc;
+        }
+        .table-border {
+            empty-cells: show;
+            border: 1px solid #000000;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table-border tr {
+            border: 1px solid #000000;
+        }
+        .table-border tr td,
+        th {
+            border: 1px solid #000000;
+            vertical-align: top;
+        }
+        .table-border tr th {
+            background-color: #cccccc;
+        }
+        .codeblock {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre;
+        }
+        li .codeblock {
+            text-indent: 0px;
+        }
+        .logoimage {
+            margin: 10px;
+        }
+        .printhere {
+            margin-top: 40px;
+        }
+        .slide {
+            border: none;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .slidetitle {
+            font-size: 14pt;
+            font-weight: bold;
+            text-align: center;
+            display: none;
+        }
+        .slidebody {
+            text-align: left;
+        }
+        .commandname {
+            font-weight: bold;
+        }
+        .syntaxarg {
+            font-style: italic;
+        }
+        .syntaxkeyword {
+            font-weight: bold;
+            font-style: italic;
+        }
+        .footline {
+            width: 98%;
+            margin-top: 30px;
+        }
+        .copyright {
+            font-size: 10pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .question {
+            margin-bottom: 20px;
+            border-bottom: solid 1px #000;
+        }
+        .question .title {
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .options {
+            border: none;
+        }
+        .option input[type=checkbox],
+        input.checkbox {
+            display: block;
+            float: left;
+        }
+        .option input[type=radio],
+        input.radio {
+            display: block;
+            float: left;
+        }
+        .option input[type=submit] {} 
+        .option label {
+            position: relative;
+            margin-left: 30px;
+            display: block;
+        }
+        .options .correct {
+            background-color: #0f0;
+        }
+        .options .incorrect {
+            background-color: #f00;
+        }
+        .feedback { 
+            border: 1px solid #000; 
+            padding: 5px;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            background-color: #eee;
+        }
+        .fbhidden {
+           display: none;
+        }
+
+      </style></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Answer Key</div><div class="parablock" xmlns=""><ul class="list"><li>Configure SW1 as follows:<ul class="list"><li>Disable all unused interfaces on the switch.<div class="richtext">Execute <span class="commandname">show interface | include Ethernet</span> command to find out which interfaces exist on the switch.</div><div class="codeblock">SW1#<span class="bold">show interface | include Ethernet</span>
+Ethernet0/0 is up, line protocol is up (connected) 
+Ethernet0/1 is up, line protocol is up (connected) 
+Ethernet0/2 is up, line protocol is up (connected) 
+Ethernet0/3 is up, line protocol is up (connected) 
+<span class="highlight">Ethernet1/0 is up, line protocol is up (connected) 
+Ethernet1/1 is up, line protocol is up (connected) 
+Ethernet1/2 is up, line protocol is up (connected) 
+Ethernet1/3 is up, line protocol is up (connected)</span> 
+  Hardware is Ethernet SVI, address is aabb.cc81.1500 (bia aabb.cc81.1500)</div><div class="richtext">From the Job Aids you can see that Etherent0/0-3 are used. Ethernet1/0-3 are not used in our topology, so these are unused interfaces; disable them by executing following commands on SW1.</div><div class="codeblock">SW1#<span class="bold">configure terminal</span>
+Enter configuration commands, one per line.  End with CNTL/Z.
+SW1(config)#<span class="bold">interface range ethernet 1/0-3</span>
+SW1(config-if-range)#<span class="bold">shutdown</span></div></li><li>Create a VLAN 99 that is named &quot;VLAN99,&quot; and assign all unused ports to VLAN 99. Disable VLAN99.<div class="codeblock">SW1(config-if-range)#<span class="bold">exit</span>
+SW1(config)#<span class="bold">vlan 99</span>
+SW1(config-vlan)#<span class="bold">name VLAN99</span>
+
+SW1(config-vlan)#<span class="bold">shutdown</span>
+SW1(config-vlan)#<span class="bold">exit</span>
+SW1(config)# <span class="bold">interface</span> <span class="bold">range</span> <span class="bold">ethernet 1/0-3</span>
+SW1(config-if-range)#<span class="bold">switchport access vlan 99
+</span></div></li><li>Configure port security on SW1 on the port that is connected to the Inventory server to allow the MAC address of the inventory server only. If any other device is connected to this port, then the port must drop all the packets and increment the security-violation count.<div class="richtext">Execute the <span class="commandname">show mac address-table</span> command on SW1 to find out the MAC addresses of the connected devices. Note down the MAC addresses for endpoints for further configuration.</div><div class="codeblock">SW1#<span class="bold">show mac address-table </span>
+          Mac Address Table
+-------------------------------------------
+
+Vlan    Mac Address       Type        Ports
+----    -----------       --------    -----
+   <span class="highlight">1    aabb.cc01.1c00    DYNAMIC     Et0/1
+   1    aabb.cc01.1d00    DYNAMIC     Et0/2
+   1    aabb.cc01.1e00    DYNAMIC     Et0/3
+   1    aabb.cc01.1f00    DYNAMIC     Et0/0</span>
+Total Mac Addresses for this criterion: 4
+SW1#</div><div class="listpreamble">In this example output, MAC addresses of interest are as follows:</div><ul class="list"><li>Inventory server: aabb.cc01.1e00    </li><li>PC1: aabb.cc01.1c00    </li><li>PC2: aabb.cc01.1d00    </li></ul><div class="codeblock">SW1(config)#<span class="bold">interface ethernet 0/3</span>
+SW1(config-if)#<span class="bold">switchport mode access</span>
+SW1(config-if)#<span class="bold">switchport port-security mac-address aabb.cc01.1e00</span>
+SW1(config-if)#<span class="bold">switchport port-security maximum 1</span>
+SW1(config-if)#<span class="bold">switchport port-security violation restrict
+</span>
+SW1(config-if)#<span class="bold">switchport port-security</span></div></li><li>Configure port security on SW1 on the port that is connected to PC1 to allow the MAC address of PC1 only. If any other device is connected to this port, then the port must drop all the packets, but it must not increment the security-violation count.<div class="codeblock">SW1(config)#<span class="bold">interface ethernet 0/1</span>
+SW1(config-if)#<span class="bold">switchport mode access</span>
+SW1(config-if)#<span class="bold">switchport port-security mac-address aabb.cc01.1c00</span>
+SW1(config-if)#<span class="bold">switchport port-security maximum 1</span>
+SW1(config-if)#<span class="bold">switchport port-security violation protect</span>
+
+SW1(config-if)#<span class="bold">switchport port-security</span></div></li><li>Configure port security on SW1, on the port that is connected to PC2 to allow the MAC address of PC2 only. If any other device is connected to this port, then the port must drop all the packets and place the port in an error-disabled state immediately.<div class="codeblock">SW1(config)#<span class="bold">interface ethernet 0/2</span>
+SW1(config-if)#<span class="bold">switchport mode access</span>
+SW1(config-if)#<span class="bold">switchport port-security mac-address aabb.cc01.1d00</span>
+SW1(config-if)#<span class="bold">switchport port-security maximum 1</span>
+SW1(config-if)#<span class="bold">switchport port-security violation shutdown</span>
+SW1(config-if)#<span class="bold">switchport port-security</span></div></li><li>Disable Cisco Discovery Protocol on ports that are currently connected to all the endpoints – PCs and servers.<div class="codeblock">SW1(config)#<span class="bold">interface range ethernet 0/1-3</span>
+SW1(config-if-range)#<span class="bold">no cdp enable</span></div></li></ul></li><li>Configure the Border router as follows:<ul class="list"><li>Disable HTTP service on the router.<div class="codeblock"><span class="bold">Border&gt;</span>enable
+Border#<span class="bold">configure terminal</span>
+Enter configuration commands, one per line.  End with CNTL/Z.
+Border(config)#<span class="bold">no ip http server</span></div></li></ul></li></ul></div><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>
+<hr>
+<hr>
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Questions</title><style type="text/css">
+
+        .title {
+            font-weight: bold;
+        }
+        body {
+            font-size: 12pt;
+        }
+        body > .title {
+            font-size: 20pt;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .procedure > .title {
+            font-size: 18pt;
+        }
+        .procedure > .stepgroup > .title {
+            font-size: 16pt;
+        }
+        .procedure > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup {
+            margin-top: 10px;
+        }
+        .procedure > .parablock {
+            margin-top: 10px;
+        }
+        .procedure > .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .step {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .step > .action > div: first-child {
+            margin-left: -20px;
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock {
+            margin-top: 10px;
+        }
+        .step > .response {
+            margin-top: 10px;
+        }
+        .step > .parablock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .step > .parablock > .titledblock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .step > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .substep {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .substep > .action > div: first-child {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-left: -20px;
+        }
+        .richtext {
+            margin-top: 10px;
+        }
+        .titledblock > .parablock {
+            margin-top: 10px;
+        }
+        .customnote {
+            margin: 10px 5px 10px 5px;
+            border: 1px solid black;
+        }
+        .notetitle {
+            font-weight: bold;
+            border-bottom: 1px solid black;
+            width: 100%;
+        }
+        .procedure {
+            margin-top: 10px;
+        }
+        .stepgroup > .title {
+            margin-left: -20px;
+        }
+        .stepgroup {
+            margin-left: 20px;
+        }
+        .procedure {
+            margin-left: 20px;
+        }
+        .procedure > .title {
+            margin-left: -20px;
+        }
+        .topic > .title {
+            font-size: 16pt;
+        }
+        .topic > .topic > .title {
+            font-size: 14pt;
+        }
+        .topic > .topic {
+            margin-top: 10px;
+        }
+        .parablock img {
+            margin-top: 20px;
+        }
+        .highlight {
+            background-color: #ffff00;
+        }
+        .double-underline {
+            border-bottom: 3px double;
+        }
+        .overline {
+            text-decoration: overline;
+        }
+        .inlineterm {
+        }
+        .inlinewindowname {
+        }        
+        .inlinemenuselection {
+          font-weight: bold;
+        }        
+        .inlinetypethis {
+          font-weight: bold;
+        }        
+        .inlinecode {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .subscript {
+            vertical-align: sub;
+            font-size: smaller;
+        }
+        .superscript {
+            vertical-align: super;
+            font-size: smaller;
+        }
+        .strikethrough {
+            text-decoration: line-through;
+        }
+        .titledblock {} .figure {
+            max-width: 100%;
+        }
+        .listpreamble {
+            margin-top: 20px;
+        }
+        .list {
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        .list li {
+            margin-left: 13px;
+            padding-left: 0px;
+            list-style-position: outside;
+            list-style-type: none;
+            text-indent: -5px;
+            margin-top: 5px;
+        }
+        .list li: before {
+            content: '\2022';
+            position: relative;
+            left: -5px;
+        }
+        .list ul {
+            margin-top: 0px;
+        }
+        .list ul li {
+            list-style-type: none;
+            margin-left: 15px;
+            text-indent: -7px;
+        }
+        .list ul li: before {
+            content: '\2013';
+            position: relative;
+            left: -7px;
+        }
+        .hintblock {
+            display: none;
+        }
+        .table {
+            empty-cells: show;
+            border: 0px none;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table tr {
+            border: 0px none;
+        }
+        .table tr td,
+        th {
+            border: 0px none;
+            vertical-align: top;
+        }
+        .table tr th {
+            background-color: #cccccc;
+        }
+        .table-border {
+            empty-cells: show;
+            border: 1px solid #000000;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table-border tr {
+            border: 1px solid #000000;
+        }
+        .table-border tr td,
+        th {
+            border: 1px solid #000000;
+            vertical-align: top;
+        }
+        .table-border tr th {
+            background-color: #cccccc;
+        }
+        .codeblock {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre;
+        }
+        li .codeblock {
+            text-indent: 0px;
+        }
+        .logoimage {
+            margin: 10px;
+        }
+        .printhere {
+            margin-top: 40px;
+        }
+        .slide {
+            border: none;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .slidetitle {
+            font-size: 14pt;
+            font-weight: bold;
+            text-align: center;
+            display: none;
+        }
+        .slidebody {
+            text-align: left;
+        }
+        .commandname {
+            font-weight: bold;
+        }
+        .syntaxarg {
+            font-style: italic;
+        }
+        .syntaxkeyword {
+            font-weight: bold;
+            font-style: italic;
+        }
+        .footline {
+            width: 98%;
+            margin-top: 30px;
+        }
+        .copyright {
+            font-size: 10pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .question {
+            margin-bottom: 20px;
+            border-bottom: solid 1px #000;
+        }
+        .question .title {
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .options {
+            border: none;
+        }
+        .option input[type=checkbox],
+        input.checkbox {
+            display: block;
+            float: left;
+        }
+        .option input[type=radio],
+        input.radio {
+            display: block;
+            float: left;
+        }
+        .option input[type=submit] {} 
+        .option label {
+            position: relative;
+            margin-left: 30px;
+            display: block;
+        }
+        .options .correct {
+            background-color: #0f0;
+        }
+        .options .incorrect {
+            background-color: #f00;
+        }
+        .feedback { 
+            border: 1px solid #000; 
+            padding: 5px;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            background-color: #eee;
+        }
+        .fbhidden {
+           display: none;
+        }
+
+      </style><script type="text/javascript" xmlns="">
+
+        function toggleClass(element, styleclass) {
+            var classes = element.className.split(" ");
+            var toggled = false;
+            for (var i = 0; i < classes.length; i++) {
+                if (classes[i] == styleclass) {
+                    classes.splice(i, 1);
+                    toggled = true;
+                }
+            }
+            if (!toggled)
+                classes.push(styleclass)
+            element.className = classes.join(" ");
+        }
+
+        function removeClass(element, styleclass) {
+            var classes = element.className.split(" ");
+            for (var i = 0; i < classes.length; i++) {
+                if (classes[i] == styleclass) {
+                    classes.splice(i, 1);
+                }
+            }
+            element.className = classes.join(" ");
+        }
+
+        function grade(questionId) {
+            var form = document.forms[questionId];
+            var answer = form["answer"].value.split(",");
+            var numAnswers = form["numAnswers"].value;
+            var numOptions = form["numOptions"].value;
+            var feedback = form.children[questionId + "-feedback"];
+
+            var correct = true;
+            removeClass(feedback, "fbhidden");
+            toggleClass(feedback, "fbhidden");
+            if (numAnswers <= 1) {
+                for (var i = 0; i < form["option"].length; i++) {
+                    var eleP = form["option"][i].parentNode;
+                    removeClass(eleP, "correct");
+                    removeClass(eleP, "incorrect");
+                }
+                for (var i = 0; i < form["option"].length; i++) {
+                    var ele = form["option"][i];
+                    var eleP = form["option"][i].parentNode;
+                    if (ele.checked && i == answer[0] - 1) {
+                        toggleClass(eleP, "correct");
+                    } else if (!ele.checked && i == answer[0] - 1) {
+                        toggleClass(eleP, "correct");
+                    } else if (ele.checked) {
+                        toggleClass(eleP, "incorrect");
+                        correct = false;
+                    }
+                }
+            } else {
+                for (var i = 0; i < numOptions; i++) {
+                    var eleP = form["option" + (i + 1)].parentNode;
+                    removeClass(eleP, "correct");
+                    removeClass(eleP, "incorrect");
+                }
+
+                for (var i = 0; i < numOptions; i++) {
+                    var ele = form["option" + (i + 1)];
+                    var eleP = ele.parentNode;
+
+                    // Is element i a correct answer?
+                    var needsCheck = (answer[i] == 1);
+                    if (ele.checked && needsCheck) {
+                        toggleClass(eleP, "correct");
+                    } else if (ele.checked && !needsCheck) {
+                        toggleClass(eleP, "incorrect");
+                        correct = false;
+                    } else if (!ele.checked && needsCheck) {
+                        toggleClass(eleP, "incorrect");
+                        correct = false;
+                    }
+                }
+            }
+            if (!correct)
+                removeClass(feedback, "fbhidden");
+        }
+
+      </script></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Questions</div><div class="question multiplechoice" xmlns=""><div class="title">
+        Question 1</div><form name="ID0ECPUU" id="ID0ECPUU"><input type="hidden" name="numAnswers" value="1"></input><input type="hidden" name="answer" value="6"></input><input type="hidden" name="numOptions" value="6"></input><div class="stem"><div class="richtext">When configuring port security on SW1, which port or ports do not require you to change the default violation mode setting?</div></div><fieldset class="options"><div class="option"><input type="radio" name="option" value="1" id="ID0EHPUU" class="radio"></input><label for="ID0EHPUU"><div class="richtext">Ethernet0/0 and Ethernet 0/3</div></label></div><div class="option"><input type="radio" name="option" value="2" id="ID0ELPUU" class="radio"></input><label for="ID0ELPUU"><div class="richtext">Ethernet0/0 and Ethernet 0/2</div></label></div><div class="option"><input type="radio" name="option" value="3" id="ID0EPPUU" class="radio"></input><label for="ID0EPPUU"><div class="richtext">Ethernet 0/1</div></label></div><div class="option"><input type="radio" name="option" value="4" id="ID0ETPUU" class="radio"></input><label for="ID0ETPUU"><div class="richtext">Ethernet0/0, Ethernet0/1, and Ethernet0/3</div></label></div><div class="option"><input type="radio" name="option" value="5" id="ID0EXPUU" class="radio"></input><label for="ID0EXPUU"><div class="richtext">Ethernet0/1 and Ethernet 0/2</div></label></div><div class="option"><input type="radio" name="option" value="6" id="ID0E2PUU" class="radio"></input><label for="ID0E2PUU"><div class="richtext">Ethernet 0/2</div></label></div></fieldset><div class="feedback fbhidden" id="ID0ECPUU-feedback">The correct answer is &quot;Ethernet 0/2.&quot; The default violation mode is shutdown. When a port is in the shutdown mode it drops all the packets, shuts down the interface, and places the interface in the err-disable state. This behavior was required for the port connecting to PC2, which is the Ethernet 0/2 port. All other violation modes, such as protect and restrict, need to be explicitly configured.</div><input type="submit" onClick="javascript:grade(&#39;ID0ECPUU&#39;); return false;" value="Grade"></input></form></div><div class="question multiplechoice" xmlns=""><div class="title">
+        Question 2</div><form name="ID0EMQUU" id="ID0EMQUU"><input type="hidden" name="numAnswers" value="1"></input><input type="hidden" name="answer" value="3"></input><input type="hidden" name="numOptions" value="4"></input><div class="stem"><div class="richtext">What is the expected output when you issue the <span class="commandname">show cdp neighbors</span> command on SW1?</div></div><fieldset class="options"><div class="option"><input type="radio" name="option" value="1" id="ID0EUQUU" class="radio"></input><label for="ID0EUQUU"><div class="richtext"><span class="inlinecode">Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID<br></br>PC2              Eth 0/2           104                    Linux Uni Eth 0/0<br></br>PC1              Eth 0/1           156                    Linux Uni Eth 0/0<br></br>Border           Eth 0/0           161               R    Linux Uni Eth 0/0</span></div></label></div><div class="option"><input type="radio" name="option" value="2" id="ID0EZQUU" class="radio"></input><label for="ID0EZQUU"><div class="richtext"><span class="inlinecode">Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID<br></br>Inventory        Eth 0/3           154                    Linux Uni Eth 0/0<br></br>PC2              Eth 0/2           104                    Linux Uni Eth 0/0<br></br>PC1              Eth 0/1           156                    Linux Uni Eth 0/0</span></div></label></div><div class="option"><input type="radio" name="option" value="3" id="ID0E5QUU" class="radio"></input><label for="ID0E5QUU"><div class="richtext"><span class="inlinecode">Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID<br></br>Border           Eth 0/0           161               R    Linux Uni Eth 0/0</span></div></label></div><div class="option"><input type="radio" name="option" value="4" id="ID0EDRUU" class="radio"></input><label for="ID0EDRUU"><div class="richtext"><span class="inlinecode">Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID<br></br>PC2              Eth 0/2           104                    Linux Uni Eth 0/0<br></br>PC1              Eth 0/1           156                    Linux Uni Eth 0/0</span></div></label></div></fieldset><div class="feedback fbhidden" id="ID0EMQUU-feedback">The correct answer is<br></br>&quot;<span class="inlinecode">Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID<br></br>Border           Eth 0/0           161               R    Linux Uni Eth 0/0</span>.&quot;<br></br>It is the best practice to disable Cisco Discovery Protocol on ports that are facing end devices. In this case, PC1, PC2, and Inventory server are end devices. Therefore, only the Border router is listed in the output when you issue the <span class="commandname">show cdp neighbords</span> command. Also, to disable the Cisco Discovery Protocol on an interface, you can use the <span class="commandname">no cdp enable</span> command.</div><input type="submit" onClick="javascript:grade(&#39;ID0EMQUU&#39;); return false;" value="Grade"></input></form></div><div class="question multiplechoice" xmlns=""><div class="title">
+        Question 3</div><form name="ID0E3RUU" id="ID0E3RUU"><input type="hidden" name="numAnswers" value="1"></input><input type="hidden" name="answer" value="4"></input><input type="hidden" name="numOptions" value="4"></input><div class="stem"><div class="richtext">Assume that you want to configure port security. You want to drop all the packets from insecure hosts and increment the security-violation count each time a violation occurs. Which port security violation mode would you use?</div></div><fieldset class="options"><div class="option"><input type="radio" name="option" value="1" id="ID0EBSUU" class="radio"></input><label for="ID0EBSUU"><div class="richtext"><span class="commandname">default</span></div></label></div><div class="option"><input type="radio" name="option" value="2" id="ID0EGSUU" class="radio"></input><label for="ID0EGSUU"><div class="richtext"><span class="commandname">protect</span></div></label></div><div class="option"><input type="radio" name="option" value="3" id="ID0ELSUU" class="radio"></input><label for="ID0ELSUU"><div class="richtext"><span class="commandname">shutdown</span></div></label></div><div class="option"><input type="radio" name="option" value="4" id="ID0EQSUU" class="radio"></input><label for="ID0EQSUU"><div class="richtext"><span class="commandname">restrict</span></div></label></div></fieldset><div class="feedback fbhidden" id="ID0E3RUU-feedback">The correct answer is &quot;<span class="commandname">restrict</span>.&quot; The default violation mode is <span class="commandname">shutdown</span>. When a port is in the shutdown mode it drops all the packets, shuts down the interface, and places the interface in the err-disable state. The protect violation mode drops all the packets from the insecure hosts at the port-security process level, but does not increment the security-violation count. Lastly, the restrict violation mode drops all the packets from the insecure hosts at the port-security process level and increments the security-violation count.</div><input type="submit" onClick="javascript:grade(&#39;ID0E3RUU&#39;); return false;" value="Grade"></input></form></div><div class="question multiplechoice" xmlns=""><div class="title">
+        Question 4</div><form name="ID0EHTUU" id="ID0EHTUU"><input type="hidden" name="numAnswers" value="1"></input><input type="hidden" name="answer" value="1"></input><input type="hidden" name="numOptions" value="4"></input><div class="stem"><div class="richtext">What is the expected output when you issue the <span class="commandname">show vlan id 99</span> command on SW1?</div></div><fieldset class="options"><div class="option"><input type="radio" name="option" value="1" id="ID0EPTUU" class="radio"></input><label for="ID0EPTUU"><div class="richtext"><span class="inlinecode">VLAN Name                             Status    Ports<br></br>---- -------------------------------- --------- -------------------------------<br></br>99   VLAN99                           act/lshut  Et1/0, Et1/1, Et1/2, Et1/3<br></br>&lt;... output omitted ...&gt;</span></div></label></div><div class="option"><input type="radio" name="option" value="2" id="ID0EUTUU" class="radio"></input><label for="ID0EUTUU"><div class="richtext"><span class="inlinecode">VLAN Name                             Status    Ports<br></br>---- -------------------------------- --------- -------------------------------<br></br>99   VLAN0099                         act/lshut Et1/0, Et1/1, Et1/2, Et1/3<br></br>&lt;... output omitted ...&gt;</span></div></label></div><div class="option"><input type="radio" name="option" value="3" id="ID0EZTUU" class="radio"></input><label for="ID0EZTUU"><div class="richtext"><span class="inlinecode">VLAN Name                             Status    Ports<br></br>---- -------------------------------- --------- -------------------------------<br></br>99   VLAN99                           act/lshut  Et0/0, Et0/1, Et0/2, Et0/3<br></br>&lt;... output omitted ...&gt;</span></div></label></div><div class="option"><input type="radio" name="option" value="4" id="ID0E5TUU" class="radio"></input><label for="ID0E5TUU"><div class="richtext"><span class="inlinecode">VLAN Name                             Status    Ports<br></br>---- -------------------------------- --------- -------------------------------<br></br>99   VLAN0099                         act/lshut  Et0/0, Et0/1, Et0/2, Et0/3<br></br>&lt;... output omitted ...&gt;</span></div></label></div></fieldset><div class="feedback fbhidden" id="ID0EHTUU-feedback">The correct answer is<br></br>&quot;<span class="inlinecode">VLAN Name                             Status    Ports<br></br>---- -------------------------------- --------- -------------------------------<br></br>99   VLAN99                           active    Et1/0, Et1/1, Et1/2, Et1/3<br></br>&lt;... output omitted ...&gt;</span>.&quot;<br></br>It is best practice to administratively shut down unused ports and place them into a blackhole VLAN. In this case, interfaces Ethernet0/0-3 are used, while interfaces Ethernet1/0-3 are unused. Therefore, interfaces Ethernet1/0-3 were placed into the VLAN 99. Lastly, if VLAN is not named, then the default name would be VLANXXXX, where XXXX would be VLAN number with leading zeros, but, in this lab, it was required to rename the VLAN to VLAN99.</div><input type="submit" onClick="javascript:grade(&#39;ID0EHTUU&#39;); return false;" value="Grade"></input></form></div><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>

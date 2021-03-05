@@ -1,0 +1,108 @@
+!
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname Border
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+clock timezone PST -8 0
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!         
+!         
+          
+          
+!         
+!         
+!         
+!         
+ip cef    
+no ipv6 cef
+!         
+multilink bundle-name authenticated
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+redundancy
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+interface Ethernet0/0
+ ip address 192.168.100.254 255.255.255.0
+ ip access-group NAT_For_ACL in
+ ip nat inside
+ ip virtual-reassembly in
+!         
+interface Ethernet0/1
+ ip address dhcp
+ ip nat outside
+ ip virtual-reassembly in
+!         
+interface Ethernet0/2
+ no ip address
+ shutdown 
+!         
+interface Ethernet0/3
+ no ip address
+ shutdown 
+!         
+ip forward-protocol nd
+!         
+!         
+ip http server
+no ip http secure-server
+ip nat inside source list NAT_For_ACL interface Ethernet0/1 overload
+ip route 0.0.0.0 0.0.0.0 209.165.200.227
+!         
+ip access-list extended NAT_For_ACL
+ permit ip 192.168.0.0 0.0.255.255 any
+!         
+!         
+snmp-server ifindex persist
+!         
+!         
+control-plane
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+line con 0
+ logging synchronous
+line aux 0
+line vty 0 4
+ login    
+ transport input all
+!         
+!         
+end

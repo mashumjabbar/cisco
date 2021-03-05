@@ -1,0 +1,1554 @@
+<img src="FASTLab11.png">
+<br>
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Scenario</title><style type="text/css">
+
+        .title {
+            font-weight: bold;
+        }
+        body {
+            font-size: 12pt;
+        }
+        body > .title {
+            font-size: 20pt;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .procedure > .title {
+            font-size: 18pt;
+        }
+        .procedure > .stepgroup > .title {
+            font-size: 16pt;
+        }
+        .procedure > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup {
+            margin-top: 10px;
+        }
+        .procedure > .parablock {
+            margin-top: 10px;
+        }
+        .procedure > .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .step {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .step > .action > div: first-child {
+            margin-left: -20px;
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock {
+            margin-top: 10px;
+        }
+        .step > .response {
+            margin-top: 10px;
+        }
+        .step > .parablock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .step > .parablock > .titledblock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .step > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .substep {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .substep > .action > div: first-child {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-left: -20px;
+        }
+        .richtext {
+            margin-top: 10px;
+        }
+        .titledblock > .parablock {
+            margin-top: 10px;
+        }
+        .customnote {
+            margin: 10px 5px 10px 5px;
+            border: 1px solid black;
+        }
+        .notetitle {
+            font-weight: bold;
+            border-bottom: 1px solid black;
+            width: 100%;
+        }
+        .procedure {
+            margin-top: 10px;
+        }
+        .stepgroup > .title {
+            margin-left: -20px;
+        }
+        .stepgroup {
+            margin-left: 20px;
+        }
+        .procedure {
+            margin-left: 20px;
+        }
+        .procedure > .title {
+            margin-left: -20px;
+        }
+        .topic > .title {
+            font-size: 16pt;
+        }
+        .topic > .topic > .title {
+            font-size: 14pt;
+        }
+        .topic > .topic {
+            margin-top: 10px;
+        }
+        .parablock img {
+            margin-top: 20px;
+        }
+        .highlight {
+            background-color: #ffff00;
+        }
+        .double-underline {
+            border-bottom: 3px double;
+        }
+        .overline {
+            text-decoration: overline;
+        }
+        .inlineterm {
+        }
+        .inlinewindowname {
+        }        
+        .inlinemenuselection {
+          font-weight: bold;
+        }        
+        .inlinetypethis {
+          font-weight: bold;
+        }        
+        .inlinecode {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .subscript {
+            vertical-align: sub;
+            font-size: smaller;
+        }
+        .superscript {
+            vertical-align: super;
+            font-size: smaller;
+        }
+        .strikethrough {
+            text-decoration: line-through;
+        }
+        .titledblock {} .figure {
+            max-width: 100%;
+        }
+        .listpreamble {
+            margin-top: 20px;
+        }
+        .list {
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        .list li {
+            margin-left: 13px;
+            padding-left: 0px;
+            list-style-position: outside;
+            list-style-type: none;
+            text-indent: -5px;
+            margin-top: 5px;
+        }
+        .list li: before {
+            content: '\2022';
+            position: relative;
+            left: -5px;
+        }
+        .list ul {
+            margin-top: 0px;
+        }
+        .list ul li {
+            list-style-type: none;
+            margin-left: 15px;
+            text-indent: -7px;
+        }
+        .list ul li: before {
+            content: '\2013';
+            position: relative;
+            left: -7px;
+        }
+        .hintblock {
+            display: none;
+        }
+        .table {
+            empty-cells: show;
+            border: 0px none;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table tr {
+            border: 0px none;
+        }
+        .table tr td,
+        th {
+            border: 0px none;
+            vertical-align: top;
+        }
+        .table tr th {
+            background-color: #cccccc;
+        }
+        .table-border {
+            empty-cells: show;
+            border: 1px solid #000000;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table-border tr {
+            border: 1px solid #000000;
+        }
+        .table-border tr td,
+        th {
+            border: 1px solid #000000;
+            vertical-align: top;
+        }
+        .table-border tr th {
+            background-color: #cccccc;
+        }
+        .codeblock {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre;
+        }
+        li .codeblock {
+            text-indent: 0px;
+        }
+        .logoimage {
+            margin: 10px;
+        }
+        .printhere {
+            margin-top: 40px;
+        }
+        .slide {
+            border: none;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .slidetitle {
+            font-size: 14pt;
+            font-weight: bold;
+            text-align: center;
+            display: none;
+        }
+        .slidebody {
+            text-align: left;
+        }
+        .commandname {
+            font-weight: bold;
+        }
+        .syntaxarg {
+            font-style: italic;
+        }
+        .syntaxkeyword {
+            font-weight: bold;
+            font-style: italic;
+        }
+        .footline {
+            width: 98%;
+            margin-top: 30px;
+        }
+        .copyright {
+            font-size: 10pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .question {
+            margin-bottom: 20px;
+            border-bottom: solid 1px #000;
+        }
+        .question .title {
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .options {
+            border: none;
+        }
+        .option input[type=checkbox],
+        input.checkbox {
+            display: block;
+            float: left;
+        }
+        .option input[type=radio],
+        input.radio {
+            display: block;
+            float: left;
+        }
+        .option input[type=submit] {} 
+        .option label {
+            position: relative;
+            margin-left: 30px;
+            display: block;
+        }
+        .options .correct {
+            background-color: #0f0;
+        }
+        .options .incorrect {
+            background-color: #f00;
+        }
+        .feedback { 
+            border: 1px solid #000; 
+            padding: 5px;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            background-color: #eee;
+        }
+        .fbhidden {
+           display: none;
+        }
+
+      </style></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Scenario</div><div class="parablock" xmlns=""><div class="customnote"><div class="notetitle">Note</div><div class="richtext">Read the requirements in the Scenario carefully and use the Configuration Tips to help you do the required steps. If you need further assistance, refer to the Answer Key. Once you have completed the configuration specified, answer the questions.</div></div><div class="richtext">A basic network security policy was configured on devices by your colleague, but you can still see that the configurations are incomplete as per the standard basic security policy that is adopted by the CCS company for the customer environment. </div><div class="listpreamble">The security policy that is adopted by CCS for R1, the Branch router, and SW1 is as follows:</div><ul class="list"><li>Access to the privileged mode must be secured using a password on all devices.</li><li>Passwords must be encrypted on all devices.</li><li>Access to the console and vty lines must be secured on all devices.</li><li>Remote access must be secured by enabling SSH on vty 0 to 4 on all devices.</li><li>A standard IPv4 ACL must be used to restrict remote access on all devices. The ACL should allow the traffic from only the AdminPC.</li><li>A login banner must be present on all devices.</li></ul><div class="listpreamble">Here are the issues that you need to troubleshoot and resolve:</div><ul class="list"><li>Local authentication is not working on R1.</li><li>AdminPC is not able to SSH to R1 IPv4 address 172.16.160.1. Generate a pair of RSA keys on R1 that will allow the router to support SSHv2. Use the domain name example.com and use 768 bits in the modulus.</li><li>The enable password should be encrypted on SW1 and the Branch router.</li><li>AdminPC is not able to SSH to the Branch router (172.16.160.3).</li><li>AdminPC is not able to SSH to SW1 (172.16.130.10). Generate a pair of RSA keys on SW1 that will allow the switch to support SSHv2. Use the domain name <span class="syntaxarg">example.com</span> and use 768 bits in the modulus. </li></ul><div class="richtext">Refer to Job Aids for login credential information.</div><div class="customnote"><div class="notetitle">Note</div><div class="richtext">The Branch router may take 3-5 minutes to boot up and become accessible.</div></div></div><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>
+<hr>
+<hr>
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Job Aids</title><style type="text/css">
+
+        .title {
+            font-weight: bold;
+        }
+        body {
+            font-size: 12pt;
+        }
+        body > .title {
+            font-size: 20pt;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .procedure > .title {
+            font-size: 18pt;
+        }
+        .procedure > .stepgroup > .title {
+            font-size: 16pt;
+        }
+        .procedure > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup {
+            margin-top: 10px;
+        }
+        .procedure > .parablock {
+            margin-top: 10px;
+        }
+        .procedure > .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .step {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .step > .action > div: first-child {
+            margin-left: -20px;
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock {
+            margin-top: 10px;
+        }
+        .step > .response {
+            margin-top: 10px;
+        }
+        .step > .parablock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .step > .parablock > .titledblock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .step > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .substep {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .substep > .action > div: first-child {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-left: -20px;
+        }
+        .richtext {
+            margin-top: 10px;
+        }
+        .titledblock > .parablock {
+            margin-top: 10px;
+        }
+        .customnote {
+            margin: 10px 5px 10px 5px;
+            border: 1px solid black;
+        }
+        .notetitle {
+            font-weight: bold;
+            border-bottom: 1px solid black;
+            width: 100%;
+        }
+        .procedure {
+            margin-top: 10px;
+        }
+        .stepgroup > .title {
+            margin-left: -20px;
+        }
+        .stepgroup {
+            margin-left: 20px;
+        }
+        .procedure {
+            margin-left: 20px;
+        }
+        .procedure > .title {
+            margin-left: -20px;
+        }
+        .topic > .title {
+            font-size: 16pt;
+        }
+        .topic > .topic > .title {
+            font-size: 14pt;
+        }
+        .topic > .topic {
+            margin-top: 10px;
+        }
+        .parablock img {
+            margin-top: 20px;
+        }
+        .highlight {
+            background-color: #ffff00;
+        }
+        .double-underline {
+            border-bottom: 3px double;
+        }
+        .overline {
+            text-decoration: overline;
+        }
+        .inlineterm {
+        }
+        .inlinewindowname {
+        }        
+        .inlinemenuselection {
+          font-weight: bold;
+        }        
+        .inlinetypethis {
+          font-weight: bold;
+        }        
+        .inlinecode {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .subscript {
+            vertical-align: sub;
+            font-size: smaller;
+        }
+        .superscript {
+            vertical-align: super;
+            font-size: smaller;
+        }
+        .strikethrough {
+            text-decoration: line-through;
+        }
+        .titledblock {} .figure {
+            max-width: 100%;
+        }
+        .listpreamble {
+            margin-top: 20px;
+        }
+        .list {
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        .list li {
+            margin-left: 13px;
+            padding-left: 0px;
+            list-style-position: outside;
+            list-style-type: none;
+            text-indent: -5px;
+            margin-top: 5px;
+        }
+        .list li: before {
+            content: '\2022';
+            position: relative;
+            left: -5px;
+        }
+        .list ul {
+            margin-top: 0px;
+        }
+        .list ul li {
+            list-style-type: none;
+            margin-left: 15px;
+            text-indent: -7px;
+        }
+        .list ul li: before {
+            content: '\2013';
+            position: relative;
+            left: -7px;
+        }
+        .hintblock {
+            display: none;
+        }
+        .table {
+            empty-cells: show;
+            border: 0px none;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table tr {
+            border: 0px none;
+        }
+        .table tr td,
+        th {
+            border: 0px none;
+            vertical-align: top;
+        }
+        .table tr th {
+            background-color: #cccccc;
+        }
+        .table-border {
+            empty-cells: show;
+            border: 1px solid #000000;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table-border tr {
+            border: 1px solid #000000;
+        }
+        .table-border tr td,
+        th {
+            border: 1px solid #000000;
+            vertical-align: top;
+        }
+        .table-border tr th {
+            background-color: #cccccc;
+        }
+        .codeblock {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre;
+        }
+        li .codeblock {
+            text-indent: 0px;
+        }
+        .logoimage {
+            margin: 10px;
+        }
+        .printhere {
+            margin-top: 40px;
+        }
+        .slide {
+            border: none;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .slidetitle {
+            font-size: 14pt;
+            font-weight: bold;
+            text-align: center;
+            display: none;
+        }
+        .slidebody {
+            text-align: left;
+        }
+        .commandname {
+            font-weight: bold;
+        }
+        .syntaxarg {
+            font-style: italic;
+        }
+        .syntaxkeyword {
+            font-weight: bold;
+            font-style: italic;
+        }
+        .footline {
+            width: 98%;
+            margin-top: 30px;
+        }
+        .copyright {
+            font-size: 10pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .question {
+            margin-bottom: 20px;
+            border-bottom: solid 1px #000;
+        }
+        .question .title {
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .options {
+            border: none;
+        }
+        .option input[type=checkbox],
+        input.checkbox {
+            display: block;
+            float: left;
+        }
+        .option input[type=radio],
+        input.radio {
+            display: block;
+            float: left;
+        }
+        .option input[type=submit] {} 
+        .option label {
+            position: relative;
+            margin-left: 30px;
+            display: block;
+        }
+        .options .correct {
+            background-color: #0f0;
+        }
+        .options .incorrect {
+            background-color: #f00;
+        }
+        .feedback { 
+            border: 1px solid #000; 
+            padding: 5px;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            background-color: #eee;
+        }
+        .fbhidden {
+           display: none;
+        }
+
+      </style></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Job Aids</div><div class="parablock" xmlns=""><div class="customnote"><div class="notetitle">Note</div><div class="richtext">If you shut down an interface on a real router or switch, the connected device will see it as &quot;down/down.&quot; Due to virtualization specifics, Cisco IOL (Cisco IOS Software on Linux) behavior is slightly different. If you shut down an interface on a router or switch, the connected device will see it as &quot;up/up.&quot; In Cisco IOL, the status of an interface can only be &quot;up/up&quot; or &quot;administratively down/down.&quot; </div></div></div><div class="titledblock" xmlns=""><div class="title">Login Credential and Device Information</div><div class="parablock"><table style="width: 100%;" class="table-border"><thead><tr><th>Access Level</th><th>Username</th><th>Password</th></tr></thead><tbody><tr><td>Console access</td><td>admin</td><td>Admin123</td></tr><tr><td>Remote access</td><td>admin</td><td>Admin123</td></tr><tr><td>Privileged mode</td><td>None</td><td>1234QWer</td></tr></tbody></table><table style="width: 100%;" class="table-border"><thead><tr><th>Device</th><th>Interface</th><th>IPv4 Address</th><th>Remote</th><th>Interface</th><th>IPv4 Address</th></tr></thead><tbody><tr><td>SW1</td><td>VLAN 1</td><td>172.16.130.10/24</td><td>VLAN 1</td><td>_</td><td>_</td></tr><tr><td>SW1</td><td>Ethernet0/1</td><td>VLAN 1</td><td>Branch</td><td>Ethernet0/0</td><td>172.16.130.3/24</td></tr><tr><td>SW1</td><td>Ethernet0/2</td><td>VLAN 1</td><td>AdminPC</td><td>Ethernet0/0</td><td>172.16.130.5/24</td></tr><tr><td>SW1</td><td>Ethernet0/3</td><td>VLAN 1</td><td>Fileserver</td><td>Ethernet0/0</td><td>172.16.130.6/24</td></tr><tr><td>Branch</td><td>Ethernet0/0</td><td>172.16.130.3/24</td><td>SW1</td><td>Ethernet0/1</td><td>VLAN 1</td></tr><tr><td>Branch</td><td>Ethernet0/1</td><td>209.165.200.226/27</td><td>Internet</td><td>Ethernet0/0</td><td>209.165.200.225/27</td></tr><tr><td>Branch</td><td>Ethernet0/2</td><td>172.16.160.3/24</td><td>R1</td><td>Ethernet0/0</td><td>172.16.160.1/24</td></tr><tr><td>Branch</td><td>Loopback 0</td><td>172.16.2.2/32</td><td>_</td><td>_</td><td>_</td></tr><tr><td>R1</td><td>Ethernet0/0</td><td>172.16.160.1/24</td><td>Branch</td><td>Ethernet0/2</td><td>172.16.160.3/24</td></tr><tr><td>R1</td><td>Loopback 0</td><td>172.16.1.1/32</td><td>_</td><td>_</td><td>_</td></tr><tr><td>AdminPC</td><td>Ethernet0/0</td><td>172.16.130.5/24</td><td>SW1</td><td>Ethernet0/2</td><td>_</td></tr><tr><td>Fileserver</td><td>Ethernet0/0</td><td>172.16.130.6/24</td><td>SW1</td><td>Ethernet0/3</td><td>_</td></tr></tbody></table></div></div><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>
+<hr>
+<hr>
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Answer Key</title><style type="text/css">
+
+        .title {
+            font-weight: bold;
+        }
+        body {
+            font-size: 12pt;
+        }
+        body > .title {
+            font-size: 20pt;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .procedure > .title {
+            font-size: 18pt;
+        }
+        .procedure > .stepgroup > .title {
+            font-size: 16pt;
+        }
+        .procedure > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup {
+            margin-top: 10px;
+        }
+        .procedure > .parablock {
+            margin-top: 10px;
+        }
+        .procedure > .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .step {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .step > .action > div: first-child {
+            margin-left: -20px;
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock {
+            margin-top: 10px;
+        }
+        .step > .response {
+            margin-top: 10px;
+        }
+        .step > .parablock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .step > .parablock > .titledblock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .step > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .substep {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .substep > .action > div: first-child {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-left: -20px;
+        }
+        .richtext {
+            margin-top: 10px;
+        }
+        .titledblock > .parablock {
+            margin-top: 10px;
+        }
+        .customnote {
+            margin: 10px 5px 10px 5px;
+            border: 1px solid black;
+        }
+        .notetitle {
+            font-weight: bold;
+            border-bottom: 1px solid black;
+            width: 100%;
+        }
+        .procedure {
+            margin-top: 10px;
+        }
+        .stepgroup > .title {
+            margin-left: -20px;
+        }
+        .stepgroup {
+            margin-left: 20px;
+        }
+        .procedure {
+            margin-left: 20px;
+        }
+        .procedure > .title {
+            margin-left: -20px;
+        }
+        .topic > .title {
+            font-size: 16pt;
+        }
+        .topic > .topic > .title {
+            font-size: 14pt;
+        }
+        .topic > .topic {
+            margin-top: 10px;
+        }
+        .parablock img {
+            margin-top: 20px;
+        }
+        .highlight {
+            background-color: #ffff00;
+        }
+        .double-underline {
+            border-bottom: 3px double;
+        }
+        .overline {
+            text-decoration: overline;
+        }
+        .inlineterm {
+        }
+        .inlinewindowname {
+        }        
+        .inlinemenuselection {
+          font-weight: bold;
+        }        
+        .inlinetypethis {
+          font-weight: bold;
+        }        
+        .inlinecode {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .subscript {
+            vertical-align: sub;
+            font-size: smaller;
+        }
+        .superscript {
+            vertical-align: super;
+            font-size: smaller;
+        }
+        .strikethrough {
+            text-decoration: line-through;
+        }
+        .titledblock {} .figure {
+            max-width: 100%;
+        }
+        .listpreamble {
+            margin-top: 20px;
+        }
+        .list {
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        .list li {
+            margin-left: 13px;
+            padding-left: 0px;
+            list-style-position: outside;
+            list-style-type: none;
+            text-indent: -5px;
+            margin-top: 5px;
+        }
+        .list li: before {
+            content: '\2022';
+            position: relative;
+            left: -5px;
+        }
+        .list ul {
+            margin-top: 0px;
+        }
+        .list ul li {
+            list-style-type: none;
+            margin-left: 15px;
+            text-indent: -7px;
+        }
+        .list ul li: before {
+            content: '\2013';
+            position: relative;
+            left: -7px;
+        }
+        .hintblock {
+            display: none;
+        }
+        .table {
+            empty-cells: show;
+            border: 0px none;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table tr {
+            border: 0px none;
+        }
+        .table tr td,
+        th {
+            border: 0px none;
+            vertical-align: top;
+        }
+        .table tr th {
+            background-color: #cccccc;
+        }
+        .table-border {
+            empty-cells: show;
+            border: 1px solid #000000;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table-border tr {
+            border: 1px solid #000000;
+        }
+        .table-border tr td,
+        th {
+            border: 1px solid #000000;
+            vertical-align: top;
+        }
+        .table-border tr th {
+            background-color: #cccccc;
+        }
+        .codeblock {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre;
+        }
+        li .codeblock {
+            text-indent: 0px;
+        }
+        .logoimage {
+            margin: 10px;
+        }
+        .printhere {
+            margin-top: 40px;
+        }
+        .slide {
+            border: none;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .slidetitle {
+            font-size: 14pt;
+            font-weight: bold;
+            text-align: center;
+            display: none;
+        }
+        .slidebody {
+            text-align: left;
+        }
+        .commandname {
+            font-weight: bold;
+        }
+        .syntaxarg {
+            font-style: italic;
+        }
+        .syntaxkeyword {
+            font-weight: bold;
+            font-style: italic;
+        }
+        .footline {
+            width: 98%;
+            margin-top: 30px;
+        }
+        .copyright {
+            font-size: 10pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .question {
+            margin-bottom: 20px;
+            border-bottom: solid 1px #000;
+        }
+        .question .title {
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .options {
+            border: none;
+        }
+        .option input[type=checkbox],
+        input.checkbox {
+            display: block;
+            float: left;
+        }
+        .option input[type=radio],
+        input.radio {
+            display: block;
+            float: left;
+        }
+        .option input[type=submit] {} 
+        .option label {
+            position: relative;
+            margin-left: 30px;
+            display: block;
+        }
+        .options .correct {
+            background-color: #0f0;
+        }
+        .options .incorrect {
+            background-color: #f00;
+        }
+        .feedback { 
+            border: 1px solid #000; 
+            padding: 5px;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            background-color: #eee;
+        }
+        .fbhidden {
+           display: none;
+        }
+
+      </style></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Answer Key</div><div class="parablock" xmlns=""><div class="listpreamble">The security policy that is adopted by CCS for R1, the Branch router, and SW1 is as follows:</div><ul class="list"><li>Access to the privileged mode must be secured using a password on all devices.<div class="richtext">Login in to R1, Branch, and SW1. Enter privileged mode using the <span class="commandname">enable</span> command; you should be asked for a password.</div></li><li>Passwords must be encrypted on all devices.<div class="richtext">On each device verify that passwords are encrypted</div></li><li>Access to the console and vty lines must be secured on all devices.<div class="richtext">Try logging in to R1, Branch, and SW1 console and vty lines; you should be asked for credentials.</div></li><li>Remote access must be secured by enabling SSH on vty 0 to 4 on all devices.<div class="richtext">Try logging in to R1, Branch, and SW1 vty lines using SSH.</div></li><li>A standard IPv4 ACL must be used to restrict remote access on all devices. The ACL should allow the traffic from only the AdminPC.<div class="richtext">Only the AdminPC should be able to login in to R1, Branch, and SW1 vty lines using SSH.</div></li><li>A login banner must be present on all devices.<div class="richtext">Try logging in to R1, Branch, and SW1 console and vty lines; you should see a login banner.</div></li></ul><div class="listpreamble">Here are the issues that you need to troubleshoot and resolve:</div><ul class="list"><li>Local authentication is not working on R1.<div class="richtext">Execute the <span class="commandname">show running-configuration | begin line</span> command on R1 to verify that the local authentication is configured.</div><div class="codeblock">R1#<span class="bold">show running-configuration | begin line</span>
+Building configuration...
+
+Current configuration : 131 bytes
+!
+!
+!
+!
+!
+!
+!
+line con 0
+ <span class="highlight">logging synchronous </span>
+line aux 0
+line vty 0 4
+ access-class 11 in
+<span class="highlight"> no login</span>
+ transport input telnet
+!
+end</div><div class="richtext">You will notice that the local authentication is not configured on R1.</div><div class="richtext">Verify that a username and password is configured on R1.</div><div class="codeblock">R1#<span class="bold">show running-configuration | include username</span>
+<span class="highlight">username admin password 7 072E25414707485744</span></div><div class="richtext">Execute the following commands to enable the local authentication on the console and vty lines.</div><div class="codeblock">R1# <span class="bold">configure terminal</span>
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#<span class="bold"> line con 0</span>
+R1(config-line)# <span class="bold">login local</span>
+R1(config-line)# <span class="bold">line vty 0 4</span>
+R1(config-line)# <span class="bold">login local</span>
+R1(config-line)# <span class="bold">end</span></div><div class="richtext">Log out and then login again on R1 to verify the local authentication is working.</div><div class="codeblock">!!! WARNING: ACCESS TO THIS DEVICE IS ONLY FOR AUTHORIZED PERSONNEL!!! 
+
+User Access Verification
+<span class="highlight">
+Username: admin
+Password: 
+</span>
+R1&gt;</div></li><li>AdminPC is not able to SSH to R1 IPv4 address 172.16.160.1. Generate a pair of RSA keys on R1 that will allow the router to support SSHv2. Use the domain name <span class="syntaxarg">example.com</span> and use 768 bits in the modulus. <div class="richtext">Notice from the output in the previous step that R1 is not configured to support SSH. Generate a pair of RSA keys on R1 that will allow the router to support SSHv2. Use the domain name<span class="syntaxarg"> example.com</span> and use 768 bits in the modulus. Configure the vty lines to support SSH and configure SSHv2. Execute the following commands on R1:</div><div class="codeblock">R1#<span class="bold">configure terminal</span>
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#<span class="bold">ip domain-name example.com</span>
+R1(config)#<span class="bold">crypto key generate rsa modulus 768</span>
+% You already have RSA keys defined named R1.example.com.
+% They will be replaced.
+
+% The key modulus size is 768 bits
+% Generating 768 bit RSA keys, keys will be non-exportable...
+[OK] (elapsed time was 0 seconds)
+
+R1(config)#<span class="bold">line vty 0 4
+</span>*Sep 25 07:09:27.290: %SSH-5-DISABLED: SSH 2.0 has been disabled
+*Sep 25 07:09:27.697: %SSH-5-ENABLED: SSH 2.0 has been enabled
+R1(config-line)#<span class="bold">transport input ssh
+R1(config-line)#exit</span>
+R1(config)#<span class="bold">ip ssh version 2</span>
+R1(config)#<span class="bold">exit</span></div><div class="richtext">Execute the <span class="bold"><span class="commandname">ssh -l admin 172.16.160.1</span></span> command on Admin PC to verify that Admin PC is able to SSH to R1. Terminate the SSH session and return to the Admin PC.</div><div class="codeblock">AdminPC#<span class="bold">ssh -l admin 172.16.160.1</span>
+
+<span class="highlight">!!! WARNING: ACCESS TO THIS DEVICE IS ONLY FOR AUTHORIZED PERSONNEL!!!
+Password: 
+</span>R1&gt; <span class="bold">logout</span>
+
+[Connection to 172.16.160.1 closed by foreign host]
+AdminPC&gt;</div></li><li>The enable password should be encrypted on SW1 and the Branch router.<div class="richtext">Execute the <span class="commandname">show running-configuration | include enable</span> command to verify that the passwords on all devices are encrypted.</div><div class="codeblock">SW1#<span class="bold">show running-configuration | include enable</span>
+<span class="highlight">enable password 1234QWer</span></div><div class="codeblock">Branch#<span class="bold">show running-configuration | include enable</span>
+<span class="highlight">enable password 1234QWer</span></div><div class="richtext">You will notice that the passwords that are configured on SW1 and Branch router are not encrypted. Execute the <span class="commandname">service password-encryption</span> command on SW1 and Branch router to encrypt the passwords on these devices.</div><div class="codeblock">SW1# <span class="bold">configure terminal</span>
+SW1(config)#<span class="bold">service password-encryption</span></div><div class="codeblock">Branch# <span class="bold">configure terminal</span>
+Branch(config)#<span class="bold">service password-encryption</span></div><div class="richtext">Verify that the password on SW1 and branch router are now encrypted as a result of the <span class="commandname">service password-encryption</span> command.</div><div class="codeblock">SW1#<span class="bold">show running-configuration | include enable</span>
+<span class="highlight">enable password 7 091D1C5A4D34201719</span></div><div class="codeblock">Branch#<span class="bold">show running-configuration | include enable</span>
+<span class="highlight">enable password 7 12485744463A3B0138</span></div></li><li>AdminPC is not able to SSH to the Branch router (172.16.160.3).<div class="richtext">A standard IPv4 ACL is configured on Branch router must be used to restrict remote access. But, the ACL should allow the traffic from AdminPC.</div><div class="richtext">Execute the <span class="commandname">show access-list</span> command on Branch router to verify the access-list configured on Branch router.</div><div class="codeblock">Branch#<span class="bold">show access-list</span>
+<span class="highlight">Standard IP access list 11
+    10 deny   172.16.130.5</span>
+Standard IP access list ACL_FOR_NAT
+    10 permit 172.16.0.0, wildcard bits 0.0.255.255</div><div class="richtext">You will notice that access-list 11 blocks the traffic from Admin PC. Fix the ACL to allow traffic from only Admin PC ( 172.16.130.5). First execute the <span class="commandname">no access-list 11</span> command to delete the ACL, then correct the ACL.</div><div class="codeblock">Branch# <span class="bold">configure terminal</span>
+Enter configuration commands, one per line.  End with CNTL/Z.
+Branch(config)# <span class="bold">no access-list 11 
+</span>Branch(config)# <span class="bold">access-list 11 permit 172.16.130.5</span></div><div class="richtext">Execute the <span class="commandname">ssh -l admin 172.16.160.3</span> command on Admin PC to verify that the AdminPC is now able to SSH to the Branch router. Terminate the SSH session and return to the Admin PC.</div><div class="codeblock">AdminPC#<span class="bold">ssh -l admin 172.16.160.3
+</span>
+<span class="highlight">!!! WARNING: ACCESS TO THIS DEVICE IS ONLY FOR AUTHORIZED PERSONNEL!!! 
+Password: 
+</span>Branch&gt;<span class="bold">logout</span>
+
+[Connection to 172.16.160.3 closed by foreign host]
+AdminPC&gt;</div><div class="richtext">You will notice that the Admin PC is now able to SSH to branch router after fixing access-list 11.</div></li><li>AdminPC is not able to SSH to SW1 (172.16.130.10). Generate a pair of RSA keys on SW1 that will allow the switch to support SSHv2. Use the domain name <span class="syntaxarg">example.com</span><span class="commandname"> </span>and use 768 bits in the modulus.<div class="richtext">Execute the following commands to configure the domain name, generate the RSA keys, enable SSH on the vty lines, and globally enable SSHv2. The switch has already a permit access list defined for the AdminPC and a username with the corresponding password.</div><div class="codeblock">SW1#<span class="bold">configure terminal</span>
+Enter configuration commands, one per line.  End with CNTL/Z.
+SW1(config)#<span class="bold">ip domain-name example.com</span>
+SW1(config)#<span class="bold">crypto key generate rsa modulus 768</span>
+The name for the keys will be: SW1.example.com
+
+% The key modulus size is 768 bits
+% Generating 768 bit RSA keys, keys will be non-exportable...
+[OK] (elapsed time was 0 seconds)
+
+SW1(config)#
+*Sep 25 07:10:33.229: %SSH-5-ENABLED: SSH 1.99 has been enabled
+SW1(config)#<span class="bold">line vty 0 4</span>
+SW1(config-line)#<span class="bold">transport input ssh</span>
+SW1(config-line)#<span class="bold">exit</span>
+SW1(config)#<span class="bold">ip ssh version 2 </span>
+SW1(config)#<span class="bold">exit</span></div><div class="richtext">Verify the configuration using the <span class="commandname">show ip ssh</span> command.</div><div class="codeblock">SW1#<span class="bold">show ip ssh</span>
+SSH Enabled - version 2.0
+Authentication timeout: 120 secs; Authentication retries: 3
+Minimum expected Diffie Hellman key size : 1024 bits
+IOS Keys in SECSH format(ssh-rsa, base64 encoded):
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAYQDhZP3BSAjj3U0ctvvbW+lEaEUmRu3ZjQM1bjskDilI
+bZ9A5tO0Z2+Vx9psBGYgW58emS3vhniP9LoTNQTxrH1g0zBrPb8qWWTa1JBv37EyJhSRM/fL+KVkRMty
+YAR604k=  </div><div class="richtext">The switch has already a permit access list defined for the AdminPC and a username with the corresponding password.</div><div class="richtext">Execute the <span class="commandname">ssh -l admin 172.16.130.10</span> command on Admin PC to verify that the AdminPC is now able to SSH to SW1. Terminate the SSH session and return to the Admin PC.</div><div class="codeblock">AdminPC#<span class="bold">ssh -l admin 172.16.130.10</span>
+
+<span class="highlight">!!! WARNING: ACCESS TO THIS DEVICE IS ONLY FOR AUTHORIZED PERSONNEL!!!
+Password: </span>
+SW1&gt;<span class="bold">logout</span>
+
+[Connection to 172.16.130.10 closed by foreign host]
+AdminPC&gt;
+</div></li></ul></div><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>
+<hr>
+<hr>
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Questions</title><style type="text/css">
+
+        .title {
+            font-weight: bold;
+        }
+        body {
+            font-size: 12pt;
+        }
+        body > .title {
+            font-size: 20pt;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .procedure > .title {
+            font-size: 18pt;
+        }
+        .procedure > .stepgroup > .title {
+            font-size: 16pt;
+        }
+        .procedure > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup {
+            margin-top: 10px;
+        }
+        .procedure > .parablock {
+            margin-top: 10px;
+        }
+        .procedure > .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .step {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .step > .action > div: first-child {
+            margin-left: -20px;
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock {
+            margin-top: 10px;
+        }
+        .step > .response {
+            margin-top: 10px;
+        }
+        .step > .parablock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .step > .parablock > .titledblock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .step > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .substep {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .substep > .action > div: first-child {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-left: -20px;
+        }
+        .richtext {
+            margin-top: 10px;
+        }
+        .titledblock > .parablock {
+            margin-top: 10px;
+        }
+        .customnote {
+            margin: 10px 5px 10px 5px;
+            border: 1px solid black;
+        }
+        .notetitle {
+            font-weight: bold;
+            border-bottom: 1px solid black;
+            width: 100%;
+        }
+        .procedure {
+            margin-top: 10px;
+        }
+        .stepgroup > .title {
+            margin-left: -20px;
+        }
+        .stepgroup {
+            margin-left: 20px;
+        }
+        .procedure {
+            margin-left: 20px;
+        }
+        .procedure > .title {
+            margin-left: -20px;
+        }
+        .topic > .title {
+            font-size: 16pt;
+        }
+        .topic > .topic > .title {
+            font-size: 14pt;
+        }
+        .topic > .topic {
+            margin-top: 10px;
+        }
+        .parablock img {
+            margin-top: 20px;
+        }
+        .highlight {
+            background-color: #ffff00;
+        }
+        .double-underline {
+            border-bottom: 3px double;
+        }
+        .overline {
+            text-decoration: overline;
+        }
+        .inlineterm {
+        }
+        .inlinewindowname {
+        }        
+        .inlinemenuselection {
+          font-weight: bold;
+        }        
+        .inlinetypethis {
+          font-weight: bold;
+        }        
+        .inlinecode {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .subscript {
+            vertical-align: sub;
+            font-size: smaller;
+        }
+        .superscript {
+            vertical-align: super;
+            font-size: smaller;
+        }
+        .strikethrough {
+            text-decoration: line-through;
+        }
+        .titledblock {} .figure {
+            max-width: 100%;
+        }
+        .listpreamble {
+            margin-top: 20px;
+        }
+        .list {
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        .list li {
+            margin-left: 13px;
+            padding-left: 0px;
+            list-style-position: outside;
+            list-style-type: none;
+            text-indent: -5px;
+            margin-top: 5px;
+        }
+        .list li: before {
+            content: '\2022';
+            position: relative;
+            left: -5px;
+        }
+        .list ul {
+            margin-top: 0px;
+        }
+        .list ul li {
+            list-style-type: none;
+            margin-left: 15px;
+            text-indent: -7px;
+        }
+        .list ul li: before {
+            content: '\2013';
+            position: relative;
+            left: -7px;
+        }
+        .hintblock {
+            display: none;
+        }
+        .table {
+            empty-cells: show;
+            border: 0px none;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table tr {
+            border: 0px none;
+        }
+        .table tr td,
+        th {
+            border: 0px none;
+            vertical-align: top;
+        }
+        .table tr th {
+            background-color: #cccccc;
+        }
+        .table-border {
+            empty-cells: show;
+            border: 1px solid #000000;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table-border tr {
+            border: 1px solid #000000;
+        }
+        .table-border tr td,
+        th {
+            border: 1px solid #000000;
+            vertical-align: top;
+        }
+        .table-border tr th {
+            background-color: #cccccc;
+        }
+        .codeblock {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre;
+        }
+        li .codeblock {
+            text-indent: 0px;
+        }
+        .logoimage {
+            margin: 10px;
+        }
+        .printhere {
+            margin-top: 40px;
+        }
+        .slide {
+            border: none;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .slidetitle {
+            font-size: 14pt;
+            font-weight: bold;
+            text-align: center;
+            display: none;
+        }
+        .slidebody {
+            text-align: left;
+        }
+        .commandname {
+            font-weight: bold;
+        }
+        .syntaxarg {
+            font-style: italic;
+        }
+        .syntaxkeyword {
+            font-weight: bold;
+            font-style: italic;
+        }
+        .footline {
+            width: 98%;
+            margin-top: 30px;
+        }
+        .copyright {
+            font-size: 10pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .question {
+            margin-bottom: 20px;
+            border-bottom: solid 1px #000;
+        }
+        .question .title {
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .options {
+            border: none;
+        }
+        .option input[type=checkbox],
+        input.checkbox {
+            display: block;
+            float: left;
+        }
+        .option input[type=radio],
+        input.radio {
+            display: block;
+            float: left;
+        }
+        .option input[type=submit] {} 
+        .option label {
+            position: relative;
+            margin-left: 30px;
+            display: block;
+        }
+        .options .correct {
+            background-color: #0f0;
+        }
+        .options .incorrect {
+            background-color: #f00;
+        }
+        .feedback { 
+            border: 1px solid #000; 
+            padding: 5px;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            background-color: #eee;
+        }
+        .fbhidden {
+           display: none;
+        }
+
+      </style><script type="text/javascript" xmlns="">
+
+        function toggleClass(element, styleclass) {
+            var classes = element.className.split(" ");
+            var toggled = false;
+            for (var i = 0; i < classes.length; i++) {
+                if (classes[i] == styleclass) {
+                    classes.splice(i, 1);
+                    toggled = true;
+                }
+            }
+            if (!toggled)
+                classes.push(styleclass)
+            element.className = classes.join(" ");
+        }
+
+        function removeClass(element, styleclass) {
+            var classes = element.className.split(" ");
+            for (var i = 0; i < classes.length; i++) {
+                if (classes[i] == styleclass) {
+                    classes.splice(i, 1);
+                }
+            }
+            element.className = classes.join(" ");
+        }
+
+        function grade(questionId) {
+            var form = document.forms[questionId];
+            var answer = form["answer"].value.split(",");
+            var numAnswers = form["numAnswers"].value;
+            var numOptions = form["numOptions"].value;
+            var feedback = form.children[questionId + "-feedback"];
+
+            var correct = true;
+            removeClass(feedback, "fbhidden");
+            toggleClass(feedback, "fbhidden");
+            if (numAnswers <= 1) {
+                for (var i = 0; i < form["option"].length; i++) {
+                    var eleP = form["option"][i].parentNode;
+                    removeClass(eleP, "correct");
+                    removeClass(eleP, "incorrect");
+                }
+                for (var i = 0; i < form["option"].length; i++) {
+                    var ele = form["option"][i];
+                    var eleP = form["option"][i].parentNode;
+                    if (ele.checked && i == answer[0] - 1) {
+                        toggleClass(eleP, "correct");
+                    } else if (!ele.checked && i == answer[0] - 1) {
+                        toggleClass(eleP, "correct");
+                    } else if (ele.checked) {
+                        toggleClass(eleP, "incorrect");
+                        correct = false;
+                    }
+                }
+            } else {
+                for (var i = 0; i < numOptions; i++) {
+                    var eleP = form["option" + (i + 1)].parentNode;
+                    removeClass(eleP, "correct");
+                    removeClass(eleP, "incorrect");
+                }
+
+                for (var i = 0; i < numOptions; i++) {
+                    var ele = form["option" + (i + 1)];
+                    var eleP = ele.parentNode;
+
+                    // Is element i a correct answer?
+                    var needsCheck = (answer[i] == 1);
+                    if (ele.checked && needsCheck) {
+                        toggleClass(eleP, "correct");
+                    } else if (ele.checked && !needsCheck) {
+                        toggleClass(eleP, "incorrect");
+                        correct = false;
+                    } else if (!ele.checked && needsCheck) {
+                        toggleClass(eleP, "incorrect");
+                        correct = false;
+                    }
+                }
+            }
+            if (!correct)
+                removeClass(feedback, "fbhidden");
+        }
+
+      </script></head><body><img src="https://cll-ng.cisco.com/static/web/fw/i/logo.gif" style="logoimage"></img><div class="title">Questions</div><div class="question multiplechoice" xmlns=""><div class="title">
+        Question 1</div><form name="ID0EFGLU" id="ID0EFGLU"><input type="hidden" name="numAnswers" value="2"></input><input type="hidden" name="answer" value="1,0,1,0"></input><input type="hidden" name="numOptions" value="4"></input><div class="stem"><div class="richtext">Which of the following commands do you use to check if access to privileged mode is secured with a password? (Choose two.)</div></div><fieldset class="options"><div class="option"><input type="checkbox" name="option1" value="1" id="ID0EKGLU"></input><label for="ID0EKGLU"><div class="richtext"><span class="commandname">show running-config | include enable</span></div></label></div><div class="option"><input type="checkbox" name="option2" value="2" id="ID0EPGLU"></input><label for="ID0EPGLU"><div class="richtext"><span class="commandname">show running-config | include exec</span></div></label></div><div class="option"><input type="checkbox" name="option3" value="3" id="ID0EUGLU"></input><label for="ID0EUGLU"><div class="richtext"><span class="commandname">show running-config | section enable</span></div></label></div><div class="option"><input type="checkbox" name="option4" value="4" id="ID0EZGLU"></input><label for="ID0EZGLU"><div class="richtext"><span class="commandname">show running-config | include username</span></div></label></div></fieldset><div class="feedback fbhidden" id="ID0EFGLU-feedback">The correct answer is &quot;<span class="commandname">show running-config | include enable</span>.&quot;  and &quot;show running-config | section enable.&quot; The <span class="commandname">enable</span> command in the global configuration mode restricts the access to the privilege mode with the password that is provided with the command.</div><input type="submit" onClick="javascript:grade(&#39;ID0EFGLU&#39;); return false;" value="Grade"></input></form></div><div class="question multiplechoice" xmlns=""><div class="title">
+        Question 2</div><form name="ID0EQHLU" id="ID0EQHLU"><input type="hidden" name="numAnswers" value="2"></input><input type="hidden" name="answer" value="1,1,0,0"></input><input type="hidden" name="numOptions" value="4"></input><div class="stem"><div class="richtext">Which two need to be configured on R1 for local authentication? (Choose two) </div></div><fieldset class="options"><div class="option"><input type="checkbox" name="option1" value="1" id="ID0EVHLU"></input><label for="ID0EVHLU"><div class="richtext"><span class="bold">login local</span> on vty line</div></label></div><div class="option"><input type="checkbox" name="option2" value="2" id="ID0E2HLU"></input><label for="ID0E2HLU"><div class="richtext"><span class="bold">login local </span>on console line</div></label></div><div class="option"><input type="checkbox" name="option3" value="3" id="ID0EBILU"></input><label for="ID0EBILU"><div class="richtext"><span class="bold">login local</span> in the global configuration mode</div></label></div><div class="option"><input type="checkbox" name="option4" value="4" id="ID0EHILU"></input><label for="ID0EHILU"><div class="richtext"><span class="bold">login local</span> in exec mode</div></label></div></fieldset><div class="feedback fbhidden" id="ID0EQHLU-feedback">The correct answers are: &quot;<span class="bold">login local</span> on vty line&quot; and &quot;<span class="bold">login local</span> on console line&quot;. The R1 router does have the username and password configured, but it is missing the <span class="commandname">login local</span> command in the console and vty lines section to authenticate users accessing the device from the console or over the SSH connection.</div><input type="submit" onClick="javascript:grade(&#39;ID0EQHLU&#39;); return false;" value="Grade"></input></form></div><div class="question multiplechoice" xmlns=""><div class="title">
+        Question 3</div><form name="ID0EBJLU" id="ID0EBJLU"><input type="hidden" name="numAnswers" value="1"></input><input type="hidden" name="answer" value="4"></input><input type="hidden" name="numOptions" value="5"></input><div class="stem"><div class="richtext">Which is the first command you have to enter on the Branch router when correcting the issue that the AdminPC could not SSH to the Branch router?</div></div><fieldset class="options"><div class="option"><input type="radio" name="option" value="1" id="ID0EGJLU" class="radio"></input><label for="ID0EGJLU"><div class="richtext">Branch(config)# <span class="commandname">no access-list 10</span></div></label></div><div class="option"><input type="radio" name="option" value="2" id="ID0EMJLU" class="radio"></input><label for="ID0EMJLU"><div class="richtext">Branch(config)# <span class="commandname">access-list permit 172.16.130.5</span></div></label></div><div class="option"><input type="radio" name="option" value="3" id="ID0ESJLU" class="radio"></input><label for="ID0ESJLU"><div class="richtext">Branch(config)# <span class="commandname">access-list 15 permit 172.16.130.5</span></div></label></div><div class="option"><input type="radio" name="option" value="4" id="ID0EYJLU" class="radio"></input><label for="ID0EYJLU"><div class="richtext">Branch(config)#<span class="bold"> </span><span class="commandname">no access-list 11</span></div></label></div><div class="option"><input type="radio" name="option" value="5" id="ID0E6JLU" class="radio"></input><label for="ID0E6JLU"><div class="richtext">Branch(config)# <span class="commandname">no access-list 1</span></div></label></div></fieldset><div class="feedback fbhidden" id="ID0EBJLU-feedback">The correct answer is: &quot;Branch(config)# <span class="commandname">no access-list 11</span>.&quot; The Branch router is configured with the access list with the number 11 which denies the traffic from the AdminPC. Adding an access list with a greater number of 11, which permits the access from an IP, does not get registered since access lists check the rules from lower numbers towards higher numbers. Access lists 1 and 10 do not exist, configuring access list without a number is not a valid command.</div><input type="submit" onClick="javascript:grade(&#39;ID0EBJLU&#39;); return false;" value="Grade"></input></form></div><div class="question multiplechoice" xmlns=""><div class="title">
+        Question 4</div><form name="ID0EVKLU" id="ID0EVKLU"><input type="hidden" name="numAnswers" value="1"></input><input type="hidden" name="answer" value="2"></input><input type="hidden" name="numOptions" value="4"></input><div class="stem"><div class="richtext">Which option describes what is needed to configure SSHv2 on SW1?</div></div><fieldset class="options"><div class="option"><input type="radio" name="option" value="1" id="ID0E1KLU" class="radio"></input><label for="ID0E1KLU"><div class="richtext">Configure the domain name, generate the RSA keys, and globally enable SSH.</div></label></div><div class="option"><input type="radio" name="option" value="2" id="ID0E5KLU" class="radio"></input><label for="ID0E5KLU"><div class="richtext">Configure the domain name, generate the RSA keys, add SSH to vty lines, and globally enable SSHv2.</div></label></div><div class="option"><input type="radio" name="option" value="3" id="ID0ECLLU" class="radio"></input><label for="ID0ECLLU"><div class="richtext">Configure the domain name, generate the RSA keys, globally enable SSHv2, add a permit access list for devices to access the switch.</div></label></div><div class="option"><input type="radio" name="option" value="4" id="ID0EGLLU" class="radio"></input><label for="ID0EGLLU"><div class="richtext">Configure the domain name, add SSH to vty lines, globally enable SSHv2, add a permit access list for devices to access the switch.</div></label></div></fieldset><div class="feedback fbhidden" id="ID0EVKLU-feedback">The correct answer is: &quot;Configure the domain name, generate the RSA keys, add SSH to vty lines, and globally enable SSHv2.&quot; To access SW1 via SSH, the mentioned configuration needs to be applied. The switch has already a permit access list defined for the AdminPC and a username with the corresponding password.</div><input type="submit" onClick="javascript:grade(&#39;ID0EVKLU&#39;); return false;" value="Grade"></input></form></div><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>

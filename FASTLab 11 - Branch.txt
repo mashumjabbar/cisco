@@ -1,0 +1,120 @@
+!
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname Branch
+!
+boot-start-marker
+boot-end-marker
+!
+!
+enable password 1234QWer
+!
+no aaa new-model
+clock timezone PST -8 0
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!         
+!         
+!         
+          
+          
+!         
+!         
+!         
+!         
+ip domain name example.com
+ip cef    
+no ipv6 cef
+!         
+multilink bundle-name authenticated
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+username admin password 0 Admin123
+!         
+redundancy
+!         
+!         
+ip ssh version 2
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+!         
+interface Loopback0
+ ip address 172.16.2.2 255.255.255.255
+!         
+interface Ethernet0/0
+ ip address 172.16.130.3 255.255.255.0
+ ip nat inside
+ ip virtual-reassembly in
+!         
+interface Ethernet0/1
+ ip address 209.165.200.226 255.255.255.224
+ ip nat outside
+ ip virtual-reassembly in
+!         
+interface Ethernet0/2
+ ip address 172.16.160.3 255.255.255.0
+ ip nat inside
+ ip virtual-reassembly in
+!         
+interface Ethernet0/3
+ no ip address
+ shutdown 
+!         
+ip forward-protocol nd
+!         
+!         
+no ip http server
+no ip http secure-server
+ip nat inside source list ACL_FOR_NAT interface Ethernet0/1 overload
+ip route 0.0.0.0 0.0.0.0 209.165.200.225
+ip route 172.16.1.1 255.255.255.255 172.16.160.1
+!         
+ip access-list standard ACL_FOR_NAT
+ permit 172.16.0.0 0.0.255.255
+!         
+access-list 11 deny   172.16.130.5
+!         
+!         
+!         
+control-plane
+!         
+!         
+!         
+!         
+!         
+!         
+banner login ^C
+!!! WARNING: ACCESS TO THIS DEVICE IS ONLY FOR AUTHORIZED PERSONNEL!!! ^C
+!         
+line con 0
+ logging synchronous
+ login local
+line aux 0
+line vty 0 4
+ access-class 11 in
+ login local
+ transport input ssh
+!         
+!         
+end
