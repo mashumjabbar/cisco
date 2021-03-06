@@ -1,0 +1,1034 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Introduction</title><style type="text/css">
+
+        .title {
+            font-weight: bold;
+        }
+        body {
+            font-size: 12pt;
+        }
+        body > .title {
+            font-size: 20pt;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .procedure > .title {
+            font-size: 18pt;
+        }
+        .procedure > .stepgroup > .title {
+            font-size: 16pt;
+        }
+        .procedure > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup {
+            margin-top: 10px;
+        }
+        .procedure > .parablock {
+            margin-top: 10px;
+        }
+        .procedure > .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .step {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .step > .action > div: first-child {
+            margin-left: -20px;
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock {
+            margin-top: 10px;
+        }
+        .step > .response {
+            margin-top: 10px;
+        }
+        .step > .parablock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .step > .parablock > .titledblock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .step > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .substep {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .substep > .action > div: first-child {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-left: -20px;
+        }
+        .richtext {
+            margin-top: 10px;
+        }
+        .titledblock > .parablock {
+            margin-top: 10px;
+        }
+        .customnote {
+            margin: 10px 5px 10px 5px;
+            border: 1px solid black;
+        }
+        .notetitle {
+            font-weight: bold;
+            border-bottom: 1px solid black;
+            width: 100%;
+        }
+        .procedure {
+            margin-top: 10px;
+        }
+        .stepgroup > .title {
+            margin-left: -20px;
+        }
+        .stepgroup {
+            margin-left: 20px;
+        }
+        .procedure {
+            margin-left: 20px;
+        }
+        .procedure > .title {
+            margin-left: -20px;
+        }
+        .topic > .title {
+            font-size: 16pt;
+        }
+        .topic > .topic > .title {
+            font-size: 14pt;
+        }
+        .topic > .topic {
+            margin-top: 10px;
+        }
+        .parablock img {
+            margin-top: 20px;
+        }
+        .highlight {
+            background-color: #ffff00;
+        }
+        .double-underline {
+            border-bottom: 3px double;
+        }
+        .overline {
+            text-decoration: overline;
+        }
+        .inlineterm {
+        }
+        .inlinewindowname {
+        }        
+        .inlinemenuselection {
+          font-weight: bold;
+        }        
+        .inlinetypethis {
+          font-weight: bold;
+        }        
+        .inlinecode {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .subscript {
+            vertical-align: sub;
+            font-size: smaller;
+        }
+        .superscript {
+            vertical-align: super;
+            font-size: smaller;
+        }
+        .strikethrough {
+            text-decoration: line-through;
+        }
+        .titledblock {} .figure {
+            max-width: 100%;
+        }
+        .listpreamble {
+            margin-top: 20px;
+        }
+        .list {
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        .list li {
+            margin-left: 13px;
+            padding-left: 0px;
+            list-style-position: outside;
+            list-style-type: none;
+            text-indent: -5px;
+            margin-top: 5px;
+        }
+        .list li: before {
+            content: '\2022';
+            position: relative;
+            left: -5px;
+        }
+        .list ul {
+            margin-top: 0px;
+        }
+        .list ul li {
+            list-style-type: none;
+            margin-left: 15px;
+            text-indent: -7px;
+        }
+        .list ul li: before {
+            content: '\2013';
+            position: relative;
+            left: -7px;
+        }
+        .hintblock {
+            display: none;
+        }
+        .table {
+            empty-cells: show;
+            border: 0px none;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table tr {
+            border: 0px none;
+        }
+        .table tr td,
+        th {
+            border: 0px none;
+            vertical-align: top;
+        }
+        .table tr th {
+            background-color: #cccccc;
+        }
+        .table-border {
+            empty-cells: show;
+            border: 1px solid #000000;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table-border tr {
+            border: 1px solid #000000;
+        }
+        .table-border tr td,
+        th {
+            border: 1px solid #000000;
+            vertical-align: top;
+        }
+        .table-border tr th {
+            background-color: #cccccc;
+        }
+        .codeblock {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre;
+        }
+        li .codeblock {
+            text-indent: 0px;
+        }
+        .logoimage {
+            margin: 10px;
+        }
+        .printhere {
+            margin-top: 40px;
+        }
+        .slide {
+            border: none;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .slidetitle {
+            font-size: 14pt;
+            font-weight: bold;
+            text-align: center;
+            display: none;
+        }
+        .slidebody {
+            text-align: left;
+        }
+        .commandname {
+            font-weight: bold;
+        }
+        .syntaxarg {
+            font-style: italic;
+        }
+        .syntaxkeyword {
+            font-weight: bold;
+            font-style: italic;
+        }
+        .footline {
+            width: 98%;
+            margin-top: 30px;
+        }
+        .copyright {
+            font-size: 10pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .question {
+            margin-bottom: 20px;
+            border-bottom: solid 1px #000;
+        }
+        .question .title {
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .options {
+            border: none;
+        }
+        .option input[type=checkbox],
+        input.checkbox {
+            display: block;
+            float: left;
+        }
+        .option input[type=radio],
+        input.radio {
+            display: block;
+            float: left;
+        }
+        .option input[type=submit] {} 
+        .option label {
+            position: relative;
+            margin-left: 30px;
+            display: block;
+        }
+        .options .correct {
+            background-color: #0f0;
+        }
+        .options .incorrect {
+            background-color: #f00;
+        }
+        .feedback { 
+            border: 1px solid #000; 
+            padding: 5px;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            background-color: #eee;
+        }
+        .fbhidden {
+           display: none;
+        }
+
+      </style></head><body><img src="logo.gif" style="logoimage"></img><div class="title">Introduction</div><div class="parablock" xmlns=""><div class="customnote"><div class="notetitle">Note</div><div class="richtext">In this activity, you will interact with a recording of a lab, made on actual devices, rather than with the actual devices. In this activity, when entering a command, the entire command must be entered exactly as stated, including matching the case and spaces; shortcuts and tab completion are not supported. In GUIs, you will only be able to use the menu items required for the activity, you will not be able to use other menu items. </div></div><div class="richtext">This activity is relatively short but very important. You will perform the initial configuration for a WLAN. In a corporate environment, you may have a large number or small number of WLANs, depending on your needs. When you connect to a wireless network, you use an SSID. Each SSID is associated to a WLAN. For example, you may have a Guest SSID that only provides the internet access to guest users. You may have an Employee SSID that can provide differentiated levels of services to different users or groups of users based on their login credentials. In some situations, you may have a department WLAN for just the users in that department. Other users would be prevented from joining that WLAN by their user credentials. In previous activities, you created an interface in the WLC. Here you will create the WLAN that uses that VLAN.</div><div class="customnote"><div class="notetitle">Note</div><div class="richtext">This is the fifth discovery in the series of the Cisco WLC discoveries. This discovery starts where the previous discovery has ended. The topology shows the relevant devices and addresses configured in this series of related discoveries.</div></div></div><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>
+<hr>
+<hr>
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Topology</title><style type="text/css">
+
+        .title {
+            font-weight: bold;
+        }
+        body {
+            font-size: 12pt;
+        }
+        body > .title {
+            font-size: 20pt;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .procedure > .title {
+            font-size: 18pt;
+        }
+        .procedure > .stepgroup > .title {
+            font-size: 16pt;
+        }
+        .procedure > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup {
+            margin-top: 10px;
+        }
+        .procedure > .parablock {
+            margin-top: 10px;
+        }
+        .procedure > .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .step {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .step > .action > div: first-child {
+            margin-left: -20px;
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock {
+            margin-top: 10px;
+        }
+        .step > .response {
+            margin-top: 10px;
+        }
+        .step > .parablock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .step > .parablock > .titledblock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .step > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .substep {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .substep > .action > div: first-child {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-left: -20px;
+        }
+        .richtext {
+            margin-top: 10px;
+        }
+        .titledblock > .parablock {
+            margin-top: 10px;
+        }
+        .customnote {
+            margin: 10px 5px 10px 5px;
+            border: 1px solid black;
+        }
+        .notetitle {
+            font-weight: bold;
+            border-bottom: 1px solid black;
+            width: 100%;
+        }
+        .procedure {
+            margin-top: 10px;
+        }
+        .stepgroup > .title {
+            margin-left: -20px;
+        }
+        .stepgroup {
+            margin-left: 20px;
+        }
+        .procedure {
+            margin-left: 20px;
+        }
+        .procedure > .title {
+            margin-left: -20px;
+        }
+        .topic > .title {
+            font-size: 16pt;
+        }
+        .topic > .topic > .title {
+            font-size: 14pt;
+        }
+        .topic > .topic {
+            margin-top: 10px;
+        }
+        .parablock img {
+            margin-top: 20px;
+        }
+        .highlight {
+            background-color: #ffff00;
+        }
+        .double-underline {
+            border-bottom: 3px double;
+        }
+        .overline {
+            text-decoration: overline;
+        }
+        .inlineterm {
+        }
+        .inlinewindowname {
+        }        
+        .inlinemenuselection {
+          font-weight: bold;
+        }        
+        .inlinetypethis {
+          font-weight: bold;
+        }        
+        .inlinecode {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .subscript {
+            vertical-align: sub;
+            font-size: smaller;
+        }
+        .superscript {
+            vertical-align: super;
+            font-size: smaller;
+        }
+        .strikethrough {
+            text-decoration: line-through;
+        }
+        .titledblock {} .figure {
+            max-width: 100%;
+        }
+        .listpreamble {
+            margin-top: 20px;
+        }
+        .list {
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        .list li {
+            margin-left: 13px;
+            padding-left: 0px;
+            list-style-position: outside;
+            list-style-type: none;
+            text-indent: -5px;
+            margin-top: 5px;
+        }
+        .list li: before {
+            content: '\2022';
+            position: relative;
+            left: -5px;
+        }
+        .list ul {
+            margin-top: 0px;
+        }
+        .list ul li {
+            list-style-type: none;
+            margin-left: 15px;
+            text-indent: -7px;
+        }
+        .list ul li: before {
+            content: '\2013';
+            position: relative;
+            left: -7px;
+        }
+        .hintblock {
+            display: none;
+        }
+        .table {
+            empty-cells: show;
+            border: 0px none;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table tr {
+            border: 0px none;
+        }
+        .table tr td,
+        th {
+            border: 0px none;
+            vertical-align: top;
+        }
+        .table tr th {
+            background-color: #cccccc;
+        }
+        .table-border {
+            empty-cells: show;
+            border: 1px solid #000000;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table-border tr {
+            border: 1px solid #000000;
+        }
+        .table-border tr td,
+        th {
+            border: 1px solid #000000;
+            vertical-align: top;
+        }
+        .table-border tr th {
+            background-color: #cccccc;
+        }
+        .codeblock {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre;
+        }
+        li .codeblock {
+            text-indent: 0px;
+        }
+        .logoimage {
+            margin: 10px;
+        }
+        .printhere {
+            margin-top: 40px;
+        }
+        .slide {
+            border: none;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .slidetitle {
+            font-size: 14pt;
+            font-weight: bold;
+            text-align: center;
+            display: none;
+        }
+        .slidebody {
+            text-align: left;
+        }
+        .commandname {
+            font-weight: bold;
+        }
+        .syntaxarg {
+            font-style: italic;
+        }
+        .syntaxkeyword {
+            font-weight: bold;
+            font-style: italic;
+        }
+        .footline {
+            width: 98%;
+            margin-top: 30px;
+        }
+        .copyright {
+            font-size: 10pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .question {
+            margin-bottom: 20px;
+            border-bottom: solid 1px #000;
+        }
+        .question .title {
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .options {
+            border: none;
+        }
+        .option input[type=checkbox],
+        input.checkbox {
+            display: block;
+            float: left;
+        }
+        .option input[type=radio],
+        input.radio {
+            display: block;
+            float: left;
+        }
+        .option input[type=submit] {} 
+        .option label {
+            position: relative;
+            margin-left: 30px;
+            display: block;
+        }
+        .options .correct {
+            background-color: #0f0;
+        }
+        .options .incorrect {
+            background-color: #f00;
+        }
+        .feedback { 
+            border: 1px solid #000; 
+            padding: 5px;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            background-color: #eee;
+        }
+        .fbhidden {
+           display: none;
+        }
+
+      </style></head><body><img src="logo.gif" style="logoimage"></img><div class="title">Topology</div><img class="figure" alt="" src="Discovery26.png" style="max-width: 100%;" xmlns=""></img><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>
+<hr>
+<hr>
+
+<style type="text/css" xmlns="http://www.w3.org/1999/xhtml">
+
+        .title {
+            font-weight: bold;
+        }
+        body {
+            font-size: 12pt;
+        }
+        body > .title {
+            font-size: 20pt;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .procedure > .title {
+            font-size: 18pt;
+        }
+        .procedure > .stepgroup > .title {
+            font-size: 16pt;
+        }
+        .procedure > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup {
+            margin-top: 10px;
+        }
+        .procedure > .parablock {
+            margin-top: 10px;
+        }
+        .procedure > .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .step {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .step > .action > div: first-child {
+            margin-left: -20px;
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock {
+            margin-top: 10px;
+        }
+        .step > .response {
+            margin-top: 10px;
+        }
+        .step > .parablock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .step > .parablock > .titledblock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .step > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .substep {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .substep > .action > div: first-child {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-left: -20px;
+        }
+        .richtext {
+            margin-top: 10px;
+        }
+        .titledblock > .parablock {
+            margin-top: 10px;
+        }
+        .customnote {
+            margin: 10px 5px 10px 5px;
+            border: 1px solid black;
+        }
+        .notetitle {
+            font-weight: bold;
+            border-bottom: 1px solid black;
+            width: 100%;
+        }
+        .procedure {
+            margin-top: 10px;
+        }
+        .stepgroup > .title {
+            margin-left: -20px;
+        }
+        .stepgroup {
+            margin-left: 20px;
+        }
+        .procedure {
+            margin-left: 20px;
+        }
+        .procedure > .title {
+            margin-left: -20px;
+        }
+        .topic > .title {
+            font-size: 16pt;
+        }
+        .topic > .topic > .title {
+            font-size: 14pt;
+        }
+        .topic > .topic {
+            margin-top: 10px;
+        }
+        .parablock img {
+            margin-top: 20px;
+        }
+        .highlight {
+            background-color: #ffff00;
+        }
+        .double-underline {
+            border-bottom: 3px double;
+        }
+        .overline {
+            text-decoration: overline;
+        }
+        .inlineterm {
+        }
+        .inlinewindowname {
+        }        
+        .inlinemenuselection {
+          font-weight: bold;
+        }        
+        .inlinetypethis {
+          font-weight: bold;
+        }        
+        .inlinecode {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .subscript {
+            vertical-align: sub;
+            font-size: smaller;
+        }
+        .superscript {
+            vertical-align: super;
+            font-size: smaller;
+        }
+        .strikethrough {
+            text-decoration: line-through;
+        }
+        .titledblock {} .figure {
+            max-width: 100%;
+        }
+        .listpreamble {
+            margin-top: 20px;
+        }
+        .list {
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        .list li {
+            margin-left: 13px;
+            padding-left: 0px;
+            list-style-position: outside;
+            list-style-type: none;
+            text-indent: -5px;
+            margin-top: 5px;
+        }
+        .list li: before {
+            content: '\2022';
+            position: relative;
+            left: -5px;
+        }
+        .list ul {
+            margin-top: 0px;
+        }
+        .list ul li {
+            list-style-type: none;
+            margin-left: 15px;
+            text-indent: -7px;
+        }
+        .list ul li: before {
+            content: '\2013';
+            position: relative;
+            left: -7px;
+        }
+        .hintblock {
+            display: none;
+        }
+        .table {
+            empty-cells: show;
+            border: 0px none;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table tr {
+            border: 0px none;
+        }
+        .table tr td,
+        th {
+            border: 0px none;
+            vertical-align: top;
+        }
+        .table tr th {
+            background-color: #cccccc;
+        }
+        .table-border {
+            empty-cells: show;
+            border: 1px solid #000000;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table-border tr {
+            border: 1px solid #000000;
+        }
+        .table-border tr td,
+        th {
+            border: 1px solid #000000;
+            vertical-align: top;
+        }
+        .table-border tr th {
+            background-color: #cccccc;
+        }
+        .codeblock {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre;
+        }
+        li .codeblock {
+            text-indent: 0px;
+        }
+        .logoimage {
+            margin: 10px;
+        }
+        .printhere {
+            margin-top: 40px;
+        }
+        .slide {
+            border: none;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .slidetitle {
+            font-size: 14pt;
+            font-weight: bold;
+            text-align: center;
+            display: none;
+        }
+        .slidebody {
+            text-align: left;
+        }
+        .commandname {
+            font-weight: bold;
+        }
+        .syntaxarg {
+            font-style: italic;
+        }
+        .syntaxkeyword {
+            font-weight: bold;
+            font-style: italic;
+        }
+        .footline {
+            width: 98%;
+            margin-top: 30px;
+        }
+        .copyright {
+            font-size: 10pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .question {
+            margin-bottom: 20px;
+            border-bottom: solid 1px #000;
+        }
+        .question .title {
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .options {
+            border: none;
+        }
+        .option input[type=checkbox],
+        input.checkbox {
+            display: block;
+            float: left;
+        }
+        .option input[type=radio],
+        input.radio {
+            display: block;
+            float: left;
+        }
+        .option input[type=submit] {} 
+        .option label {
+            position: relative;
+            margin-left: 30px;
+            display: block;
+        }
+        .options .correct {
+            background-color: #0f0;
+        }
+        .options .incorrect {
+            background-color: #f00;
+        }
+        .feedback { 
+            border: 1px solid #000; 
+            padding: 5px;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            background-color: #eee;
+        }
+        .fbhidden {
+           display: none;
+        }
+
+      </style>
+<div class="lds_sidebar_task"><h1>Task1: Configure a WLAN</h1><ul class="lds_sidebar_steps"><li><strong>Procedure1:
+      </strong><div class="richtext">You are back the Monitor Summary Screen. The first step is to choose the <span class="bold">WLANs</span> option in the top menu bar.</div><div class="lds_sidebar_tip"><div class="richtext"></div><img class="figure" alt="" src="CCNAU_1-0-0_EAI_Configure_a_WLAN_001.png" style="max-width: 100%;"></img></div></li><li><strong>Procedure2:
+      </strong><div class="richtext">You will see this screen next. As you can see, there are no WLANs configured on the WLC.</div><div class="lds_sidebar_tip"><div class="richtext">To add a new WLAN to the WLC, go to the right and look for the dialog box that says, &quot;Create New.&quot; Click the <span class="bold">Go</span> button next to the dialog box.</div><img class="figure" alt="" src="CCNAU_1-0-0_EAI_Configure_a_WLAN_002.png" style="max-width: 100%;"></img><div class="richtext">A new screen will appear that prompts you to type in the profile name and SSID details.</div><img class="figure" alt="" src="CCNAU_1-0-0_EAI_Configure_a_WLAN_003.png" style="max-width: 100%;"></img></div></li><li><strong>Procedure3:
+      </strong><div class="richtext">There are four fields that you can configure but you will only be using three of them in this discovery. Look at the Type dialog box. It says WLAN. Click the down arrow. You will see that there are three options, Guest LAN, WLAN, and Remote LAN. Guest LAN is meant for users that come into your facility and need only the internet access. The Remote LAN would be for those users that are using Office Extend AP (OEAP). This option would allow remote uses to connect to the corporate network and have the same access as if they were at their desk. For example, a mobile user at a home office. Choose <span class="bold">WLAN</span> from the drop-down menu </div><div class="lds_sidebar_tip"><div class="richtext"></div><img class="figure" alt="" src="CCNAU_1-0-0_EAI_Configure_a_WLAN_004.png" style="max-width: 100%;"></img></div></li><li><strong>Procedure4:
+      </strong><div class="richtext">The next option is Profile Name. Enter a descriptive name for the WLAN. Capitalization and spaces are permitted. Enter <span class="bold">1xauth1</span> in the <span class="bold">Profile Name</span> dialog box, and press <span class="bold">Enter</span>.</div><div class="lds_sidebar_tip"><div class="richtext"></div><div class="customnote"><div class="notetitle">Note</div><div class="richtext">This is a simulation. In a real environment, you would not need to press <span class="bold">Enter</span> and submit every entry. You would first fill in all the information on the screen and only submit it in the end, using the <span class="bold">Apply</span> button.</div></div><img class="figure" alt="" src="CCNAU_1-0-0_EAI_Configure_a_WLAN_005.png" style="max-width: 100%;"></img></div></li><li><strong>Procedure5:
+      </strong><div class="richtext">Now go to the SSID dialog box. Typically, the Profile Name and the SSID are the same. You could use different values, but it might cause confusion with your user community and that is something you really want to avoid. In the <span class="bold">SSID</span> Dialog box, enter <span class="bold">1xauth1</span> and press <span class="bold">Enter</span>.</div><div class="lds_sidebar_tip"><div class="richtext"></div><img class="figure" alt="" src="CCNAU_1-0-0_EAI_Configure_a_WLAN_006.png" style="max-width: 100%;"></img></div></li><li><strong>Procedure6:
+      </strong><div class="richtext">The last option is ID. This option is the VLAN you want to associate with the WLAN. As you can see, the default is 1. Click the down arrow, and you will see that the option range is from 1 to 512. Choose <span class="bold">10 </span>as<span class="bold"> </span>this is the ID of the VLAN you have created earlier.</div><div class="lds_sidebar_tip"><div class="richtext"></div><img class="figure" alt="" src="CCNAU_1-0-0_EAI_Configure_a_WLAN_007.png" style="max-width: 100%;"></img></div></li><li><strong>Procedure7:
+      </strong><div class="richtext">Remember to click <span class="bold">Apply</span>.</div><div class="lds_sidebar_tip"><div class="richtext"></div><img class="figure" alt="" src="CCNAU_1-0-0_EAI_Configure_a_WLAN_008.png" style="max-width: 100%;"></img></div></li><li><strong>Procedure8:
+      </strong><div class="richtext">Click <span class="bold">Save Configuration</span> to commit the changes.</div><div class="lds_sidebar_tip"><div class="richtext"></div><img class="figure" alt="" src="CCNAU_1-0-0_EAI_Configure_a_WLAN_009.png" style="max-width: 100%;"></img></div></li><li><strong>Procedure9:
+      </strong><div class="richtext">Upon receiving the pop-up window, confirm that you want to save the configuration by clicking <span class="bold">OK</span>.</div><div class="lds_sidebar_tip"><div class="richtext"></div><img class="figure" alt="" src="CCNAU_1-0-0_EAI_Configure_a_WLAN_010.png" style="max-width: 100%;"></img><div class="richtext">You will see this new screen. Notice at the top of the screen the heading is WLANs &gt; Edit &#39;1xauth1.&#39; Verify that the information that you entered in the previous step have been configured properly. </div><div class="richtext">You also see that there are five tabs below the heading. They are General, Security, QoS, Policy-Mapping, and Advanced. In this activity, you will only use the General tab. As you can see, the General tab is the opening tab you see. The profile name, Type, and SSID have been carried forward from the initial WLAN configuration screen.</div></div></li><li><strong>Procedure10:
+      </strong><div class="richtext">The most important configuration change you need to make is the Status option. Check the checkbox next to the <span class="bold">Enabled</span> option to change the status to Enabled.</div><div class="lds_sidebar_tip"><div class="richtext"></div><img class="figure" alt="" src="CCNAU_1-0-0_EAI_Configure_a_WLAN_011.png" style="max-width: 100%;"></img><div class="richtext">As you can see, there is a box next to Enabled. You need to click in the box next to <span class="bold">Enabled</span> to enable this WLAN. If you fail to click in the box next to Enabled, the WLAN will not become active. It often occurs that you made all the changes to the WLAN for Security and QoS, and when you go to try to join the WLAN, it is not there. You can spend a few minutes looking at your PC and WLC to ensure that they are working properly, only to discover that the Enabled box was not checked.</div></div></li><li><strong>Procedure11:
+      </strong><div class="richtext">Click <span class="bold">Apply</span>.</div><div class="lds_sidebar_tip"><div class="richtext"></div><img class="figure" alt="" src="CCNAU_1-0-0_EAI_Configure_a_WLAN_012.png" style="max-width: 100%;"></img></div></li><li><strong>Procedure12:
+      </strong><div class="richtext">Choose <span class="bold">Save Configuration </span>to apply the changes to the WLC. </div><div class="lds_sidebar_tip"><div class="richtext"></div><img class="figure" alt="" src="CCNAU_1-0-0_EAI_Configure_a_WLAN_012a.png" style="max-width: 100%;"></img></div></li><li><strong>Procedure13:
+      </strong><div class="richtext">Click <span class="bold">OK</span> in the pop-up window to confirm the changes.</div><div class="lds_sidebar_tip"><div class="richtext"></div><img class="figure" alt="" src="CCNAU_1-0-0_EAI_Configure_a_WLAN_013.png" style="max-width: 100%;"></img></div></li><li><strong>Procedure14:
+      </strong><div class="richtext">Click <span class="bold">WLANs</span> in the left menu bar.</div><div class="lds_sidebar_tip"><div class="richtext"></div><img class="figure" alt="" src="CCNAU_1-0-0_EAI_Configure_a_WLAN_014.png" style="max-width: 100%;"></img><div class="richtext">You will see this screen. Use this screen to verify all the changes you have entered for WLAN are correct. Pay particular attention to the Admin Status. Ensure it is Enabled otherwise the WLAN will not be active. </div><img class="figure" alt="" src="CCNAU_1-0-0_EAI_Configure_a_WLAN_015.png" style="max-width: 100%;"></img><div class="richtext">Click the <span class="bold">Next</span> button to see the rest of the screen. In a non-simulation environment, you would use the scrollbar.</div><img class="figure" alt="" src="CCNAU_1-0-0_EAI_Configure_a_WLAN_016.png" style="max-width: 100%;"></img><div class="customnote"><div class="notetitle">Note</div><div class="richtext">You can also remove a WLAN that you may no longer need or if it has been misconfigured by using the Remove option (from the blue drop-down arrow).</div></div></div></li><li><strong>Procedure15:
+      </strong><div class="richtext">You have completed this activity when you have attained these results:</div><ul class="list"><li>You have created a new WLAN.</li><li>You have added a Profile Name, selected a Type, added an SSID, and selected a VLAN ID.</li><li>You have verified the Profile Name and SSID and Enabled the WLAN.</li></ul></li><li><p><div class="titledblock"><div class="title">Configuring Additional WLAN Parameters</div><div class="parablock"><div class="listpreamble">Beside VLAN assignment, Profile name and SSID, you can configure additional parameters for the WLAN:</div><ul class="list"><li><span class="bold">Security:</span> You can define user authentication and traffic encryption types.</li><li><span class="bold">QoS:</span> QoS provides priority, including dedicated bandwidth. You can choose one of four different QoS levels per WLAN:<ul class="list"><li>Platinum/Voice—ensures a high quality of service for voice over wireless.</li><li>Gold/Video—supports high-quality video applications.</li><li>Silver/Best Effort—supports normal bandwidth for clients. This level is the default setting.</li><li>Bronze/Background—provides the lowest bandwidth, e.g. for guest services.</li></ul></li><li><span class="bold">Advanced: </span>Provides you options to configure advanced performance and security features. Some of them include:<ul class="list"><li>Enabling AAA override—RADIUS server can dynamically provide VLAN, ACL, and QoS assignment for the client.</li><li>Enabling the client session timeout.</li><li>Providing the maximum number of clients that are allowed per WLAN.</li><li>Enabling client exclusion.</li><li>Configuring peer-to-peer blocking.</li><li>Enabling band select feature, that tries to force clients to use 5GHz if possible.</li><li>Enabling load balancing feature, that tries to balance the clients between different APs. This is usually applicable for high density environments, when APs are installed close together. </li><li>Configuring WLAN as FlexConnect WLAN, which can then be switched locally instead of centrally on the WLC. </li></ul></li></ul><img class="figure" alt="" src="CCNA_1-0-0_EAI_Configure_a_WLAN_012aac.png" style="max-width: 100%;"></img></div></div></p></li></ul></div>

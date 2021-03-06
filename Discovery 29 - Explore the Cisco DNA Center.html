@@ -1,0 +1,1038 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Introduction</title><style type="text/css">
+
+        .title {
+            font-weight: bold;
+        }
+        body {
+            font-size: 12pt;
+        }
+        body > .title {
+            font-size: 20pt;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .procedure > .title {
+            font-size: 18pt;
+        }
+        .procedure > .stepgroup > .title {
+            font-size: 16pt;
+        }
+        .procedure > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup {
+            margin-top: 10px;
+        }
+        .procedure > .parablock {
+            margin-top: 10px;
+        }
+        .procedure > .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .step {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .step > .action > div: first-child {
+            margin-left: -20px;
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock {
+            margin-top: 10px;
+        }
+        .step > .response {
+            margin-top: 10px;
+        }
+        .step > .parablock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .step > .parablock > .titledblock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .step > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .substep {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .substep > .action > div: first-child {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-left: -20px;
+        }
+        .richtext {
+            margin-top: 10px;
+        }
+        .titledblock > .parablock {
+            margin-top: 10px;
+        }
+        .customnote {
+            margin: 10px 5px 10px 5px;
+            border: 1px solid black;
+        }
+        .notetitle {
+            font-weight: bold;
+            border-bottom: 1px solid black;
+            width: 100%;
+        }
+        .procedure {
+            margin-top: 10px;
+        }
+        .stepgroup > .title {
+            margin-left: -20px;
+        }
+        .stepgroup {
+            margin-left: 20px;
+        }
+        .procedure {
+            margin-left: 20px;
+        }
+        .procedure > .title {
+            margin-left: -20px;
+        }
+        .topic > .title {
+            font-size: 16pt;
+        }
+        .topic > .topic > .title {
+            font-size: 14pt;
+        }
+        .topic > .topic {
+            margin-top: 10px;
+        }
+        .parablock img {
+            margin-top: 20px;
+        }
+        .highlight {
+            background-color: #ffff00;
+        }
+        .double-underline {
+            border-bottom: 3px double;
+        }
+        .overline {
+            text-decoration: overline;
+        }
+        .inlineterm {
+        }
+        .inlinewindowname {
+        }        
+        .inlinemenuselection {
+          font-weight: bold;
+        }        
+        .inlinetypethis {
+          font-weight: bold;
+        }        
+        .inlinecode {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .subscript {
+            vertical-align: sub;
+            font-size: smaller;
+        }
+        .superscript {
+            vertical-align: super;
+            font-size: smaller;
+        }
+        .strikethrough {
+            text-decoration: line-through;
+        }
+        .titledblock {} .figure {
+            max-width: 100%;
+        }
+        .listpreamble {
+            margin-top: 20px;
+        }
+        .list {
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        .list li {
+            margin-left: 13px;
+            padding-left: 0px;
+            list-style-position: outside;
+            list-style-type: none;
+            text-indent: -5px;
+            margin-top: 5px;
+        }
+        .list li: before {
+            content: '\2022';
+            position: relative;
+            left: -5px;
+        }
+        .list ul {
+            margin-top: 0px;
+        }
+        .list ul li {
+            list-style-type: none;
+            margin-left: 15px;
+            text-indent: -7px;
+        }
+        .list ul li: before {
+            content: '\2013';
+            position: relative;
+            left: -7px;
+        }
+        .hintblock {
+            display: none;
+        }
+        .table {
+            empty-cells: show;
+            border: 0px none;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table tr {
+            border: 0px none;
+        }
+        .table tr td,
+        th {
+            border: 0px none;
+            vertical-align: top;
+        }
+        .table tr th {
+            background-color: #cccccc;
+        }
+        .table-border {
+            empty-cells: show;
+            border: 1px solid #000000;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table-border tr {
+            border: 1px solid #000000;
+        }
+        .table-border tr td,
+        th {
+            border: 1px solid #000000;
+            vertical-align: top;
+        }
+        .table-border tr th {
+            background-color: #cccccc;
+        }
+        .codeblock {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre;
+        }
+        li .codeblock {
+            text-indent: 0px;
+        }
+        .logoimage {
+            margin: 10px;
+        }
+        .printhere {
+            margin-top: 40px;
+        }
+        .slide {
+            border: none;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .slidetitle {
+            font-size: 14pt;
+            font-weight: bold;
+            text-align: center;
+            display: none;
+        }
+        .slidebody {
+            text-align: left;
+        }
+        .commandname {
+            font-weight: bold;
+        }
+        .syntaxarg {
+            font-style: italic;
+        }
+        .syntaxkeyword {
+            font-weight: bold;
+            font-style: italic;
+        }
+        .footline {
+            width: 98%;
+            margin-top: 30px;
+        }
+        .copyright {
+            font-size: 10pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .question {
+            margin-bottom: 20px;
+            border-bottom: solid 1px #000;
+        }
+        .question .title {
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .options {
+            border: none;
+        }
+        .option input[type=checkbox],
+        input.checkbox {
+            display: block;
+            float: left;
+        }
+        .option input[type=radio],
+        input.radio {
+            display: block;
+            float: left;
+        }
+        .option input[type=submit] {} 
+        .option label {
+            position: relative;
+            margin-left: 30px;
+            display: block;
+        }
+        .options .correct {
+            background-color: #0f0;
+        }
+        .options .incorrect {
+            background-color: #f00;
+        }
+        .feedback { 
+            border: 1px solid #000; 
+            padding: 5px;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            background-color: #eee;
+        }
+        .fbhidden {
+           display: none;
+        }
+
+      </style></head><body><img src="logo.gif" style="logoimage"></img><div class="title">Introduction</div><div class="parablock" xmlns=""><div class="customnote"><div class="notetitle">Note</div><div class="richtext">In this activity, you will interact with a recording of a lab, made on actual devices, rather than with the actual devices. In this activity, when entering a command, the entire command must be entered exactly as stated, including matching the case and spaces; shortcuts and tab completion are not supported. In GUIs, you will only be able to use the menu items required for the activity, you will not be able to use other menu items. </div></div><div class="richtext">This discovery will guide you through the usage of the Cisco DNA Center GUI. You will navigate through different menus to explore the functionalities of the controller.</div></div><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>
+
+<hr>
+<hr>
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>Topology</title><style type="text/css">
+
+        .title {
+            font-weight: bold;
+        }
+        body {
+            font-size: 12pt;
+        }
+        body > .title {
+            font-size: 20pt;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .procedure > .title {
+            font-size: 18pt;
+        }
+        .procedure > .stepgroup > .title {
+            font-size: 16pt;
+        }
+        .procedure > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup {
+            margin-top: 10px;
+        }
+        .procedure > .parablock {
+            margin-top: 10px;
+        }
+        .procedure > .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .step {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .step > .action > div: first-child {
+            margin-left: -20px;
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock {
+            margin-top: 10px;
+        }
+        .step > .response {
+            margin-top: 10px;
+        }
+        .step > .parablock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .step > .parablock > .titledblock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .step > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .substep {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .substep > .action > div: first-child {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-left: -20px;
+        }
+        .richtext {
+            margin-top: 10px;
+        }
+        .titledblock > .parablock {
+            margin-top: 10px;
+        }
+        .customnote {
+            margin: 10px 5px 10px 5px;
+            border: 1px solid black;
+        }
+        .notetitle {
+            font-weight: bold;
+            border-bottom: 1px solid black;
+            width: 100%;
+        }
+        .procedure {
+            margin-top: 10px;
+        }
+        .stepgroup > .title {
+            margin-left: -20px;
+        }
+        .stepgroup {
+            margin-left: 20px;
+        }
+        .procedure {
+            margin-left: 20px;
+        }
+        .procedure > .title {
+            margin-left: -20px;
+        }
+        .topic > .title {
+            font-size: 16pt;
+        }
+        .topic > .topic > .title {
+            font-size: 14pt;
+        }
+        .topic > .topic {
+            margin-top: 10px;
+        }
+        .parablock img {
+            margin-top: 20px;
+        }
+        .highlight {
+            background-color: #ffff00;
+        }
+        .double-underline {
+            border-bottom: 3px double;
+        }
+        .overline {
+            text-decoration: overline;
+        }
+        .inlineterm {
+        }
+        .inlinewindowname {
+        }        
+        .inlinemenuselection {
+          font-weight: bold;
+        }        
+        .inlinetypethis {
+          font-weight: bold;
+        }        
+        .inlinecode {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .subscript {
+            vertical-align: sub;
+            font-size: smaller;
+        }
+        .superscript {
+            vertical-align: super;
+            font-size: smaller;
+        }
+        .strikethrough {
+            text-decoration: line-through;
+        }
+        .titledblock {} .figure {
+            max-width: 100%;
+        }
+        .listpreamble {
+            margin-top: 20px;
+        }
+        .list {
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        .list li {
+            margin-left: 13px;
+            padding-left: 0px;
+            list-style-position: outside;
+            list-style-type: none;
+            text-indent: -5px;
+            margin-top: 5px;
+        }
+        .list li: before {
+            content: '\2022';
+            position: relative;
+            left: -5px;
+        }
+        .list ul {
+            margin-top: 0px;
+        }
+        .list ul li {
+            list-style-type: none;
+            margin-left: 15px;
+            text-indent: -7px;
+        }
+        .list ul li: before {
+            content: '\2013';
+            position: relative;
+            left: -7px;
+        }
+        .hintblock {
+            display: none;
+        }
+        .table {
+            empty-cells: show;
+            border: 0px none;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table tr {
+            border: 0px none;
+        }
+        .table tr td,
+        th {
+            border: 0px none;
+            vertical-align: top;
+        }
+        .table tr th {
+            background-color: #cccccc;
+        }
+        .table-border {
+            empty-cells: show;
+            border: 1px solid #000000;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table-border tr {
+            border: 1px solid #000000;
+        }
+        .table-border tr td,
+        th {
+            border: 1px solid #000000;
+            vertical-align: top;
+        }
+        .table-border tr th {
+            background-color: #cccccc;
+        }
+        .codeblock {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre;
+        }
+        li .codeblock {
+            text-indent: 0px;
+        }
+        .logoimage {
+            margin: 10px;
+        }
+        .printhere {
+            margin-top: 40px;
+        }
+        .slide {
+            border: none;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .slidetitle {
+            font-size: 14pt;
+            font-weight: bold;
+            text-align: center;
+            display: none;
+        }
+        .slidebody {
+            text-align: left;
+        }
+        .commandname {
+            font-weight: bold;
+        }
+        .syntaxarg {
+            font-style: italic;
+        }
+        .syntaxkeyword {
+            font-weight: bold;
+            font-style: italic;
+        }
+        .footline {
+            width: 98%;
+            margin-top: 30px;
+        }
+        .copyright {
+            font-size: 10pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .question {
+            margin-bottom: 20px;
+            border-bottom: solid 1px #000;
+        }
+        .question .title {
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .options {
+            border: none;
+        }
+        .option input[type=checkbox],
+        input.checkbox {
+            display: block;
+            float: left;
+        }
+        .option input[type=radio],
+        input.radio {
+            display: block;
+            float: left;
+        }
+        .option input[type=submit] {} 
+        .option label {
+            position: relative;
+            margin-left: 30px;
+            display: block;
+        }
+        .options .correct {
+            background-color: #0f0;
+        }
+        .options .incorrect {
+            background-color: #f00;
+        }
+        .feedback { 
+            border: 1px solid #000; 
+            padding: 5px;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            background-color: #eee;
+        }
+        .fbhidden {
+           display: none;
+        }
+
+      </style></head><body><img src="logo.gif" style="logoimage"></img><div class="title">Topology</div><img class="figure" alt="" src="CCNA_1-0-0_EAI_DISCOVERY_APIC_EM_001.png" style="max-width: 100%;" xmlns=""></img><hr class="footline"></hr><div class="copyright">&#169; 2020 Cisco Systems, Inc.</div></body></html>
+<hr>
+<hr>
+
+<style type="text/css" xmlns="http://www.w3.org/1999/xhtml">
+
+        .title {
+            font-weight: bold;
+        }
+        body {
+            font-size: 12pt;
+        }
+        body > .title {
+            font-size: 20pt;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .procedure > .title {
+            font-size: 18pt;
+        }
+        .procedure > .stepgroup > .title {
+            font-size: 16pt;
+        }
+        .procedure > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup {
+            margin-top: 10px;
+        }
+        .procedure > .parablock {
+            margin-top: 10px;
+        }
+        .procedure > .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .step {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .step > .action > div: first-child {
+            margin-left: -20px;
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock {
+            margin-top: 10px;
+        }
+        .step > .response {
+            margin-top: 10px;
+        }
+        .step > .parablock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .step > .parablock > .titledblock {
+            margin-top: 10px;
+        }
+        .step > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .step > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            font-size: 14pt;
+        }
+        .stepgroup > .parablock > .titledblock > .title {
+            margin-top: 10px;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock > .title {
+            font-size: 12pt;
+        }
+        .stepgroup > .parablock > .titledblock .titledblock {
+            margin-top: 10px;
+        }
+        .substep {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .substep > .action > div: first-child {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-left: -20px;
+        }
+        .richtext {
+            margin-top: 10px;
+        }
+        .titledblock > .parablock {
+            margin-top: 10px;
+        }
+        .customnote {
+            margin: 10px 5px 10px 5px;
+            border: 1px solid black;
+        }
+        .notetitle {
+            font-weight: bold;
+            border-bottom: 1px solid black;
+            width: 100%;
+        }
+        .procedure {
+            margin-top: 10px;
+        }
+        .stepgroup > .title {
+            margin-left: -20px;
+        }
+        .stepgroup {
+            margin-left: 20px;
+        }
+        .procedure {
+            margin-left: 20px;
+        }
+        .procedure > .title {
+            margin-left: -20px;
+        }
+        .topic > .title {
+            font-size: 16pt;
+        }
+        .topic > .topic > .title {
+            font-size: 14pt;
+        }
+        .topic > .topic {
+            margin-top: 10px;
+        }
+        .parablock img {
+            margin-top: 20px;
+        }
+        .highlight {
+            background-color: #ffff00;
+        }
+        .double-underline {
+            border-bottom: 3px double;
+        }
+        .overline {
+            text-decoration: overline;
+        }
+        .inlineterm {
+        }
+        .inlinewindowname {
+        }        
+        .inlinemenuselection {
+          font-weight: bold;
+        }        
+        .inlinetypethis {
+          font-weight: bold;
+        }        
+        .inlinecode {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .subscript {
+            vertical-align: sub;
+            font-size: smaller;
+        }
+        .superscript {
+            vertical-align: super;
+            font-size: smaller;
+        }
+        .strikethrough {
+            text-decoration: line-through;
+        }
+        .titledblock {} .figure {
+            max-width: 100%;
+        }
+        .listpreamble {
+            margin-top: 20px;
+        }
+        .list {
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        .list li {
+            margin-left: 13px;
+            padding-left: 0px;
+            list-style-position: outside;
+            list-style-type: none;
+            text-indent: -5px;
+            margin-top: 5px;
+        }
+        .list li: before {
+            content: '\2022';
+            position: relative;
+            left: -5px;
+        }
+        .list ul {
+            margin-top: 0px;
+        }
+        .list ul li {
+            list-style-type: none;
+            margin-left: 15px;
+            text-indent: -7px;
+        }
+        .list ul li: before {
+            content: '\2013';
+            position: relative;
+            left: -7px;
+        }
+        .hintblock {
+            display: none;
+        }
+        .table {
+            empty-cells: show;
+            border: 0px none;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table tr {
+            border: 0px none;
+        }
+        .table tr td,
+        th {
+            border: 0px none;
+            vertical-align: top;
+        }
+        .table tr th {
+            background-color: #cccccc;
+        }
+        .table-border {
+            empty-cells: show;
+            border: 1px solid #000000;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        .table-border tr {
+            border: 1px solid #000000;
+        }
+        .table-border tr td,
+        th {
+            border: 1px solid #000000;
+            vertical-align: top;
+        }
+        .table-border tr th {
+            background-color: #cccccc;
+        }
+        .codeblock {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre;
+        }
+        li .codeblock {
+            text-indent: 0px;
+        }
+        .logoimage {
+            margin: 10px;
+        }
+        .printhere {
+            margin-top: 40px;
+        }
+        .slide {
+            border: none;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .slidetitle {
+            font-size: 14pt;
+            font-weight: bold;
+            text-align: center;
+            display: none;
+        }
+        .slidebody {
+            text-align: left;
+        }
+        .commandname {
+            font-weight: bold;
+        }
+        .syntaxarg {
+            font-style: italic;
+        }
+        .syntaxkeyword {
+            font-weight: bold;
+            font-style: italic;
+        }
+        .footline {
+            width: 98%;
+            margin-top: 30px;
+        }
+        .copyright {
+            font-size: 10pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .question {
+            margin-bottom: 20px;
+            border-bottom: solid 1px #000;
+        }
+        .question .title {
+            font-weight: bold;
+            font-size: 14pt;
+        }
+        .multiplechoice {}
+        .stem {
+            margin-bottom: 10px;
+        }
+        .options {
+            border: none;
+        }
+        .option input[type=checkbox],
+        input.checkbox {
+            display: block;
+            float: left;
+        }
+        .option input[type=radio],
+        input.radio {
+            display: block;
+            float: left;
+        }
+        .option input[type=submit] {} 
+        .option label {
+            position: relative;
+            margin-left: 30px;
+            display: block;
+        }
+        .options .correct {
+            background-color: #0f0;
+        }
+        .options .incorrect {
+            background-color: #f00;
+        }
+        .feedback { 
+            border: 1px solid #000; 
+            padding: 5px;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            background-color: #eee;
+        }
+        .fbhidden {
+           display: none;
+        }
+
+      </style>
+<div class="lds_sidebar_task"><h1>Task1: Explore Cisco DNA Center GUI</h1><p>Explore the Cisco DNA Center_PORTFOLIO_2.0/_Cross_Technology/CCNA_Unified/CCNA/v1.0/v1.0/ELT_Videos/CCNA100_27-7_Explore_DNA_Center_001.mp43Play Transcript ID4190906template_version4.1.1_PORTFOLIO_2.0/_Cross_Technology/CCNA_Unified/CCNA/v1.0/v1.0/ELT_Videos/CCNA100_27-7_Explore_DNA_Center_001.vtt</p><ul class="lds_sidebar_steps"><li><p><div class="customnote"><div class="notetitle">Note</div><div class="richtext">The red callouts in the simulation signify the steps where you will simply observe. When the blue callouts appear, you are expected to follow the instructions, take action, and explore the Cisco DNA GUI.</div></div><div class="richtext">Complete the following steps:</div></p></li><li><strong>Procedure1:
+      </strong><div class="richtext">Click the Cisco DNA Center icon. </div><div class="lds_sidebar_tip"><div class="richtext">This action will automatically connect you to the Cisco DNA Center GUI home page, where you get the welcome message, overall health summary, network snapshot, network configuration, and operation and tools. </div><img class="figure" alt="" src="CCNA_1-0-0_EAI_DNA_001a.png" style="max-width: 100%;"></img></div></li><li><strong>Procedure2:
+      </strong><div class="richtext">The screen scrolls down to the <span class="bold">Tools</span> area; click the <span class="bold">Discovery</span> box.</div><div class="lds_sidebar_tip"><div class="richtext">This tool allows the Cisco DNA Center to automatically build a network topology. </div><img class="figure" alt="" src="CCNA_1-0-0_EAI_DNA_002a.png" style="max-width: 100%;"></img><div class="listpreamble">Cisco DNA Center offers three methods for discovering networking devices. </div><ul class="list"><li><span class="bold">Cisco</span> <span class="bold">Discovery Protocol:</span> Cisco DNA center uses Cisco Discovery protocol to discover network devices and interconnections between devices.</li><li><span class="bold">Range:</span> You can provide an IP address range and the server will attempt to communicate with devices by using SSH, Telnet, HTTP, HTTPS, and NETCONF.</li><li><span class="bold">Link Layer Discovery Protocol</span>: Cisco DNA center uses Link Layer Discovery protocol to discover network devices and interconnections between devices.</li></ul><img class="figure" alt="" src="CCNA_1-0-0_EAI_DNA_002aa.png" style="max-width: 100%;"></img></div></li><li><strong>Procedure3:
+      </strong><div class="richtext">Click the <span class="bold">DiscoveryAtAll Sites</span> area to display the discovered devices.</div><div class="lds_sidebar_tip"><div class="richtext"></div><div class="richtext">Regardless of the method that you use, you will need to provide the credentials to use when attempting communication from the server to get access to the information on the device. These credentials can be global (used for all devices) or specific (exception device credentials that are used during the scan). </div><div class="richtext">You can see that a couple of active scans are currently in progress. You can see that the IP addresses are listed in the table on the right-hand side, along with some detailed information that has been discovered about this device.</div><img class="figure" alt="" src="CCNA_1-0-0_EAI_DNA_002b.png" style="max-width: 100%;"></img></div></li><li><strong>Procedure4:
+      </strong><div class="richtext">Click the Cisco icon in the top left corner to return to the <span class="bold">Home</span> screen; the screen will scroll down to <span class="bold">Tools</span>. Click the <span class="bold">Inventory</span> box, then click the three dots to display the <span class="bold">Layout</span> menu.</div><div class="lds_sidebar_tip"><div class="richtext"></div><img class="figure" alt="" src="CCNA_1-0-0_EAI_DNA_004a.png" style="max-width: 100%;"></img><div class="richtext">This page displays all the network devices that the Cisco DNA Center controller is aware of and can work with.</div><img class="figure" alt="" src="CCNA_1-0-0_EAI_DNA_005a.png" style="max-width: 100%;"></img><div class="richtext">By default, the display shows the Status, Hardware, and Tagging layouts. When you use the Layout drop-down (three vertical dots) menu, you can define which type of information you want to be displayed. For example, media access control (MAC) address, IP address, operating system (OS) version, device platform, and serial number. You can also view the configuration of the device, the up time, and so on.</div><div class="richtext">You can also sort and filter devices by device name, IP address, reachability status, or the OS version.</div></div></li><li><strong>Procedure5:
+      </strong><div class="richtext">Click the <span class="bold">MAC address</span> checkbox, and then click <span class="bold">Apply</span>.</div><div class="lds_sidebar_tip"><div class="richtext"></div><img class="figure" alt="" src="CCNA_1-0-0_EAI_DNA_025a.png" style="max-width: 100%;"></img><img class="figure" alt="" src="CCNA_1-0-0_EAI_DNA_026a.png" style="max-width: 100%;"></img><div class="richtext">Notice that the MAC addresses have been added.</div></div></li><li><strong>Procedure6:
+      </strong><div class="richtext">Click the <span class="bold">Device Name </span>column title to sort devices bottom-up.</div><div class="lds_sidebar_tip"><div class="richtext">Before clicking the <span class="bold">Device Name</span> column:</div><img class="figure" alt="" src="CCNA_1-0-0_EAI_DNA_026a.png" style="max-width: 100%;"></img><div class="richtext">After clicking the <span class="bold">Device Name </span>column:</div><img class="figure" alt="" src="CCNA_1-0-0_EAI_DNA_027a.png" style="max-width: 100%;"></img></div></li><li><strong>Procedure7:
+      </strong><div class="richtext">Click the Cisco icon in the top left corner; the screen will scroll down to <span class="bold">Tools</span>. Click the <span class="bold">Topology</span> box.</div><div class="lds_sidebar_tip"><div class="richtext"></div><img class="figure" alt="" src="CCNA_1-0-0_EAI_DNA_006a.png" style="max-width: 100%;"></img><div class="richtext">This page gives you a visual depiction of what the network topology looks like, including all the nodes and edges that were gathered during the discovery process.</div><div class="richtext">There are multiple topological graphs. You can choose them by using the <span class="bold">View Option</span> gear and <span class="bold">Layer</span> menu.</div></div></li><li><strong>Procedure8:
+      </strong><div class="richtext">In the <span class="bold">Topology </span>view, choose the <span class="bold">View Option</span> gear. In the Layout tab, the <span class="bold">Cisco Recommended</span> view is chosen by default. Click the <span class="bold">Collapsed View</span> to toggle the <span class="bold">Expanded View</span> and then click the <span class="bold">Expanded View</span> to toggle back.</div><div class="lds_sidebar_tip"><div class="richtext">Observe how the topology is presented.</div><img class="figure" alt="" src="CCNA_1-0-0_EAI_DNA_007a.png" style="max-width: 100%;"></img><img class="figure" alt="" src="CCNA_1-0-0_EAI_DNA_008a.png" style="max-width: 100%;"></img></div></li><li><strong>Procedure9:
+      </strong><div class="richtext">Click the Cisco icon in the top left corner to return to the <span class="bold">Home</span> screen, then choose the <span class="bold">Policy</span> option from the top menu.</div><div class="lds_sidebar_tip"><div class="richtext"></div><img class="figure" alt="" src="CCNA_1-0-0_EAI_DNA_009a.png" style="max-width: 100%;"></img><div class="richtext">You can see <span class="bold">Dashboard</span>, <span class="bold">Group-Based Access Control</span>, <span class="bold">IP Based Access Control, Application, Traffic Copy</span>, and <span class="bold">Virtual Network</span> tabs.</div><img class="figure" alt="" src="CCNA_1-0-0_EAI_DNA_010a.png" style="max-width: 100%;"></img></div></li><li><strong>Procedure10:
+      </strong><div class="richtext">Choose the <span class="bold">IP Based Access Control</span> tab. The <span class="bold">IP Based Access Control Policies</span> tab is already selected. Click <span class="bold">Add Policy</span>.</div><div class="lds_sidebar_tip"><div class="richtext"></div><img class="figure" alt="" src="CCNA_1-0-0_EAI_DNA_011a.png" style="max-width: 100%;"></img><div class="richtext">You can see that the parameters here are similar to creating an access control list (ACL) on Cisco Internet Operating System (IOS). The only difference is that this policy will be pushed to all devices that need it, which helps you make fewer mistakes when implementing networkwide policies.</div><img class="figure" alt="" src="CCNA_1-0-0_EAI_DNA_012a.png" style="max-width: 100%;"></img></div></li><li><strong>Procedure11:
+      </strong><div class="richtext">Now, choose the <span class="bold">Assurance</span> option from the top menu. The screen will scroll down and then scroll up again.</div><div class="lds_sidebar_tip"><div class="richtext"></div><img class="figure" alt="" src="CCNA_1-0-0_EAI_DNA_013a.png" style="max-width: 100%;"></img><div class="richtext">This page gives you a visual depiction of the <span class="bold">Overall Health</span>, including <span class="bold">Network Devices </span>health, <span class="bold">Wired</span> <span class="bold">Clients</span> health, <span class="bold">Wireless Clients</span> health, and <span class="bold">Top 10 Issues</span>. </div></div></li><li><strong>Procedure12:
+      </strong><div class="richtext">From the menu, choose <span class="bold">Health &gt; Network</span>. The screen will scroll down and then scroll up again.</div><div class="lds_sidebar_tip"><div class="richtext">The dashboard provides an at-a-glance view of the overall network health.</div><img class="figure" alt="" src="CCNA_1-0-0_EAI_DNA_014a.png" style="max-width: 100%;"></img><div class="richtext">Health Scores are given for the network and for clients. Cisco DNA Center pulls information from switches, routers, WLCs, and APs, correlating that information with the Cisco Identity Services Engine (ISE) which provides client information on both users and devices, making this dashboard view incredibly helpful in quickly identifying the health of the entire network environment.</div><img class="figure" alt="" src="CCNA_1-0-0_EAI_DNA_015a.png" style="max-width: 100%;"></img></div></li><li><strong>Procedure13:
+      </strong><div class="richtext">Go to <span class="bold">Issues</span> &gt; <span class="bold">Global Issues</span>.</div><div class="lds_sidebar_tip"><div class="richtext">If problems have been detected on any of these elements, the <span class="bold">Global Issues</span> list enables you to quickly locate issues that may be impacting users or network performance.</div><img class="figure" alt="" src="CCNA_1-0-0_EAI_DNA_016a.png" style="max-width: 100%;"></img></div></li><li><strong>Procedure14:
+      </strong><div class="richtext">You will notice that Cisco DNA Center can greatly simplify troubleshooting effort. For example, user Grace called saying that she was not able to connect to the network yesterday. Click the <span class="bold">Search tool </span>(the magnifying glass Icon) in the upper right corner, enter <span class="bold">gra</span>, and then press <span class="bold">Enter</span>, select user <span class="bold">Grace.Smith</span> and click the <span class="bold">User 360</span>.<span class="bold"> </span>The screen will scroll to the Issues area.</div><div class="lds_sidebar_tip"><div class="richtext">Since Cisco DNA Center is tied to the Cisco ISE, you will start by using the search tool to find Grace. After typing in a few letters, the search tool autocompletes the name to find <span class="bold">Grace Smith</span>. Now, take a look at what you can learn about <span class="bold">Grace</span> and her difficulties.</div><img class="figure" alt="" src="CCNA_1-0-0_EAI_DNA_017a.png" style="max-width: 100%;"></img><div class="richtext">With Client 360, you can see the complete Cisco DNA Center related information pertaining to Grace Smith. You can see that Grace has three devices registered and one of them is having trouble. Her iPad does not appear to be connected but her other devices are connected without issue.</div><img class="figure" alt="" src="CCNA_1-0-0_EAI_DNA_018a.png" style="max-width: 100%;"></img></div></li><li><strong>Procedure15:
+      </strong><div class="richtext">Observe Grace&#39;s iPad <span class="bold">Issues</span>.</div><div class="lds_sidebar_tip"><div class="richtext">You also see a list of issues that Grace has experienced. The issues listed are context-sensitive, meaning the issues are related to the device under examination, in this case, her iPad. It looks like she’s had couple of issues: Application issues and Onboarding issues.</div><img class="figure" alt="" src="CCNA_1-0-0_EAI_DNA_019a.png" style="max-width: 100%;"></img></div></li><li><strong>Procedure16:
+      </strong><div class="richtext">Click Grace&#39;s iPad <span class="bold">Onboarding</span>. The screen will scroll down through the <span class="bold">Detail</span> information, and back up. The screen will then scroll through the timeline.</div><div class="lds_sidebar_tip"><div class="richtext">You can see exactly where (her location) she was trying to connect. You are able to get the information about her location and about the specific devices that her iPad was interacting with when she had the problem throughout the onboarding process.</div><img class="figure" alt="" src="CCNA_1-0-0_EAI_DNA_020a.png" style="max-width: 100%;"></img><div class="richtext">You can also see that the Authentication Server was operational. You can automatically eliminate one possible source of the problem.</div><div class="richtext">Observe the <span class="bold">Detail</span> information related to Grace’s iPad and its experience on the network including her IP Address, MAC Address, what radio frequency band she is trying to connect with and so on.</div><div class="richtext">You have complete visibility. However, you need to know what was happening yesterday when she was trying to connect. One of the most difficult types of problems to resolve are problems that are reported now but happened in the past—which is exactly the purpose and power of Network Time Travel. Take a look and see how it works.</div><div class="richtext">Once at the top of the page again, you see her iPad timeline for the last 24 hours. You can change the granularity from 3 hours to 7 days; however, you are interested in the last 24 hours.</div><div class="richtext">Observing the timeline, you can see that Grace’s iPad was fine prior to the problem with a perfect health score and strong wireless connectivity.</div></div></li><li><strong>Procedure17:
+      </strong><div class="richtext">When the cursor is where the health dropped to 1, click the timeline. The screen will scroll down to the Issues area.</div><div class="lds_sidebar_tip"><div class="richtext">She was not connecting at this point.</div><img class="figure" alt="" src="CCNA_1-0-0_EAI_DNA_021a.png" style="max-width: 100%;"></img></div></li><li><strong>Procedure18:
+      </strong><div class="richtext">Click the <span class="bold">Wireless client failed to connect</span> issue</div><div class="lds_sidebar_tip"><div class="richtext">As you continue to explore the timeline, you also notice that the issues are, once again, context sensitive, meaning the issues listed reflect or are associated with the timeline under examination.</div><img class="figure" alt="" src="CCNA_1-0-0_EAI_DNA_022a.png" style="max-width: 100%;"></img><div class="richtext">Looking at the issues found by the analytic engine within Assurance you see that she failed to connect to Service Set Identifier (SSID) @CorpSSID because the client timed out.</div><div class="richtext">You have now completed this activity.</div></div></li></ul></div>
